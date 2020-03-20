@@ -1,0 +1,20 @@
+.banner__wrapper_duo {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.banner_duo {
+  flex-basis: 48%;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  text-decoration: none;
+  position: relative;
+}
+
+.banner__inner_duo {
+  max-width: 80%;
+  margin: 24px;
+  position: relative;
+}

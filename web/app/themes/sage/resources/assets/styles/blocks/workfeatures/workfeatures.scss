@@ -1,0 +1,47 @@
+.workfeatures {
+  &__title {
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  &__inner {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    font-family: $font;
+    padding-bottom: 25px;
+  }
+
+  &__left {
+    flex-basis: 17%;
+    text-align: center;
+
+    svg {
+      width: 30px;
+    }
+  }
+
+  &__right {
+    flex-basis: 83%;
+  }
+
+  &__titling {
+    padding-bottom: 15px;
+    color: $black;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $greytext;
+  }
+}

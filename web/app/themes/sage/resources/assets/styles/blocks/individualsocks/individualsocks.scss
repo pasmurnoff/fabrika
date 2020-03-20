@@ -1,0 +1,53 @@
+.individualsocks {
+  position: relative;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  &__titling {
+    padding-bottom: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex: 1 0 33.3%;
+
+    &_left {
+      text-align: right;
+    }
+  }
+
+  &__item {
+    padding-bottom: 30px;
+    font-family: $font;
+    font-size: 14px;
+  }
+
+  &__text {
+    color: $greytext;
+    line-height: 1.8;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__list {
+    padding-left: 15px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .individualsocks__column {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}

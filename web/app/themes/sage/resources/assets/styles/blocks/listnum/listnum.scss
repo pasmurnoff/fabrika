@@ -1,0 +1,26 @@
+.listnum {
+  padding-left: 0;
+
+  &__point {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $font;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__number {
+    background-color: #222;
+    color: #fff;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

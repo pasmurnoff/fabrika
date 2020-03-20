@@ -1,0 +1,66 @@
+.footer {
+  border-top: 1px solid #ccc;
+
+  &__top {
+    padding: 35px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex-basis: 25%;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  &__menu {
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: $font;
+    line-height: 1.8;
+    color: $greytext;
+  }
+}
+
+.payments {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  padding-top: 10px;
+
+  svg {
+    width: 50px;
+  }
+
+  &__text {
+    font-family: $font;
+    color: $greytext;
+    line-height: 1.8;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__column {
+    flex-basis: 50%;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__column {
+    flex-basis: 100%;
+    padding-bottom: 35px;
+  }
+}

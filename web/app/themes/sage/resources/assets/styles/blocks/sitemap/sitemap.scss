@@ -1,0 +1,44 @@
+.sitemap {
+  &__title {
+    padding-bottom: 15px;
+  }
+
+  &__block {
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  &__single {
+    flex-basis: 24.5%;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    color: $greytext;
+    font-size: 14px;
+    line-height: 1.4;
+    text-decoration: none;
+    font-family: $font;
+
+    &:hover {
+      text-decoration: underline;
+      color: $black;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sitemap {
+    &__single {
+      flex-basis: 48%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sitemap {
+    &__single {
+      flex-basis: 100%;
+    }
+  }
+}

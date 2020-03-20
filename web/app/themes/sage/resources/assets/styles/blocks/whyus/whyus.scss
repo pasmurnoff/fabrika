@@ -1,0 +1,36 @@
+.whyus {
+  font-family: $font;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 45%;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  &__titling {
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $greytext;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whyus__item {
+    flex-basis: 100%;
+  }
+}

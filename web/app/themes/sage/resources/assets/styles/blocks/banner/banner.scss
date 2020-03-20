@@ -1,0 +1,40 @@
+.banner {
+  //background-color: #f6f7f8;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+
+  &__inner {
+    padding: 30px 54px;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: #222;
+    font-weight: 700;
+    font-family: $font;
+  }
+
+  &__text {
+    line-height: 1.8;
+    color: $greytext;
+    font-family: $font;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  &__side {
+    //width: 50%;
+    flex: 1 0 50%;
+  }
+
+  &__icon {
+    text-align: right;
+  }
+
+  &__img {
+    //max-width: 320px;
+  }
+}

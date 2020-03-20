@@ -1,0 +1,12 @@
+.socials {
+  width: 230px;
+  height: 10px;
+  background-color: #222;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: wrap;
+
+  &__inline {
+    justify-content: space-between;
+  }
+}

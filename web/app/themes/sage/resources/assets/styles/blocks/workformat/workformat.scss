@@ -1,0 +1,13 @@
+.workformat {
+  text-align: center;
+  font-family: $font;
+  //background-color: #f6f7f8;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &__text {
+    line-height: 1.8;
+    color: $greytext;
+    padding-top: 20px;
+  }
+}

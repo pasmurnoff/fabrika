@@ -1,0 +1,40 @@
+.forwhom {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  &_padding-bottom {
+    padding-bottom: 45px;
+  }
+
+  &__item {
+    flex-basis: 31%;
+    text-align: center;
+    font-family: $font;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__sep {
+    display: block;
+    height: 2px;
+    background-color: #222;
+    width: 40px;
+    margin: 12px auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $greytext;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .forwhom__item {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,86 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Общие стили */
+@import "common/fonts"; // Подключение шрифтов
+@import "common/global"; // Глобальные стили
+@import "common/elems/text"; // Глобальные стили
+@import "common/elems/breadcrumbs"; // Хлебные крошки
+
+/** Меню */
+@import "blocks/menu/menu"; // Общее меню
+@import "blocks/menu/menu_inline"; // Меню в одну строку
+@import "blocks/menu/__item/menu__item"; // Тег <li> в меню
+@import "blocks/menu/__item/menu__item_top"; // Тег <li> в меню в самом верху
+@import "blocks/menu/__item/menu__item_main"; // Тег <li> в меню в самом верху
+@import "blocks/menu/__item/menu__item_bold"; // Жирный пункт меню
+@import "blocks/menu/__link/menu__link"; // Тег <a> в меню
+@import "blocks/menu/__link/menu__link_top"; // Тег <a> в меню в самом верху
+@import "blocks/menu/__link/menu__link_grey"; // Тег <a> серый
+@import "blocks/menu/__link/menu__link_bold"; // Тег <a> в меню жирный
+@import "blocks/menu/__link/menu__link_main"; // Тег <a> в меню жирный
+
+/** Повторяющиеся элементы */
+@import "common/elems/logo"; // Логотип
+@import "common/elems/phone"; // Блок с телефоном и ссылкой
+@import "common/elems/socials"; // Блок с соцсетями
+@import "common/elems/topbanner"; // Всплывашка сверху
+@import "common/elems/button/button"; // Кнопка
+@import "common/elems/form/form"; // Общие стили формм
+@import "common/elems/form/form-constr"; // Стили для форм с тайтлами и текстами перед полями
+@import "common/elems/form/input"; // Стили input
+@import "common/elems/points/points"; // Пункты выдачи
+
+/** Хедер */
+@import "blocks/header/header"; // Общее хедера
+@import "blocks/header/__top/header__top"; // Верхняя часть хедера
+@import "blocks/header/__bottom/header__bottom"; // Нижняя часть хедер
+
+/** Футер */
+@import "blocks/footer/footer"; // Общее верхней части футера
+@import "blocks/footer/__top/footer__top"; // Общее верхней части футера
+@import "blocks/footer/__bottom/footer__bottom"; // Общее нижней части футера
+
+/** Блоки */
+@import "blocks/title/title"; // Тайтлы
+@import "blocks/title/title_main"; // Тайтл на главной
+@import "blocks/title/title_middle"; // Тайтл 20px
+@import "blocks/title/title_large"; // Тайтл 24px
+@import "blocks/title/title_huge"; // Тайтл 30px
+@import "blocks/individualsocks/individualsocks"; // Производство носков с индивидуальным дизайном
+@import "blocks/block-text/block-text"; // Дефолтный блок с текстами
+@import "blocks/additional/additional"; // Блок с тремя понтами
+@import "blocks/whyus/whyus"; // Блок почему стоит заказывать у нас
+@import "blocks/workorder/workorder"; // Блок порядок работы
+@import "blocks/defaultpage/defaultpage"; // Блок для одинаковых страниц
+@import "blocks/faq/faq"; // Блок для вопросов и ответов
+@import "blocks/table/table"; // Блок с таблицей
+@import "blocks/table/table_wide"; // Блок с таблицей на всю ширину
+@import "blocks/worksteps/worksteps"; // Блок 4 шага до работы
+@import "blocks/workformat/workformat"; // Блок Формат работы
+@import "blocks/workfeatures/workfeatures"; // Блок Особенности работы с Фабрикой носков
+@import "blocks/forwhom/formwhom"; // Блок Для кого
+@import "blocks/contacts/contacts"; // Страница контактов
+@import "blocks/sitemap/sitemap"; // Страница Карта сайта
+@import "blocks/blog/blog"; // Страница Блога
+@import "blocks/country/country"; // Страница Пункты выдачи
+@import "blocks/listnum/listnum"; // Блок-список с черными круглыми цифрами
+
+/** Баннеры */
+@import "blocks/banner/banner"; // Общие стили баннеров
+@import "blocks/banner/banner_single"; // Одиночный баннер
+@import "blocks/banner/banner_duo"; // 2 баннера в строке
+@import "blocks/banner/__title/banner__title_duo"; // Заголовок двойного баннера
+@import "blocks/banner/__text/banner__text_duo"; // Текст двойного баннера
+@import "blocks/banner/__icon/banner__icon_duo"; // Иконка двойного баннера
+@import "blocks/banner/__button/banner__button_duo"; // Кнопка в двойном баннере

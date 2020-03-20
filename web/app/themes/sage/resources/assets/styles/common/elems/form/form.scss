@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  &__col {
+    &_double {
+      flex-basis: 49.5%;
+    }
+  }
+
+  &_single {
+    width: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &_cdek {
+    width: 370px;
+  }
+}
+
+.formline {
+  &__inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    &__col {
+      &_double {
+        flex-basis: 100%;
+      }
+    }
+
+    &__privacy {
+      &_right {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

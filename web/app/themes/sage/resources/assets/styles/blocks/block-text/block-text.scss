@@ -1,0 +1,84 @@
+.block-text {
+  font-family: $font;
+  padding-bottom: 35px;
+
+  &_nopad {
+    padding-bottom: 5px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $greytext;
+
+    &_bold {
+      font-weight: 700;
+      color: $black;
+    }
+
+    &_padding-away {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__img {
+    max-width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__list {
+    padding-left: 15px;
+    color: $greytext;
+    line-height: 1.8;
+  }
+
+  &__point {
+    font-size: 14px;
+    line-height: 1.8;
+
+    &_underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    color: $greytext;
+    text-decoration: underline;
+
+    &_bold {
+      font-weight: 700;
+      color: $black;
+    }
+
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+
+.link-with-icon {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $font;
+  color: $greytext;
+  font-size: 14px;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+
+  svg {
+    width: 20px;
+    margin-right: 10px;
+  }
+}

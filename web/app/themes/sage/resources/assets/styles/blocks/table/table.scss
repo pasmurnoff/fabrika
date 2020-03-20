@@ -1,0 +1,46 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: $font;
+
+  &__wrapper {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__row {
+    width: 100%;
+
+    &_title {
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  &__box {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    color: $greytext;
+    line-height: 1.6;
+
+    &_title {
+      color: $black;
+    }
+
+    &_quart {
+      width: 25%;
+    }
+
+    &_triple {
+      width: 33.3%;
+    }
+
+    &_double {
+      width: 50%;
+    }
+  }
+}
