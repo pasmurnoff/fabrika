@@ -1,8 +1,5 @@
 @import "common/variables";
 
-/** Import everything from autoload */
-@import "./autoload/**/*";
-
 /**
  * Import npm dependencies
  *
@@ -11,76 +8,139 @@
  */
 // @import "~some-node-module";
 
+/* External libraries */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/css/brands.css";
+
 /** Общие стили */
-@import "common/fonts"; // Подключение шрифтов
-@import "common/global"; // Глобальные стили
-@import "common/elems/text"; // Глобальные стили
-@import "common/elems/breadcrumbs"; // Хлебные крошки
+@import "common/fonts";
+// Подключение шрифтов
+@import "common/global";
+// Глобальные стили
+@import "common/elems/text";
+// Глобальные стили
+@import "common/elems/breadcrumbs";
+// Хлебные крошки
 
 /** Меню */
-@import "components/menu/menu"; // Общее меню
-@import "components/menu/menu_inline"; // Меню в одну строку
-@import "components/menu/__item/menu__item"; // Тег <li> в меню
-@import "components/menu/__item/menu__item_top"; // Тег <li> в меню в самом верху
-@import "components/menu/__item/menu__item_main"; // Тег <li> в меню в самом верху
-@import "components/menu/__item/menu__item_bold"; // Жирный пункт меню
-@import "components/menu/__link/menu__link"; // Тег <a> в меню
-@import "components/menu/__link/menu__link_top"; // Тег <a> в меню в самом верху
-@import "components/menu/__link/menu__link_grey"; // Тег <a> серый
-@import "components/menu/__link/menu__link_bold"; // Тег <a> в меню жирный
-@import "components/menu/__link/menu__link_main"; // Тег <a> в меню жирный
+@import "components/menu/menu";
+// Общее меню
+@import "components/menu/menu_inline";
+// Меню в одну строку
+@import "components/menu/__item/menu__item";
+// Тег <li> в меню
+@import "components/menu/__item/menu__item_top";
+// Тег <li> в меню в самом верху
+@import "components/menu/__item/menu__item_main";
+// Тег <li> в меню в самом верху
+@import "components/menu/__item/menu__item_bold";
+// Жирный пункт меню
+@import "components/menu/__link/menu__link";
+// Тег <a> в меню
+@import "components/menu/__link/menu__link_top";
+// Тег <a> в меню в самом верху
+@import "components/menu/__link/menu__link_grey";
+// Тег <a> серый
+@import "components/menu/__link/menu__link_bold";
+// Тег <a> в меню жирный
+@import "components/menu/__link/menu__link_main";
+// Тег <a> в меню жирный
 
 /** Повторяющиеся элементы */
-@import "common/elems/logo"; // Логотип
-@import "common/elems/phone"; // Блок с телефоном и ссылкой
-@import "common/elems/socials"; // Блок с соцсетями
-@import "common/elems/topbanner"; // Всплывашка сверху
-@import "common/elems/button/button"; // Кнопка
-@import "common/elems/form/form"; // Общие стили формм
-@import "common/elems/form/form-constr"; // Стили для форм с тайтлами и текстами перед полями
-@import "common/elems/form/input"; // Стили input
-@import "common/elems/points/points"; // Пункты выдачи
+@import "common/elems/logo";
+// Логотип
+@import "common/elems/phone";
+// Блок с телефоном и ссылкой
+@import "common/elems/socials";
+// Блок с соцсетями
+@import "common/elems/topbanner";
+// Всплывашка сверху
+@import "common/elems/button/button";
+// Кнопка
+@import "common/elems/form/form";
+// Общие стили формм
+@import "common/elems/form/form-constr";
+// Стили для форм с тайтлами и текстами перед полями
+@import "common/elems/form/input";
+// Стили input
+@import "common/elems/points/points";
+// Пункты выдачи
 
 /** Хедер */
-@import "components/header/header"; // Общее хедера
-@import "components/header/__top/header__top"; // Верхняя часть хедера
-@import "components/header/__bottom/header__bottom"; // Нижняя часть хедер
+@import "components/header/header";
+// Общее хедера
+@import "components/header/__top/header__top";
+// Верхняя часть хедера
+@import "components/header/__bottom/header__bottom";
+// Нижняя часть хедер
 
 /** Футер */
-@import "components/footer/footer"; // Общее верхней части футера
-@import "components/footer/__top/footer__top"; // Общее верхней части футера
-@import "components/footer/__bottom/footer__bottom"; // Общее нижней части футера
+@import "components/footer/footer";
+// Общее верхней части футера
+@import "components/footer/__top/footer__top";
+// Общее верхней части футера
+@import "components/footer/__bottom/footer__bottom";
+// Общее нижней части футера
 
 /** Блоки */
-@import "components/title/title"; // Тайтлы
-@import "components/title/title_main"; // Тайтл на главной
-@import "components/title/title_middle"; // Тайтл 20px
-@import "components/title/title_large"; // Тайтл 24px
-@import "components/title/title_huge"; // Тайтл 30px
-@import "components/individualsocks/individualsocks"; // Производство носков с индивидуальным дизайном
-@import "components/block-text/block-text"; // Дефолтный блок с текстами
-@import "components/additional/additional"; // Блок с тремя понтами
-@import "components/whyus/whyus"; // Блок почему стоит заказывать у нас
-@import "components/workorder/workorder"; // Блок порядок работы
-@import "components/defaultpage/defaultpage"; // Блок для одинаковых страниц
-@import "components/faq/faq"; // Блок для вопросов и ответов
-@import "components/table/table"; // Блок с таблицей
-@import "components/table/table_wide"; // Блок с таблицей на всю ширину
-@import "components/worksteps/worksteps"; // Блок 4 шага до работы
-@import "components/workformat/workformat"; // Блок Формат работы
-@import "components/workfeatures/workfeatures"; // Блок Особенности работы с Фабрикой носков
-@import "components/forwhom/formwhom"; // Блок Для кого
-@import "components/contacts/contacts"; // Страница контактов
-@import "components/sitemap/sitemap"; // Страница Карта сайта
-@import "components/blog/blog"; // Страница Блога
-@import "components/country/country"; // Страница Пункты выдачи
-@import "components/listnum/listnum"; // Блок-список с черными круглыми цифрами
+@import "components/title/title";
+// Тайтлы
+@import "components/title/title_main";
+// Тайтл на главной
+@import "components/title/title_middle";
+// Тайтл 20px
+@import "components/title/title_large";
+// Тайтл 24px
+@import "components/title/title_huge";
+// Тайтл 30px
+@import "components/individualsocks/individualsocks";
+// Производство носков с индивидуальным дизайном
+@import "components/block-text/block-text";
+// Дефолтный блок с текстами
+@import "components/additional/additional";
+// Блок с тремя понтами
+@import "components/whyus/whyus";
+// Блок почему стоит заказывать у нас
+@import "components/workorder/workorder";
+// Блок порядок работы
+@import "components/defaultpage/defaultpage";
+// Блок для одинаковых страниц
+@import "components/faq/faq";
+// Блок для вопросов и ответов
+@import "components/table/table";
+// Блок с таблицей
+@import "components/table/table_wide";
+// Блок с таблицей на всю ширину
+@import "components/worksteps/worksteps";
+// Блок 4 шага до работы
+@import "components/workformat/workformat";
+// Блок Формат работы
+@import "components/workfeatures/workfeatures";
+// Блок Особенности работы с Фабрикой носков
+@import "components/forwhom/formwhom";
+// Блок Для кого
+@import "components/contacts/contacts";
+// Страница контактов
+@import "components/sitemap/sitemap";
+// Страница Карта сайта
+@import "components/blog/blog";
+// Страница Блога
+@import "components/country/country";
+// Страница Пункты выдачи
+@import "components/listnum/listnum";
+// Блок-список с черными круглыми цифрами
 
 /** Баннеры */
-@import "components/banner/banner"; // Общие стили баннеров
-@import "components/banner/banner_single"; // Одиночный баннер
-@import "components/banner/banner_duo"; // 2 баннера в строке
-@import "components/banner/__title/banner__title_duo"; // Заголовок двойного баннера
-@import "components/banner/__text/banner__text_duo"; // Текст двойного баннера
-@import "components/banner/__icon/banner__icon_duo"; // Иконка двойного баннера
+@import "components/banner/banner";
+// Общие стили баннеров
+@import "components/banner/banner_single";
+// Одиночный баннер
+@import "components/banner/banner_duo";
+// 2 баннера в строке
+@import "components/banner/__title/banner__title_duo";
+// Заголовок двойного баннера
+@import "components/banner/__text/banner__text_duo";
+// Текст двойного баннера
+@import "components/banner/__icon/banner__icon_duo";
+// Иконка двойного баннера
 @import "components/banner/__button/banner__button_duo"; // Кнопка в двойном баннере
