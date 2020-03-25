@@ -14,8 +14,7 @@
 /** Общие стили */
 @import "common/fonts"; // Подключение шрифтов
 @import "common/global"; // Глобальные стили
-@import "common/elems/text"; // Глобальные стили
-@import "common/elems/breadcrumbs"; // Хлебные крошки
+@import "components/elems/breadcrumbs"; // Хлебные крошки
 
 /** Меню */
 @import "components/menu/menu"; // Общее меню
@@ -31,15 +30,15 @@
 @import "components/menu/__link/menu__link_main"; // Тег <a> в меню жирный
 
 /** Повторяющиеся элементы */
-@import "common/elems/logo"; // Логотип
-@import "common/elems/phone"; // Блок с телефоном и ссылкой
-@import "common/elems/socials"; // Блок с соцсетями
-@import "common/elems/topbanner"; // Всплывашка сверху
-@import "common/elems/button/button"; // Кнопка
-@import "common/elems/form/form"; // Общие стили формм
-@import "common/elems/form/form-constr"; // Стили для форм с тайтлами и текстами перед полями
-@import "common/elems/form/input"; // Стили input
-@import "common/elems/points/points"; // Пункты выдачи
+@import "components/elems/logo"; // Логотип
+@import "components/elems/phone"; // Блок с телефоном и ссылкой
+@import "components/elems/socials"; // Блок с соцсетями
+@import "components/elems/topbanner"; // Всплывашка сверху
+@import "components/button/button"; // Кнопка
+@import "components/form/form"; // Общие стили формм
+@import "components/form/form-constr"; // Стили для форм с тайтлами и текстами перед полями
+@import "components/form/input"; // Стили input
+@import "components/points/points"; // Пункты выдачи
 
 /** Хедер */
 @import "components/header/header"; // Общее хедера
@@ -53,16 +52,13 @@
 
 /** Блоки */
 @import "components/title/title"; // Тайтлы
-@import "components/title/title_main"; // Тайтл на главной
-@import "components/title/title_middle"; // Тайтл 20px
-@import "components/title/title_large"; // Тайтл 24px
-@import "components/title/title_huge"; // Тайтл 30px
+@import "components/text/text"; // Обычный текст
 @import "components/individualsocks/individualsocks"; // Производство носков с индивидуальным дизайном
 @import "components/block-text/block-text"; // Дефолтный блок с текстами
 @import "components/additional/additional"; // Блок с тремя понтами
 @import "components/whyus/whyus"; // Блок почему стоит заказывать у нас
 @import "components/workorder/workorder"; // Блок порядок работы
-@import "components/defaultpage/defaultpage"; // Блок для одинаковых страниц
+@import "components/defaultpage/defaultpage"; // Блок для одинаковых страниц1
 @import "components/faq/faq"; // Блок для вопросов и ответов
 @import "components/table/table"; // Блок с таблицей
 @import "components/table/table_wide"; // Блок с таблицей на всю ширину

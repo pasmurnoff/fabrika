@@ -13,4 +13,6 @@ Template Name: Конструктор заказа носков
                  alt="Изготовление носков на заказ">
         @endslot
     @endcomponent
+
+    @include('components.form.constructor')
 @endsection

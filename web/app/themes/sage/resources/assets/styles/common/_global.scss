@@ -49,11 +49,20 @@ body {
 .mrgn35 {
   margin-top: 35px;
   margin-bottom: 35px;
+
+  &_bottom {
+    margin-bottom: 35px;
+  }
 }
 
 .pdng35 {
   padding-top: 35px;
   padding-bottom: 35px;
+}
+
+.pdng15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .partner-image {
