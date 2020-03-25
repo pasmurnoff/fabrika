@@ -120,3 +120,7 @@ function add_specific_menu_location_atts( $atts, $item, $args ) {
     return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
+
+
+/* add custom functions */
+require dirname(__DIR__) . '/resources/functions/remove.php';
