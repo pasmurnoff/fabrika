@@ -1,5 +1,5 @@
 <div class="additional mrgn35">
-  @component('blocks.block-additional.additional-item')
+  @component('components.block-additional.additional-item')
     @slot('icon')
       @include('icon::quality')
     @endslot
@@ -14,7 +14,7 @@
     @endslot
   @endcomponent
 
-  @component('blocks.block-additional.additional-item')
+  @component('components.block-additional.additional-item')
     @slot('icon')
       @include('icon::dashboard')
     @endslot
@@ -29,7 +29,7 @@
     @endslot
   @endcomponent
 
-  @component('blocks.block-additional.additional-item')
+  @component('components.block-additional.additional-item')
     @slot('icon')
       @include('icon::telemarketer')
     @endslot

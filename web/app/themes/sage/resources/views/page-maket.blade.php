@@ -4,7 +4,7 @@ Template Name: Макет носков
 
 @extends('layouts.app')
 @section('content')
-  @component('blocks.banner.banner', ['href' => '/konstruktor-zakaza-noskov'])
+  @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov'])
     @slot('title')
       Заказать дизайн-концепцию<br/>
       и получить бесплатный образец

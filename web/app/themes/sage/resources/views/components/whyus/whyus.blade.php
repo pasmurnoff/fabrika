@@ -2,7 +2,7 @@
   <div class="title_large title whyus__title">Почему надо заказывать у нас?</div>
   <div class="whyus__inner">
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Специализация
@@ -15,7 +15,7 @@
 
       @endcomponent
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Размерный ряд включен
@@ -28,7 +28,7 @@
 
       @endcomponent
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Маленькие тиражи
@@ -40,7 +40,7 @@
 
       @endcomponent
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Сжатые сроки
@@ -52,7 +52,7 @@
 
       @endcomponent
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Качество!
@@ -65,7 +65,7 @@
 
       @endcomponent
 
-      @component('blocks.whyus.whyus-item')
+      @component('components.whyus.whyus-item')
 
         @slot('title')
           Цена!

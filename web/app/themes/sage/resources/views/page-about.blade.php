@@ -4,7 +4,7 @@ Template Name: О фабрике
 
 @extends('layouts.app')
 @section('content')
-  @component('blocks.banner.banner-twobuttons', ['href' => '/noski-optom', 'buttonText' => 'Носки оптом', 'href2' => '/na-zakaz', 'buttonText2' => 'Носки на заказ'])
+  @component('components.banner.banner-twobuttons', ['href' => '/noski-optom', 'buttonText' => 'Носки оптом', 'href2' => '/na-zakaz', 'buttonText2' => 'Носки на заказ'])
     @slot('title')
       Производство и продажа носков<br/>
       по низким ценам
@@ -138,5 +138,5 @@ Template Name: О фабрике
     </div>
   </div>
 
-  @include('blocks.workyears.workyears')
+  @include('components.workyears.workyears')
 @endsection

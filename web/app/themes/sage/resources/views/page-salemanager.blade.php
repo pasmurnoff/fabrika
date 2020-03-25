@@ -5,7 +5,7 @@
 
 @section('content')
 
-  @component('blocks.banner.banner', ['href' => '/menedzher-po-prodazham/#manager-form', 'classes' => 'mrgn35'])
+  @component('components.banner.banner', ['href' => '/menedzher-po-prodazham/#manager-form', 'classes' => 'mrgn35'])
     @slot('title')
       Мы платим 10%<br/>
       от суммы всех твоих продаж
@@ -21,9 +21,9 @@
     @endslot
   @endcomponent
 
-  @include('blocks.worksteps.worksteps')
-  @include('blocks.workformat.workformat')
-  @include('blocks.workfeatures.workfeatures')
+  @include('components.worksteps.worksteps')
+  @include('components.workformat.workformat')
+  @include('components.workfeatures.workfeatures')
 
   <div class="block-text">
     <div class="block-text__text block-text__text_padding-away">
@@ -76,5 +76,5 @@
     </div>
   </div>
 
-  @include('blocks.form.default', ['title' => 'Я хочу работать с вами'])
+  @include('components.form.default', ['title' => 'Я хочу работать с вами'])
 @endsection

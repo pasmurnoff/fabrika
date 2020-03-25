@@ -129,5 +129,5 @@ Template Name: Контакты
     </div>
   </div>
 
-  @include('blocks.writeus.writeus')
+  @include('components.writeus.writeus')
 @endsection

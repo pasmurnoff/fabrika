@@ -5,7 +5,7 @@
 
 @section('content')
   <div class="defaultpage">
-    @component('blocks.banner.banner', ['href' => '/pomosh#toform', 'classes' => 'mrgn35'])
+    @component('components.banner.banner', ['href' => '/pomosh#toform', 'classes' => 'mrgn35'])
       @slot('title')
         Задайте свой вопрос<br/>
         и мы вам обязательно ответим

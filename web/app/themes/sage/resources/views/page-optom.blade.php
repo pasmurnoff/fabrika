@@ -109,5 +109,5 @@
     </div>
   </div>
 
-  @include('blocks.whyus.whyus')
+  @include('components.whyus.whyus')
 @endsection
