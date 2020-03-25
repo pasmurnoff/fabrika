@@ -1,7 +1,7 @@
 <div class="workorder mrgn35">
   <div class="workorder__title title title_huge">Порядок работы</div>
   <div class="workorder__inner">
-    @component('blocks.workorder.workorder-item', ['num' => '1', 'right' => false])
+    @component('components.workorder.workorder-item', ['num' => '1', 'right' => false])
       @slot('title')
         Сбор данных
       @endslot
@@ -11,7 +11,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '2', 'right' => true])
+    @component('components.workorder.workorder-item', ['num' => '2', 'right' => true])
       @slot('title')
         Заполнение брифа
       @endslot
@@ -21,7 +21,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '3', 'right' => false])
+    @component('components.workorder.workorder-item', ['num' => '3', 'right' => false])
       @slot('title')
         Создание макета
       @endslot
@@ -34,7 +34,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '4', 'right' => true])
+    @component('components.workorder.workorder-item', ['num' => '4', 'right' => true])
       @slot('title')
         Оплата образца
       @endslot
@@ -44,7 +44,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '5', 'right' => false])
+    @component('components.workorder.workorder-item', ['num' => '5', 'right' => false])
       @slot('title')
         Отрисовка макета
       @endslot
@@ -55,7 +55,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '6', 'right' => true])
+    @component('components.workorder.workorder-item', ['num' => '6', 'right' => true])
       @slot('title')
         Производство образца
       @endslot
@@ -65,7 +65,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '7', 'right' => false])
+    @component('components.workorder.workorder-item', ['num' => '7', 'right' => false])
       @slot('title')
         Предоплата тиража
       @endslot
@@ -75,7 +75,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '8', 'right' => true])
+    @component('components.workorder.workorder-item', ['num' => '8', 'right' => true])
       @slot('title')
         Запуск тиража
       @endslot
@@ -85,7 +85,7 @@
       @endslot
     @endcomponent
 
-    @component('blocks.workorder.workorder-item', ['num' => '9', 'right' => false, 'last' => 'workorder__subline_last'])
+    @component('components.workorder.workorder-item', ['num' => '9', 'right' => false, 'last' => 'workorder__subline_last'])
       @slot('title')
         Отгрузка и оплата изделий
       @endslot

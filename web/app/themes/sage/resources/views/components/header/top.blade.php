@@ -1,4 +1,4 @@
 <div class="header__top">
-  @include('blocks.header.topmenu')
+  @include('components.header.topmenu')
   @include('common.socials')
 </div>

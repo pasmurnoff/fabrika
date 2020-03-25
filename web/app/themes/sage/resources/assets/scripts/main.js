@@ -4,6 +4,10 @@ import 'jquery';
 // Import everything from autoload
 import './autoload/**/*'
 import './forms/visual'
+import './cookie/cookie-init'
+import './cookie/cookie-check'
+import './cookie/top-baner'
+
 
 // import local dependencies
 import Router from './util/Router';
@@ -15,16 +19,16 @@ import maket from './routes/maket';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
-  // All pages
-  common,
-  // Home page
-  home,
-  // About Us page, note the change from about-us to aboutUs.
-  aboutUs,
+    // All pages
+    common,
+    // Home page
+    home,
+    // About Us page, note the change from about-us to aboutUs.
+    aboutUs,
 
-  cdek,
+    cdek,
 
-  maket,
+    maket,
 });
 
 // Load Events

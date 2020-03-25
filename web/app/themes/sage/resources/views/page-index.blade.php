@@ -5,7 +5,7 @@
 
 @section('content')
 
-  @component('blocks.banner.banner-duo', ['href' => '/noski-optom', 'href2' => '/konstruktor-zakaza-noskov'])
+  @component('components.banner.banner-duo', ['href' => '/noski-optom', 'href2' => '/konstruktor-zakaza-noskov'])
     @slot('title')
       Продажа носков, колготок и чулок оптом
     @endslot

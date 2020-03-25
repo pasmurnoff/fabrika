@@ -13,7 +13,7 @@
       и неповторимым дизайном. Мы открыты к коллаборациям с другими брендами.
     </div>
   </div>
-  @component('blocks.banner.banner', ['href' => '/konstruktor-zakaza-noskov'])
+  @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov'])
     @slot('title')
       Носки на заказ с Вашим дизайном<br/>
       от 1000 пар!
@@ -29,7 +29,7 @@
     @endslot
   @endcomponent
 
-  @include('blocks.individualsocks', ['classes' => 'pdng35'])
+  @include('components.individualsocks', ['classes' => 'pdng35'])
 
   {{--  @include('blocks.block-text', ['title' => 'Услуги по вязке носков'])--}}
   <div class="block-text">
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  @component('blocks.banner.banner', ['href' => '/konstruktor-zakaza-noskov', 'classes' => 'mrgn35'])
+  @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov', 'classes' => 'mrgn35'])
     @slot('title')
       От вас идея, от нас - продукт!
     @endslot
@@ -148,22 +148,22 @@
     </div>
   </div>
 
-  @include('blocks.block-additional.additional')
+  @include('components.block-additional.additional')
 
-  @include('blocks.whyus.whyus')
+  @include('components.whyus.whyus')
 
-  @include('blocks.workorder.workorder')
+  @include('components.workorder.workorder')
 
-  @include('blocks.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
+  @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
 
-  @include('blocks.tables.table')
+  @include('components.tables.table')
 
-  @include('blocks.workyears.workyears')
+  @include('components.workyears.workyears')
 
   <div class="title title_large">Доставляем носки, колготки и прочие грузы:</div>
   <img class="partner-image" src="@asset('images/defaultpages/dostavka_noski_kolgotki.jpg')"
        alt="Доставляем носки, колготки и прочие грузы">
 
-  @include('blocks.socksdesign.socksdesign')
+  @include('components.socksdesign.socksdesign')
 
 @endsection

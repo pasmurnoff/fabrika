@@ -48,7 +48,7 @@
       <div class="block-text__title title title_huge">Размерная сетка</div>
     </div>
 
-    @include('blocks.tables.table')
+    @include('components.tables.table')
 
   </div>
 @endsection
