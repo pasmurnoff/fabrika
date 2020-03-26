@@ -15,6 +15,7 @@
     flex-flow: wrap;
 
     @media screen and (max-width: 767px) {
+      padding: 30px;
       flex-direction: column-reverse;
       align-items: center;
       justify-content: space-between;
