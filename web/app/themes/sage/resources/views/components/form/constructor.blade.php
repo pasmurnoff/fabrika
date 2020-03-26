@@ -1,32 +1,22 @@
 <div class="title title_large mrgn35-top">Рассчитать стоимость носков или колготок</div>
-<form class="form mrgn35">
+<form class="form mrgn35" enctype="multipart/form-data">
 
     {{--Количество моделей--}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Количество моделей',
-        'text' =>'Сколько моделей носков с индивидуальным дизайном входит в тираж?',
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Количество моделей','text' =>'Сколько моделей носков с индивидуальным дизайном входит в тираж?'])
         @slot('content')
             @include('components.form.elements.input-number', ['value' => '5', 'name' => 'model-quantity'])
         @endslot
     @endcomponent
 
     {{--Тираж на одну модель--}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Тираж на одну модель',
-        'text' =>'Если вы хотите сделать сигнальный образец, то поставьте 1',
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Тираж на одну модель','text' =>'Если вы хотите сделать сигнальный образец, то поставьте 1'])
         @slot('content')
             @include('components.form.elements.input-number', ['value' => '1000', 'step' => '100','min' => '1000','max' => '', 'name'=>'one-model-quantity' ])
         @endslot
     @endcomponent
 
     {{-- Тип будущих изделий --}}
-    @component('components.form.elements.form-item', [
-                'title' => 'Тип будущих изделий',
-                'text' =>'Сделаем типовую или индивидуальную высоту паголенка',
-                'class' => 'checkbox singlerow'
-                ])
+    @component('components.form.elements.form-item', ['title' => 'Тип будущих изделий','text' =>'Сделаем типовую или индивидуальную высоту паголенка','class' => 'checkbox singlerow'])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'type', 'value' => 'Следы', 'attr' => 'checked="checked"'])
             @include('components.form.elements.checkbox', ['name' => 'type', 'value' => 'Короткие гладкие'])
@@ -40,11 +30,7 @@
     @endcomponent
 
     {{-- Плотность изделия--}}
-    @component('components.form.elements.form-item', [
-                'title' => 'Плотность изделия',
-                'text' =>'Состав 80% хлопок 20% синтетика',
-                'class' => 'checkbox singlerow'
-                ])
+    @component('components.form.elements.form-item', ['title' => 'Плотность изделия','text' =>'Состав 80% хлопок 20% синтетика','class' => 'checkbox singlerow'])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'density', 'value' => 'Связываем в одну нить (тонкие, легкие)', 'attr' => 'checked="checked"'])
             @include('components.form.elements.checkbox', ['name' => 'density', 'value' => 'Связываем в две нити (уплотненные, премиум)'])
@@ -53,11 +39,7 @@
     @endcomponent
 
     {{--Выберите размеры--}}
-    @component('components.form.elements.form-item', [
-            'title' => 'Выберите размеры',
-            'text' =>'Размеры, которые нужно охватить',
-            'class' => 'checkbox singlerow'
-            ])
+    @component('components.form.elements.form-item', ['title' => 'Выберите размеры','text' =>'Размеры, которые нужно охватить','class' => 'checkbox'])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'sizes', 'value' => '16-23'])
             @include('components.form.elements.checkbox', ['name' => 'sizes', 'value' => '24-32'])
@@ -72,11 +54,7 @@
     @endcomponent
 
     {{--Носки в паре --}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Носки в паре',
-        'text' =>'Если в носках есть хотя бы одно отличие, то выбирайте второй вариант',
-        'class' => 'checkbox singlerow'
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Носки в паре','text' =>'Если в носках есть хотя бы одно отличие, то выбирайте второй вариант','class' => 'checkbox singlerow'])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'pairs', 'value' => 'Одинаковые', 'attr' => 'checked="checked"'])
             @include('components.form.elements.checkbox', ['name' => 'pairs', 'value' => 'Разные'])
@@ -84,11 +62,7 @@
     @endcomponent
 
     {{--Основной цвет носка --}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Основной цвет носка',
-        'text' =>'Если носки других или разных цветов, то выбираем последний вариант',
-        'class' => 'radio singlerow'
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Основной цвет носка','text' =>'Если носки других или разных цветов, то выбираем последний вариант','class' => 'radio singlerow'])
         @slot('content')
             @include('components.form.elements.radio', ['name' => 'colors', 'value' => 'Белый', 'attr' => 'checked="checked"'])
             @include('components.form.elements.radio', ['name' => 'colors', 'value' => 'Черный'])
@@ -99,34 +73,24 @@
     @endcomponent
 
     {{--Количество цветов в изделии (с основным)--}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Количество цветов в изделии (с основным)',
-        'text' =>'Оптимальный максимум цветов в изделии - 7 оттенков',
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Количество цветов в изделии (с основным)','text' =>'Оптимальный максимум цветов в изделии - 7 оттенков'])
         @slot('content')
             @include('components.form.elements.input-number', ['value' => '3','max' => '7', 'name' =>'color-quantity' ])
         @endslot
     @endcomponent
 
     {{--Упаковка изделий --}}
-    @component('components.form.elements.form-item', [
-        'title' => 'Упаковка изделий',
-        'text' =>'Упаковываем в свои пакеты или работаем с вашей упаковкой',
-        'class' => 'radio singlerow'
-        ])
+    @component('components.form.elements.form-item', ['title' => 'Упаковка изделий','text' =>'Упаковываем в свои пакеты или работаем с вашей упаковкой','class' => 'radio singlerow'])
         @slot('content')
             @include('components.form.elements.radio', ['name' => 'package', 'value' => 'Бесплатная упаковка от предприятия', 'attr' => 'checked="checked"'])
             @include('components.form.elements.radio', ['name' => 'package', 'value' => 'Понадобятся дополнительные услуги по упаковке'])
         @endslot
     @endcomponent
 
-    <div class="form__col_double">
+    <div class="form__col_third">
 
         {{--К какой дате нужен тираж--}}
-        @component('components.form.elements.form-item', [
-        'title' => 'К какой дате нужен тираж',
-        'text' =>'Средний срок производства мелкотиражных партий 10-15 рабочих дней',
-        ])
+        @component('components.form.elements.form-item', ['title' => 'К какой дате нужен тираж','text' =>'Средний срок производства мелкотиражных партий 10-15 рабочих дней'])
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
@@ -136,10 +100,7 @@
         @endcomponent
 
         {{--Город доставки--}}
-        @component('components.form.elements.form-item', [
-        'title' => 'Город доставки',
-        'text' =>'Доставляем заказы до пунктов выдачи носков',
-        ])
+        @component('components.form.elements.form-item', ['title' => 'Город доставки','text' =>'Доставляем заказы до пунктов выдачи носков'])
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
@@ -148,11 +109,19 @@
             @endslot
         @endcomponent
 
+
+        {{--Общий объем тиража--}}
+        @component('components.form.elements.form-item', ['title' => 'Общий объем тиража','class' => 'child__mrgn'])
+            @slot('content')
+                <div class="text text_large">
+                    Количество изделий: <span class="quantity_result text text_large text_bold"></span>
+
+                </div>
+            @endslot
+        @endcomponent
+
         {{-- Форма связи --}}
-        @component('components.form.elements.form-item', [
-    'title' => 'Ваше имя',
-    'class' => 'singlerow callback'
-    ])
+        @component('components.form.elements.form-item', ['title' => 'Ваше имя','class' => 'singlerow child__mrgn'])
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
@@ -161,10 +130,7 @@
             @endslot
         @endcomponent
 
-        @component('components.form.elements.form-item', [
-    'title' => 'Ваш email',
-    'class' => 'singlerow callback'
-    ])
+        @component('components.form.elements.form-item', ['title' => 'Ваш email','class' => 'singlerow child__mrgn'])
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
@@ -174,10 +140,7 @@
             @endslot
         @endcomponent
 
-        @component('components.form.elements.form-item', [
-    'title' => 'Ваш телефон',
-    'class' => 'singlerow callback'
-    ])
+        @component('components.form.elements.form-item', ['title' => 'Ваш телефон','class' => 'singlerow child__mrgn'])
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
@@ -187,5 +150,17 @@
             @endslot
         @endcomponent
 
+        @component('components.form.elements.form-item', ['title' => 'Файл или архив файлов, с которыми нужно поработать','class' => 'singlerow child__mrgn'])
+            @slot('content')
+                @include('components.form.elements.file', ['name'=>'file', ])
+            @endslot
+        @endcomponent
+
+        @component('components.form.elements.form-item', ['title' => 'Комментарий','text' => 'Любая дополнительная информация'])
+            @slot('content')
+                @include('components.form.elements.textarea', ['name' => 'description', 'label' => 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации'])
+            @endslot
+        @endcomponent
     </div>
+    @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
 </form>

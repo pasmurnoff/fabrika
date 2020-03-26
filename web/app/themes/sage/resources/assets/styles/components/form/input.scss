@@ -53,7 +53,7 @@
   }
 }
 
-.callback .title {
+.child__mrgn .title {
   margin-bottom: 15px;
 }
 
@@ -83,6 +83,10 @@
     transform: translateY(-10px);
     font-size: 13px;
   }
+
+  &_textarea {
+    white-space: normal;
+  }
 }
 
 .textarea {
@@ -111,7 +115,7 @@
 
 .submit {
   background-color: #ecf1f7;
-  color: #1771e6;
+  color: $secondcolor;
   opacity: 1;
   border-width: 0;
   padding: 10px 20px;

@@ -52,7 +52,7 @@
             Отправляя форму я соглашаюсь<br/> с <a class="form__privacy_link" href="/uslovija-peredachi-informacii">условиями
                 передачи информации</a>
         </div>
-        <input type="submit" class="submit" value="{{ $submit }}">
+        <input type="submit" class="submit" value="{{ $submit or '' }}">
     </div>
 
 </form>
