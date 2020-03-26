@@ -1,4 +1,4 @@
-<div class="title title_large mrgn35_top">Рассчитать стоимость носков или колготок</div>
+<div class="title title_large mrgn35-top">Рассчитать стоимость носков или колготок</div>
 <form class="form mrgn35">
 
     {{--Количество моделей--}}
@@ -25,7 +25,7 @@
     @component('components.form.elements.form-item', [
                 'title' => 'Тип будущих изделий',
                 'text' =>'Сделаем типовую или индивидуальную высоту паголенка',
-                'class' => 'checkbox'
+                'class' => 'checkbox singlerow'
                 ])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'type', 'value' => 'Следы', 'attr' => 'checked="checked"'])
@@ -43,7 +43,7 @@
     @component('components.form.elements.form-item', [
                 'title' => 'Плотность изделия',
                 'text' =>'Состав 80% хлопок 20% синтетика',
-                'class' => 'checkbox'
+                'class' => 'checkbox singlerow'
                 ])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'density', 'value' => 'Связываем в одну нить (тонкие, легкие)', 'attr' => 'checked="checked"'])
@@ -56,7 +56,7 @@
     @component('components.form.elements.form-item', [
             'title' => 'Выберите размеры',
             'text' =>'Размеры, которые нужно охватить',
-            'class' => 'checkbox'
+            'class' => 'checkbox singlerow'
             ])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'sizes', 'value' => '16-23'])
@@ -75,7 +75,7 @@
     @component('components.form.elements.form-item', [
         'title' => 'Носки в паре',
         'text' =>'Если в носках есть хотя бы одно отличие, то выбирайте второй вариант',
-        'class' => 'checkbox'
+        'class' => 'checkbox singlerow'
         ])
         @slot('content')
             @include('components.form.elements.checkbox', ['name' => 'pairs', 'value' => 'Одинаковые', 'attr' => 'checked="checked"'])
@@ -87,7 +87,7 @@
     @component('components.form.elements.form-item', [
         'title' => 'Основной цвет носка',
         'text' =>'Если носки других или разных цветов, то выбираем последний вариант',
-        'class' => 'radio'
+        'class' => 'radio singlerow'
         ])
         @slot('content')
             @include('components.form.elements.radio', ['name' => 'colors', 'value' => 'Белый', 'attr' => 'checked="checked"'])
@@ -112,7 +112,7 @@
     @component('components.form.elements.form-item', [
         'title' => 'Упаковка изделий',
         'text' =>'Упаковываем в свои пакеты или работаем с вашей упаковкой',
-        'class' => 'radio'
+        'class' => 'radio singlerow'
         ])
         @slot('content')
             @include('components.form.elements.radio', ['name' => 'package', 'value' => 'Бесплатная упаковка от предприятия', 'attr' => 'checked="checked"'])
@@ -120,4 +120,72 @@
         @endslot
     @endcomponent
 
+    <div class="form__col_double">
+
+        {{--К какой дате нужен тираж--}}
+        @component('components.form.elements.form-item', [
+        'title' => 'К какой дате нужен тираж',
+        'text' =>'Средний срок производства мелкотиражных партий 10-15 рабочих дней',
+        ])
+            @slot('content')
+                @include('components.form.elements.input', [
+                            'positionClass' => 'labelwrap_single',
+                            'name' => 'data-delivery',
+                            'label' => '01-01-2020' ])
+            @endslot
+        @endcomponent
+
+        {{--Город доставки--}}
+        @component('components.form.elements.form-item', [
+        'title' => 'Город доставки',
+        'text' =>'Доставляем заказы до пунктов выдачи носков',
+        ])
+            @slot('content')
+                @include('components.form.elements.input', [
+                            'positionClass' => 'labelwrap_single',
+                            'name' => 'city-delivery',
+                            'label' => 'Москва' ])
+            @endslot
+        @endcomponent
+
+        {{-- Форма связи --}}
+        @component('components.form.elements.form-item', [
+    'title' => 'Ваше имя',
+    'class' => 'singlerow callback'
+    ])
+            @slot('content')
+                @include('components.form.elements.input', [
+                            'positionClass' => 'labelwrap_single',
+                            'name' => 'name',
+                            'label' => 'Иван Иванов' ])
+            @endslot
+        @endcomponent
+
+        @component('components.form.elements.form-item', [
+    'title' => 'Ваш email',
+    'class' => 'singlerow callback'
+    ])
+            @slot('content')
+                @include('components.form.elements.input', [
+                            'positionClass' => 'labelwrap_single',
+                            'name' => 'email',
+                            'type' => 'email',
+                            'label' => 'primer@mail.ru' ])
+            @endslot
+        @endcomponent
+
+        @component('components.form.elements.form-item', [
+    'title' => 'Ваш телефон',
+    'class' => 'singlerow callback'
+    ])
+            @slot('content')
+                @include('components.form.elements.input', [
+                            'positionClass' => 'labelwrap_single',
+                            'name' => 'phone',
+                            'type' => 'tel',
+                            'label' => '+7 (999) 999-99-99' ])
+            @endslot
+        @endcomponent
+
+    </div>
 </form>

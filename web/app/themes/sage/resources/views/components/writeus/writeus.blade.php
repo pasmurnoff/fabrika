@@ -1,6 +1,6 @@
 <div class="title title_huge">Напишите нам</div>
-<div class="block-text">
-    <div class="block-text__text block-text__text_padding-away">
+<div class="pdng15-top pdng35-bottom">
+    <div class="text">
         Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой
         для
         связи с нами.
@@ -8,36 +8,32 @@
 </div>
 <form class="form" method="POST">
 
-    <div class="dualrow dualrow_mrgn15">
+    <div class="dualrow">
         @include('components.form.elements.input', [
-                    'placeClass' => 'labelwrap_dual',
+                    'positionClass' => 'labelwrap_dual',
                     'type' => 'text',
                     'name' => 'name',
                     'label' => 'Фамилия Имя Отчество*'
                  ])
         @include('components.form.elements.input', [
-                    'placeClass' => 'labelwrap_dual',
+                    'positionClass' => 'labelwrap_dual',
                     'type' => 'text',
                     'name' => 'email',
                     'label' => 'Email'
                   ])
-    </div>
 
-    <div class="singlerow singlerow_mrgn15">
         @include('components.form.elements.input', [
-                    'placeClass' => 'labelwrap_single',
-                    'type' => 'text',
-                    'name' => 'theme',
-                    'label' => 'Тема (необязательно)'
-                ])
-    </div>
+              'positionClass' => 'labelwrap_single',
+              'type' => 'text',
+              'name' => 'theme',
+              'label' => 'Тема (необязательно)'
+          ])
 
-    <div class="singlerow singlerow_mrgn15">
         @include('components.form.elements.textarea', [
-                    'placeClass' => 'labelwrap_single',
-                    'name' => 'additional',
-                    'label' => 'Задайте ваш вопрос'
-                ])
+              'positionClass' => 'labelwrap_single',
+              'name' => 'additional',
+              'label' => 'Задайте ваш вопрос'
+          ])
     </div>
 
     <div class="singlerow_privacy">
