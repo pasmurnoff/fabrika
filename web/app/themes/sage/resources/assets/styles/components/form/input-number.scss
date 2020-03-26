@@ -1,0 +1,45 @@
+.input_number {
+  appearance: none;
+  padding: 0;
+  text-align: center;
+  height: 50px;
+  -moz-appearance: textfield;
+  user-select: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.number {
+  position: relative;
+  min-width: 100px;
+  width: max-content;
+  max-width: 130px;
+
+  &__counter {
+    font-size: 20px;
+    color: $secondcolor;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+
+    &:hover {
+      color: $black;
+    }
+
+    &_minus {
+      left: 10px;
+    }
+
+    &_plus {
+      right: 10px;
+    }
+  }
+}
+

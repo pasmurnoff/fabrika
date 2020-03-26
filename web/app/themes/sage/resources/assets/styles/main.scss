@@ -13,6 +13,7 @@
 
 /** Общие стили */
 @import "common/fonts"; // Подключение шрифтов
+@import "components/title/title"; // Тайтлы
 @import "common/global"; // Глобальные стили
 @import "components/elems/breadcrumbs"; // Хлебные крошки
 
@@ -36,8 +37,6 @@
 @import "components/elems/topbanner"; // Всплывашка сверху
 @import "components/button/button"; // Кнопка
 @import "components/form/form"; // Общие стили формм
-@import "components/form/form-constr"; // Стили для форм с тайтлами и текстами перед полями
-@import "components/form/input"; // Стили input
 @import "components/points/points"; // Пункты выдачи
 
 /** Хедер */
@@ -51,7 +50,6 @@
 @import "components/footer/__bottom/footer__bottom"; // Общее нижней части футера
 
 /** Блоки */
-@import "components/title/title"; // Тайтлы
 @import "components/text/text"; // Обычный текст
 @import "components/individualsocks/individualsocks"; // Производство носков с индивидуальным дизайном
 @import "components/block-text/block-text"; // Дефолтный блок с текстами
