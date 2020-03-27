@@ -1,4 +1,5 @@
 @import "gallery";
+@import "swatches";
 
 .product {
   &__wrapper {
@@ -9,7 +10,11 @@
 
   &__counter {
     max-width: 100px;
-    margin-right: 20px;
+    margin-right: 10px;
+
+    .input_number {
+      height: 55px;
+    }
   }
 
   &__cart {
@@ -23,5 +28,11 @@
     min-width: 250px;
     max-width: 300px;
     width: 100%;
+  }
+
+  &_meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

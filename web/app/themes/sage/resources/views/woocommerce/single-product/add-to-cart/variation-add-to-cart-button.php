@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 
 global $product;
 ?>
-<div class="woocommerce-variation-add-to-cart variations_button">
+<div class="woocommerce-variation-add-to-cart variations_button product__cart mrgn15-bottom">
     <?php do_action('woocommerce_before_add_to_cart_button'); ?>
 
     <?php
@@ -27,7 +27,7 @@ global $product;
     ?>
 
     <button type="submit"
-            class="single_add_to_cart_button button alt"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+            class="single_add_to_cart_button button alt product__add-cart"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
 
     <?php do_action('woocommerce_after_add_to_cart_button'); ?>
 

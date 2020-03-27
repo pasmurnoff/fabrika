@@ -40,7 +40,7 @@
     "wpackagist-plugin/woocommerce": "^3.9",
     "wpackagist-plugin/wp-translitera": "^170510",
     "wpackagist-plugin/wordpress-seo": "^13.0",
-    "wpackagist-plugin/variation-swatches-for-woocommerce": "^1.0.5"
+    "wpackagist-plugin/wc-variation-swatches": "^1.0.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",

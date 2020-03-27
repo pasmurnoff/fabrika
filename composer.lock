@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "060d780a37515adfea522546b229f849",
+    "content-hash": "c9a415dce3439a3104d7daf76d416f4c",
     "packages": [
         {
             "name": "composer/installers",
@@ -560,22 +560,22 @@
             "time": "2020-03-12T13:44:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/variation-swatches-for-woocommerce",
-            "version": "1.0.7",
+            "name": "wpackagist-plugin/wc-variation-swatches",
+            "version": "1.0.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/variation-swatches-for-woocommerce/",
-                "reference": "tags/1.0.7"
+                "url": "https://plugins.svn.wordpress.org/wc-variation-swatches/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/variation-swatches-for-woocommerce.1.0.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wc-variation-swatches.zip?timestamp=1571899645"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/variation-swatches-for-woocommerce/"
+            "homepage": "https://wordpress.org/plugins/wc-variation-swatches/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",
