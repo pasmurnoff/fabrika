@@ -123,6 +123,19 @@ function add_specific_menu_location_atts($atts, $item, $args)
 
 add_filter('nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3);
 
-
+/**
+ * Custom functions
+ */
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/remove.php';
+
+/* add custom functions */
+require dirname(__DIR__) . '/resources/functions/support.php';
+
+/* add product functions */
+require dirname(__DIR__) . '/resources/functions/product.php';
+
+/* Изменяем валюту */
+require dirname(__DIR__) . '/resources/functions/change-rub.php';
+
+

@@ -1,0 +1,27 @@
+@import "gallery";
+
+.product {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__counter {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__add-cart {
+    height: 55px;
+    min-width: 250px;
+    max-width: 300px;
+    width: 100%;
+  }
+}
