@@ -4,6 +4,9 @@ import 'jquery';
 // Import everything from autoload
 import './autoload/**/*'
 import './forms/visual'
+import './forms/input-file'
+import './forms/ajax'
+import './forms/input-number'
 import './cookie/cookie-init'
 import './cookie/cookie-check'
 import './cookie/top-baner'

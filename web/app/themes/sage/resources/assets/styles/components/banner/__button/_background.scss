@@ -1,0 +1,8 @@
+.banner_bg .banner__button {
+  background-color: transparent;
+  border: 1px solid $secondcolor;
+
+  &:hover {
+    background-color: rgba(23, 113, 230, 0.08);
+  }
+}

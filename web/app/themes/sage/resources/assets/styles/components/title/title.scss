@@ -1,6 +1,28 @@
 .title {
   color: $black;
   font-family: $font;
-  font-weight: 700;
   margin: 0;
+
+  &_huge {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &_large {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &_middle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &_thin {
+    font-weight: 400;
+  }
+
+  &_main {
+    padding-top: 45px;
+  }
 }

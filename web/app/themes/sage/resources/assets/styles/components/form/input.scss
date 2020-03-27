@@ -21,23 +21,16 @@
   flex-flow: wrap;
   justify-content: space-between;
   width: 100%;
-
-  &_mrgn15 {
-    margin-bottom: 15px;
-  }
 }
 
 .singlerow {
   width: 100%;
   position: relative;
-
-  &_mrgn15 {
-    margin-bottom: 15px;
-  }
 }
 
 .labelwrap {
   position: relative;
+  margin-bottom: 15px;
 
   &_single {
     flex-basis: 100%;
@@ -58,6 +51,10 @@
   &_submit {
     flex-basis: 13%;
   }
+}
+
+.child__mrgn .title {
+  margin-bottom: 15px;
 }
 
 .label {
@@ -85,6 +82,10 @@
   &_filled {
     transform: translateY(-10px);
     font-size: 13px;
+  }
+
+  &_textarea {
+    white-space: normal;
   }
 }
 
@@ -114,7 +115,7 @@
 
 .submit {
   background-color: #ecf1f7;
-  color: #1771e6;
+  color: $secondcolor;
   opacity: 1;
   border-width: 0;
   padding: 10px 20px;
@@ -213,10 +214,6 @@
     &_line {
       flex-basis: 100%;
     }
-  }
-
-  .dualrow_mrgn15 {
-    margin-bottom: 0;
   }
 
   .form__privacy {

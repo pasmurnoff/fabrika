@@ -49,11 +49,53 @@ body {
 .mrgn35 {
   margin-top: 35px;
   margin-bottom: 35px;
+
+  &-top {
+    margin-top: 35px;
+  }
+
+  &-bottom {
+    margin-bottom: 35px;
+  }
+}
+
+.mrgn15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &-top {
+    margin-top: 15px;
+  }
+
+  &-bottom {
+    margin-bottom: 15px;
+  }
 }
 
 .pdng35 {
   padding-top: 35px;
   padding-bottom: 35px;
+
+  &-top {
+    padding-top: 35px;
+  }
+
+  &-bottom {
+    padding-bottom: 35px;
+  }
+}
+
+.pdng15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &-top {
+    padding-top: 15px;
+  }
+
+  &-bottom {
+    padding-bottom: 15px;
+  }
 }
 
 .partner-image {

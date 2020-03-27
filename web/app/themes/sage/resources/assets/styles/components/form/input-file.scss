@@ -1,0 +1,11 @@
+.input {
+  &__file {
+    margin-bottom: 5px;
+  }
+
+  &_file {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+  }
+}

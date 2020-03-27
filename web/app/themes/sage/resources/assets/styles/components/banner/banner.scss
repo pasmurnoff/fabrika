@@ -3,11 +3,23 @@
   border: 1px solid #e6e6e6;
   border-radius: 8px;
 
+  &_bg {
+    background-color: $grey;
+    border: none;
+  }
+
   &__inner {
     padding: 30px 54px;
     justify-content: space-between;
     display: flex;
     flex-flow: wrap;
+
+    @media screen and (max-width: 767px) {
+      padding: 30px;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__title {
@@ -28,6 +40,25 @@
   &__side {
     //width: 50%;
     flex: 1 0 50%;
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &_right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 767px) {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__icon {
