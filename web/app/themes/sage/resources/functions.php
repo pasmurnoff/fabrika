@@ -98,28 +98,30 @@ Container::getInstance()
  * @return array
  *
  */
-function my_special_nav_class( $classes, $item ) {
+function my_special_nav_class($classes, $item)
+{
     $classes[] = 'menu__item menu__item_main';
 
     return $classes;
-
 }
 
-add_filter( 'nav_menu_css_class', 'my_special_nav_class', 10, 2 );
+add_filter('nav_menu_css_class', 'my_special_nav_class', 10, 2);
 
 
 /**
  * Add class to a in menu
  */
-function add_specific_menu_location_atts( $atts, $item, $args ) {
+function add_specific_menu_location_atts($atts, $item, $args)
+{
     // check if the item is in the primary menu
-    if( $args->theme_location == 'primary_navigation' ) {
+    if ($args->theme_location == 'primary_navigation') {
         // add the desired attributes:
         $atts['class'] = 'menu__link menu__link_bold menu__link_main';
     }
     return $atts;
 }
-add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
+
+add_filter('nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3);
 
 
 /* add custom functions */

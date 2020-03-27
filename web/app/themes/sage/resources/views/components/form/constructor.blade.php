@@ -1,5 +1,5 @@
 <div class="title title_large mrgn35-top">Рассчитать стоимость носков или колготок</div>
-<form class="form mrgn35" enctype="multipart/form-data">
+<form class="form mrgn35" enctype="multipart/form-data" method="post">
 
     {{--Количество моделей--}}
     @component('components.form.elements.form-item', ['title' => 'Количество моделей','text' =>'Сколько моделей носков с индивидуальным дизайном входит в тираж?'])
@@ -163,4 +163,5 @@
         @endcomponent
     </div>
     @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
+    <div id="result_form"></div>
 </form>
