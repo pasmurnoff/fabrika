@@ -11,6 +11,10 @@
  */
 // @import "~some-node-module";
 
+/* External libraries */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/css/brands.css";
+
 /** Общие стили */
 @import "common/fonts"; // Подключение шрифтов
 @import "components/title/title"; // Тайтлы
