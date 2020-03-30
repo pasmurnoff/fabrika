@@ -1,0 +1,24 @@
+.share {
+  &__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    color: $greytext;
+    text-decoration: none;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__icon {
+    padding-right: 15px;
+  }
+}

@@ -3,11 +3,12 @@
 @import "tabs";
 @import "attributes";
 @import "related";
+@import "share";
 
 .product {
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 
     @media screen and (max-width: 1023px) {
