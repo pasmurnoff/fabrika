@@ -75,3 +75,7 @@ if (post_password_required()) {
 </div>
 
 <?php do_action('woocommerce_after_single_product'); ?>
+<div class="mrgn35-top">
+    @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству'])
+</div>
+

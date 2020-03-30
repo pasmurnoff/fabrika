@@ -161,7 +161,7 @@
                 @include('components.form.elements.textarea', ['name' => 'description', 'label' => 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации'])
             @endslot
         @endcomponent
+        @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
     </div>
-    @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
     <div id="result_form"></div>
 </form>
