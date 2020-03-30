@@ -87,6 +87,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: max-content;
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

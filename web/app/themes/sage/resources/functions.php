@@ -141,4 +141,8 @@ require dirname(__DIR__) . '/resources/functions/change-rub.php';
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/column-count.php';
 
+/* Изменяем количество колонок в выводе товаров */
+require dirname(__DIR__) . '/resources/functions/archive.php';
+
+
 
