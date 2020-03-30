@@ -27,14 +27,14 @@ global $product;
 
     <?php if (wc_product_sku_enabled() && ($product->get_sku() || $product->is_type('variable'))) : ?>
 
-        <span class="sku_wrapper text"><?php esc_html_e('SKU:', 'woocommerce'); ?> <span
-                    class="sku"><?php echo ($sku = $product->get_sku()) ? $sku : esc_html__('N/A', 'woocommerce'); ?></span></span>
+        <span class="sku_wrapper text text_bold"><?php esc_html_e('SKU:', 'woocommerce'); ?> <span
+                    class="sku text_thin"><?php echo ($sku = $product->get_sku()) ? $sku : esc_html__('N/A', 'woocommerce'); ?></span></span>
 
     <?php endif; ?>
 
-    <?php echo wc_get_product_category_list($product->get_id(), ', ', '<span class="posted_in text">' . _n('Category:', 'Categories:', count($product->get_category_ids()), 'woocommerce') . ' ', '</span>'); ?>
+    <?php echo wc_get_product_category_list($product->get_id(), ', ', '<span class="posted_in text text_bold">' . _n('Category:', 'Categories:', count($product->get_category_ids()), 'woocommerce') . ' ', '</span>'); ?>
 
-    <?php echo wc_get_product_tag_list($product->get_id(), ', ', '<span class="tagged_as">' . _n('Tag:', 'Tags:', count($product->get_tag_ids()), 'woocommerce') . ' ', '</span>'); ?>
+    <?php echo wc_get_product_tag_list($product->get_id(), ', ', '<span class="tagged_as text text_bold">' . _n('Tag:', 'Tags:', count($product->get_tag_ids()), 'woocommerce') . ' ', '</span>'); ?>
 
     <?php do_action('woocommerce_product_meta_end'); ?>
 

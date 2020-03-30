@@ -10,4 +10,4 @@ function customAfterSingleProductSummary()
 }
 
 add_action('woocommerce_before_single_product_summary', 'customBeforeSingleProductSummary');
-add_action('woocommerce_after_single_product_summary', 'customAfterSingleProductSummary');
+add_action('custom_woocommerce_after_summary', 'customAfterSingleProductSummary');
