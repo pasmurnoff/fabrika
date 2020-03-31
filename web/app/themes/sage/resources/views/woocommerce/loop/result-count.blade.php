@@ -21,7 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<p class="woocommerce-result-count">
+@php do_action('custom_before_result_count') @endphp
+<p class="woocommerce-result-count text">
 	<?php
 	if ( 1 === $total ) {
 		_e( 'Showing the single result', 'woocommerce' );

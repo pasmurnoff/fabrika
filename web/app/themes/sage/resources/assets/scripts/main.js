@@ -11,7 +11,9 @@ import './cookie/cookie-init'
 import './cookie/cookie-check'
 import './cookie/top-baner'
 import './components/dropdown'
-
+import './overlay/overlay'
+import './sidebar/sidebar'
+import './popup/popup'
 
 // import local dependencies
 import Router from './util/Router';

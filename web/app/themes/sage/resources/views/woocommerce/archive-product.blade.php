@@ -19,15 +19,18 @@ the readme will list any important changes.
         do_action('woocommerce_before_main_content');
     @endphp
 
-    <header class="woocommerce-products-header">
-        @if(apply_filters('woocommerce_show_page_title', true))
-            <h1 class="woocommerce-products-header__title page-title">{!! woocommerce_page_title(false) !!}</h1>
-        @endif
+    @if(apply_filters('woocommerce_show_page_title', true))
+        <h1 class="woocommerce-products-header__title page-title">{!! woocommerce_page_title(false) !!}</h1>
+    @endif
 
-        @php
-            do_action('woocommerce_archive_description');
-        @endphp
-    </header>
+    @php
+        do_action('woocommerce_archive_description');
+    @endphp
+
+    @if(is_dynamic_sidebar('filter-sidebar'))
+        @include('components.filter.filter')
+    @endif
+
     @if(woocommerce_product_loop())
         @php
             do_action('woocommerce_before_shop_loop');

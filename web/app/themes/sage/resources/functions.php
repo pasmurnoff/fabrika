@@ -127,16 +127,6 @@ add_filter('nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3)
  * Custom functions
  */
 
-/* Подключаем скрипты в зависимости от страницы */
-add_action('wp_enqueue_scripts', 'my_scripts_method');
-
-function my_scripts_method()
-{
-    if (is_archive()) {
-        wp_enqueue_script('selectWoo');
-    }
-}
-
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/remove.php';
 
@@ -155,6 +145,13 @@ require dirname(__DIR__) . '/resources/functions/column-count.php';
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
 
+add_action('wp_enqueue_scripts', 'add_custom_dropdown');
+function add_custom_dropdown()
+{
+    if (is_archive()) {
+        wp_enqueue_script('selectWoo');
+    }
+}
 
 
 

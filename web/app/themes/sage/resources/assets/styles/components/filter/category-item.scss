@@ -1,0 +1,45 @@
+.filter-sidebar__item {
+  .cat-item {
+    padding-bottom: 5px;
+
+    a {
+      position: relative;
+      padding-left: 25px;
+
+      &::after {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        left: 0;
+        top: 0;
+        border: 2px solid #d6dbe0;
+        box-sizing: border-box;
+        border-radius: 3px;
+        content: "";
+      }
+    }
+  }
+
+  .current-cat {
+    a {
+      &::after {
+        background-color: $secondcolor;
+        border: 2px solid $secondcolor;
+      }
+
+      &::before {
+        position: absolute;
+        background-color: transparent;
+        content: "";
+        height: 8px;
+        width: 5px;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        left: 5px;
+        top: 2px;
+        transform: rotate(45deg);
+        z-index: 1;
+      }
+    }
+  }
+}
