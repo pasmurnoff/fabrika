@@ -5,6 +5,6 @@ $positionClass:
 --}}
 
 <div class="labelwrap {{ $positionClass or '' }}">
-    <textarea name="{{ $name or ''}}" class="textarea"></textarea>
+    <textarea name="{{ $name or ''}}" class="textarea {{ $textareaClass or ''}}"></textarea>
     <label class="label label_textarea">{{ $label or '' }}</label>
 </div>

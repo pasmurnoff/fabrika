@@ -1,0 +1,69 @@
+@import "gallery";
+@import "swatches";
+@import "tabs";
+@import "attributes";
+@import "related";
+@import "share";
+
+.product {
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+
+  &__counter {
+    max-width: 100px;
+    margin-right: 10px;
+
+    .input_number {
+      height: 55px;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__add-cart {
+    height: 55px;
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &_meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .posted_in,
+    .tagged_as {
+      a {
+        font-weight: 400;
+        text-decoration: none;
+        color: $black;
+        transition: color ease 200ms;
+
+        &:hover {
+          color: $red;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &_title {
+      margin-top: 35px;
+    }
+  }
+}

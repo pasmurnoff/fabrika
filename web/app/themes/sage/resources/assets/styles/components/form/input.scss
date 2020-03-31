@@ -26,6 +26,23 @@
 .singlerow {
   width: 100%;
   position: relative;
+
+  &_privacy {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
 }
 
 .labelwrap {
@@ -111,6 +128,16 @@
   &_workwithyou {
     height: 225px;
   }
+
+  &_large {
+    height: 100%;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1023px) {
+      padding-bottom: 0 !important;
+    }
+  }
 }
 
 .submit {
@@ -144,21 +171,13 @@
   &:hover {
     background-color: #e4ebf3;
   }
-}
 
-.singlerow_privacy {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
+  &_privacy {
+    margin-left: 15px;
 
-  &_toright {
-    justify-content: flex-end;
-  }
-
-  &_managers {
-    margin-top: 10px;
+    @media screen and (max-width: 550px) {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -167,20 +186,6 @@
   color: $greytext;
   font-size: 14px;
 
-  &_left {
-    margin-left: 15px;
-  }
-
-  &_right {
-    margin-right: 15px;
-  }
-
-  &_center {
-    text-align: center;
-    width: 100%;
-    margin-top: 15px;
-  }
-
   &_link {
     color: $greytext;
     text-decoration: underline;
@@ -188,6 +193,10 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  @media screen and (max-width: 550px) {
+    text-align: right;
   }
 }
 
@@ -214,24 +223,5 @@
     &_line {
       flex-basis: 100%;
     }
-  }
-
-  .form__privacy {
-    margin-top: 15px;
-    margin-left: 0;
-    width: 100%;
-
-    &_right {
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    &_center {
-      text-align: left;
-    }
-  }
-
-  .singlerow_privacy_toright {
-    justify-content: flex-start;
   }
 }

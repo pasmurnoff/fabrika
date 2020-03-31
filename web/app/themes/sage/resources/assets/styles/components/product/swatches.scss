@@ -1,0 +1,45 @@
+.variations {
+  .label {
+    position: static;
+  }
+
+  tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reset_variations {
+    text-decoration: none;
+    padding-left: 3px;
+    padding-top: 5px;
+  }
+}
+
+.wc-ever-swatches .variation_check.disabled.without_cross {
+  filter: none;
+}
+
+.pa_razmer-noskov .round-box {
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.variation_check {
+  color: $black;
+  font-family: $font;
+  font-size: 14px;
+}
+
+.round-box.wcvs-border-style {
+  transition: border-color ease 100ms;
+  border: 1px solid #ddd !important;
+}
+
+.round-box.wcvs-border-style.selected {
+  border: 1px solid $red !important;
+}
+
+.wcvs-swatch-color.round-box {
+  padding: 3px;
+}

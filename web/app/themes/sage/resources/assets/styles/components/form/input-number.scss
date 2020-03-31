@@ -20,6 +20,7 @@
   max-width: 130px;
 
   &__counter {
+    font-family: $font;
     font-size: 20px;
     color: $secondcolor;
     cursor: pointer;

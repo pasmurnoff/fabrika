@@ -4,25 +4,27 @@
 <body {{ body_class() }}>
 <div class="wrap">
     @php do_action('get_header') @endphp
-
     @include('components.header')
     <div class="container">
 
         @if( is_front_page() )
             @php $title = 'Носки и колготки оптом. Продажа и изготовление на заказ.'; @endphp
-        @else
+        @elseif(!is_product())
             @php $title =  App::title(); @endphp
         @endif
 
-
-        @include('components.title.title', ['classes' => 'title_huge title_main', 'title' => $title])
+        @if (isset($title))
+            @include('components.title.title', ['classes' => 'title_huge title_main', 'title' => $title])
+        @endif
         @php
-            if (!is_front_page()) {
+            if (!is_front_page() && !is_product()) {
               if (function_exists('yoast_breadcrumb')) {
                 yoast_breadcrumb('<p class="breadcrumbs">', '</p>');
               } else {
                 echo 'no';
               }
+            } elseif(is_product()) {
+                function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<p class="breadcrumbs breadcrumbs_mrgn15-top">', '</p>') : '';
             }
         @endphp
         <div class="content">

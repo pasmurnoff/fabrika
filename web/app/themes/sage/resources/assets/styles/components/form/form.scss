@@ -9,6 +9,10 @@
   flex-flow: wrap;
   justify-content: space-between;
 
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
+
   &__col {
     &_double {
       flex-basis: 49.5%;
@@ -20,11 +24,15 @@
   }
 
   &_single {
-    width: auto;
     display: flex;
-    flex-flow: wrap;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
   }
 
   &_cdek {
@@ -49,13 +57,6 @@
 
       &_third {
         flex-basis: 100%;
-      }
-    }
-
-    &__privacy {
-      &_right {
-        margin-top: 0;
-        margin-right: 0;
       }
     }
   }

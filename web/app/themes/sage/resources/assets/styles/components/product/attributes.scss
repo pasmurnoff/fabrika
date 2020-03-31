@@ -1,0 +1,38 @@
+.product {
+  &__attributes {
+    padding: 0 !important;
+  }
+
+  &__attribute {
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+
+    &-label {
+      color: $black;
+      font-size: 14px;
+      font-family: $font;
+    }
+
+    &-dotted {
+      height: 1px;
+      margin: 0 8px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 33%, transparent 0) repeat-x bottom;
+      background-size: 3px 1px;
+      flex-grow: 1;
+    }
+
+    &-value {
+      color: $greytext;
+      font-size: 14px;
+      font-family: $font;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

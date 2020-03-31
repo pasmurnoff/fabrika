@@ -82,3 +82,12 @@
 @import "components/banner/__text/banner__text_duo"; // Текст двойного баннера
 @import "components/banner/__icon/banner__icon_duo"; // Иконка двойного баннера
 @import "components/banner/__button/button"; // Кнопки в баннерах
+
+/** Single Product **/
+@import "components/product/product";
+
+/* product loop output */
+@import "components/product-loop/loop";
+
+/* pagination */
+@import "components/pagination/pagination";

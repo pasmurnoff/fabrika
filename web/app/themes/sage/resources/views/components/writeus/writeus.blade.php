@@ -36,11 +36,5 @@
           ])
     </div>
 
-    <div class="singlerow_privacy">
-        <input type="submit" class="submit" value="Отправить">
-        <div class="form__privacy form__privacy_left">
-            Отправляя форму я соглашаюсь<br/> с <a class="form__privacy_link" href="/uslovija-peredachi-informacii">условиями
-                передачи информации</a>
-        </div>
-    </div>
+   @include('components.form.elements.privacy')
 </form>
