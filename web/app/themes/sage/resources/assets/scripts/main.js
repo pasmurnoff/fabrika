@@ -10,10 +10,11 @@ import './forms/input-number'
 import './cookie/cookie-init'
 import './cookie/cookie-check'
 import './cookie/top-baner'
-import './components/dropdown'
+import './components/orderby'
 import './overlay/overlay'
 import './sidebar/sidebar'
 import './popup/popup'
+import './components/cat-dropdown'
 
 // import local dependencies
 import Router from './util/Router';

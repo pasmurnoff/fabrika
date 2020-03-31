@@ -3,10 +3,15 @@
 @import "category-item";
 
 .filter-sidebar {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   min-width: 275px;
-  display: flex;
+
+  &__wrapper {
+    width: 95%;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 25px;
@@ -39,9 +44,10 @@
     left: -280px;
 
     &__wrapper {
+      padding: 15px 0 15px 0;
       overflow-y: scroll;
       height: 100%;
-      width: 100%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -54,30 +60,5 @@
 
   &__item {
     width: 100%;
-
-    @media screen and (max-width: 767px) {
-      width: 90%;
-    }
-  }
-
-  .product-categories {
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-
-    .cat-item {
-      a {
-        color: $greytext;
-        font-size: 14px;
-        font-family: $font;
-        text-decoration: none;
-        line-height: 1.4;
-        transition: color ease 200ms;
-
-        &:hover {
-          color: $black;
-        }
-      }
-    }
   }
 }
