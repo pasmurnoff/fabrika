@@ -148,9 +148,7 @@ require dirname(__DIR__) . '/resources/functions/archive.php';
 add_action('wp_enqueue_scripts', 'add_custom_dropdown');
 function add_custom_dropdown()
 {
-    if (is_archive()) {
-        wp_enqueue_script('selectWoo');
-    }
+    wp_enqueue_script('selectWoo');
 }
 
 
