@@ -1,0 +1,124 @@
+/* stylelint-disable */
+.wootop__form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.order__components {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.order__select {
+  display: none;
+}
+
+.select2-search__field {
+  display: none;
+}
+
+.select2-results__options {
+  @extend .text;
+  padding: 0;
+  list-style-type: none;
+}
+
+.select2-selection__rendered {
+  @extend .text;
+  color: #898a8a !important;
+  font-size: 14px !important;
+  padding: 8px 12px !important;
+  padding-right: 25px !important;
+  background-color: #EDEDED !important;
+  outline: none !important;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+
+
+.select2-selection__rendered::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 2px solid $greytext;
+  border-right: none;
+  border-top: none;
+  position: absolute;
+  top: 43%;
+  transform: rotate(-45deg) translateY(-50%);
+  right: 5px;
+  transition-property: transform, top, right;
+  transition-timing-function: ease;
+  transition-duration: 100ms;
+}
+
+.select2-container--open .select2-selection__rendered::after {
+  top: 47%;
+  right: 7px;
+  transform: rotate(-225deg);
+}
+
+
+.selection > *:active, .selection > *:hover, .selection > *:focus {
+  outline: 0;
+  outline-offset: 0;
+  user-select: none;
+}
+
+.select2-container .select2-selection--single {
+  background-color: transparent !important;
+}
+
+.select2-results__options {
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.235) 0 10px 40px;
+  border-radius: 10px;
+  width: 220px;
+  z-index: 3;
+  top: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+}
+
+.select2-results__option {
+  text-align: left;
+  margin: 0;
+  color: #898a8a;
+  padding: 10px 15px;
+  border-top: 1px solid $grey;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+
+.select2-results__option:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.select2-results__option:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.select2-results__option:hover {
+  color: $red;
+  background: #EDEDED;
+}
+
+
+.select2-results__option[data-selected="true"] {
+  color: $red;
+  background: #EDEDED;
+}
+
+.select2-results__option:active, .select2-results__option:hover, .select2-results__option:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+/* stylelint-enable */

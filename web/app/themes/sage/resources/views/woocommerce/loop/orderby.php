@@ -10,22 +10,26 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @package 	WooCommerce/Templates
+ * @see        https://docs.woocommerce.com/document/template-structure/
+ * @package    WooCommerce/Templates
  * @version     3.6.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if ( ! defined('ABSPATH')) {
+    exit;
 }
 
 ?>
-<form class="woocommerce-ordering" method="get">
-	<select name="orderby" class="orderby" aria-label="<?php esc_attr_e( 'Shop order', 'woocommerce' ); ?>">
-		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
-			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
-		<?php endforeach; ?>
-	</select>
-	<input type="hidden" name="paged" value="1" />
-	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>
-</form>
+<div class="wootop wootop__form">
+    <form class="order__components woocommerce-ordering" method="get">
+        <select name="orderby" class="orderby order__select"
+                aria-label="<?php esc_attr_e('Shop order', 'woocommerce'); ?>">
+            <?php foreach ($catalog_orderby_options as $id => $name) : ?>
+                <option class="order__option" value="<?php echo esc_attr($id); ?>" <?php selected($orderby,
+                    $id); ?>><?php echo esc_html($name); ?></option>
+            <?php endforeach; ?>
+        </select>
+        <input type="hidden" name="paged" value="1"/>
+        <?php wc_query_string_form_fields(null, array('orderby', 'submit', 'paged', 'product-page')); ?>
+    </form>
+</div>

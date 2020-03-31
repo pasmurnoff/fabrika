@@ -10,6 +10,7 @@ import './forms/input-number'
 import './cookie/cookie-init'
 import './cookie/cookie-check'
 import './cookie/top-baner'
+import './components/dropdown'
 
 
 // import local dependencies
