@@ -1,0 +1,10 @@
+.filter {
+  &__colors {
+    list-style-type: none;
+  }
+
+  &__color {
+    width: 30px;
+    height: 30px;
+  }
+}
