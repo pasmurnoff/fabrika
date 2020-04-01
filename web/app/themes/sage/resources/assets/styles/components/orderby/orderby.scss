@@ -2,6 +2,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media screen and (max-width: 470px) {
+    margin-top: 15px;
+    width: 100%;
+  }
 }
 
 .order__components {

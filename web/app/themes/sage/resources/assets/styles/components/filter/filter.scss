@@ -1,6 +1,8 @@
 @import "toggle";
 @import "price";
 @import "category-item";
+@import "color";
+@import "list";
 
 .filter-sidebar {
   display: flex;
@@ -8,6 +10,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 275px;
+  max-width: 300px;
 
   &__wrapper {
     width: 95%;

@@ -20,7 +20,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php do_action('woocommerce_widget_price_filter_start', $args); ?>
 
-<form method="get" action="<?php echo esc_url($form_action); ?>">
+<form method="get" class="pdng15-top" action="<?php echo esc_url($form_action); ?>">
     <div class="price_slider_wrapper">
         <div class="price_slider" style="display:none;"></div>
         <div class="price_slider_amount" data-step="<?php echo esc_attr($step); ?>">
@@ -32,7 +32,7 @@ defined('ABSPATH') || exit;
                    placeholder="<?php echo esc_attr__('Max price', 'woocommerce'); ?>"/>
             <?php /* translators: Filter: verb "to filter" */ ?>
             <button type="submit" class="button"><?php echo esc_html__('Filter', 'woocommerce'); ?></button>
-            <div class="price_label" style="display:none;">
+            <div class="price_label mrgn15-top" style="display:none;">
                 <?php echo esc_html__('Price:', 'woocommerce'); ?> <span class="from"></span> &mdash; <span
                         class="to"></span>
             </div>
@@ -43,3 +43,5 @@ defined('ABSPATH') || exit;
 </form>
 
 <?php do_action('woocommerce_widget_price_filter_end', $args); ?>
+
+@include('components.filter.filter-color')
