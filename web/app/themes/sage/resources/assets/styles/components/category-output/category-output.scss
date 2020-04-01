@@ -1,0 +1,31 @@
+.category-output {
+  &__title {
+    @extend .related_title;
+  }
+
+  &__list {
+    @media screen and (max-width: 767px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      /* stylelint-disable */
+      overflow: -moz-scrollbars-none;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+
+      /* stylelint-enable */
+      .product {
+        width: 250px;
+        min-width: 250px;
+        margin-bottom: 0;
+        margin-right: 15px !important;
+
+        &:last-child {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+}
