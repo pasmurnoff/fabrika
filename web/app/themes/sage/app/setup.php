@@ -77,18 +77,14 @@ add_action('after_setup_theme', function () {
  */
 add_action('widgets_init', function () {
     $config = [
-        'before_widget' => '<section class="widget %1$s %2$s">',
+        'before_widget' => '<section class="mrgn35-bottom filter-sidebar__item %1$s %2$s">',
         'after_widget' => '</section>',
-        'before_title' => '<h3>',
+        'before_title' => '<h3 class="title title_middle">',
         'after_title' => '</h3>'
     ];
     register_sidebar([
-            'name' => __('Primary', 'sage'),
-            'id' => 'sidebar-primary'
-        ] + $config);
-    register_sidebar([
-            'name' => __('Footer', 'sage'),
-            'id' => 'sidebar-footer'
+            'name' => __('Filter', 'sage'),
+            'id' => 'filter-sidebar'
         ] + $config);
 });
 

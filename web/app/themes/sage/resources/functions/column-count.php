@@ -15,7 +15,7 @@ add_filter('loop_shop_columns', 'custom_count_loop_shop_per_page');
 function custom_count_loop_shop_per_page($cols)
 {
     if (is_archive()) {
-        $cols = 5;
+        $cols = 4;
         return $cols;
     }
 }

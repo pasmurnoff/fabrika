@@ -37,5 +37,6 @@
     @include('components.footer.footer')
     @php wp_footer() @endphp
 </div>
+<div class="overlay"></div>
 </body>
 </html>

@@ -22,6 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 
-<?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price"><?php echo $price_html; ?></span>
+<?php if ( $price = $product->get_price() ) : ?>
+	<span class="price"><?php echo $price; ?> руб.</span>
 <?php endif; ?>

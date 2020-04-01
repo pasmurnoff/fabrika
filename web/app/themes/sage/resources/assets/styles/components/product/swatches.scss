@@ -19,7 +19,7 @@
   filter: none;
 }
 
-.pa_razmer-noskov .round-box {
+.wcvs-swatch.round-box {
   border-radius: 20px;
   padding: 5px 10px;
   box-sizing: border-box;
@@ -42,4 +42,8 @@
 
 .wcvs-swatch-color.round-box {
   padding: 3px;
+}
+
+.swatch_wrapper {
+  margin-bottom: 10px;
 }
