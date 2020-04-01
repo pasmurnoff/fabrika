@@ -36,3 +36,13 @@ function archive_after_content_wrapper()
 
 add_action('woocommerce_after_shop_loop', 'archive_after_content_wrapper');
 add_action('custom_woocommerce_before_sidebar', 'archive_before_content_wrapper');
+
+
+/* Remove count in filter */
+
+add_filter('woocommerce_layered_nav_count', 'woo_remove_category_products_count');
+
+function woo_remove_category_products_count()
+{
+    return;
+}

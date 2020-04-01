@@ -1,0 +1,52 @@
+.woocommerce-widget-layered-nav-list {
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+  list-style-type: none;
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    line-height: 25px;
+
+    &--chosen a {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 45%;
+        transform: translateY(-50%) rotate(45deg);
+        width: 4px;
+        height: 9px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        border-left: none;
+        border-top: none;
+      }
+    }
+
+    a {
+      @extend .text;
+
+      color: $greytext;
+      transition: color ease 200ms;
+      text-decoration: none;
+      padding-left: 25px;
+
+      &:hover {
+        color: $black;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 3px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
