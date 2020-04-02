@@ -12,7 +12,7 @@ function new_loop_shop_per_page($cols)
 /* Обернем сортировку и вывод количества страниц */
 function archive_header_wrapper_top()
 {
-    echo '<div class="archive__top_wrap mrgn15">';
+    echo '<div class="archive__top_wrap mrgn15-bottom">';
 }
 
 function archive_header_wrapper_bottom()
