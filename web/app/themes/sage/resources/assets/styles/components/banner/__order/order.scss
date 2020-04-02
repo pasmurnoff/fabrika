@@ -1,0 +1,24 @@
+.banner__order {
+  &-list {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+  }
+
+  &-item {
+    position: relative;
+
+    &::after {
+      width: 8px;
+      height: 8px;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $greytext;
+    }
+  }
+}

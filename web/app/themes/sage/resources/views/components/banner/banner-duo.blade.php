@@ -1,18 +1,23 @@
 <div class="banner__wrapper banner__wrapper_duo">
-  <a href="{{ $href or '#'}}" class="banner_duo">
-    <div class="banner__inner_duo">
-      <div class="banner__title_duo">{{ $title or '' }}</div>
-      <div class="banner__text_duo">{{ $text or '' }}</div>
-      <div class="banner__icon_duo">{{ $icon or '' }}</div>
-    </div>
-    <span class="button banner__button_duo">{{ $buttonText or '' }}</span>
-  </a>
-  <a href="{{ $href2 or '#'}}" class="banner_duo">
-    <div class="banner__inner_duo">
-      <div class="banner__title_duo">{{ $title2 or '' }}</div>
-      <div class="banner__text_duo">{{ $text2 or '' }}</div>
-      <div class="banner__icon_duo">{{ $icon2 or '' }}</div>
-    </div>
-    <span class="button banner__button_duo">{{ $buttonText2 or '' }}</span>
-  </a>
+    @component('components.banner.duo-item', ['href' => '/noski-optom', 'title' => 'Продажа носков, колготок и чулок оптом', 'buttonText' =>' Купить оптом'])
+        @slot('text')
+            Оптовый склад носков, колготок и чулок от производителя. Цены от 12 рублей. Доставка по всей России, странам
+            СНГ и миру.
+        @endslot
+        @slot('icon')
+            @include('icon::okay')
+        @endslot
+    @endcomponent
+    @component('components.banner.duo-item', ['href' => '/konstruktor-zakaza-noskov', 'title' => 'Носки, колготки и чулки на заказ по вашему дизайну', 'buttonText' =>'Оформить заказ'])
+        @slot('text')
+            Наша фабрика может отвязать для вас носки, колготки и чулки на заказ. Любых расцветок и дизайнов. У нас своё
+            производство и возможны даже минимальные оптовые партии.
+        @endslot
+        @slot('icon')
+            @include('icon::diamond')
+        @endslot
+        @slot('buttonText')
+            Оформить заказ
+        @endslot
+    @endcomponent
 </div>
