@@ -1,6 +1,6 @@
 @switch($prodCat->slug)
     @case('detskaja-kollekcija')
-    First case...
+    @include('components.afisha.afisha')
     @break
 
     @case('zhenskaja-kollekcija')
