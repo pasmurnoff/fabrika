@@ -1,0 +1,31 @@
+.content {
+  &__block {
+    .title {
+      font-size: 28px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__text {
+    @extend .text;
+
+    ul {
+      padding-left: 15px;
+
+      li {
+        line-height: 24px;
+      }
+    }
+
+    p {
+      margin: 15px 0;
+    }
+
+    a {
+      color: $greytext;
+    }
+  }
+}

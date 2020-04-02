@@ -139,13 +139,9 @@
 // Одиночный баннер
 @import "components/banner/banner_duo";
 // 2 баннера в строке
-@import "components/banner/__title/banner__title_duo";
-// Заголовок двойного баннера
 @import "components/banner/__text/banner__text_duo";
 // Текст двойного баннера
-@import "components/banner/__icon/banner__icon_duo";
-// Иконка двойного баннера
-// Иконка двойного баннера
+
 @import "components/banner/__button/button";
 // Кнопки в баннерах
 
@@ -163,3 +159,6 @@
 
 /* afisha */
 @import "components/afisha/afisha";
+
+/* Стили простого контента */
+@import "components/content/content";

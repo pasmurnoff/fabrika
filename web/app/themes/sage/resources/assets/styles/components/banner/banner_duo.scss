@@ -3,6 +3,10 @@
   flex-flow: wrap;
   justify-content: space-between;
   align-items: stretch;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
 }
 
 .banner_duo {
@@ -11,10 +15,46 @@
   border-radius: 8px;
   text-decoration: none;
   position: relative;
+
+  @media screen and (max-width: 1023px) {
+    flex-basis: 100%;
+
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
 }
 
 .banner__inner_duo {
-  max-width: 80%;
   margin: 24px;
-  position: relative;
 }
+
+.banner__title {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  &_duo {
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.banner__icon_duo {
+  background-color: $grey;
+  padding: 15px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
