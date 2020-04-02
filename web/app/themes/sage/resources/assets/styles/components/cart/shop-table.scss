@@ -1,0 +1,40 @@
+.shop_table {
+  width: 100%;
+
+  th {
+    color: $black;
+    font-size: 14px;
+    font-family: $font;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $grey;
+  }
+
+  .product__counter .input_number {
+    height: 40px;
+
+    @media screen and (max-width: 767px) {
+      border-radius: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    thead {
+      display: none;
+    }
+
+    &.woocommerce-cart-form__contents tbody {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+
+      tr {
+        &:last-child {
+          flex-basis: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

@@ -151,6 +151,9 @@ function add_custom_dropdown()
     wp_enqueue_script('selectWoo');
 }
 
-
+/* cart and checkout */
+/* Изменяем количество колонок в выводе товаров */
+require dirname(__DIR__) . '/resources/functions/cart.php';
+require dirname(__DIR__) . '/resources/functions/checkout.php';
 
 
