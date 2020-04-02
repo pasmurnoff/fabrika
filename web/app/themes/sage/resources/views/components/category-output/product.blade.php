@@ -1,4 +1,4 @@
-@if($productId &&  get_the_post_thumbnail_url($productId)) {{-- Если картинки нет, то товар не будет выводится --}}
+@if($productId)
     <li class="product">
         <a href="@php echo get_the_permalink($productId) @endphp" class="woocommerce-loop-product__link">
             <img width="300" height="300"
