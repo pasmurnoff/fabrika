@@ -86,6 +86,15 @@ add_action('widgets_init', function () {
             'name' => __('Filter', 'sage'),
             'id' => 'filter-sidebar'
         ] + $config);
+
+    register_sidebar([
+        'name' => __('Mini-cart', 'sage'),
+        'id' => 'cart-sidebar',
+        'before_widget' => '<div class="cart-sidebar__item %1$s %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="title title_middle">',
+        'after_title' => '</h2>'
+    ]);
 });
 
 /**
