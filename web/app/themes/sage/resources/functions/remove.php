@@ -32,9 +32,11 @@ remove_filter('the_content_feed', 'wp_staticize_emoji');
 remove_filter('comment_text_rss', 'wp_staticize_emoji');
 remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
 
-
 /* Remove woo breadcrumbs */
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 
 /* Remove button from product card */
-remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+/* remove responsive wishlist */
+add_action('yith_wcwl_is_wishlist_responsive', '__return_false');
