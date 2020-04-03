@@ -34,3 +34,11 @@
 #yith-wcwl-popup-message {
   display: none !important;
 }
+
+.woocommerce-product-gallery {
+  .yith-wcwl-add-to-wishlist {
+    right: 15px;
+    left: auto;
+    z-index: 2;
+  }
+}
