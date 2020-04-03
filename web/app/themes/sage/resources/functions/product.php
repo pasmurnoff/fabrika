@@ -14,12 +14,14 @@ add_action('custom_woocommerce_after_summary', 'customAfterSingleProductSummary'
 
 function beforeShopLoopItemTitle()
 {
+    echo do_shortcode('[yith_wcwl_add_to_wishlist]');
     echo '<div class="woocommerce-loop-product__wrapper">';
 }
 
 function afterShopLoopItem()
 {
     echo '</div>';
+    echo do_shortcode('[yith_wcwl_add_to_wishlist]');
 }
 
 add_action('woocommerce_before_shop_loop_item_title', 'beforeShopLoopItemTitle');

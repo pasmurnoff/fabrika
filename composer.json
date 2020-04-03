@@ -17,7 +17,12 @@
     }
   ],
   "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+    "bedrock",
+    "composer",
+    "roots",
+    "wordpress",
+    "wp",
+    "wp-config"
   ],
   "support": {
     "issues": "https://github.com/roots/bedrock/issues",
@@ -40,7 +45,8 @@
     "wpackagist-plugin/woocommerce": "^3.9",
     "wpackagist-plugin/wp-translitera": "^170510",
     "wpackagist-plugin/wordpress-seo": "^13.0",
-    "wpackagist-plugin/wc-variation-swatches": "^1.0.1"
+    "wpackagist-plugin/wc-variation-swatches": "^1.0.1",
+    "wpackagist-plugin/yith-woocommerce-wishlist": "^3.0.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
@@ -55,9 +61,15 @@
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   },

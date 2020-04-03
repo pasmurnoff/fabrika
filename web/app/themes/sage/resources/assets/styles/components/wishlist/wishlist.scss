@@ -1,0 +1,36 @@
+.yith-wcwl-add-to-wishlist {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+
+  .yith-wcwl-icon {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: url("assets/images/components/wishlist/heart.svg");
+    }
+  }
+
+  .feedback .yith-wcwl-icon {
+    margin: 0;
+
+    &::before {
+      content: url("assets/images/components/wishlist/heart-fill.svg");
+    }
+  }
+}
+
+.product__summary {
+  .yith-wcwl-add-to-wishlist {
+    position: relative;
+  }
+}
+
+#yith-wcwl-popup-message {
+  display: none !important;
+}
