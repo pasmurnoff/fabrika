@@ -1,0 +1,115 @@
+.mini-cart {
+  position: fixed;
+  width: 350px;
+  z-index: 3;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition-property: opacity, right;
+  transition-timing-function: ease;
+  transition-duration: 300ms;
+
+  &.active {
+    right: 0;
+    opacity: 1;
+  }
+
+  &__cross {
+    align-self: flex-end;
+    cursor: pointer;
+    color: $greytext;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.woocommerce-mini-cart {
+  &__empty-message {
+    @extend .text;
+  }
+
+  &__total {
+    @extend .text;
+  }
+
+  padding: 0;
+  list-style-type: none;
+
+  &-item {
+    @extend .text;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    &:first-child {
+      border-top: 1px solid $grey;
+    }
+
+    border-bottom: 1px solid $grey;
+
+    a {
+      color: $greytext;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      transition: color ease 200ms;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .remove {
+      align-self: flex-start;
+      line-height: 9px;
+    }
+  }
+}
+
+.widget_shopping_cart_content {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .total {
+    margin-bottom: 50px;
+  }
+
+  .buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    .button {
+      padding: 8px 12px;
+    }
+  }
+}

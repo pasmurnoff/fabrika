@@ -90,10 +90,17 @@ add_action('widgets_init', function () {
     register_sidebar([
         'name' => __('Mini-cart', 'sage'),
         'id' => 'cart-sidebar',
-        'before_widget' => '<div class="cart-sidebar__item %1$s %2$s">',
+        'before_widget' => '<div class="mini-cart %1$s %2$s"><div class="mini-cart__cross"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+     class="mini-cart__icon">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h24v24H0z"></path>
+        <path d="M12 10.587l6.293-6.294a1 1 0 111.414 1.414l-6.293 6.295 6.293 6.294a1 1 0 11-1.414 1.414L12 13.416 5.707 19.71a1 1 0 01-1.414-1.414l6.293-6.294-6.293-6.295a1 1 0 011.414-1.414L12 10.587z"
+              fill="currentColor" fill-rule="nonzero"></path>
+    </g>
+</svg></div>',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="title title_middle">',
-        'after_title' => '</h2>'
+        'after_title' => '<div></div></h2>'
     ]);
 });
 
