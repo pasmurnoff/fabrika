@@ -160,3 +160,7 @@ require dirname(__DIR__) . '/resources/functions/checkout.php';
 require dirname(__DIR__) . '/resources/functions/mini-cart.php';
 /* wishlist */
 require dirname(__DIR__) . '/resources/functions/wishlist.php';
+
+/* Custom walker nav menu */
+require dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
+
