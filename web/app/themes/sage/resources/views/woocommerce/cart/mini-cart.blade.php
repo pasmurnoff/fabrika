@@ -66,7 +66,7 @@
             <div class="mini-cart__variations text">
                 <?php echo wc_get_formatted_cart_item_data($cart_item, true);// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
             </div>
-            <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s &times; %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+            <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s <i class="fas fa-times"></i> %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
         </div>
 
         <?php endif; ?>
