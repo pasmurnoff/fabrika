@@ -1,19 +1,6 @@
 jQuery(function ($) {
     /* eslint-disable */
     $('.single_add_to_cart_button').addClass('ajax_add_to_cart');
-
-    /*    $('.post-type-archive-product').on('click', '.quantity input', function () {
-            return false;
-        });*/
-
-    /*    $('.archive').on('change input', '.quantity .qty', function () {
-            var add_to_cart_button = $(this).parents('.product').find('.add_to_cart_button');
-            // For AJAX add-to-cart actions
-            add_to_cart_button.data('quantity', $(this).val());
-            // For non-AJAX add-to-cart actions
-            add_to_cart_button.attr('href', '?add-to-cart=' + add_to_cart_button.attr('data-product_id') + '&quantity=' + $(this).val());
-        });*/
-
     $('.input-text.qty.text').bind('keyup mouseup', function () {
         var value = $(this).val();
         $('.product_quantity').val(value)
@@ -94,12 +81,6 @@ jQuery(function ($) {
                             $(key).addClass('updating');
                         });
                     }
-                    $('.shop_table.cart, .updating, .cart_totals').fadeTo('400', '0.6').block({
-                        message: null,
-                        overlayCSS: {
-                            opacity: 0.6,
-                        },
-                    });
                     $thisbutton.addClass('added');
                     if (fragments) {
                         $.each(fragments, function (key, value) {
