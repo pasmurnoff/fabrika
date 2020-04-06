@@ -17,6 +17,7 @@ import './popup/popup'
 import './components/cat-dropdown'
 import './components/mini-cart'
 import './components/mini-cart-close'
+import './components/wishlist'
 
 // import local dependencies
 import Router from './util/Router';

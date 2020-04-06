@@ -22,7 +22,7 @@ add_filter('woocommerce_add_to_cart_fragments', 'refresh_cart_count_fragments', 
 
 function refresh_cart_count_fragments($fragments)
 {
-    $fragments['.panel__cart'] = '<span class="panel__cart">' . WC()->cart->get_cart_contents_count() . '</span>';
+    $fragments['.cart-counter'] = '<span class="cart-counter">' . WC()->cart->get_cart_contents_count() . '</span>';
 
     return $fragments;
 }

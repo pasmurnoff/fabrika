@@ -1,11 +1,12 @@
 <div class="panel panel_logout">
     <div class="panel__items">
         <div class="panel__item">
-            <?php $wishlist_count = YITH_WCWL()->count_products(); ?>
-            <span class="your-counter-selector"><?php echo $wishlist_count; ?></span>
+            <div class="panel__wishlist">
+                @include('components.wishlist.counter')
+            </div>
         </div>
         <div class="panel__item">
-            <span class="panel__cart"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+            @include('components.cart.counter')
         </div>
         <a href="#" class="button">Войти</a>
     </div>

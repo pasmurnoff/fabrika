@@ -1,0 +1,1 @@
+<span class="wishlist-counter">@php echo YITH_WCWL()->count_products() @endphp</span>

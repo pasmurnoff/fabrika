@@ -99,7 +99,9 @@ add_action('widgets_init', function () {
               fill="currentColor" fill-rule="nonzero"></path>
     </g>
 </svg></div>
+<div class="mini-cart__title-wrap">
 <h3 class="title title_middle">Корзина</h3>
+</div>
 </div>',
         'after_widget' => '</div>',
     ]);
