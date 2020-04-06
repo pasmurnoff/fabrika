@@ -42,7 +42,7 @@
         echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
             'woocommerce_cart_item_remove_link',
             sprintf(
-                '<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
+                '<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s"><i class="remove__icon fas fa-times"></i></a>',
                 esc_url(wc_get_cart_remove_url($cart_item_key)),
                 esc_attr__('Remove this item', 'woocommerce'),
                 esc_attr($product_id),
@@ -54,13 +54,22 @@
         ?>
         <?php if ( empty($product_permalink) ) : ?>
 						<?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						        <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s &times; %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					<?php else : ?>
-        <a href="<?php echo esc_url($product_permalink); ?>">
-            <?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+        <a class="mini-cart__item-img" href="<?php echo esc_url($product_permalink); ?>">
+            <?php echo $thumbnail; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
         </a>
+        <div class="mini-cart__info-wrapper">
+            <a class="text mini-cart__link" href="@php echo esc_url($product_permalink); @endphp">
+                @php echo $product_name @endphp
+            </a>
+            <div class="mini-cart__variations text">
+                <?php echo wc_get_formatted_cart_item_data($cart_item, true);// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+            </div>
+            <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s &times; %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+        </div>
+
         <?php endif; ?>
-        <?php echo wc_get_formatted_cart_item_data($cart_item); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-        <?php echo apply_filters('woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf('%s &times; %s', $cart_item['quantity'], $product_price) . '</span>', $cart_item, $cart_item_key); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
     </li>
     <?php
     }
