@@ -1,5 +1,6 @@
 @import "shop-table";
 @import "woocommerce-cart-form";
+@import "mini-cart";
 
 .cart-collaterals {
   .cart_totals {
@@ -82,4 +83,8 @@
   dd {
     margin: 0;
   }
+}
+
+.woocommerce-info {
+  @extend .text;
 }

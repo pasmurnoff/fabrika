@@ -156,4 +156,6 @@ function add_custom_dropdown()
 require dirname(__DIR__) . '/resources/functions/cart.php';
 require dirname(__DIR__) . '/resources/functions/checkout.php';
 
+/* mini-cart */
+require dirname(__DIR__) . '/resources/functions/mini-cart.php';
 

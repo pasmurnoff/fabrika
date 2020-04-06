@@ -3,6 +3,10 @@
   border-spacing: 0;
   font-family: $font;
 
+  &_wide {
+    width: 100%;
+  }
+
   &__wrapper {
     margin-bottom: 35px;
   }

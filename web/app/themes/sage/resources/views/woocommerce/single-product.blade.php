@@ -28,6 +28,9 @@ the readme will list any important changes.
         @endphp
     @endwhile
 
+    @if(is_dynamic_sidebar('cart-sidebar'))
+        @php dynamic_sidebar( 'cart-sidebar' ); @endphp
+    @endif
     @php
         do_action('woocommerce_after_main_content');
         do_action('get_sidebar', 'shop');
