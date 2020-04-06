@@ -18,7 +18,7 @@
 /** Общие стили */
 @import "common/fonts";
 // Подключение шрифтов
-@import "components/title/title";
+@import "components/title/init";
 // Тайтлы
 @import "common/global";
 // Глобальные стили
@@ -48,7 +48,7 @@
 // Тег <a> в меню жирный
 @import "components/menu/__link/menu__link_main";
 // Тег <a> в меню жирный
-@import "components/orderby/orderby";
+@import "components/orderby/init";
 // Dropdown menu
 
 /** Повторяющиеся элементы */
@@ -62,9 +62,9 @@
 // Всплывашка сверху
 @import "components/button/button";
 // Кнопка
-@import "components/form/form";
+@import "components/form/init";
 // Общие стили формм
-@import "components/points/points";
+@import "components/points/init";
 // Пункты выдачи
 
 /** Хедер */
@@ -82,63 +82,57 @@
 // Общее верхней части футера
 @import "components/footer/__bottom/footer__bottom";
 // Общее нижней части футера
-@import "components/overlay/overlay";
+@import "components/overlay/init";
 // overlay
 
 /* Archive */
-@import "components/archive/archive";
-@import "components/filter/filter";
+@import "components/archive/init";
+@import "components/filter/init";
 
 /* Common */
-@import "components/search/search";
+@import "components/search/init";
 
 /** Блоки */
-@import "components/text/text";
+@import "components/text/init";
 // Обычный текст
-@import "components/individualsocks/individualsocks";
+@import "components/individualsocks/init";
 // Производство носков с индивидуальным дизайном
 @import "components/block-text/block-text";
 // Дефолтный блок с текстами
-@import "components/additional/additional";
+@import "components/additional/init";
 // Блок с тремя понтами
-@import "components/whyus/whyus";
+@import "components/whyus/init";
 // Блок почему стоит заказывать у нас
-@import "components/workorder/workorder";
+@import "components/workorder/init";
 // Блок порядок работы
-@import "components/defaultpage/defaultpage";
+@import "components/defaultpage/init";
 // Блок для одинаковых страниц1
-@import "components/faq/faq";
+@import "components/faq/init";
 // Блок для вопросов и ответов
-@import "components/table/table";
+@import "components/table/init";
 // Блок с таблицей
-@import "components/table/table_wide";
-// Блок с таблицей на всю ширину
-@import "components/worksteps/worksteps";
+@import "components/worksteps/init";
 // Блок 4 шага до работы
-@import "components/workformat/workformat";
+@import "components/workformat/init";
 // Блок Формат работы
-@import "components/workfeatures/workfeatures";
+@import "components/workfeatures/init";
 // Блок Особенности работы с Фабрикой носков
-@import "components/forwhom/formwhom";
+@import "components/forwhom/init";
 // Блок Для кого
-@import "components/contacts/contacts";
+@import "components/contacts/init";
 // Страница контактов
-@import "components/sitemap/sitemap";
+@import "components/sitemap/init";
 // Страница Карта сайта
-@import "components/blog/blog";
+@import "components/blog/init";
 // Страница Блога
-@import "components/country/country";
+@import "components/country/init";
 // Страница Пункты выдачи
-@import "components/listnum/listnum";
+@import "components/listnum/init";
 // Блок-список с черными круглыми цифрами
 
 /** Баннеры */
-@import "components/banner/banner";
+@import "components/banner/init";
 // Общие стили баннеров
-@import "components/banner/banner_single";
-// Одиночный баннер
-@import "components/banner/banner_duo";
-// 2 баннера в строке
 @import "components/banner/__text/banner__text_duo";
 // Текст двойного баннера
 
@@ -146,28 +140,28 @@
 // Кнопки в баннерах
 
 /** Single Product **/
-@import "components/product/product";
+@import "components/product/init";
 
 /* product loop output */
-@import "components/product-loop/loop";
+@import "components/product-loop/init";
 
 /* pagination */
-@import "components/pagination/pagination";
+@import "components/pagination/init";
 
 /* category output */
-@import "components/category-output/category-output";
+@import "components/category-output/init";
 
 /* afisha */
-@import "components/afisha/afisha";
+@import "components/afisha/init";
 
 /* Стили простого контента */
-@import "components/content/content";
+@import "components/content/init";
 
 /* cart */
-@import "components/cart/cart";
+@import "components/cart/init";
 
 /* checkout */
-@import "components/checkout/checkout";
+@import "components/checkout/init";
 
 /* wishlist */
-@import "components/wishlist/wishlist";
+@import "components/wishlist/init";
