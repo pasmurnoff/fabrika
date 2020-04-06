@@ -1,13 +1,7 @@
-<div class="panel panel_logout">
+<div class="panel">
     <div class="panel__items">
-        <div class="panel__item">
-            <div class="panel__wishlist">
-                @include('components.wishlist.counter')
-            </div>
-        </div>
-        <div class="panel__item">
-            @include('components.cart.counter')
-        </div>
-        <a href="#" class="button">Войти</a>
+        @include('components.panel.wishlist')
+        @include('components.panel.account')
+        @include('components.panel.cart')
     </div>
 </div>

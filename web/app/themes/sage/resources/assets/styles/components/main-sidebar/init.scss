@@ -1,0 +1,31 @@
+.main-sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  background-color: white;
+  display: none;
+  transition-timing-function: ease-in-out;
+  transition-property: right;
+  transition-duration: 400ms;
+  z-index: 3;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+    right: -300px;
+  }
+
+  &.active {
+    right: 0;
+  }
+
+  &__wrap {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,47 @@
+.hamburger {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-property: right;
+  display: none;
+  z-index: 4;
+
+  &__item {
+    display: block;
+    height: 3px;
+    background-color: $greytext;
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+    transition-property: opacity, transform, background-color;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &.active {
+    right: 310px;
+
+    @media screen and (max-width: 400px) {
+      right: 260px;
+    }
+  }
+
+  &.active &__item {
+    &:first-child {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}

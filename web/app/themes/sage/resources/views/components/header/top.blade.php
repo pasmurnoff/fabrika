@@ -1,4 +1,4 @@
 <div class="header__top">
-  @include('components.header.topmenu')
-  @include('common.socials')
+    @include('components.header.menu')
+    @include('common.socials')
 </div>

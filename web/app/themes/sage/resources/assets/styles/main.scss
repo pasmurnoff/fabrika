@@ -68,12 +68,8 @@
 // Пункты выдачи
 
 /** Хедер */
-@import "components/header/header";
+@import "components/header/init";
 // Общее хедера
-@import "components/header/__top/header__top";
-// Верхняя часть хедера
-@import "components/header/__bottom/header__bottom";
-// Нижняя часть хедер
 
 /** Футер */
 @import "components/footer/footer";
@@ -165,3 +161,12 @@
 
 /* wishlist */
 @import "components/wishlist/init";
+
+/* panel */
+@import "components/panel/init";
+
+/* hamburger */
+@import "components/hamburger/init";
+
+/* main-sidebar */
+@import "components/main-sidebar/init";
