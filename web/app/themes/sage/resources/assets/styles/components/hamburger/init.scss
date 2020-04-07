@@ -25,6 +25,8 @@
 
   &.active {
     right: 310px;
+    position: fixed;
+    top: 15px;
 
     @media screen and (max-width: 400px) {
       right: 260px;
