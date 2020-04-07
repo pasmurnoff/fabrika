@@ -1,0 +1,8 @@
+@import "navigation/init";
+@import "content";
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

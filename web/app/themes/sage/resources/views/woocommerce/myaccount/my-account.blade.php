@@ -1,4 +1,4 @@
-<?php
+{{--
 /**
  * My Account page
  *
@@ -13,24 +13,25 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
  * @version 3.5.0
- */
-
-defined( 'ABSPATH' ) || exit;
-
-/**
+ */--}}
+@php defined('ABSPATH') || exit;@endphp
+{{--/**
  * My Account navigation.
  *
  * @since 2.6.0
- */
-do_action( 'woocommerce_account_navigation' ); ?>
+ */--}}
+<div class="account">
+    @php do_action('woocommerce_account_navigation'); @endphp
 
-<div class="woocommerce-MyAccount-content">
-	<?php
-		/**
-		 * My Account content.
-		 *
-		 * @since 2.6.0
-		 */
-		do_action( 'woocommerce_account_content' );
-	?>
+    <div class="account__content woocommerce-MyAccount-content">
+        <?php
+        /**
+         * My Account content.
+         *
+         * @since 2.6.0
+         */
+        do_action('woocommerce_account_content');
+        ?>
+    </div>
+
 </div>

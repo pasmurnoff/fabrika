@@ -1,0 +1,50 @@
+@import "icons";
+
+.account {
+  &__menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-right: 35px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 45%;
+      transform: translateY(-70%);
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &__link {
+    @extend .text, .text_bold, .text_middle;
+
+    text-decoration: none;
+    color: $greytext;
+    transition: color ease 200ms;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__item.is-active &__link {
+    color: $red !important;
+  }
+}
