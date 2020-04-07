@@ -4,7 +4,7 @@
 <body {{ body_class() }}>
 <div class="wrap">
     @php do_action('get_header') @endphp
-    @include('components.header')
+    @include('components.header.wrap')
     <div class="container">
 
         @if( is_front_page() )

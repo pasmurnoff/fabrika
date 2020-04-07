@@ -1,9 +1,9 @@
 <div class="header__bottom">
-  @include('common.logo')
+    @include('common.logo')
 
-  @if (has_nav_menu('primary_navigation'))
-    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'container' => false, 'items_wrap' => '<ul class="%2$s">%3$s</ul>', 'menu_class' => 'menu menu_inline' ]) !!}
-  @endif
+    @if (has_nav_menu('main_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'main_navigation', 'menu_class' => 'menu-navigation menu menu_inline' , 'walker' => new Custom_Walker_Nav_Menu() ]) !!}
+    @endif
 
-  @include('components.header.wooitems')
+    @include('components.panel.wrap')
 </div>

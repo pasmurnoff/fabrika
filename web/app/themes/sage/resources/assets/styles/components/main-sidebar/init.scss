@@ -1,0 +1,54 @@
+.main-sidebar {
+  position: fixed;
+  height: 100%;
+  padding: 40px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  background-color: white;
+  display: none;
+  transition-timing-function: ease-in-out;
+  transition-property: right;
+  transition-duration: 400ms;
+  z-index: 4;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+    right: -300px;
+  }
+
+  &.active {
+    right: 0;
+  }
+
+  &__wrap {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+    /* stylelint-disable */
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+
+    /* stylelint-enable */
+  }
+
+  .panel {
+    justify-content: flex-start;
+
+    &__link {
+      padding-bottom: 0;
+    }
+  }
+}

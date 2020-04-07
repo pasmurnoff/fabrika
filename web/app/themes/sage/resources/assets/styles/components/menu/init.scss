@@ -1,0 +1,13 @@
+@import "item";
+@import "link";
+@import "navigation/init";
+@import "sidebar/init";
+
+.menu {
+  &_inline {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+}

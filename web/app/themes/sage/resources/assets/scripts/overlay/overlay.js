@@ -5,5 +5,6 @@ jQuery(document).ready(function () {
         $('.popup.active').removeClass('active');
         $('.sidebar.active').removeClass('active');
         $('.mini-cart.active').removeClass('active');
+        $('.togglesidebar.active').removeClass('active');
     });
 });

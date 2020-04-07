@@ -1,0 +1,23 @@
+.menu__item {
+  list-style-type: none;
+  font-family: $font;
+
+  &_bold {
+    font-weight: 700;
+    color: #222;
+  }
+
+  &_main {
+    margin-left: 21px;
+  }
+
+  &_top {
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 1.8;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

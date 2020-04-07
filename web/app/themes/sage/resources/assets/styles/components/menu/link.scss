@@ -1,0 +1,31 @@
+.menu__link {
+  font-family: $font;
+  text-decoration: none;
+
+  &_bold {
+    font-weight: 700;
+    color: #222;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &_grey {
+    color: #666;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &_main {
+    font-size: 14px;
+  }
+
+  &_top {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,19 @@
+@import "top";
+@import "bottom";
+
+.header {
+  border-bottom: 1px solid $grey;
+  position: relative;
+
+  @media screen and (max-width: 1023px) {
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__top {
+      display: none;
+    }
+  }
+}

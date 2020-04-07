@@ -44,7 +44,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'main_navigation' => __('Main navigation', 'sage'),
     ]);
 
     /**
@@ -99,7 +99,9 @@ add_action('widgets_init', function () {
               fill="currentColor" fill-rule="nonzero"></path>
     </g>
 </svg></div>
+<div class="mini-cart__title-wrap">
 <h3 class="title title_middle">Корзина</h3>
+</div>
 </div>',
         'after_widget' => '</div>',
     ]);
