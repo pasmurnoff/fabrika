@@ -1,0 +1,26 @@
+.woocommerce-billing-fields__field-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1023px) {
+    justify-content: space-between;
+  }
+
+  .form-row {
+    flex-basis: 48%;
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  .screen-reader-text {
+    @extend .text;
+
+    .optional {
+      display: none;
+    }
+  }
+}

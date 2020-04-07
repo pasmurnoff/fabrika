@@ -1,0 +1,49 @@
+@import "dropdown";
+
+.checkout {
+  .selection > {
+    *:active,
+    *:hover,
+    *:focus {
+      outline: 0;
+      outline-offset: 0;
+      user-select: none;
+    }
+  }
+
+  .country_select {
+    display: none;
+  }
+
+  .select2 {
+    &-selection {
+      border: none;
+
+      &__arrow {
+        b {
+          display: none;
+        }
+      }
+
+      &__rendered {
+        background-color: #eef2f7 !important;
+        font-size: 17px !important;
+        color: $greytext !important;
+        font-family: $font;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 34px 6px 11px 17px !important;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 6px;
+        line-height: inherit !important;
+      }
+
+      &--single {
+        display: flex !important;
+        height: 100%;
+      }
+    }
+  }
+}

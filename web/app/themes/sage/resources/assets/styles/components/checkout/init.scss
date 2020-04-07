@@ -1,4 +1,6 @@
 @import "order";
+@import "billing";
+@import "select/init";
 
 .checkout {
   .woocommerce-info {
@@ -13,81 +15,11 @@
     color: $black;
   }
 
-  .form-row {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%;
-
-    label {
-      color: $black;
-      font-size: 14px;
-      font-family: $font;
-      padding-bottom: 5px;
-    }
+  &__label {
+    @extend .text;
   }
 
-  .input-text {
-    border-radius: 5px;
-    background-color: $grey;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    transition-timing-function: ease-in-out;
-    transition-property: border;
-    transition-duration: 200ms;
-    outline: none;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: $font;
-    font-size: 14px;
-    width: 100%;
-
-    &:last-child {
-      justify-self: flex-start;
-    }
-
-    &:focus {
-      border: 1px solid rgba(81, 203, 238, 0.5);
-    }
-  }
-}
-
-.woocommerce-input-wrapper {
   textarea {
-    height: 150px !important;
-    width: 100%;
-    padding-top: 10px;
-  }
-}
-
-.woocommerce-billing-fields__field-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-
-  @media screen and (max-width: 1023px) {
-    justify-content: space-between;
-  }
-
-  .form-row {
-    @media screen and (min-width: 1024px) {
-      margin-right: 5%;
-
-      &:nth-child(3n+3) {
-        margin-right: 0;
-      }
-    }
-
-    @media screen and (max-width: 1023px) {
-      flex-basis: 48%;
-    }
-
-    @media screen and (max-width: 767px) {
-      flex-basis: 100%;
-    }
+    @extend .textarea;
   }
 }
