@@ -10,6 +10,18 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+
+    @media screen and (min-width: 1024px) {
+      min-width: 750px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
   }
 
   &__item {
@@ -19,6 +31,13 @@
     justify-content: space-between;
     font-family: $font;
     padding-bottom: 25px;
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__left {
@@ -37,11 +56,20 @@
   &__titling {
     padding-bottom: 15px;
     color: $black;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding-top: 15px;
+    }
   }
 
   &__text {
     font-size: 14px;
     line-height: 1.8;
     color: $greytext;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 }
