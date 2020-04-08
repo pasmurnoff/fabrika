@@ -20,6 +20,7 @@ import './components/mini-cart-close'
 import './components/wishlist'
 import './components/menu'
 import './components/main-sidebar'
+import './forms/cdek'
 
 // import local dependencies
 import Router from './util/Router';
