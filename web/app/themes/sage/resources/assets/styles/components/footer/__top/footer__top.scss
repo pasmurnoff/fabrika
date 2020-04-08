@@ -1,6 +1,38 @@
 .footer {
   border-top: 1px solid #ccc;
 
+  &__callback {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_field {
+      flex-basis: 50%;
+
+      .label {
+        font-size: 13px;
+      }
+
+      .input {
+        font-size: 14px;
+        border-radius: 6px 0 0 6px;
+        padding: 22px 12px;
+        padding-right: 0;
+      }
+    }
+
+    &_submit {
+      flex-basis: 50%;
+
+      .submit {
+        border-radius: 0 6px 6px 0;
+        background-color: $secondcolor;
+        color: white;
+      }
+    }
+  }
+
   &__top {
     padding: 35px 0;
     display: flex;
@@ -54,7 +86,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__column {
-    flex-basis: 50%;
+    flex-basis: 49%;
     padding-bottom: 35px;
   }
 }
