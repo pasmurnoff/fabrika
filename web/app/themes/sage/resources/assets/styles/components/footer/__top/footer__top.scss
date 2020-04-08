@@ -3,12 +3,13 @@
 
   &__callback {
     width: 100%;
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     &_field {
-      flex-basis: 50%;
+      flex-basis: 70%;
 
       .label {
         font-size: 13px;
@@ -17,13 +18,13 @@
       .input {
         font-size: 14px;
         border-radius: 6px 0 0 6px;
-        padding: 22px 12px;
+        padding: 20px 6px 18px 12px;
         padding-right: 0;
       }
     }
 
     &_submit {
-      flex-basis: 50%;
+      flex-basis: 30%;
 
       .submit {
         border-radius: 0 6px 6px 0;
@@ -41,7 +42,7 @@
   }
 
   &__column {
-    flex-basis: 25%;
+    flex-basis: 24%;
   }
 
   &__title {

@@ -66,7 +66,7 @@
   }
 
   &_submit {
-    flex-basis: 13%;
+    flex-basis: auto;
   }
 }
 
@@ -193,18 +193,6 @@
 
   &_center {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .labelwrap {
-    &_line {
-      flex-basis: 27%;
-    }
-
-    &_submit {
-      flex-basis: 13%;
-    }
   }
 }
 
