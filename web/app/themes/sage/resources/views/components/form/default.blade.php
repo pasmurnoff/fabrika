@@ -42,12 +42,12 @@
       'textareaClass' => 'textarea_large',
       'positionClass' => 'labelwrap_single textarea_large',
       'name' => 'additional',
-      'label' => 'Расскажите о себе'
+      'label' => 'Любая дополнительная информация'
   ])
         </div>
 
     </div>
 
-    @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
+    @include('components.form.elements.privacy')
 
 </form>

@@ -100,5 +100,6 @@
 
       </ul>
     </div>
+    @include('components.form.default', ['title' =>'Задать вопрос на Фабрику Носков' , 'submit' => 'Задать вопрос'])
   </div>
 @endsection
