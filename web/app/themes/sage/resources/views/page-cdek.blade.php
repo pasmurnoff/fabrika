@@ -24,6 +24,9 @@ Template Name: Статус заказа по номеру
                     <div class="labelwrap cdek__labelwrap">
                         <label class="label">Введите трек код вашего заказа</label>
                         <input type="text" class="input cdek__input">
+                        <div class="cdek__alert">
+                            Введен некорректный номер
+                        </div>
                     </div>
                     <input type="submit" class="submit cdek__submit" value="Отследить">
                 </div>
