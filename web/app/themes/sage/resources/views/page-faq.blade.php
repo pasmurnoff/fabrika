@@ -5,7 +5,7 @@
 
 @section('content')
   <div class="defaultpage">
-    @component('components.banner.banner', ['href' => '/pomosh#toform', 'classes' => 'mrgn35'])
+    @component('components.banner.banner', ['href' => '/pomosh#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
       @slot('title')
         Задайте свой вопрос<br/>
         и мы вам обязательно ответим
@@ -15,7 +15,7 @@
         публикуются на портале или отправляются на указанный адрес электронной почты.
       @endslot
       @slot('icon')
-        {{--      <img class="banner__img" src="@asset('images/blocks/banners/noski_na_zakaz_s_vashim_dizainom.png')" alt="Носки на заказ с Вашим дизайном от 1000 пар">--}}
+              <img width="350"src="@asset('images/components/banners/voprosi_fabrika_noskov.png')" alt="Носки на заказ с Вашим дизайном от 1000 пар">
       @endslot
       @slot('buttonText')
         Задать вопрос
