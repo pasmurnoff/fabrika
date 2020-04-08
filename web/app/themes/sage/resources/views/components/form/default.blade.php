@@ -1,4 +1,4 @@
-<div class="title title_huge">{{ $title or '' }}</div>
+<div class="title title_huge" id="{{$id or ''}}">{{ $title or '' }}</div>
 <form class="form mrgn35" method="POST">
     <div class="form_single">
         <div class="form__col form__col_double">

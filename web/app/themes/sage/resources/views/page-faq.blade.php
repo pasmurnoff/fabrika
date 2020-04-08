@@ -5,7 +5,7 @@
 
 @section('content')
   <div class="defaultpage">
-    @component('components.banner.banner', ['href' => '/pomosh#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
+    @component('components.banner.banner', ['href' => '#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
       @slot('title')
         Задайте свой вопрос<br/>
         и мы вам обязательно ответим
@@ -100,6 +100,6 @@
 
       </ul>
     </div>
-    @include('components.form.default', ['title' =>'Задать вопрос на Фабрику Носков' , 'submit' => 'Задать вопрос'])
+    @include('components.form.default', ['title' =>'Задать вопрос на Фабрику Носков' , 'submit' => 'Задать вопрос', 'id' =>'toform'])
   </div>
 @endsection
