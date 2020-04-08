@@ -163,4 +163,5 @@ require dirname(__DIR__) . '/resources/functions/wishlist.php';
 
 /* Custom walker nav menu */
 require dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
-
+/* account */
+require dirname(__DIR__) . '/resources/functions/account.php';

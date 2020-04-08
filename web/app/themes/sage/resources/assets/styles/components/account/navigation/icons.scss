@@ -1,0 +1,73 @@
+.woocommerce-MyAccount-navigation-link {
+  &--dashboard {
+    &::after {
+      content: url("resources/assets/images/components/account/dashboard.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/dashboard_colored.svg");
+      }
+    }
+  }
+
+  &--orders {
+    &::after {
+      content: url("resources/assets/images/components/account/orders.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/orders_colored.svg");
+      }
+    }
+  }
+
+  &--downloads {
+    &::after {
+      content: url("resources/assets/images/components/account/orders.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/orders_colored.svg");
+      }
+    }
+  }
+
+  &--edit-address {
+    &::after {
+      content: url("resources/assets/images/components/account/address.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/address_colored.svg");
+      }
+    }
+  }
+
+  &--edit-account {
+    &::after {
+      content: url("resources/assets/images/components/account/account.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/account_colored.svg");
+      }
+    }
+  }
+
+  &--customer-logout {
+    &::after {
+      content: url("resources/assets/images/components/account/logout.svg");
+    }
+
+    &.is-active {
+      &::after {
+        content: url("resources/assets/images/components/account/logout_colored.svg");
+      }
+    }
+  }
+}

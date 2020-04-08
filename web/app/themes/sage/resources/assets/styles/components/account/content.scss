@@ -1,0 +1,23 @@
+.account {
+  &__content {
+    @extend .text;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: auto;
+
+    a {
+      color: $greytext;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 35px;
+    }
+  }
+
+  &__fieldset {
+    border: 0;
+    padding: 0;
+  }
+}

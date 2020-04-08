@@ -2,7 +2,6 @@
 @import "input";
 @import "input-number";
 @import "input-file";
-@import "form-constr";
 
 .form {
   display: flex;
@@ -15,7 +14,7 @@
 
   &__col {
     &_double {
-      flex-basis: 49.5%;
+      flex-basis: 48%;
     }
 
     &_third {
@@ -60,4 +59,8 @@
       }
     }
   }
+}
+
+.field__label {
+  @extend .text;
 }
