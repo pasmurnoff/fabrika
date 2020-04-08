@@ -1,0 +1,41 @@
+.cdek {
+  &__form {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__wrap {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      flex-basis: 70%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__labelwrap {
+    margin: 0;
+    flex-basis: 65%;
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__submit {
+    flex-basis: 33%;
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100px;
+      justify-self: flex-end;
+    }
+  }
+}
