@@ -31,7 +31,7 @@
 
     <div class="individualsocks__column individualsocks__column_center">
       <div class="individualsocks__image">
-        <img class="individualsocks__img" src="@asset('images/blocks/individualsocks/noski_na_zakaz_po_designu.gif')"
+        <img class="individualsocks__img" src="@asset('images/components/individualsocks/noski_na_zakaz_po_designu.gif')"
              alt="Производство носков с индивидуальным дизайном">
       </div>
     </div>

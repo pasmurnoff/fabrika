@@ -1,5 +1,6 @@
 @import "default";
-@import "__order/order";
-@import "_manager/init";
-@import "_faq/init";
+@import "__order";
+@import "manager";
+@import "faq";
+@import "design";
 @import "duo";

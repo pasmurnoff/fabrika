@@ -38,6 +38,10 @@
     }
   }
 
+  &__list {
+    padding-left: 15px;
+  }
+
   &__side {
     //width: 50%;
     flex: 1 0 65%;
@@ -70,6 +74,10 @@
     img {
       height: 100%;
       object-fit: contain;
+
+      @media screen and (max-width: 400px) {
+        max-width: 240px;
+      }
     }
   }
 }
