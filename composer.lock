@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d495777ae23798921a3cb40da32c103",
+    "content-hash": "41ee7b5cccee67a23874a1e95faad650",
     "packages": [
         {
             "name": "composer/installers",
@@ -633,6 +633,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-translitera/"
+        },
+        {
+            "name": "wpackagist-plugin/yith-woocommerce-quick-view",
+            "version": "1.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/yith-woocommerce-quick-view/",
+                "reference": "tags/1.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/yith-woocommerce-quick-view.1.4.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/yith-woocommerce-quick-view/"
         },
         {
             "name": "wpackagist-plugin/yith-woocommerce-wishlist",
