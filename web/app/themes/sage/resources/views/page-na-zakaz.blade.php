@@ -36,7 +36,7 @@
 
     {{--  @include('blocks.block-text', ['title' => 'Услуги по вязке носков'])--}}
     <div class="block-text">
-        <div class="title title_middle">Услуги по вязке носков</div>
+        <div class="title title_middle pdng15-bottom">Услуги по вязке носков</div>
         <div class="text">
             «Фабрика носков» предлагает услугу носки по собственному дизайну.
         </div>
@@ -83,7 +83,7 @@
     </div>
 
     <div class="block-text">
-        <div class="title title_middle">Носки с логотипом на заказ</div>
+        <div class="title title_middle pdng15-bottom">Носки с логотипом на заказ</div>
         <div class="text">
             Мы можем отвязать партию носков с логотипом вашей компании. В фирменных цветах и стиле. Для корпоративных
             подарков, форменной одежды или продажи в ваших магазинах. Цветные носки зададут отличное настроение вашим
@@ -92,7 +92,7 @@
     </div>
 
     <div class="block-text">
-        <div class="title title_middle">Изготовим носки по индивидуальному дизайну</div>
+        <div class="title title_middle pdng15-bottom">Изготовим носки по индивидуальному дизайну</div>
         <div class="text">
             Используйте конструктор заказа, который поможет нам быстро обработать вашу заявку и создать носки по
             индивидуальному заказу. Если нужны определенные цвета или оттенки пряжи, оформим специальный заказ у наших
@@ -113,7 +113,8 @@
             </ul>
         @endslot
         @slot('icon')
-                  <img width="310" src="@asset('images/components/banners/Noski_na_zakaz.png')" alt="Носки на заказ с Вашим дизайном от 1000 пар">
+            <img width="310" src="@asset('images/components/banners/Noski_na_zakaz.png')"
+                 alt="Носки на заказ с Вашим дизайном от 1000 пар">
         @endslot
         @slot('buttonText')
             Конструктор дизайна носков и колготок
@@ -121,7 +122,7 @@
     @endcomponent
 
     <div class="block-text">
-        <div class="title title_middle">Виды чулочно-носочных изделий:</div>
+        <div class="title title_middle pdng15-bottom">Виды чулочно-носочных изделий:</div>
         <div class="text mrgn35-bottom">
             Носки следки, носки низкие, носки средние, носки высокие, носки гольфы, чулки низкие, чулки высокие, чулки
             сетка
@@ -131,7 +132,7 @@
     </div>
 
     <div class="block-text">
-        <div class="title title_middle">Материалы</div>
+        <div class="title title_middle pdng15-bottom">Материалы</div>
         <div class="text">
             Мы используем только качественные материалы, обязательно проверяем сертификацию у всех поставщиков. Закупаем
             пряжу
@@ -144,7 +145,7 @@
     </div>
 
     <div class="block-text">
-        <div class="title title_middle">Состав носков</div>
+        <div class="title title_middle pdng15-bottom">Состав носков</div>
         <div class="text">
             Наши крошки на 80% состоят из качественного гребенного хлопка. Никаких примесей и хитростей. 15% полиамида –
             это
@@ -160,7 +161,7 @@
     </div>
 
     <div class="block-text">
-        <div class="title title_middle">Минимальный тираж и стоимость</div>
+        <div class="title title_middle pdng15-bottom">Минимальный тираж и стоимость</div>
         <div class="text">
             Мы работаем на собственном оборудовании и готовы взяться за заказы всего от 100 пар.
             <br/><br/>
