@@ -3,7 +3,9 @@
         <div class="banner__side banner__side_left">
             <div class="banner__cont-wrap">
                 <div class="banner__title title title_large">{{ $title or '' }}</div>
-                <div class="banner__text">{{ $text or '' }}</div>
+                @isset($text)
+                    <div class="banner__text">{{ $text or '' }}</div>
+                @endisset
             </div>
             <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
         </div>
