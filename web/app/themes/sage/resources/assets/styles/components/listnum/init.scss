@@ -1,5 +1,6 @@
 .listnum {
   padding-left: 0;
+  margin: 0;
 
   &__point {
     display: flex;
@@ -9,18 +10,31 @@
     font-family: $font;
     font-size: 20px;
     padding-bottom: 20px;
+    position: relative;
+    line-height: 30px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &__number {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #222;
     color: #fff;
     border-radius: 50px;
     height: 30px;
     width: 30px;
-    text-align: center;
-    line-height: 30px;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  &__text {
+    padding-left: 40px;
   }
 }

@@ -34,6 +34,12 @@
       flex-direction: column;
     }
   }
+
+  &__item {
+    .labelwrap {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .formline {
