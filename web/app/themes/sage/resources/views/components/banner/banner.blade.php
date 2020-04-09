@@ -7,7 +7,14 @@
                     <div class="banner__text">{{ $text or '' }}</div>
                 @endisset
             </div>
-            <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
+            @if(isset($href2))
+                <div class="banner__btn-wrap">
+                    <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
+                    <a href="{{ $href2 }}" class="button banner__button">{{ $buttonText2 or '' }}</a>
+                </div>
+            @else
+                <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
+            @endif
         </div>
         <div class="banner__side banner__side_right">
             <div class="banner__icon">{{ $icon or ''}}</div>
