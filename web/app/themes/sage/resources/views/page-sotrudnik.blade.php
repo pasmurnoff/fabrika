@@ -51,4 +51,72 @@ Template Name: Помощь сотрудникам
             @endslot
         @endcomponent
     </div>
+
+    <form class="form form_employee" method="post">
+        <div class="form__col_third">
+            <div class="title title_large mrgn35">Рассчитать стоимость носков или колготок</div>
+            @component('components.form.elements.form-item', ['title' => 'Данные менеджера'])
+                @slot('content')
+                    <div class="dualrow mrgn15-top">
+                        @include('components.form.elements.input',[
+                      'positionClass' => 'labelwrap_dual',
+                      'name' => 'name',
+                      'label' => 'Ваше имя*'
+                      ])
+                        @include('components.form.elements.input',[
+                            'positionClass' => 'labelwrap_dual',
+                            'name' => 'phone',
+                            'label' => 'Ваш телефон*'
+                            ])
+                    </div>
+                @endslot
+            @endcomponent
+            @component('components.form.elements.form-item', ['title' => 'Данные клиента'])
+                @slot('content')
+                    <div class="dualrow mrgn15-top">
+                        @include('components.form.elements.input',[
+                          'positionClass' => 'labelwrap_dual',
+                          'name' => 'client-name',
+                          'label' => 'Имя лица, принимающего решение'
+                          ])
+                        @include('components.form.elements.input',[
+                            'positionClass' => 'labelwrap_dual',
+                            'name' => 'client-phone',
+                            'label' => 'Телефон лица, принимающего решение'
+                            ])
+                        @include('components.form.elements.input',[
+                         'positionClass' => 'labelwrap_single',
+                         'name' => 'client-fio',
+                         'label' => 'Наименование юр лица или ФИО заказчика'
+                         ])
+                        @include('components.form.elements.input',[
+                       'positionClass' => 'labelwrap_single',
+                       'name' => 'client-inn',
+                       'label' => 'ИНН юр лица или физ лица заказчика'
+                       ])
+                    </div>
+                @endslot
+            @endcomponent
+            @component('components.form.elements.form-item', ['title' => 'Заказываем'])
+                @slot('content')
+                    @include('components.form.elements.sku', [
+                        'positionClass' => 'mrgn15-top sku__element',
+                       'name' => 'productSKU[]',
+                       'label' => 'Артикул'
+                        ])
+                @endslot
+            @endcomponent
+            @component('components.form.elements.form-item', ['title' => 'Дополнительная информация'])
+                @slot('content')
+                    @include('components.form.elements.textarea',[
+                        'positionClass' => 'mrgn15-top',
+                        'name' => 'description',
+                        'label' => 'Расскажите о себе'
+                        ])
+
+                @endslot
+            @endcomponent
+            @include('components.form.elements.privacy')
+        </div>
+    </form>
 @endsection

@@ -3,6 +3,7 @@
 @import "input-number";
 @import "input-file";
 @import "cdek";
+@import "sku";
 
 .form {
   display: flex;
@@ -11,6 +12,10 @@
 
   @media screen and (max-width: 1023px) {
     flex-direction: column;
+  }
+
+  &_employee {
+    justify-content: center;
   }
 
   &__col {

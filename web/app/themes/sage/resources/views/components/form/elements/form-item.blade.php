@@ -5,7 +5,7 @@ $class:
 Также можно указать дополнительные классы (checkbox, radio - если хотите использовать чекбоксы)
 --}}
 
-<div class="form__item mrgn35-bottom {{ $class or 'singlerow' }}">
+<div class="mrgn35-bottom {{ $class or 'singlerow' }}">
     @if(isset($title))
         <div class="title title_middle title_thin">{{$title}}</div>
     @endif
