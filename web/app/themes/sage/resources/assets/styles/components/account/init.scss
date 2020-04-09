@@ -6,3 +6,17 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+.akkaunt {
+  .u-columns {
+    .form__col_double {
+      flex-basis: 48%;
+
+      @media screen and (max-width: 1023px) {
+        &.u-column2 {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
