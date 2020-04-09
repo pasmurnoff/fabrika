@@ -5,14 +5,12 @@ Template Name: Контакты
 @extends('layouts.app')
 @section('content')
     <div class="title title_large">Горячая линия</div>
-    <div class="block-text">
-        <div class="block-text__text block-text__text_padding-away">
-            Телефон: <a class="block-text__link" href="tel:88004441156">8 800 444 11 56</a><br/>
-            Почта: <a class="block-text__link" href="mailto@mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
-        </div>
+    <div class="pdng15 text">
+        <span class="text_bold">Телефон:</span> <a class="text_link" href="tel:88004441156">8 800 444 11 56</a><br/>
+        <span class="text_bold">Почта:</span> <a class="text_link" href="mailto@mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
     </div>
 
-    <div class="points points_contact">
+    <div class="points points_contact mrgn15-top">
         <div class="points__items">
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>

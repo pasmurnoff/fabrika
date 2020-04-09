@@ -46,4 +46,14 @@
   &_opacity {
     opacity: 0.8;
   }
+
+  &_link {
+    text-decoration: none;
+    color: $greytext;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $black;
+    }
+  }
 }
