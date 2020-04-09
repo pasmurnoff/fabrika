@@ -165,3 +165,6 @@ require dirname(__DIR__) . '/resources/functions/wishlist.php';
 require dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
 /* account */
 require dirname(__DIR__) . '/resources/functions/account.php';
+
+/* quantity input */
+require dirname(__DIR__) . '/resources/functions/quantity-input.php';
