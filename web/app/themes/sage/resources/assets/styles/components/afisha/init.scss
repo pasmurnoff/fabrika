@@ -48,11 +48,11 @@
       background-repeat: no-repeat;
 
       @media screen and (max-width: 1023px) {
-        margin-right: 15px !important;
+        margin-right: 15px;
         width: 245px;
 
-        &:first-child {
-          margin-left: 15px;
+        &:last-child {
+          margin-right: 0;
         }
       }
 
@@ -67,7 +67,7 @@
   }
 
   &__text {
-    width: 80%;
+    width: 85%;
     position: absolute;
     bottom: 20px;
   }
