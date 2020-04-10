@@ -3,7 +3,7 @@
 
 .yith-wcwl-add-to-wishlist {
   position: absolute;
-  left: 35%;
+  left: 30%;
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
@@ -12,6 +12,11 @@
   background-color: $black;
   margin: 0;
   pointer-events: auto;
+  transition: background-color ease 200ms;
+
+  &:hover {
+    background-color: black;
+  }
 
   .yith-wcwl-add-button {
     height: 100%;
@@ -31,8 +36,8 @@
     position: relative;
 
     &::before {
-      width: 70%;
-      height: 70%;
+      width: 60%;
+      height: 60%;
       position: absolute;
       top: 53%;
       right: 50%;
@@ -53,8 +58,8 @@
         top: 53%;
         right: 50%;
         transform: translate(50%, -50%);
-        width: 70%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
         content: url("assets/images/components/wishlist/heart-fill.svg");
       }
     }
@@ -74,6 +79,7 @@
 .woocommerce-product-gallery {
   .yith-wcwl-add-to-wishlist {
     right: 15px;
+    top: 30px;
     left: auto;
     z-index: 1;
   }

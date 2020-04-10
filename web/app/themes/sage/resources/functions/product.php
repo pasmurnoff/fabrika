@@ -14,15 +14,21 @@ add_action('custom_woocommerce_after_summary', 'customAfterSingleProductSummary'
 
 function beforeShopLoopItemTitle()
 {
-    echo do_shortcode('[yith_wcwl_add_to_wishlist]');
     echo '<div class="woocommerce-loop-product__wrapper">';
 }
 
 function afterShopLoopItem()
 {
     echo '</div>';
-    echo do_shortcode('[yith_wcwl_add_to_wishlist]');
 }
 
 add_action('woocommerce_before_shop_loop_item_title', 'beforeShopLoopItemTitle');
 add_action('woocommerce_after_shop_loop_item_title', 'afterShopLoopItem');
+
+function product_tools()
+{
+    global $product;
+    echo '<div class="product__tools">' . do_shortcode('[yith_wcwl_add_to_wishlist]') . do_shortcode('[yith_quick_view type="icon"]') . '</div>';
+}
+
+add_action('woocommerce_after_shop_loop_item_title', 'product_tools', 999);
