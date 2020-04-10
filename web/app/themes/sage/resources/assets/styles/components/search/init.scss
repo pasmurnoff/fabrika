@@ -1,20 +1,28 @@
 @import "cross";
+@import "main";
 
 .search {
   &__button {
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.1);
-    transition: color ease 200ms;
+    width: 18px;
+    height: 18px;
+    outline: none;
 
-    &:hover {
-      color: $red;
+    svg {
+      width: 18px;
+      height: 18px;
+      transition: fill ease 200ms;
+      fill: rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover svg {
+      fill: $red;
     }
   }
 
@@ -24,6 +32,10 @@
     border: 1px solid #ededed;
     padding: 15px 6px 15px 20px;
     font-size: 14px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
 
     &:focus {
       border-color: #ddd;
