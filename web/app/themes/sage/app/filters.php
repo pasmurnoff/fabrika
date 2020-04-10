@@ -108,14 +108,18 @@ add_filter('comments_template', function ($comments_template) {
 /**
  * Change excerpt size
  */
-add_filter( 'excerpt_length', function($length) {
+add_filter('excerpt_length', function ($length) {
     return 20;
-} );
+});
 
 /**
  * Change readmore on excerpt
  */
-add_filter('excerpt_more', function($more) {
-    global $post;
-    return '<a class="button blog__readmore" href="'. get_permalink($post->ID) . '">Подробнее</a>';
+add_filter('excerpt_more', function ($more) {
+    if (!is_front_page()) {
+        global $post;
+        return '<a class="button blog__readmore" href="' . get_permalink($post->ID) . '">Подробнее</a>';
+    } else {
+        return ' ...';
+    }
 });

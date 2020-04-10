@@ -168,3 +168,7 @@ require dirname(__DIR__) . '/resources/functions/account.php';
 
 /* quantity input */
 require dirname(__DIR__) . '/resources/functions/quantity-input.php';
+
+/* excerpt modify */
+require dirname(__DIR__) . '/resources/functions/excerpt.php';
+
