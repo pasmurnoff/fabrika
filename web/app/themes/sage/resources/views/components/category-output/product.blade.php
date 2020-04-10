@@ -13,7 +13,10 @@
 			</span>
 		</span>
             </div>
-            @php echo do_shortcode('[yith_wcwl_add_to_wishlist product_id=' . $productId . ']') @endphp
         </a>
+        <div class="product__tools">
+            @php echo do_shortcode('[yith_wcwl_add_to_wishlist product_id=' . $productId . ']') @endphp
+            @php echo do_shortcode('[yith_quick_view type="icon" label="" product_id=' . $productId . ']') @endphp
+        </div>
     </li>
 @endif
