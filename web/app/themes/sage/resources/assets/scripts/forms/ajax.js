@@ -13,7 +13,7 @@ $(document).ready(function () {
             $.ajax({
                 contentType: false, // важно - убираем форматирование данных по умолчанию
                 processData: false, // важно - убираем преобразование строк по умолчанию
-                url: '/app/themes/sage/app/ajax.php', //url страницы (action_ajax_form.php)
+                url: '/app/themes/sage/resources/functions/ajax.php', //url страницы (action_ajax_form.php)
                 type: 'POST', //метод отправки
                 data: formData,  // Сеарилизуем объект
                 success: function () { //Данные отправлены успешно
