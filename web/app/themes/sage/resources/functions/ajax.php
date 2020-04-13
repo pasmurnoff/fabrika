@@ -47,8 +47,8 @@ function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName)
 }
 
 // Email configuration
-$to = 'recipient@example.com';
-$from = 'fabrika@example.com';
+$to = 'mail@fabrikanoskov.ru';
+$from = 'mail@fabrikanoskov.ru';
 $fromName = 'Фабрика носков';
 
 // Html content
