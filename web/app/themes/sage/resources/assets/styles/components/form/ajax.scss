@@ -1,13 +1,14 @@
-.result-form {
+.result-message {
   position: fixed;
   width: max-content;
   display: none;
   max-width: 250px;
-  height: 60px;
+  height: max-content;
   bottom: 15px;
   right: 50%;
   transform: translateX(50%);
   background-color: #fff;
-  padding: 10px 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 15px;
+  padding: 20px 35px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 6px 30px;
 }
