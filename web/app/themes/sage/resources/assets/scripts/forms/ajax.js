@@ -24,7 +24,7 @@ $(document).ready(function () {
                 error: function () { // Данные не отправлены
                     let $resultForm = $('<div class="result-message text text_dangerous">Что-то пошло не так, попробуйте в другой раз</div>').hide();
                     $('body').append($resultForm);
-                    $resultForm.show('normal').delay(1000).animate({opacity: 'toggle'});
+                    dynamicAnimate($resultForm);
                 },
             });
 
