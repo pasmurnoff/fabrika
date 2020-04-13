@@ -152,7 +152,7 @@
 
         @component('components.form.elements.form-item', ['title' => 'Файл или архив файлов, с которыми нужно поработать','class' => 'singlerow child__mrgn'])
             @slot('content')
-                @include('components.form.elements.file', ['name'=>'file', ])
+                @include('components.form.elements.file', ['name'=>'file'])
             @endslot
         @endcomponent
 
