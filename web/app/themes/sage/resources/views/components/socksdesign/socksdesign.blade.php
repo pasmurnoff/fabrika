@@ -39,7 +39,7 @@
     </div>
 </div>
 
-<form method="POST" class="form" action="<?php echo admin_url('admin-ajax.php?action=send_mail') ?>">
+<form method="POST" class="form">
     <div class="formline">
         <div class="formline__inner">
             <div class="labelwrap labelwrap_line">

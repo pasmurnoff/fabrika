@@ -172,8 +172,5 @@ require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 /* excerpt modify */
 require_once dirname(__DIR__) . '/resources/functions/excerpt.php';
 
-/* ajax */
-require_once(get_theme_file_path() . '/app/ajax.php');
-
 
 

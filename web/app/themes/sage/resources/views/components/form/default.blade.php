@@ -6,7 +6,7 @@
         </div>
     </div>
 @endisset
-<form class="form mrgn35" method="POST" action="<?php echo admin_url('admin-ajax.php?action=send_mail') ?>">
+<form class="form mrgn35" method="POST">
     <div class="form_single">
         <div class="form__col form__col_double">
             <div class="singlerow singlerow_mrgn15">
