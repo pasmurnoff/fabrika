@@ -73,7 +73,6 @@ foreach ($_POST as $key => $value) {
 $subject = 'Сообщение с сайта Фабрика носков';
 
 $sendEmail = multi_attach_mail($to, $subject, $html, $from, $fromName);
-var_dump($sendEmail);
 
 // Email sending status
 if ($sendEmail) {
