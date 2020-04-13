@@ -66,7 +66,7 @@
   }
 
   &_submit {
-    flex-basis: 13%;
+    flex-basis: auto;
   }
 }
 
@@ -157,7 +157,6 @@
   font-family: $font;
 
   &_line {
-    width: 100%;
     height: 100%;
   }
 
@@ -191,17 +190,9 @@
   @media screen and (max-width: 550px) {
     text-align: right;
   }
-}
 
-@media screen and (max-width: 1023px) {
-  .labelwrap {
-    &_line {
-      flex-basis: 27%;
-    }
-
-    &_submit {
-      flex-basis: 13%;
-    }
+  &_center {
+    text-align: center;
   }
 }
 

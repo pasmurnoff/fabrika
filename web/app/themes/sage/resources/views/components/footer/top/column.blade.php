@@ -1,3 +1,3 @@
 <div class="footer__column">
-  {{ $include }}
+  {{ $include or '' }}
 </div>

@@ -1,0 +1,19 @@
+.banner_faq {
+  .banner__text {
+    width: 90%;
+  }
+
+  .banner__side {
+    &_left {
+      flex-basis: 55%;
+    }
+  }
+
+  .banner__icon {
+    @media screen and (max-width: 400px) {
+      img {
+        width: 250px;
+      }
+    }
+  }
+}

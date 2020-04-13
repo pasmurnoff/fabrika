@@ -1,0 +1,40 @@
+.sku {
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .labelwrap {
+      flex-basis: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__minus {
+    display: none;
+  }
+
+  &__toggle {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    background-color: #eef2f7;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: $secondcolor;
+    }
+
+    &_minus {
+      margin-left: 10px;
+    }
+  }
+}

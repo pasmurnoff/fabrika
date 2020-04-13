@@ -1,6 +1,6 @@
-<div class="title title_large">Носки с принтом на заказ</div>
+<div class="title title_large mrgn15-bottom">Носки с принтом на заказ</div>
 <div class="block-text">
-  <div class="block-text__text block-text__text_padding-away">
+  <div class="block-text__text pdng15-bottom">
     Мечтаете выпустить коллекцию носков со своими рисунками? Мы можем воплотить в носках почти все ваши фантазии и
     скрытые желания. Орнаменты, паттерны, вы можете придумать любой принт для ваших носков. Если у вас есть бренд
     одежды, мы можем выпустить совместную коллекцию носков в вашем фирменном стиле. Этот яркий аксессуар значительно
@@ -18,9 +18,9 @@
 </div>
 
 
-<div class="title title_large">Носки на заказ с Вашим дизайном от 1000 пар</div>
+<div class="title title_large mrgn15-bottom">Носки на заказ с Вашим дизайном от 1000 пар</div>
 <div class="block-text">
-  <div class="block-text__text block-text__text_padding-away">
+  <div class="block-text__text pdng15-bottom">
     На нашей фабрике можно заказать не только носки оптом, но и носки с логотипом или в фирменной стилистике бренда и
     мероприятия для самых разных нужд. Мерч, промо, сувениры, подарки, на продажу для расширения ассортимента - носки
     зарекомендовали себя как отличный инструмент для корпоративных подарков.
@@ -29,9 +29,9 @@
 </div>
 
 
-<div class="title title_large">Узнайте как будет выглядеть ваш носок</div>
+<div class="title title_large mrgn15-bottom">Узнайте как будет выглядеть ваш носок</div>
 <div class="block-text block-text_nopad">
-  <div class="block-text__text block-text__text_padding-away">
+  <div class="block-text__text pdng15-bottom">
     Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!
   </div>
 </div>
@@ -43,7 +43,7 @@
       <label class="label">Имя*</label>
     </div>
     <div class="labelwrap labelwrap_line">
-      <input type="tel" class="input" name="name">
+      <input type="tel" class="input" name="phone">
       <label class="label">Мобильный телефон*</label>
     </div>
     <div class="labelwrap labelwrap_line">

@@ -29,7 +29,7 @@ if (!defined('ABSPATH')) {
                id="woocommerce-product-search-field-<?php echo isset($index) ? absint($index) : 0; ?>"
                class="search-field"
                value="<?php echo get_search_query(); ?>" name="s" placeholder="Найти..."/>
-        <button class="search__button" type="submit"><i class="search__icon fas fa-search"></i></button>
+        <button class="search__button" type="submit">@include('icon::common.search-regular')</button>
         <input type="hidden" name="post_type" value="product"/>
     </div>
 </form>

@@ -1,14 +1,14 @@
 @switch($prodCat->slug)
 
-    @case('detskaja-kollekcija')
+    @case('detskoe')
     @include('components.banner.afisha')
     @break
 
-    @case('zhenskaja-kollekcija')
+    @case('zhenskoe')
     @include('components.banner.custom-socks')
     @break
 
-    @case('muzhskaja-kollekcija')
+    @case('muzhskoe')
     @include('components.banner.manager')
     @break
 

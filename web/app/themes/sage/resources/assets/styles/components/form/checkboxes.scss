@@ -22,8 +22,8 @@
       position: absolute;
       left: 0;
       top: 3px;
-      width: 19px;
-      height: 19px;
+      width: 18px;
+      height: 18px;
       border: 2px solid $secondcolor;
       box-sizing: border-box;
       border-radius: 50%;
@@ -44,15 +44,15 @@
       top: 7px;
       width: 10px;
       height: 10px;
-      left: 5px;
+      left: 4px;
       background-color: $secondcolor;
     }
 
     &_checkbox {
-      left: 7px;
+      left: 6px;
       top: 6px;
       width: 4px;
-      height: 9px;
+      height: 8px;
       transform: rotate(40deg);
       border-bottom: 2px solid $secondcolor;
       border-right: 2px solid $secondcolor;

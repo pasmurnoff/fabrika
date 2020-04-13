@@ -21,6 +21,7 @@ import './components/wishlist'
 import './components/menu'
 import './components/main-sidebar'
 import './forms/cdek'
+import './components/manager-sku'
 
 // import local dependencies
 import Router from './util/Router';

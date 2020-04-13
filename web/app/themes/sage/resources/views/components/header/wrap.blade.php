@@ -7,4 +7,5 @@
         @include('components.header.bottom')
     </div>
     @include('components.main-sidebar.wrap')
+    @include('components.search.wrap')
 </header>

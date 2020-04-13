@@ -1,0 +1,41 @@
+@import "popup";
+
+.yith-wcqv-button {
+  display: none;
+}
+
+.product__tools {
+  .yith-wcqv-button {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    pointer-events: auto;
+    background-color: $black;
+    border-radius: 50%;
+    transition: background-color ease 200ms;
+
+    &:hover {
+      background-color: black;
+    }
+
+    &::after {
+      content: url("assets/images/components/quick-view/expand.svg");
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 48%;
+      right: 49%;
+      transform: translate(50%, -50%);
+    }
+
+    .blockUI {
+      border-radius: 50%;
+      opacity: 0.3 !important;
+    }
+  }
+}

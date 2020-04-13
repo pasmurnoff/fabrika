@@ -108,6 +108,38 @@ add_action('widgets_init', function () {
 });
 
 /**
+ * Register custom types
+ */
+
+register_post_type('city', [
+    'label' => null,
+    'labels' => [
+        'name' => 'Страница города',
+        'singular_name' => 'Cтраница города',
+        'add_new' => 'Добавить страницу города',
+        'add_new_item' => 'Добавление страницы города',
+        'edit_item' => 'Редактирование страницы города',
+        'new_item' => 'Новая страница города',
+        'view_item' => 'Смотреть страницу города',
+        'search_items' => 'Искать страницу города',
+        'not_found' => 'Не найдено',
+        'not_found_in_trash' => 'Не найдено в корзине',
+        'parent_item_colon' => '',
+        'menu_name' => 'Города',
+    ],
+    'description' => '',
+    'public' => true,
+    'show_in_menu' => null,
+    'show_in_rest' => null,
+    'rest_base' => null,
+    'menu_position' => null,
+    'menu_icon' => 'dashicons-admin-site-alt2',
+    'hierarchical' => false,
+    'has_archive' => false,
+    'query_var' => true,
+]);
+
+/**
  * Updates the `$post` variable on each iteration of the loop.
  * Note: updated value is only available for subsequently loaded views, such as partials
  */

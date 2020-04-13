@@ -1,0 +1,12 @@
+@import "card";
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 885px) {
+    justify-content: space-between;
+  }
+}

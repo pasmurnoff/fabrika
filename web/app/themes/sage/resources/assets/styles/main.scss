@@ -67,7 +67,6 @@
 
 /* Common */
 @import "components/search/init";
-@import "components/popup/init";
 
 /** Блоки */
 @import "components/text/init";
@@ -146,6 +145,9 @@
 /* wishlist */
 @import "components/wishlist/init";
 
+/* quick-view */
+@import "components/quick-view/init";
+
 /* panel */
 @import "components/panel/init";
 
@@ -157,3 +159,12 @@
 
 /* account panel */
 @import "components/account/init";
+
+/* maket slider */
+@import "components/slider/init";
+
+/* city page */
+@import "components/city/init";
+
+/* city page */
+@import "components/cards/init";

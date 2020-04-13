@@ -9,11 +9,14 @@
                 <h2 class="woocommerce-loop-product__title">@php echo get_the_title($productId) @endphp</h2>
                 <span class="price">
 			<span class="woocommerce-Price-amount amount">@php echo $product->get_price() @endphp&nbsp;<span
-                        class="woocommerce-Price-currencySymbol"> руб.</span>
+                        class="woocommerce-Price-currencySymbol">руб.</span>
 			</span>
 		</span>
             </div>
-            @php echo do_shortcode('[yith_wcwl_add_to_wishlist product_id=' . $productId . ']') @endphp
         </a>
+        <div class="product__tools">
+            @php echo do_shortcode('[yith_wcwl_add_to_wishlist product_id=' . $productId . ']') @endphp
+            @php echo do_shortcode('[yith_quick_view type="icon" label="" product_id=' . $productId . ']') @endphp
+        </div>
     </li>
 @endif

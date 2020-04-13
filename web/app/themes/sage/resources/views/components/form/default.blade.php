@@ -1,4 +1,11 @@
-<div class="title title_huge">{{ $title or '' }}</div>
+<div class="title title_huge" id="{{$id or ''}}">{{ $title or '' }}</div>
+@isset($text)
+    <div class="pdng15-top">
+        <div class="text">
+            {{ $text }}
+        </div>
+    </div>
+@endisset
 <form class="form mrgn35" method="POST">
     <div class="form_single">
         <div class="form__col form__col_double">
@@ -42,12 +49,12 @@
       'textareaClass' => 'textarea_large',
       'positionClass' => 'labelwrap_single textarea_large',
       'name' => 'additional',
-      'label' => 'Расскажите о себе'
+      'label' => 'Любая дополнительная информация'
   ])
         </div>
 
     </div>
 
-    @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
+    @include('components.form.elements.privacy')
 
 </form>

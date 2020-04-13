@@ -60,5 +60,16 @@
     p {
       margin: 0;
     }
+
+    /* stylelint-disable */
+    a {
+      color: $greytext;
+      transition: color ease 200ms;
+
+      &:hover {
+        color: $black;
+      }
+    }
+    /* stylelint-enable */
   }
 }

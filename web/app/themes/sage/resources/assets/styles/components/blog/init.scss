@@ -1,3 +1,5 @@
+@import "index";
+
 .blog {
   &_loop {
     display: flex;
@@ -12,8 +14,8 @@
       display: flex;
       flex-flow: wrap;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 30px;
+      align-items: flex-start;
+      margin-bottom: 35px;
     }
   }
 
@@ -43,8 +45,17 @@
 
     img {
       max-width: 100%;
+      width: 100%;
       object-fit: cover;
       border-radius: 6px;
+
+      @media screen and (max-width: 1023px) {
+        height: 600px;
+      }
+
+      @media screen and (max-width: 767px) {
+        height: 350px;
+      }
     }
 
     &_loop {
@@ -57,6 +68,7 @@
   &__readmore {
     display: block;
     margin-top: 15px;
+    width: max-content;
   }
 
   &__content {
