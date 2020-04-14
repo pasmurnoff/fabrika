@@ -3,6 +3,7 @@ import 'jquery';
 
 // Import everything from autoload
 import './autoload/**/*'
+import './common/transition-fix'
 import './forms/visual'
 import './forms/input-file'
 import './forms/ajax'

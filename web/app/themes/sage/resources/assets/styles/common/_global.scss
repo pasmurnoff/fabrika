@@ -132,3 +132,7 @@ body {
 .hidden {
   display: none;
 }
+
+.preload * {
+  transition: none !important;
+}
