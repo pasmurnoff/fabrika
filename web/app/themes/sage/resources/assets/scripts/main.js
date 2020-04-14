@@ -23,6 +23,7 @@ import './components/menu'
 import './components/main-sidebar'
 import './forms/cdek'
 import './components/manager-sku'
+import './components/product-sticky'
 
 // import local dependencies
 import Router from './util/Router';

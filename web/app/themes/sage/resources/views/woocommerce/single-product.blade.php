@@ -27,6 +27,7 @@ the readme will list any important changes.
             wc_get_template_part('content', 'single-product');
         @endphp
     @endwhile
+    @include('components.cart.sticky')
 
     @if(is_dynamic_sidebar('cart-sidebar'))
         @php dynamic_sidebar( 'cart-sidebar' ); @endphp
