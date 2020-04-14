@@ -5,6 +5,7 @@
 <div class="wrap">
     @php do_action('get_header') @endphp
     @include('components.header.wrap')
+    @php get_template_part('functions/watched') @endphp
 
     <div class="container">
 
@@ -28,18 +29,12 @@
                 function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<p class="breadcrumbs breadcrumbs_mrgn15-top">', '</p>') : '';
             }
         @endphp
-    </div>
 
-    @if(!is_front_page())
-        <div class="container content">
-            @yield('content')
-        </div>
-    @else
+
         <div class="content">
             @yield('content')
         </div>
-    @endif
-
+    </div>
 
     @php do_action('get_footer') @endphp
 

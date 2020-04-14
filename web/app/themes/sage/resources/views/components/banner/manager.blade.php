@@ -1,4 +1,9 @@
-@component('components.banner.banner', ['classes' => 'banner_manager mrgn15', 'title' => 'Зарабатывай с нами! Платим 10% от суммы счета', 'href' => '/konstruktor-zakaza-noskov', 'buttonText' => 'Заказать носки' ])
+@component('components.banner.banner', [
+    'classes' => 'banner_manager mrgn35',
+    'title' => 'Зарабатывай с нами! Платим 10% от суммы счета',
+    'href' => '/konstruktor-zakaza-noskov',
+    'buttonText' => 'Заказать носки' ])
+
     @slot('text')
         <a class="banner_manager-link" href="/menedzher-po-prodazham"></a>
         <div class="banner_manager-text"> Мы всегда заинтересованы в том, чтобы работать с нами было не только

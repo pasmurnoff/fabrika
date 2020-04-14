@@ -2,8 +2,10 @@
   width: 100%;
 
   @media screen and (max-width: 1023px) {
+    width: auto;
     overflow-x: hidden;
-    margin-top: 0;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   &__inner {
@@ -51,8 +53,12 @@
         margin-right: 15px;
         width: 245px;
 
+        &:first-child {
+          margin-left: 15px;
+        }
+
         &:last-child {
-          margin-right: 0;
+          margin-right: 15px;
         }
       }
 

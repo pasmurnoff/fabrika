@@ -24,6 +24,8 @@
     @media screen and (max-width: 767px) {
       flex-wrap: nowrap;
       overflow-x: auto;
+      margin-right: -15px;
+      margin-left: -15px;
 
       /* stylelint-disable */
       overflow: -moz-scrollbars-none;
@@ -38,24 +40,13 @@
         min-width: 250px;
         margin-bottom: 0;
         margin-right: 15px !important;
-      }
-    }
-  }
-
-  &__wrapper {
-    @extend .container;
-
-    @media screen and (max-width: 767px) {
-      padding-left: 0;
-      padding-right: 0;
-
-      .product {
-        &:first-child {
-          margin-left: 15px;
-        }
 
         &:last-child {
           padding-right: 15px;
+        }
+
+        &:first-child {
+          padding-left: 15px;
         }
       }
     }
