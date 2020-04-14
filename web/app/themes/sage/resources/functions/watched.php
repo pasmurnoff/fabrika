@@ -4,7 +4,7 @@ if (is_product()) {
         $watchedProducts = [];
         foreach ($_COOKIE['watched'] as $watchedId) {
             array_push($watchedProducts, $watchedId);
-            if (count($watchedProducts) == 12 && (!in_array($post->ID, $watchedProducts))) {
+            if (count($watchedProducts) == 13 && (!in_array($post->ID, $watchedProducts))) {
                 setcookie('watched[' . $watchedProducts[0] . ']', $watchedProducts[0], time() - 31556926, '/');
             }
         }
