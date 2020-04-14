@@ -38,9 +38,24 @@
         min-width: 250px;
         margin-bottom: 0;
         margin-right: 15px !important;
+      }
+    }
+  }
+
+  &__wrapper {
+    @extend .container;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+
+      .product {
+        &:first-child {
+          margin-left: 15px;
+        }
 
         &:last-child {
-          margin-right: 0 !important;
+          padding-right: 15px;
         }
       }
     }

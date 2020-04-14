@@ -8,9 +8,9 @@
 @endphp
 @foreach($productCategories as $prodCat)
     <div class="category-output mrgn35-top">
-        @include('components.category-output.title')
-        @include('components.category-output.list')
-        @include('components.page-index-banners.banners')
+        @include('components.category-output.title' , ['class' => 'container'])
+        @include('components.category-output.list', ['class' => 'category-output__wrapper'])
+        @include('components.page-index-banners.banners', ['class' => 'container'])
     </div>
 @endforeach
 
