@@ -1,20 +1,21 @@
 .product {
   &__tools {
     position: absolute;
-    bottom: 0;
+    top: 20%;
     width: 100%;
-    height: 50px;
+    height: 100%;
     background-color: transparent;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity, bottom;
+    transition-property: visibility, opacity, top;
     transition-timing-function: ease;
     transition-duration: 300ms;
 
     @media screen and (max-width: 1023px) {
       visibility: visible;
       opacity: 1;
+      top: 20% !important;
     }
   }
 }
@@ -22,4 +23,24 @@
 .products li.product:hover .product__tools {
   visibility: visible;
   opacity: 1;
+  top: 8%;
+
+  @media screen and (max-width: 1200px) {
+    top: 4%;
+  }
 }
+
+/* stylelint-disable */
+.columns-4 {
+  .product__tools {
+    @media screen and (min-width: 861px) and (max-width: 1023px) {
+      top: 10% !important;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 860px) {
+      top: 3% !important;
+    }
+  }
+}
+
+/* stylelint-enable */
