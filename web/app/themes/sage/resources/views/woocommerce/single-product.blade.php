@@ -31,6 +31,12 @@ the readme will list any important changes.
     @if(is_dynamic_sidebar('cart-sidebar'))
         @php dynamic_sidebar( 'cart-sidebar' ); @endphp
     @endif
+
+    @include('components.watched.wrap')
+
+    <div class="mrgn35-top">
+        @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству'])
+    </div>
     @php
         do_action('woocommerce_after_main_content');
         do_action('get_sidebar', 'shop');

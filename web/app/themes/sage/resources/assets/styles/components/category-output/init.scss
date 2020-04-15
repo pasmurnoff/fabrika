@@ -24,6 +24,8 @@
     @media screen and (max-width: 767px) {
       flex-wrap: nowrap;
       overflow-x: auto;
+      margin-right: -15px;
+      margin-left: -15px;
 
       /* stylelint-disable */
       overflow: -moz-scrollbars-none;
@@ -40,7 +42,11 @@
         margin-right: 15px !important;
 
         &:last-child {
-          margin-right: 0 !important;
+          padding-right: 15px;
+        }
+
+        &:first-child {
+          padding-left: 15px;
         }
       }
     }

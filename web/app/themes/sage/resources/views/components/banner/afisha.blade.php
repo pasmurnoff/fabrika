@@ -1,4 +1,4 @@
-<div class="afisha mrgn15">
+<div class="afisha mrgn35">
     <div class="afisha__inner-mobile">
         <div class="afisha__inner">
             @component('components.banner.afisha-item', ['color' => '#7F25FC', 'href' => 'konstruktor-zakaza-noskov/', 'text' => 'Рассчитать стоимость носков онлайн'])

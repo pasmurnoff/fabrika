@@ -1,4 +1,4 @@
-@component('components.content.content', ['title' => 'О нашей фабрике носков'])
+@component('components.content.content', ['title' => 'О нашей фабрике носков', 'class' =>'container'])
     @slot('text')
         <p><a href="https://fabrikanoskov.ru/">Fabrikanoskov.ru</a> – это не просто фабрика, производящая
             носочно-чулочную продукцию, а в первую очередь это люди, которые каждый день думают о вашем тепле,

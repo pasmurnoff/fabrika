@@ -1,4 +1,4 @@
-<div class="banner__wrapper banner__wrapper_duo">
+<div class="banner__wrapper banner__wrapper_duo {{ $class or '' }}">
     @component('components.banner.duo-item', ['href' => '/noski-optom', 'title' => 'Продажа носков, колготок и чулок оптом', 'buttonText' =>' Купить оптом'])
         @slot('text')
             Оптовый склад носков, колготок и чулок от производителя. Цены от 12 рублей. Доставка по всей России, странам

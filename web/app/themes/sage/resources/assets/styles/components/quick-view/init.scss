@@ -8,9 +8,9 @@
   .yith-wcqv-button {
     display: block !important;
     position: absolute;
+    right: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    right: 30%;
+    transform: translate(150%, -50%);
     width: 30px;
     height: 30px;
     padding: 0;

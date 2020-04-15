@@ -14,4 +14,5 @@
 
     @default
     @php echo '' @endphp
+
 @endswitch

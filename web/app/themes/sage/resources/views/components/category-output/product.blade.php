@@ -8,7 +8,7 @@
             <div class="woocommerce-loop-product__wrapper">
                 <h2 class="woocommerce-loop-product__title">@php echo get_the_title($productId) @endphp</h2>
                 <span class="price">
-			<span class="woocommerce-Price-amount amount">@php echo $product->get_price() @endphp&nbsp;<span
+			<span class="woocommerce-Price-amount amount">@php echo wc_get_product( $productId )->get_price() @endphp&nbsp;<span
                         class="woocommerce-Price-currencySymbol">руб.</span>
 			</span>
 		</span>
