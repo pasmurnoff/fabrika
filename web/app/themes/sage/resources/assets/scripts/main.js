@@ -1,7 +1,5 @@
 // import external dependencies
 import 'jquery';
-
-import './common/transition-fix'
 import './forms/visual'
 import './forms/input-file'
 import './forms/ajax'
