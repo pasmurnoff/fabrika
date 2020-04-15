@@ -153,22 +153,24 @@ function add_custom_dropdown()
 
 /* cart and checkout */
 /* Изменяем количество колонок в выводе товаров */
-require dirname(__DIR__) . '/resources/functions/cart.php';
-require dirname(__DIR__) . '/resources/functions/checkout.php';
+require_once dirname(__DIR__) . '/resources/functions/cart.php';
+require_once dirname(__DIR__) . '/resources/functions/checkout.php';
 
 /* mini-cart */
-require dirname(__DIR__) . '/resources/functions/mini-cart.php';
+require_once dirname(__DIR__) . '/resources/functions/mini-cart.php';
 /* wishlist */
-require dirname(__DIR__) . '/resources/functions/wishlist.php';
+require_once dirname(__DIR__) . '/resources/functions/wishlist.php';
 
 /* Custom walker nav menu */
-require dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
+require_once dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
 /* account */
-require dirname(__DIR__) . '/resources/functions/account.php';
+require_once dirname(__DIR__) . '/resources/functions/account.php';
 
 /* quantity input */
-require dirname(__DIR__) . '/resources/functions/quantity-input.php';
+require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 
 /* excerpt modify */
-require dirname(__DIR__) . '/resources/functions/excerpt.php';
+require_once dirname(__DIR__) . '/resources/functions/excerpt.php';
+
+
 

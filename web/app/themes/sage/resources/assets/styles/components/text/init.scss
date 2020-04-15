@@ -56,4 +56,12 @@
       color: $black;
     }
   }
+
+  &_success {
+    color: seagreen;
+  }
+
+  &_dangerous {
+    color: $red;
+  }
 }

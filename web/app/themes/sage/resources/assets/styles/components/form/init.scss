@@ -4,6 +4,7 @@
 @import "input-file";
 @import "cdek";
 @import "sku";
+@import "ajax";
 
 .form {
   display: flex;
@@ -48,6 +49,8 @@
 }
 
 .formline {
+  width: 100%;
+
   &__inner {
     display: flex;
     flex-flow: wrap;
