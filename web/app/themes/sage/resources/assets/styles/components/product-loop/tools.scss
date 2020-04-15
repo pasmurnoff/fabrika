@@ -1,19 +1,18 @@
 .product {
   &__tools {
     position: absolute;
-    top: -40px;
+    bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: transparent;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity, top;
+    transition-property: visibility, opacity, bottom;
     transition-timing-function: ease;
     transition-duration: 300ms;
 
     @media screen and (max-width: 1023px) {
-      top: 0;
       visibility: visible;
       opacity: 1;
     }
@@ -23,5 +22,4 @@
 .products li.product:hover .product__tools {
   visibility: visible;
   opacity: 1;
-  top: 0;
 }

@@ -90,3 +90,7 @@
 .woocommerce-info {
   @extend .text;
 }
+
+.restore-item {
+  @extend .text_link;
+}
