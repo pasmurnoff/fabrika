@@ -23,7 +23,6 @@ import './components/menu'
 import './components/main-sidebar'
 import './forms/cdek'
 import './components/manager-sku'
-import './components/product-sticky'
 
 // import local dependencies
 import Router from './util/Router';
@@ -32,6 +31,7 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 import cdek from './routes/cdek';
 import maket from './routes/maket';
+import singleProduct from './routes/product-sticky';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -45,6 +45,8 @@ const routes = new Router({
     cdek,
 
     maket,
+
+    singleProduct,
 });
 
 // Load Events
