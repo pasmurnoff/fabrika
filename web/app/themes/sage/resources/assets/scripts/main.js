@@ -3,6 +3,7 @@ import 'jquery';
 
 // Import everything from autoload
 import './autoload/**/*'
+import './common/transition-fix'
 import './forms/visual'
 import './forms/input-file'
 import './forms/ajax'
@@ -22,6 +23,7 @@ import './components/menu'
 import './components/main-sidebar'
 import './forms/cdek'
 import './components/manager-sku'
+import './components/product-sticky'
 
 // import local dependencies
 import Router from './util/Router';

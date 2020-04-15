@@ -1,7 +1,7 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
 @include('components.head')
-<body {{ body_class() }}>
+<body {{ body_class('preload') }}>
 <div class="wrap">
     @php do_action('get_header') @endphp
     @include('components.header.wrap')
