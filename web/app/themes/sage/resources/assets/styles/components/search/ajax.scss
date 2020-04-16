@@ -2,6 +2,38 @@
   position: relative;
   height: 60%;
 
+  .search__circle {
+    position: absolute;
+    right: 55px;
+    top: 17px;
+    width: 22px;
+    height: 22px;
+    fill: $grey;
+    animation: rotateCircle 1s linear infinite;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition-timing-function: ease;
+    transition-duration: 100ms;
+
+    @keyframes rotateCircle {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &.loading {
+    .search__circle {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
   .search {
     &__list {
       padding: 10px 20px;

@@ -10,7 +10,11 @@ function dataList() {
                 action: 'data_fetch',
                 keyword: $search.val(),
             },
+            beforeSend: function () {
+                $search.parent().addClass('loading');
+            },
             success: function (data) {
+                $search.parent().removeClass('loading');
                 $list.html(data);
             },
             error: function () {
@@ -23,4 +27,4 @@ function dataList() {
     }
 }
 
-$('.search__input').on('keyup', dataList);
+$('.ajax-search .search__input').on('keyup', dataList);
