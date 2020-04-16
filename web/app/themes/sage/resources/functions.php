@@ -172,5 +172,5 @@ require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 /* excerpt modify */
 require_once dirname(__DIR__) . '/resources/functions/excerpt.php';
 
-
-
+/* excerpt modify */
+require_once dirname(__DIR__) . '/resources/functions/search.php';

@@ -17,6 +17,7 @@ import './components/menu'
 import './components/main-sidebar'
 import './components/manager-sku'
 import './components/product-tools'
+import './forms/ajax-search'
 
 // import local dependencies
 import Router from './util/Router';

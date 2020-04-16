@@ -2,6 +2,7 @@
   z-index: 5;
   pointer-events: none;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
   top: 0;
@@ -10,7 +11,7 @@
   opacity: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   transition-property: opacity, visibility;
   transition-timing-function: ease;
   transition-duration: 300ms;
@@ -22,8 +23,9 @@
 
   &__cross {
     position: absolute;
-    top: 20px;
+    top: 17px;
     pointer-events: auto;
+    z-index: 1;
     right: 20px;
     width: 20px;
     height: 20px;
@@ -41,6 +43,10 @@
   .search {
     pointer-events: auto;
     padding: 0;
+    width: 100%;
+    max-width: 768px;
+    margin-right: 20px;
+    margin-left: 20px;
 
     .labelwrap {
       margin: 0;
@@ -49,12 +55,12 @@
     &__input {
       background: transparent;
       color: white;
-      border: 2px solid $grey !important;
       font-size: 18px;
       height: 60px;
-      border-radius: 50px;
+      border-radius: 0;
       padding-right: 45px;
-      padding-top: 20px;
+      border: none;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
       &::placeholder {
         color: $grey;
@@ -62,7 +68,7 @@
     }
 
     &__button {
-      right: 30px;
+      right: 20px;
       color: $grey;
 
       svg {
@@ -74,6 +80,16 @@
           transform: scale(1.1);
         }
       }
+    }
+
+    &__list {
+      max-height: calc(100% - 120px) !important;
+    }
+  }
+
+  .ajax-search {
+    @media screen and (orientation: landscape) and (max-width: 1023px) {
+      height: 95%;
     }
   }
 }
