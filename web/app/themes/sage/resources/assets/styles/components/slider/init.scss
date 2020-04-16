@@ -11,6 +11,7 @@
   margin: 0;
   display: flex;
   justify-content: flex-start;
+  user-select: none;
 
   @media screen and (max-width: 767px) {
     margin: auto;
