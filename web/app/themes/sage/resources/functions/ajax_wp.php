@@ -1,7 +1,13 @@
 <?php
 function send_mail()
 {
-    $headers = 'From: Фабрика носков <myname@mydomain.com>' . "\r\n";
+    $from = 'Фабрика носков <myname@mydomain.com>';
+    $headers = "From: $from";
+    $semi_rand = md5(time());
+    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+
+// Headers for attachment
+    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
     $to = 'mail@fabrikanoskov.ru';
     $subject = 'Форма с сайта fabrikanoskov.ru';
 
@@ -23,6 +29,8 @@ function send_mail()
             }
     }
 
+    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+        "Content-Transfer-Encoding: 7bit\n\n" . $html . "\n\n--{$mime_boundary}--";
 
     $attachments = [];
 
@@ -31,7 +39,8 @@ function send_mail()
             $attachments[] = $name;
 
 
-    wp_mail($to, $subject, $html, $headers, $attachments);
+    wp_mail($to, $subject, $message, $headers, $attachments);
+    var_dump($attachments);
     die();
 }
 
