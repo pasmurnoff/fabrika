@@ -1,5 +1,5 @@
 /* eslint-disable */
-class BeforeAfter {
+export default class BeforeAfter {
     constructor(enteryObject) {
 
         const beforeAfterContainer = document.querySelector(enteryObject.id);
@@ -51,9 +51,5 @@ class BeforeAfter {
 
     }
 }
-
-new BeforeAfter({
-    id: '#comparison-slider-1'
-});
 
 /* eslint-enable */
