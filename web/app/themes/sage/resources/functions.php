@@ -171,3 +171,7 @@ require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 
 /* search ajax */
 require_once dirname(__DIR__) . '/resources/functions/search.php';
+
+/* product views */
+require_once dirname(__DIR__) . '/resources/functions/product-views.php';
+
