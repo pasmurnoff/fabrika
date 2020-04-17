@@ -110,18 +110,31 @@ Template Name: Макет носков
     </div>
 
     <div class="maket__drag mrgn35">
-        <div class="akcii__touch">
-            <figure class="cd-image-container is-visible">
-                <img src="@asset('images/components/maket/fabrikanoskov_after.jpg')" alt="Фабрика носков макет">
-                <span class="cd-image-label" data-type="original">Адаптация в BMP</span>
-
-                <div class="cd-resize-img" style="width: 50.625%;">
-                    <img src="@asset('images/components/maket/fabrikanoskov_before.jpg')" alt="Фабрика носков макет">
-                    <span class="cd-image-label" data-type="modified">Оригинал в JPG</span>
+        <div class="mainSection">
+            <div id="comparison-slider-1" class="bal-container">
+                <div class="bal-after">
+                    <img src="@asset('images/components/maket/fabrikanoskov_after.jpg')" alt="Фабрика носков макет">
+                    <div class="bal-afterPosition afterLabel">
+                        Адаптация в BMP
+                    </div>
                 </div>
 
-                <span class="cd-handle" style="left: 50.625%;"></span>
-            </figure>
+                <div class="bal-before">
+                    <div class="bal-before-inset">
+                        <img src="@asset('images/components/maket/fabrikanoskov_before.jpg')"
+                             alt="Фабрика носков макет">
+                        <div class="bal-beforePosition beforeLabel">
+                            Оригинал в JPG
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bal-handle">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                </div>
+
+            </div>
         </div>
     </div>
 

@@ -18,12 +18,12 @@ import './components/main-sidebar'
 import './components/manager-sku'
 import './components/product-tools'
 import './forms/ajax-search'
+import './components/maket/comparison'
 
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
 import pageCdek from './routes/pageCdek';
-import pageMaket from './routes/pageMaket';
 import singleProduct from './routes/singleProduct';
 
 /** Populate Router instance with DOM routes */
@@ -32,8 +32,6 @@ const routes = new Router({
     common,
 
     pageCdek,
-
-    pageMaket,
 
     singleProduct,
 });

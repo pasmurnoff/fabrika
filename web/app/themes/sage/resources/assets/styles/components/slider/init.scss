@@ -1,136 +1,186 @@
-/* draggable slider */
-.teethcleaning {
-  padding-top: 60px;
-  padding-bottom: 60px;
+/* stylelint-disable */
+.maket__drag {
+  display: flex;
+  justify-content: center;
 }
 
-.cd-image-container {
-  position: relative;
-  width: 320px;
-  max-width: 320px;
-  margin: 0;
+.mainSection {
   display: flex;
-  justify-content: flex-start;
-  user-select: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
 
   @media screen and (max-width: 767px) {
-    margin: auto;
-    display: block;
+    width: 400px;
+    height: 400px;
   }
 
-  @media screen and (max-width: 400px) {
-    width: 280px;
-    max-width: 280px;
+  @media screen and (max-width: 440px) {
+    width: 300px;
+    height: 300px;
+    padding: 0;
   }
+}
+
+
+/* Before After Container */
+
+.bal-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  font-family: $font;
+}
+
+.bal-after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
 
   img {
-    display: block;
-    width: 320px;
-    max-width: 320px;
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 50%;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    user-select: none;
 
-    @media screen and (max-width: 400px) {
-      width: 280px;
-      max-width: 280px;
+    @media screen and (max-width: 767px) {
+      width: 400px;
+      height: 400px;
+    }
+
+    @media screen and (max-width: 440px) {
+      width: 300px;
+      height: 300px;
     }
   }
 }
 
-.cd-image-label {
-  position: absolute;
-  font-family: $font;
-  top: 0;
-  right: 0;
-  color: #fff;
-  background-color: #222;
-  padding: 2px 9px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+.bal-before {
+  @extend .bal-after;
+
+  z-index: 1;
 }
 
-.cd-resize-img {
+.bal-before-inset {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  width: 0;
-  height: 100%;
-  overflow: hidden;
-  border-right: 4px solid #fff;
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    height: 100%;
-    width: auto;
-    max-width: none;
-  }
-
-  .cd-image-label {
-    left: 0;
-    width: 132px;
-    text-align: center;
-  }
+  right: 0;
 }
 
-.cd-handle {
+.bal-beforePosition {
+  background: #121212;
+  color: #fff;
+  left: 0;
+  pointer-events: none;
+  border-radius: 0.2rem;
+  padding: 2px 10px;
+}
+
+.bal-afterPosition {
+  @extend .bal-beforePosition;
+
+  left: auto;
+  right: 0;
+}
+
+.beforeLabel,
+.afterLabel {
   position: absolute;
-  height: 24px;
-  width: 24px;
+  top: 0;
+  margin: 1rem;
+  font-size: 14px;
+  user-select: none;
+  padding: 10px;
+}
+
+/* handle and arrow */
+
+.bal-handle {
+  height: 41px;
+  width: 41px;
+  position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -10px;
-  margin-top: -20px;
-  border-radius: 50%;
-  background: #222 url("resources/assets/images/components/maket/cd-arrows.svg") no-repeat center center;
-  cursor: move;
-  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  opacity: 0;
-  transform: translate3d(0, 0, 0) scale(0);
-
-  &.draggable {
-    background-color: #222;
-  }
+  margin-left: -20px;
+  margin-top: -21px;
+  border: 2px solid $black;
+  background-color: $black;
+  border-radius: 1000px;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgb(12, 12, 12);
 }
 
-.is-visible {
-  .cd-image-label {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .cd-resize-img {
-    width: 50%;
-    animation: cd-bounce-in 0.7s;
-  }
-
-  .cd-handle {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
-    transition: transform 0.3s 0.7s, opacity 0s 0.7s;
-  }
+.handle-left-arrow,
+.handle-right-arrow {
+  width: 0;
+  height: 0;
+  border: 6px inset transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
 }
 
-@keyframes cd-bounce-in {
-  0% {
-    width: 0;
-  }
-
-  60% {
-    width: 55%;
-  }
-
-  100% {
-    width: 50%;
-  }
+.handle-left-arrow {
+  border-right: 6px solid #fff;
+  left: 50%;
+  margin-left: -17px;
 }
 
-.profchist > .vc_column-inner > .wpb_wrapper {
-  float: right;
+.handle-right-arrow {
+  border-left: 6px solid #fff;
+  right: 50%;
+  margin-right: -17px;
 }
+
+.bal-handle::before {
+  bottom: 55%;
+  margin-bottom: 20px;
+}
+
+.bal-handle::after {
+  top: 55%;
+  margin-top: 20.5px;
+}
+
+.bal-handle::before,
+.bal-handle::after {
+  content: " ";
+  display: block;
+  width: 5px;
+  background: #fff;
+  height: calc(300px - 90%);
+
+  @media screen and (max-width: 767px) {
+    height: calc(200px - 90%);
+  }
+
+  @media screen and (max-width: 767px) {
+    height: calc(150px - 90%);
+  }
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+/* stylelint-enable */
