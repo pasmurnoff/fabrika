@@ -1,5 +1,4 @@
-/* Sticky cart for product */
-jQuery(function ($) {
+export default function sticky() {
     const wrapper = $('.single-product');
 
     function stickyCart() {
@@ -10,4 +9,4 @@ jQuery(function ($) {
     $(window).on('scroll', function () {
         stickyCart();
     });
-});
+}

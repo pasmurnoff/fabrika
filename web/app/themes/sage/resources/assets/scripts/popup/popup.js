@@ -8,7 +8,8 @@ jQuery(document).ready(function () {
 
     /* Hide modal popup */
     $('.closepopup').on('click', function () {
-        $(this).parent().removeClass('active');
+        const block = $(this).data('popup');
+        $('.' + block).removeClass('active');
         $('.overlay').removeClass('active');
     })
 });

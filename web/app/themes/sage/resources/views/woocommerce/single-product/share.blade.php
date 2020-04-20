@@ -23,3 +23,4 @@
 
 @php do_action( 'woocommerce_share' ); @endphp
 @include('components.share.share')
+@include('components.product-views.wrap')

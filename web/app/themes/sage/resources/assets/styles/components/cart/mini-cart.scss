@@ -17,6 +17,10 @@
   transition-timing-function: ease;
   transition-duration: 300ms;
 
+  .text {
+    line-height: 1.4;
+  }
+
   @media screen and (max-width: 400px) {
     width: 300px;
     right: -300px;

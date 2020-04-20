@@ -1,4 +1,7 @@
 $('.file-upload').on('change', function () {
-    let path = $(this).val().split('\\');
-    $(this).next('.input__file_result').text(path[path.length - 1]);
+    let files = $(this).get(0).files;
+    let names = $.map(files, function (val, i) {
+        return files.length === i + 1 ? val.name : val.name + ', ';
+    });
+    $(this).next().html(names);
 });

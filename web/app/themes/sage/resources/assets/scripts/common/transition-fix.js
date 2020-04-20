@@ -1,3 +1,3 @@
-$(window).load(function () {
+export default function transitionFix() {
     $('body').removeClass('preload');
-});
+}

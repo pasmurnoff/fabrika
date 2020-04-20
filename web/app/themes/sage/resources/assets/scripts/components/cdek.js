@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+export default function cdek() {
     let $track = $('.cdek__input');
     let $cdekAlert = $('.cdek__alert');
     $('.cdek__submit').on('click', function (e) {
@@ -12,4 +12,4 @@ jQuery(document).ready(function ($) {
             });
         }
     });
-});
+}

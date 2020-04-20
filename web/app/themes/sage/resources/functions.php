@@ -169,8 +169,12 @@ require_once dirname(__DIR__) . '/resources/functions/account.php';
 /* quantity input */
 require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 
-/* excerpt modify */
-require_once dirname(__DIR__) . '/resources/functions/excerpt.php';
+/* search ajax */
+require_once dirname(__DIR__) . '/resources/functions/search.php';
 
+/* product views */
+require_once dirname(__DIR__) . '/resources/functions/product-views.php';
 
+/* ajax wp_mail */
+require_once dirname(__DIR__) . '/resources/functions/ajax_wp.php';
 

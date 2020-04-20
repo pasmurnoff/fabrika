@@ -16,18 +16,22 @@ function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName)
 // File content
     foreach ($_FILES as $key => $value) {
         if (!empty($value['name'])) {
-            $file_name = basename($value['name']);
-            $file_size = $value['size'];
 
-            $message .= "--{$mime_boundary}\n";
-            $fp = @fopen($value['name'], "rb");
-            $data = @fread($fp, $file_size);
-            @fclose($fp);
-            $data = chunk_split(base64_encode($data));
-            $message .= "Content-Type: application/octet-stream; name=\"" . $file_name . "\"\n" .
-                "Content-Description: " . $file_name . "\n" .
-                "Content-Disposition: attachment;\n" . " filename=\"" . $file_name . "\"; size=" . $file_size . ";\n" .
-                "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+            for ($i = 0; $i < count($value['name']); $i++) {
+                $name = basename($value['name'][$i]);
+                $size = $value['size'][$i];
+
+                $message .= "--{$mime_boundary}\n";
+                $fp = @fopen($value['name'][$i], "rb");
+                $data = @fread($fp, $size);
+                @fclose($fp);
+                $data = chunk_split(base64_encode($data));
+                $message .= "Content-Type: application/octet-stream; name=\"" . $name . "\"\n" .
+                    "Content-Description: " . $name . "\n" .
+                    "Content-Disposition: attachment;\n" . " filename=\"" . $name . "\"; size=" . $size . ";\n" .
+                    "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+
+            }
         }
     }
 
@@ -36,6 +40,7 @@ function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName)
 
 // Send email
     $mail = @mail($to, $subject, $message, $headers, $returnpath);
+    echo $message;
 // Return true, if email sent, otherwise return false
     if ($mail) {
         return true;
@@ -45,7 +50,7 @@ function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName)
 }
 
 // Email configuration
-$to = 'mail@fabrikanoskov.ru';
+$to = 'artem94.12@gmail.com';
 $from = 'mail@fabrikanoskov.ru';
 $fromName = 'Фабрика носков';
 

@@ -35,9 +35,6 @@ function send_mail()
     die();
 }
 
-add_action("wp_ajax_send_mail", "send_mail");
-add_action("wp_ajax_nopriv_send_mail", "send_mail");
-
 function htm_mail_name($email)
 {
     return 'Фабрика носков';
@@ -52,3 +49,7 @@ function htm_mail_from($email)
 }
 
 add_filter('wp_mail_from', 'htm_mail_from');
+
+add_action("wp_ajax_send_mail", "send_mail");
+add_action("wp_ajax_nopriv_send_mail", "send_mail");
+

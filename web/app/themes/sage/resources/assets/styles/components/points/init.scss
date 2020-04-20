@@ -19,6 +19,8 @@
 
   &__item {
     padding-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
 
     &:last-child {
       padding-bottom: 0;
@@ -26,8 +28,9 @@
   }
 
   &__icon {
-    display: inline-flex;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 16px;
     height: 19px;
     margin-right: 5px;

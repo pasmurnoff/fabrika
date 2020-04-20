@@ -1,9 +1,5 @@
 // import external dependencies
 import 'jquery';
-
-// Import everything from autoload
-import './autoload/**/*'
-import './common/transition-fix'
 import './forms/visual'
 import './forms/input-file'
 import './forms/ajax'
@@ -16,35 +12,31 @@ import './overlay/overlay'
 import './sidebar/sidebar'
 import './popup/popup'
 import './components/cat-dropdown'
-import './components/mini-cart'
-import './components/mini-cart-close'
 import './components/wishlist'
 import './components/menu'
 import './components/main-sidebar'
-import './forms/cdek'
 import './components/manager-sku'
-import './components/product-sticky'
+import './components/product-tools'
+import './forms/ajax-search'
+/*import './components/maket/comparison'*/
 
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
-import home from './routes/home';
-import aboutUs from './routes/about';
-import cdek from './routes/cdek';
-import maket from './routes/maket';
+import pageCdek from './routes/pageCdek';
+import singleProduct from './routes/singleProduct';
+import pageMaket from './routes/pageMaket';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
     // All pages
     common,
-    // Home page
-    home,
-    // About Us page, note the change from about-us to aboutUs.
-    aboutUs,
 
-    cdek,
+    pageCdek,
 
-    maket,
+    pageMaket,
+
+    singleProduct,
 });
 
 // Load Events
