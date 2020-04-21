@@ -33,6 +33,7 @@ the readme will list any important changes.
         @php dynamic_sidebar( 'cart-sidebar' ); @endphp
     @endif
 
+    @include('components.random.wrap')
     @include('components.watched.wrap')
 
     <div class="mrgn35-top">
