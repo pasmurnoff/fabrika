@@ -35,6 +35,7 @@ the readme will list any important changes.
 
     @include('components.random.wrap')
     @include('components.watched.wrap')
+    @include('components.another.wrap')
 
     <div class="mrgn35-top">
         @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству'])
