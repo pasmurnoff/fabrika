@@ -17,7 +17,7 @@ Template Name: О фабрике
 
         @slot('icon')
             <img width="210" src="@asset('images/components/banners/Fabrika_Noskov_O_Kompanii.png')"
-                 alt="Производство и продажа нносков по низким ценам">
+                 alt="Производство и продажа носков по низким ценам">
         @endslot
 
     @endcomponent
