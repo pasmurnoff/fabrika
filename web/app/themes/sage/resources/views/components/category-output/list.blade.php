@@ -17,6 +17,7 @@
                 @endphp
                 @include('components.category-output.product')
             @endforeach
+            @php wp_reset_postdata() @endphp
         </ul>
         @isset($class)
     </div>

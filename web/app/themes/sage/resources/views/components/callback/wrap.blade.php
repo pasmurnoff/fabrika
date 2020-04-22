@@ -4,7 +4,7 @@
         <div class="mswipe__social">
             <a href="tel:+78004441156" class="mswipe__item">
                 <img src="@asset('images/components/callback/callme.svg')" alt="Позвонить fabrikanoskov.ru">
-                <span>Телефон</span>
+                <span>Позвонить</span>
             </a>
             <a href="#" class="mswipe__item">
                 <img src="@asset('images/components/callback/whatsapp.svg')" alt="Ватсапп fabrikanoskov.ru">
