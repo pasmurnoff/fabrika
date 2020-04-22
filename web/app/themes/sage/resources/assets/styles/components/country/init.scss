@@ -19,15 +19,39 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
   }
 
   &__link {
+    flex-basis: 16%;
     text-decoration: none;
     color: $greytext;
     font-family: $font;
     font-size: 14px;
-    line-height: 1.8;
-    padding-right: 20px;
+    line-height: 1.4;
+    padding-bottom: 10px;
+    padding-right: 4%;
+
+    @media screen and (max-width: 1023px) {
+      flex-basis: 31%;
+      padding-right: 1.4%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 46%;
+      padding-right: 0;
+    }
+
+    @media screen and (max-width: 420px) {
+      flex-basis: 100%;
+    }
 
     &:hover {
       color: $black;
