@@ -1,0 +1,93 @@
+.footer-messenger {
+  background-color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1230px) {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    color: $black !important;
+  }
+
+  &__icons-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .text {
+      padding-right: 15px;
+    }
+  }
+
+  &__msg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &_viber {
+      .cls-1 {
+        fill: #7f4da0;
+      }
+    }
+
+    &_telegram {
+      .cls-1 {
+        fill: #30a7da;
+      }
+    }
+
+    &_whatsapp {
+      .cls-1 {
+        fill: #00e676;
+      }
+    }
+  }
+}
