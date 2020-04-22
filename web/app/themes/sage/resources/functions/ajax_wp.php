@@ -40,7 +40,7 @@ function send_mail()
 
 
     wp_mail($to, $subject, $message, $headers, $attachments);
-    var_dump($attachments);
+    var_dump($message);
     die();
 }
 

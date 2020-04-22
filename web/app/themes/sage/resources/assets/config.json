@@ -6,6 +6,10 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "zakaz": [
+      "./styles/pages/noski-zakaz/main.scss",
+      "./scripts/pages/noski-zakaz/main.js"
     ]
   },
   "publicPath": "/app/themes/sage",
