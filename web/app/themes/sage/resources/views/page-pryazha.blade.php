@@ -64,6 +64,8 @@
         </div>
     </div>
 
+    @include('components.pryazha.wrap')
+
     @component('components.form.default', ['title' => 'Проконсультируйтесь с нами'])
         @slot('text')
             Наши специалисты подробно расскажут вам о вариациях товара, а также об оборудовании
