@@ -28,7 +28,7 @@ if ($related_products) : ?>
 
         if ($heading) :
             ?>
-            <h2 class="related_title title title_large mrgn35-bottom pdng15-bottom"><?php echo esc_html($heading); ?></h2>
+            <h2 class="related_title title title_large mrgn35-bottom pdng15-bottom">Похожие носки</h2>
         <?php endif; ?>
 
         <?php woocommerce_product_loop_start(); ?>

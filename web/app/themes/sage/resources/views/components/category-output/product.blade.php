@@ -1,5 +1,10 @@
 @if($productId)
     <li class="product">
+        @if(isset($inStock) && $inStock)
+            <div class="product__instock">
+                @include('icon::common.instock')
+            </div>
+        @endif
         <a href="@php echo get_the_permalink($productId) @endphp" class="woocommerce-loop-product__link">
             <img width="300" height="300"
                  src="@php echo get_the_post_thumbnail_url($productId) @endphp"

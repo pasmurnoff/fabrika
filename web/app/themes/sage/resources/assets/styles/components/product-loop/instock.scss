@@ -1,0 +1,24 @@
+.product__instock {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 15px;
+  pointer-events: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: seagreen;
+  }
+}
+
+.category-output__list .product {
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      .product__instock {
+        left: 30px;
+      }
+    }
+  }
+}
