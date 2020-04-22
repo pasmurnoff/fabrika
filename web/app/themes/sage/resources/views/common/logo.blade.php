@@ -1,3 +1,3 @@
-<a class="logo__link" href="/" title="Фабрика носков" {{ $class or '' }}>
+<a class="logo__link {{ $class or '' }}" href="/" title="Фабрика носков">
   @include('icon::logo')
 </a>
