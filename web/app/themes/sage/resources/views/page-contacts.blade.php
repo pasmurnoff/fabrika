@@ -327,4 +327,61 @@ Template Name: Контакты
     </div>
 
     @include('components.writeus.writeus')
+
+    @component('components.form.elements.form-item',
+        ['class' => 'mrgn35-top', 'title' => 'Написать директору', 'titleClass' => 'title_huge', 'textClass' => 'pdng15-top pdng35-bottom'])
+        @slot('text')
+            Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.
+        @endslot
+        @slot('content')
+            <form class="form" method="post">
+                <div class="form_single">
+                    <div class="form__col form__col_double">
+                        <div class="dualrow">
+                            @include('components.form.elements.input', [
+                                  'positionClass' => 'labelwrap_dual',
+                                  'type' => 'tel',
+                                  'name' => 'Телефон',
+                                  'attr' => 'required',
+                                  'label' => 'Мобильный телефон*'
+                                ])
+
+                            @include('components.form.elements.input', [
+                                'positionClass' => 'labelwrap_dual',
+                                'type' => 'text',
+                                'name' => 'Имя',
+                                'attr' => 'required',
+                                'label' => 'Ваше имя*'
+                              ])
+                        </div>
+                        <div class="dualrow">
+                            @include('components.form.elements.input', [
+                           'positionClass' => 'labelwrap_dual',
+                           'type' => 'email',
+                           'name' => 'Email',
+                           'attr' => 'required',
+                           'label' => 'Электронная почта*'
+                         ])
+                            @include('components.form.elements.input', [
+                           'positionClass' => 'labelwrap_dual',
+                           'type' => 'text',
+                           'name' => 'Тема',
+                           'label' =>'Тема письма'
+                         ])
+                        </div>
+                    </div>
+                    <div class="form__col form__col_double">
+                        @include('components.form.elements.textarea', [
+                              'textareaClass' => 'textarea_large',
+                              'positionClass' => 'labelwrap_single textarea_large',
+                              'name' => 'Описание',
+                              'label' => 'Описание вашего вопроса'
+                          ])
+                    </div>
+                </div>
+                <input type="hidden" name="director">
+                @include('components.form.elements.privacy')
+            </form>
+        @endslot
+    @endcomponent
 @endsection
