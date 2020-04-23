@@ -63,6 +63,15 @@
     line-height: 1.4;
     color: var(--main-color);
     margin: 21px 0;
+
+
+    &_success {
+      color: seagreen;
+    }
+
+    &_dangerous {
+      color: #dc2b2b;
+    }
   }
 
   &__items {
@@ -146,6 +155,22 @@
       }
     }
   }
+}
+
+.result-message {
+  position: fixed;
+  width: max-content;
+  display: none;
+  max-width: 250px;
+  height: max-content;
+  top: 50%;
+  right: 50%;
+  text-align: center;
+  transform: translate(50%, -50%);
+  background-color: #fff;
+  padding: 20px 35px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 6px 30px;
 }
 
 .design__custom-btn {

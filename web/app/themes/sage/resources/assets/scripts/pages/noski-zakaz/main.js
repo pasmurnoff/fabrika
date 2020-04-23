@@ -26,6 +26,11 @@ $(document).ready(function () {
     })
 });
 
+function dynamicAnimate(elem) {
+    elem.animate({opacity: 'toggle'}).delay(2000).animate({opacity: 'toggle'});
+}
+
+
 $(document).ready(function () {
     $('form').submit(function (e) {
         e.preventDefault();
@@ -33,10 +38,17 @@ $(document).ready(function () {
         var formNm = $('#' + formID);
         $.ajax({
             type: 'POST',
-            url: '/app/themes/sage/functions/noski-zakaz/form.php',
+            url: window.wp_data.ajax_url + '?action=send_message',
             data: formNm.serialize(),
-            success: function (data) {
-                $(formNm).html(data);
+            success: function () {
+                let $resultForm = $('<div class="result-message custom__text custom__text_success">Ваши данные успешно отправлены</div>').hide();
+                $('body').append($resultForm);
+                dynamicAnimate($resultForm);
+            },
+            error: function () {
+                let $resultForm = $('<div class="result-message custom__text custom__text_dangerous">Что-то пошло не так, попробуйте в другой раз</div>').hide();
+                $('body').append($resultForm);
+                dynamicAnimate($resultForm);
             },
         });
         return false;

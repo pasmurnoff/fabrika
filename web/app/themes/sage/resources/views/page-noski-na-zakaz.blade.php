@@ -13,6 +13,13 @@ Template name: Носки на заказ, отдельная страница
     <meta property="og:description" content="Купить носки оптом и в розницу"/>
     <meta property="og:url" content="@php echo get_home_url() @endphp"/>
     <meta property="og:image" content=""/>
+    @php
+        $ajax_href = ['ajax_url' => get_permalink()];
+    echo
+    '<script type="text/javascript">window.wp_data = ',
+    json_encode($ajax_href),
+    ';</script>'; @endphp
+    @include('components.noski-zakaz.form')
 </head>
 
 <body>
@@ -21,13 +28,12 @@ Template name: Носки на заказ, отдельная страница
         <section class="custom__welcome">
             <div class="custom__welcome-wrap">
                 <h1 class="custom__title">Носки на заказ по вашему дизайну</h1>
-                <p class="custom__text">На нашей фабрике можно заказать не только носки
-                    <nobr>Г Д Е Н О С К И</nobr>
-                    , но и носки с
-                    логотипом или в фирменной стилистике бренда и мероприятия для самых разных нужд.
+                <p class="custom__text">На нашей фабрике можно заказать не только носки изготовленные нашими дизайнера,
+                    но и носки с логотипом или в фирменной стилистике бренда и мероприятия для самых разных нужд.
                 </p>
-                <p class="custom__text"> Мерч, промо, сувениры, подарки, на продажу для расширения ассортимента - носки
-                    зарекомендовали себя как отличный инструмент для самых различных целей.</p>
+                <p class="custom__text">Мерч,
+                    промо, сувениры, подарки, на продажу для расширения ассортимента - носки зарекомендовали себя как
+                    отличный инструмент для самых различных целей.</p>
             </div>
         </section>
         <section class="custom__comunication">
@@ -72,23 +78,16 @@ Template name: Носки на заказ, отдельная страница
 
                     <div class="custom__input-wrapper">
                         <input class="custom__checkbox" type="checkbox"
-                               id="style-6" value="С логотипом"
+                               id="style-6" value="Из мультфильма"
                                name="stylesocks[]">
-                        <label for="style-6" class="custom__item ">С логотипом</label>
+                        <label for="style-6" class="custom__item ">Из мультфильма</label>
                     </div>
 
                     <div class="custom__input-wrapper">
                         <input class="custom__checkbox" type="checkbox"
-                               id="style-7" value="Из мультфильма"
+                               id="style-7" value="Другое"
                                name="stylesocks[]">
-                        <label for="style-7" class="custom__item ">Из мультфильма</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-8" value="Другое"
-                               name="stylesocks[]">
-                        <label for="style-8" class="custom__item ">Другое</label>
+                        <label for="style-7" class="custom__item ">Другое</label>
                     </div>
 
                 </div>
