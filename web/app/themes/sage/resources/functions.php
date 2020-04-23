@@ -127,6 +127,9 @@ add_filter('nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3)
  * Custom functions
  */
 
+/* js variables */
+require dirname(__DIR__) . '/resources/functions/js_vars.php';
+
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/remove.php';
 

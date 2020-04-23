@@ -35,7 +35,9 @@
             @yield('content')
         </div>
     </div>
-
+    @if(is_dynamic_sidebar('cart-sidebar'))
+        @php dynamic_sidebar( 'cart-sidebar' ); @endphp
+    @endif
     @php do_action('get_footer') @endphp
 
     @include('components.footer.footer')
