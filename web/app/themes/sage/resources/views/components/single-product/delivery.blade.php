@@ -39,16 +39,14 @@
     <p class="delivery__city title">В Казань</p>
     <ul class="delivery__items">
         @php
-            function instock() {
-                global $product;
-                $availability = $product->get_availability();
-                return empty( $availability['availability']) ? true : false ;
-            }
+            global $product;
+            $availability = $product->get_availability();
+            $instock =  empty( $availability['availability']) ? true : false ;
         @endphp
 
-        <li class="delivery__item pdng5-top mrgn15-bottom @php echo  instock() ? '' : 'out-of-stock' @endphp">
+        <li class="delivery__item pdng5-top mrgn15-bottom @php echo  $instock ? '' : 'out-of-stock' @endphp">
             @include('icon::single-product.instock')
-            <span class="text delivery__item-details">@php echo  instock() ? 'Есть в наличии' : 'Нет в наличии'  @endphp</span>
+            <span class="text delivery__item-details">@php echo  $instock ? 'Есть в наличии' : 'Нет в наличии'  @endphp</span>
         </li>
 
         <li class="delivery__item mrgn15-bottom">
