@@ -6,6 +6,16 @@
     list-style-type: none;
   }
 
+  .banner__side {
+    flex: 1 0 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .banner__inner {
+      flex-direction: column;
+    }
+  }
+
   &-item {
     position: relative;
 
@@ -19,5 +29,12 @@
       top: 8px;
       background-color: $greytext;
     }
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100% !important;
   }
 }

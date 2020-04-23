@@ -9,7 +9,7 @@
         <div class="banner_manager-text"> Мы всегда заинтересованы в том, чтобы работать с нами было не только
             удобно, но и выгодно! Продавай носки онлайн и оффлайн!
         </div>
-        <span class="banner_manager-action text text_bold text_large">Мне интересно</span>
+        <span class="banner_manager-action text text_bold text_large">Хочу работать с вами</span>
     @endslot
     @slot('icon')
         <img width="200" src="@asset('images/components/banners/manager.png')"
