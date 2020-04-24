@@ -28,11 +28,6 @@ the readme will list any important changes.
         @endphp
     @endwhile
     @include('components.cart.sticky')
-
-    @if(is_dynamic_sidebar('cart-sidebar'))
-        @php dynamic_sidebar( 'cart-sidebar' ); @endphp
-    @endif
-
     @include('components.random.wrap')
     @include('components.another.wrap')
     @include('components.watched.wrap')

@@ -5,6 +5,7 @@
 @import "related";
 @import "share";
 @import "instock";
+@import "delivery";
 
 .product {
   &__wrapper {
@@ -20,6 +21,7 @@
   &__counter {
     max-width: 100px;
     margin-right: 10px;
+    margin-bottom: 10px;
 
     .input_number {
       height: 55px;
@@ -30,15 +32,24 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &__add-cart {
     height: 55px;
     min-width: 150px;
-    max-width: 300px;
+    max-width: max-content;
     width: 100%;
     font-weight: 700;
     text-transform: uppercase;
+    margin-right: 10px;
+    outline: none;
+    margin-bottom: 10px;
+
+    &.checkout-button {
+      margin-right: 0;
+      white-space: nowrap;
+    }
   }
 
   &_meta {

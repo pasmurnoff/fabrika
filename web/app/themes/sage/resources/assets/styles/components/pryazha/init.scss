@@ -1,0 +1,101 @@
+.pryazha {
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    flex-basis: 48%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    flex-shrink: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $secondcolor;
+      opacity: 0.8;
+    }
+  }
+
+  &__item {
+    .text {
+      width: 70%;
+
+      @media screen and (max-width: 767px) {
+        width: 85%;
+      }
+    }
+  }
+
+  &__gallery {
+    &-title {
+      font-size: 18px;
+      padding: 15px 0 35px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: 700;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-images {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 460px) {
+        justify-content: space-between;
+      }
+    }
+
+    &-img {
+      flex-basis: 18%;
+      margin-bottom: 15px;
+      margin-right: 2.5%;
+      cursor: zoom-in;
+
+      @media screen and (min-width: 768px) {
+        &:nth-child(5n+5) {
+          margin-right: 0;
+        }
+      }
+
+      @media screen and (max-width: 767px) and (min-width: 461px) {
+        flex-basis: 31.6%;
+
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
+      }
+
+      @media screen and (max-width: 460px) {
+        flex-basis: 48%;
+        margin-right: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

@@ -5,6 +5,6 @@ $positionClass:
 --}}
 
 <div class="labelwrap {{$positionClass or ''}}">
-    <input type="{{$type or 'text'}}" class="input" name="{{ $name or '' }}">
+    <input {{ $attr or '' }} type="{{$type or 'text'}}" class="input" name="{{ $name or '' }}">
     <label class="label">{{ $label or '' }}</label>
 </div>

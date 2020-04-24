@@ -34,6 +34,12 @@ the readme will list any important changes.
     @endif
 
     <div class="archive__content">
+
+      {{--  @if (function_exists('dynamic_sidebar'))
+            @php dynamic_sidebar('tags-cloud') @endphp
+        @endif--}}
+        @include('components.tags.wrap')
+
         @if(woocommerce_product_loop())
             @php
                 do_action('woocommerce_before_shop_loop');

@@ -7,11 +7,11 @@ $class:
 
 <div class="mrgn35-bottom {{ $class or 'singlerow' }}">
     @if(isset($title))
-        <div class="title title_middle title_thin">{{$title}}</div>
+        <div class="title {{ $titleClass or 'title_middle title_thin' }}">{{$title}}</div>
     @endif
 
     @if(isset($text))
-        <div class="text pdng15-bottom">{{$text or ''}}</div>
+        <div class="text {{ $textClass or 'pdng15-bottom' }}">{{$text or ''}}</div>
     @endif
 
     {{ $content or '' }}

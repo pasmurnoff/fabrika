@@ -8,7 +8,7 @@
         </ul>
     @endslot
     @slot('icon')
-        <img width="200" src="@asset('images/components/banners/fabrikanoskov_konstruktor.png')"
+        <img class="banner__order-img" src="@asset('images/components/banners/fabrikanoskov_konstruktor.png')"
              alt="Носки с логотипами компаний">
     @endslot
 @endcomponent

@@ -1,0 +1,45 @@
+.delivery {
+  &__title {
+    font-size: 14px;
+    margin: 0;
+    line-height: 2;
+  }
+
+  &__city {
+    color: $greytext;
+    font-family: $font;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 2.5;
+
+    &-details {
+      padding-left: 10px;
+      color: $black;
+    }
+
+    &.out-of-stock {
+      svg {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__date {
+    color: $black;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+}

@@ -1,8 +1,5 @@
 @import "common/variables";
 
-/** Import everything from autoload */
-@import "./autoload/**/*";
-
 /**
  * Import npm dependencies
  *
@@ -172,3 +169,8 @@
 /* callback swipe */
 @import "components/callback/init";
 
+/* pryazha page */
+@import "components/pryazha/init";
+
+/* product tags */
+@import "components/tags/init";

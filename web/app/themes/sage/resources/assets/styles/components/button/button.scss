@@ -20,4 +20,31 @@
     background-color: transparent;
     border: 1px solid $secondcolor;
   }
+
+  &_design {
+    background: #4149f2;
+    border-radius: 100px;
+    width: 240px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 200ms;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    user-select: none;
+    outline: none;
+
+    &:hover {
+      background-color: #f41224;
+    }
+  }
 }

@@ -66,6 +66,7 @@
       box-sizing: border-box;
       transform: translateX(-50%);
       z-index: 3;
+      flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: center;
       margin: 0;
@@ -83,9 +84,19 @@
       }
     }
 
+    .product__counter {
+      margin-bottom: 0;
+    }
+
     .product__add-cart {
       max-width: max-content;
       min-width: 115px;
+      margin-bottom: 0;
+      margin-right: 0;
+
+      &.checkout-button {
+        display: none;
+      }
 
       @media screen and (max-width: 587px) {
         max-width: 100%;

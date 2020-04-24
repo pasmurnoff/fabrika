@@ -1,16 +1,4 @@
 <?php
-// Передаем переменную в js
-function js_variables()
-{
-    $ajax_href = ['ajax_url' => admin_url('admin-ajax.php')];
-    echo
-    '<script type="text/javascript">window.wp_data = ',
-    json_encode($ajax_href),
-    ';</script>';
-}
-
-add_action('wp_head', 'js_variables');
-
 // the ajax function
 add_action('wp_ajax_data_fetch', 'data_fetch');
 add_action('wp_ajax_nopriv_data_fetch', 'data_fetch');

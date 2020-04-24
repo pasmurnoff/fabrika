@@ -22,5 +22,6 @@
 @endphp
 
 @php do_action( 'woocommerce_share' ); @endphp
+@include('components.single-product.delivery')
 @include('components.share.share')
-@include('components.product-views.wrap')
+@include('components.single-product.views')

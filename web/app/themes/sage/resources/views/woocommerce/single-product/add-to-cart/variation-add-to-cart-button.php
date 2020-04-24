@@ -27,7 +27,10 @@ global $product;
     ?>
 
     <button type="submit"
-            class="single_add_to_cart_button button alt product__add-cart"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+            class="ajax_add_to_cart single_add_to_cart_button button alt product__add-cart"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+    <button href="#" class="ajax_add_to_cart checkout-button single_add_to_cart_button product__add-cart button alt wc-forward">
+        Быстрый заказ
+    </button>
 
     <?php do_action('woocommerce_after_add_to_cart_button'); ?>
 
