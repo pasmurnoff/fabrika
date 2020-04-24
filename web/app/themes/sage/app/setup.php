@@ -88,6 +88,13 @@ add_action('widgets_init', function () {
         ] + $config);
 
     register_sidebar([
+        'name' => __('Tags', 'sage'),
+        'id' => 'tags-cloud',
+        'class' => 'tags',
+
+    ]);
+
+    register_sidebar([
         'name' => __('Mini-cart', 'sage'),
         'id' => 'cart-sidebar',
         'before_widget' => '<div class="mini-cart %1$s %2$s"><div class="mini-cart__top">

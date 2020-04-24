@@ -28,7 +28,6 @@ the readme will list any important changes.
         @endphp
     @endwhile
     @include('components.cart.sticky')
-
     @include('components.random.wrap')
     @include('components.another.wrap')
     @include('components.watched.wrap')

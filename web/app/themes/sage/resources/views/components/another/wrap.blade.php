@@ -6,6 +6,7 @@
          break;
      }
 
+
      $productCategories = get_terms([
          'taxonomy' => "product_cat",
          'orderby' => 'rand',

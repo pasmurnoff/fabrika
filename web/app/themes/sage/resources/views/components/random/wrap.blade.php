@@ -2,17 +2,32 @@
     global $post;
     $terms = get_the_terms( $post->ID, 'product_cat' );
     foreach ( $terms as $term ) {
-        $slug = $term->slug;
-        $name = $term->name;
-        $id = $term->term_id;
+        $currentId = $term->term_id;
         break;
     }
 
+    $productCategories = get_terms([
+         'taxonomy' => "product_cat",
+         'orderby' => 'rand',
+         'include' => $currentId
+     ]);
+
+@endphp
+@foreach($productCategories as $cat)
+    @php
+        $slug = $cat->slug;
+        $name = $cat ->name;
+        $id = $cat->term_id
+    @endphp
+@endforeach
+
+@php
     $products = wc_get_products([
-         "product_cat" => $slug,
-         "posts_per_page" => 12,
-         "orderby" => 'rand'
-    ]);
+    "product_cat" => $slug,
+    "orderby" => 'rand',
+    "posts_per_page" => 12,
+    "parent" => 0
+]);
 @endphp
 
 
@@ -21,7 +36,7 @@
         @php echo get_category_link($id) @endphp
     @endslot
     @slot('button')
-       Все @php echo mb_strtolower($name) @endphp
+        Все @php echo mb_strtolower($name) @endphp
     @endslot
 
     @slot('productLoop')
