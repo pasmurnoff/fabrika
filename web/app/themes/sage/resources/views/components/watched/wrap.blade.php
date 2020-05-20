@@ -11,6 +11,7 @@
             @foreach(array_reverse($_COOKIE['watched']) as $productId)
                 @if(get_the_ID() !== intval($productId) && $i <=12)
                     @php $i++ @endphp
+                    @php $inStock = wc_get_product($productId)->is_in_stock() @endphp
                     @include('components.category-output.product')
                 @endif
             @endforeach
