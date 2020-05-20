@@ -20,4 +20,17 @@ if (!defined('ABSPATH')) {
 }
 
 ?>
-<p class="stock @php echo esc_attr($class); @endphp">@php echo wp_kses_post($availability); @endphp</p>
+{{--<p class="stock @php echo esc_attr($class); @endphp">@php echo wp_kses_post($availability); @endphp</p>--}}
+<p class="stock @php echo esc_attr($class); @endphp">
+    @if(esc_attr($class) == 'in-stock')
+        <span class="single-product__stock-wrap">
+            <span class="single-product__instock">
+                   @include('icon::common.instock')
+                <span class="instock__text">@php echo  wp_kses_post($availability) @endphp</span>
+            </span>
+        </span>
+    @elseif(esc_attr($class) == 'out-of-stock')
+        Нет в наличии
+    @endif
+</p>
+
