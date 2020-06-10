@@ -50,7 +50,7 @@ function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName)
 }
 
 // Email configuration
-$to = 'artem94.12@gmail.com';
+$to = 'mail@fabrikanoskov.ru';
 $from = 'mail@fabrikanoskov.ru';
 $fromName = 'Фабрика носков';
 

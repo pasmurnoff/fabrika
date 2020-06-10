@@ -25,4 +25,21 @@
       object-fit: contain;
     }
   }
+
+  &__text {
+    max-width: 100%;
+
+    img {
+      height: auto;
+      width: 32%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+
+  &__video {
+    iframe {
+      width: 100%;
+    }
+  }
 }
