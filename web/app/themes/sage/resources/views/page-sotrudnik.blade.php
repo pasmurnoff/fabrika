@@ -6,7 +6,7 @@ Template Name: Помощь сотрудникам
 
 @section('content')
     <div class="cards">
-        @component('components.card.wrap', ['bgc' => '#F82F2F','title' => 'Готовые изделия', 'href' => '/sotrudnik-forma-zakaza-gotovoy-produkcii', 'buttonText' => 'Разместить заказ'])
+        @component('components.card.wrap', ['bgc' => '#F82F2F','title' => 'Готовые изделия', 'href' => '#', 'buttonText' => 'Разместить заказ'])
             @slot('text')
                 Разместить заказ на продажу оптом готовых изделий
             @endslot
@@ -15,7 +15,7 @@ Template Name: Помощь сотрудникам
             @endslot
         @endcomponent
 
-        @component('components.card.wrap', ['bgc' => '#7F25FC', 'title' => 'Продукция на заказ', 'href' => '/sotrudnik/forma-zakaza-produkcii', 'buttonText' => 'Разместить заказ'])
+        @component('components.card.wrap', ['bgc' => '#7F25FC', 'title' => 'Продукция на заказ', 'href' => '/forma-zakaza-produkcii', 'buttonText' => 'Разместить заказ'])
             @slot('text')
                 Разместить заказ на производство носков или колготок "Под заказ"
             @endslot
