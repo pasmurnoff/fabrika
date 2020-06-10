@@ -6,7 +6,7 @@ function data_fetch()
 {
 
     $the_query = new WP_Query([
-        'posts_per_page' => -1,
+        'posts_per_page' => 20,
         's' => esc_attr($_POST['keyword']),
         'post_type' => 'product',
     ]);
