@@ -15,7 +15,7 @@
                     $productId = $product->get_id();
                     $inStock = $product->is_in_stock();
                 @endphp
-                @include('components.category-output.product')
+                @include('components.product.product')
             @endforeach
             @php wp_reset_postdata() @endphp
         </ul>

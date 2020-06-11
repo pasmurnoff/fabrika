@@ -54,13 +54,7 @@
                 <input type="email" class="input" name="email">
                 <label class="label">Электронная почта</label>
             </div>
-            <div class="labelwrap labelwrap_line labelwrap_submit">
-                <input type="submit" class="submit submit_line" value="Отправить">
-            </div>
         </div>
-        <div class="form__privacy form__privacy_center">
-            Отправляя форму я соглашаюсь с <a class="form__privacy_link" href="/uslovija-peredachi-informacii">условиями
-                передачи информации</a>
-        </div>
+        @include('components.form.elements.privacy')
     </div>
 </form>

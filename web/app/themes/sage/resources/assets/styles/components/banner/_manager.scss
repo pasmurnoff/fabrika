@@ -42,14 +42,16 @@
   }
 
   &-action {
-    @extend .text_white;
-
-    text-decoration: underline;
-    opacity: 1;
+    width: max-content;
+    background-color: #fff;
+    margin-top: 10px;
+    border: none;
+    display: flex !important;
     cursor: pointer;
+    transition: background-color ease 200ms;
 
     &:hover {
-      text-decoration: none;
+      background-color: #eee;
     }
   }
 

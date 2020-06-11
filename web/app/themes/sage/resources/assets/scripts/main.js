@@ -16,7 +16,6 @@ import './components/wishlist'
 import './components/menu'
 import './components/main-sidebar'
 import './components/manager-sku'
-import './components/product-tools'
 import './forms/ajax-search'
 import './components/stories/init'
 /*import './components/maket/comparison'*/

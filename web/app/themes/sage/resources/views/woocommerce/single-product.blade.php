@@ -30,7 +30,6 @@ the readme will list any important changes.
     @include('components.cart.sticky')
     @include('components.random.wrap')
     @include('components.another.wrap')
-{{--    @include('components.watched.wrap')--}}
 
     <div class="mrgn35-top">
         @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству'])

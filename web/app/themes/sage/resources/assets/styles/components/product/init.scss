@@ -6,6 +6,7 @@
 @import "share";
 @import "instock";
 @import "delivery";
+@import "colors";
 
 .product {
   &__wrapper {
@@ -76,6 +77,28 @@
   @media screen and (max-width: 1023px) {
     &_title {
       margin-top: 35px;
+    }
+  }
+
+  &__quantity {
+    &_icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $greytext;
+      }
+    }
+
+    &_text {
+      display: flex;
+      align-items: center;
     }
   }
 }

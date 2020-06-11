@@ -11,6 +11,12 @@
     width: max-content;
     height: 30px;
     padding: 7px 12px;
+    color: $black;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $secondcolor;
+    }
   }
 }
 
@@ -79,12 +85,12 @@
   width: max-content;
   padding-bottom: 18px;
   padding-top: 10px;
-  color: $greytext;
+  color: $black;
   font-size: 14px;
   font-weight: 700;
 
   .from,
   .to {
-    color: $greytext;
+    color: $black;
   }
 }

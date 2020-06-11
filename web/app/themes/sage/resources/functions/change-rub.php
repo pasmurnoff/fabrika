@@ -4,7 +4,7 @@ function change_rub_currency_symbol($currency_symbol, $currency)
 {
     switch ($currency) {
         case'RUB':
-            $currency_symbol = 'руб.';
+            $currency_symbol = '₽';
             break;
     }
     return $currency_symbol;

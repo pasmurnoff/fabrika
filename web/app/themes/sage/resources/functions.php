@@ -222,4 +222,7 @@ require_once dirname(__DIR__) .'/resources/functions/default-variation.php';
 require_once dirname(__DIR__) .'/resources/functions/woo-custom-field.php';
 
 /* Add last modified for all pages */
-require_once dirname(__DIR__) .'/resources/functions/last-modified.php';
+require_once dirname(__DIR__) . '/resources/functions/last-modified.php';
+require_once dirname(__DIR__) . '/resources/functions/colors.php';
+require_once dirname(__DIR__) . '/resources/functions/product-tools.php';
+require_once dirname(__DIR__) . '/resources/functions/breadcrumb-separator.php';
