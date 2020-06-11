@@ -36,10 +36,9 @@ if ($total <= 1) {
         'add_args' => false,
         'current' => max(1, $current),
         'total' => $total,
-        'prev_text' => '<i class="archive__pagination-icon fas fa-angle-double-left"></i>',
-        'next_text' => '<i class="archive__pagination-icon fas fa-angle-double-right"></i>',
+        'prev_next' => false,
         'end_size' => 3,
-        'mid_size' => 3,
+        'mid_size' => 1,
     )));
     ?>
 </nav>

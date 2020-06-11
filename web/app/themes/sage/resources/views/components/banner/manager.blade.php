@@ -1,8 +1,11 @@
 @component('components.banner.banner', [
     'classes' => 'banner_manager mrgn35',
-    'title' => 'Зарабатывай с нами! Платим 10% от суммы счета',
     'href' => '/konstruktor-zakaza-noskov',
     'buttonText' => 'Заказать носки' ])
+
+    @slot('title')
+        Зарабатывай с нами! <br> Платим 10% от суммы счета
+    @endslot
 
     @slot('text')
         <a class="banner_manager-link" href="/menedzher-po-prodazham"></a>

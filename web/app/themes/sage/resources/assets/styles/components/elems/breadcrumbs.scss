@@ -6,6 +6,12 @@
   margin-bottom: 0;
   color: $greytext;
 
+  span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   a {
     color: inherit;
     text-decoration: none;
@@ -19,6 +25,15 @@
 
   &_mrgn15-top {
     margin-top: 15px;
+  }
+
+  &__separator {
+    margin: 0 4px 0 8px;
+    display: inline-block;
+    vertical-align: top;
+    height: 16px;
+    width: 16px;
+    color: #999;
   }
 }
 

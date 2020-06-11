@@ -25,7 +25,8 @@ Template Name: О фабрике
     <div class="block-text pdng35">
         <h2 class="title title_large mrgn15-bottom">Фабрика носков</h2>
         <div class="block-text__text">
-            Мы рады приветствовать вас на сайте нашей носочной фабрики
+            Мы рады приветствовать вас на сайте нашей носочной фабрики. Все действия в одном клике. 90% клиентов
+            работают с нами полностью в электронном виде и никогда не приезжали в наш офис.
             <br/><br/>
             В ассортименте нашей фабрики Вы найдете: мужские носки, женские носки, детские носки от самых простых до
             носков
@@ -131,21 +132,21 @@ Template Name: О фабрике
 
     <div class="forwhom forwhom_padding-bottom">
         <div class="forwhom__item">
-            <div class="title title_middle forwhom__title">Для коммерческих организаций</div>
+            <div class="title title_middle forwhom__title">Коммерческим организациям</div>
             <div class="forwhom__sep"></div>
             <div class="forwhom__text">Работаем по безналичному расчёту с НДС. Выставляем счёт и образец договора, ваша
                 организация переводит деньги на наш расчётный счёт.
             </div>
         </div>
         <div class="forwhom__item">
-            <div class="title title_middle forwhom__title">Для государственных учреждений</div>
+            <div class="title title_middle forwhom__title">Государственным учреждениям</div>
             <div class="forwhom__sep"></div>
             <div class="forwhom__text">Мы зарегистрированы на электронных площадках. Можем участвовать в государственных
                 аукционах, тендерах.
             </div>
         </div>
         <div class="forwhom__item">
-            <div class="title title_middle forwhom__title">Для физических лиц</div>
+            <div class="title title_middle forwhom__title">Физическим лицам</div>
             <div class="forwhom__sep"></div>
             <div class="forwhom__text">Выставляем счёт на физическое лицо. Деньги можете перевести на наш расчётный счёт
                 через

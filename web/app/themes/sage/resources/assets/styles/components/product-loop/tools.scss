@@ -15,7 +15,7 @@
     @media screen and (max-width: 1023px) {
       visibility: visible;
       opacity: 1;
-      top: 20% !important;
+      top: 0 !important;
     }
   }
 }
@@ -23,24 +23,5 @@
 .products li.product:hover .product__tools {
   visibility: visible;
   opacity: 1;
-  top: 8%;
-
-  @media screen and (max-width: 1200px) {
-    top: 4%;
-  }
+  top: 0;
 }
-
-/* stylelint-disable */
-.columns-4 {
-  .product__tools {
-    @media screen and (min-width: 861px) and (max-width: 1023px) {
-      top: 10% !important;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 860px) {
-      top: 3% !important;
-    }
-  }
-}
-
-/* stylelint-enable */
