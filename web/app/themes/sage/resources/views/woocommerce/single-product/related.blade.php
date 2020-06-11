@@ -1,4 +1,4 @@
-<?php
+{{--
 /**
  * Related Products
  *
@@ -14,21 +14,20 @@
  * @package     WooCommerce/Templates
  * @version     3.9.0
  */
+ --}}
 
-if (!defined('ABSPATH')) {
-    exit;
-}
-
-if ($related_products) : ?>
-
+@if (!defined('ABSPATH'))
+    @php exit @endphp
+@endif
+@include('components.watched.wrap')
+@if($related_products)
     <section class="related products mrgn35-top">
-
         <?php
         $heading = apply_filters('woocommerce_product_related_products_heading', __('Related products', 'woocommerce'));
 
         if ($heading) :
-            ?>
-            <h2 class="related_title title title_large mrgn35-bottom pdng15-bottom">Похожие носки</h2>
+        ?>
+        <h2 class="related_title title title_large mrgn35-bottom pdng15-bottom">Похожие носки</h2>
         <?php endif; ?>
 
         <?php woocommerce_product_loop_start(); ?>
@@ -48,7 +47,6 @@ if ($related_products) : ?>
         <?php woocommerce_product_loop_end(); ?>
 
     </section>
-<?php
-endif;
+@endif
+@php wp_reset_postdata(); @endphp
 
-wp_reset_postdata();
