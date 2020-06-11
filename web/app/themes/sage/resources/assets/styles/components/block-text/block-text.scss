@@ -42,6 +42,45 @@
     }
   }
 
+  &__table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        tr {
+          display: flex;
+          flex-direction: column;
+
+          td {
+            border-bottom: 0;
+
+            &:last-child {
+              border-bottom: 1px solid $greytext;
+            }
+          }
+
+          &:first-child {
+            td {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+
+    td {
+      border: 1px solid $greytext;
+      padding: 5px;
+    }
+  }
+
   &__link {
     color: $greytext;
     text-decoration: underline;
