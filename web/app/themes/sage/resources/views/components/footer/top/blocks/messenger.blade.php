@@ -8,7 +8,7 @@
 
         </div>
         <div class="footer-messenger__icons-wrap">
-            <div class="text text_bold text_middle">Или пишите!</div>
+            <div class="text text_bold text_middle">Ответим на ваши вопросы в мессенджерах</div>
             <div class="footer-messenger__icons">
                 <a href="#"
                    class="footer-messenger__icon footer-messenger__icon_viber">@include('icon::social.viber')</a>
