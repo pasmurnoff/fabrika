@@ -1,0 +1,16 @@
+.product {
+  &__colors {
+    flex-basis: 100%;
+    order: -2;
+    margin-top: 3px;
+
+    .filter__item {
+      padding: 2px;
+    }
+  }
+
+  &__color {
+    width: 12px;
+    height: 12px;
+  }
+}

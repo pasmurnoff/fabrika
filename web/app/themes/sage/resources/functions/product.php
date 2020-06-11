@@ -14,7 +14,7 @@ add_action('custom_woocommerce_after_summary', 'customAfterSingleProductSummary'
 
 function beforeShopLoopItemTitle()
 {
-    echo '<div class="woocommerce-loop-product__wrapper">';
+    echo '<div class="woocommerce-loop-product__wrapper">' . get_product_colors();
 }
 
 function afterShopLoopItem()
