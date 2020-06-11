@@ -172,6 +172,37 @@ require_once dirname(__DIR__) . '/resources/functions/account.php';
 /* quantity input */
 require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
 
+
+/**
+ * Product relationship field - include searching SKU
+ *
+ * @param Array $args
+ * @param Array $field
+ * @param Integer $post_id
+ *
+ * @return $args
+ */
+function prefix_product_relationship_query_mods( $args, $field, $post_id ) {
+
+    $args['post_status'] = 'publish';
+
+    if( ! empty( $args['s'] ) ) {
+
+        $args['meta_query'] = array( array(
+            'key'		=> '_sku',
+            'value'		=> $args['s'],
+            'compare'	=> 'LIKE',
+        ) );
+
+    }
+
+    return $args;
+
+}
+add_filter( 'acf/fields/relationship/query/name=field_name', 'prefix_product_relationship_query_mods', 10, 3 );
+
+
+
 /* search ajax */
 require_once dirname(__DIR__) . '/resources/functions/search.php';
 
@@ -181,3 +212,14 @@ require_once dirname(__DIR__) . '/resources/functions/product-views.php';
 /* ajax wp_mail */
 require_once dirname(__DIR__) . '/resources/functions/ajax_wp.php';
 
+/* Remove slug from cities, products, and woo_categories */
+require_once dirname(__DIR__) .'/resources/functions/remove-slugs.php';
+
+/* Set default variation for all Products */
+require_once dirname(__DIR__) .'/resources/functions/default-variation.php';
+
+/* Custom field for woocommerce product */
+require_once dirname(__DIR__) .'/resources/functions/woo-custom-field.php';
+
+/* Add last modified for all pages */
+require_once dirname(__DIR__) .'/resources/functions/last-modified.php';

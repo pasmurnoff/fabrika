@@ -1,6 +1,6 @@
-<div class="custom__design mrgn35">
-    <a class="button_design" href="/zakazatnoski">Носки на заказ</a>
-</div>
+{{--<div class="custom__design mrgn35">--}}
+{{--    <a class="button_design" href="/zakazatnoski">Носки на заказ</a>--}}
+{{--</div>--}}
 @component('components.content.content', ['title' => 'О нашей фабрике носков', 'class' =>'container'])
     @slot('text')
         <p><a href="https://fabrikanoskov.ru/">Fabrikanoskov.ru</a> – это не просто фабрика, производящая
