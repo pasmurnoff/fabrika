@@ -1,6 +1,5 @@
 @if($productId)
     <li class="product">
-    {{--    @include('components.product.instock')--}}
         <a href="{{ get_the_permalink($productId) }}" class="woocommerce-loop-product__link">
             <img width="300" height="300"
                  src="{{ get_the_post_thumbnail_url($productId) }}"
@@ -14,8 +13,9 @@
                          {!! wc_get_product( $productId )->get_price() !!}
                             <span class="woocommerce-Price-currencySymbol">₽</span>
                     </span>
-		</span>
+		            </span>
                 @endif
+                @include('components.product.instock')
             </div>
         </a>
         @include('components.product.tools')

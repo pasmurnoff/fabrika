@@ -17,7 +17,8 @@ $(document).ready(function () {
                 type: 'POST', //метод отправки
                 data: formData,  // Сеарилизуем объект
                 success: function () { //Данные отправлены успешно
-                    let $resultForm = $('<div class="result-message text text_success">Ваши данные успешно отправлены</div>').hide();
+                    let $resultForm = $('<div class="result-message text text_success">Ваше сообщение было успешно отправлено.\n' +
+                        'Mы свяжемся с Вами в ближайшее время.</div>').hide();
                     $('body').append($resultForm);
                     dynamicAnimate($resultForm);
                 },

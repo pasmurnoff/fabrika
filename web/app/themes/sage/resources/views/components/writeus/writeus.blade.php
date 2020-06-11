@@ -1,4 +1,4 @@
-<div class="title title_huge">Напишите нам</div>
+<div class="title title_huge">Написать на Фабрику Носков</div>
 <div class="pdng15-top pdng35-bottom">
     <div class="text">
         Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой
@@ -36,5 +36,5 @@
           ])
     </div>
 
-   @include('components.form.elements.privacy')
+    @include('components.form.elements.privacy')
 </form>

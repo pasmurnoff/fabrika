@@ -19,7 +19,12 @@ function beforeShopLoopItemTitle()
 
 function afterShopLoopItem()
 {
-    echo '</div>';
+    global $product;
+    $inStock = $product->is_in_stock();
+    if (isset($inStock) && $inStock)
+        echo '<div class="product__instock">В наличии</div></div>';
+    else
+        echo '<div class="product__instock product__instock_off">На заказ</div></div>';
 }
 
 add_action('woocommerce_before_shop_loop_item_title', 'beforeShopLoopItemTitle');

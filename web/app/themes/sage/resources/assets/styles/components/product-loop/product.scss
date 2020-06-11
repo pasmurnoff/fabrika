@@ -51,17 +51,6 @@
       height: auto;
       object-fit: cover;
     }
-
-    .price {
-      display: flex;
-      justify-content: center;
-      font-family: $font;
-      color: $black;
-      font-size: 16px;
-      font-weight: 700;
-      text-align: center;
-      padding-top: 5px;
-    }
   }
 }
 
@@ -69,6 +58,7 @@
   &__title {
     color: $greytext;
     margin: 0;
+    order: 1;
     text-align: left;
     font-weight: 400;
     font-size: 14px;
@@ -76,6 +66,8 @@
     font-family: $font;
     transition: color ease 200ms;
     padding-top: 3px;
+    flex-basis: 100%;
+    align-self: flex-start;
 
     &:hover {
       color: $red;
@@ -94,9 +86,21 @@
   &__wrapper {
     margin-top: 5px;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .price {
+      display: flex;
+      justify-content: center;
+      font-family: $font;
+      color: $black;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 5px;
+      flex-basis: max-content;
+      order: -1;
+    }
   }
 }
