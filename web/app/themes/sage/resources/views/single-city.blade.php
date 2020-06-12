@@ -63,6 +63,7 @@
     @endcomponent
 
     <div class="text city__text">
+      <h2 class="title title_large">Где в городе {{ get_field('city-rod') }} купить носки оптом</h2>
       @php echo get_field('city-description'); @endphp
     </div>
 
