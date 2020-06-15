@@ -1,24 +1,82 @@
 .share {
-  &__items {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+
+  &__icon {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 0;
-    list-style-type: none;
-    margin-bottom: 0;
-  }
+    height: 100%;
+    padding: 10px;
+    transition: border-color ease 100ms;
+    border-left: 1px solid #eee;
 
-  &__link {
-    color: $greytext;
-    text-decoration: none;
-    transition: color ease 200ms;
-
-    &:hover {
-      color: $red;
+    svg {
+      width: 16px;
+      height: 16px;
     }
   }
 
-  &__icon {
-    padding-right: 15px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    width: max-content;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: background-color ease 100ms;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    .share__icon {
+      border-color: white;
+    }
+  }
+
+  &__title {
+    padding: 0 20px;
+    color: $black;
+  }
+
+  .ya-share2 {
+    width: max-content;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 0;
+    display: none;
+
+    &__container {
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-bottom-color: #fff;
+        left: 50%;
+        top: -16px;
+        margin-left: -11px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+    }
+
+    &__item {
+      margin: 0 !important;
+    }
   }
 }
