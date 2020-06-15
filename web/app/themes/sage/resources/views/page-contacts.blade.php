@@ -70,6 +70,7 @@ Template Name: Контакты
 
     <div class="points points_contact mrgn15-top">
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Москва</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Москва</span>, <span
@@ -86,6 +87,7 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-18:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Санкт-Петербург</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Санкт-Петербург</span>, <span
@@ -104,6 +106,7 @@ Template Name: Контакты
                 <span>Пн-Пт 09:00-21:00</span> <span>Сб-Вс 10:00-19:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Новосибирск</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Новосибирская обл.</span>,
@@ -121,6 +124,7 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Екатеринбург</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Свердловская обл.</span>,
@@ -138,6 +142,7 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Нижний Новгород</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Нижегородская обл.</span>,
@@ -155,6 +160,7 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Казань</div>
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Татарстан респ.</span>, <span
@@ -171,6 +177,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Челябинск</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Челябинская обл.</span>, <span
@@ -188,6 +196,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб-Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Омск</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Омская обл.</span>, <span
@@ -204,6 +214,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Самара</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Самарская обл.</span>, <span
@@ -220,6 +232,8 @@ Template Name: Контакты
                 <span>Пн-Пт 09:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Ростов-на-Дону</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Ростовская обл.</span>, <span
@@ -238,6 +252,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Уфа</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Башкортостан респ.</span>,
@@ -254,6 +270,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Красноярск</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Красноярский край</span>,
@@ -271,6 +289,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Пермь</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Пермский край</span>, <span
@@ -287,6 +307,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб-Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Воронеж</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Воронежская обл.</span>, <span
@@ -303,6 +325,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб-Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Волгоград</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Волгоградская обл.</span>,
@@ -319,6 +343,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Краснодар</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Краснодарский край</span>,
@@ -335,6 +361,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Саратов</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Саратовская обл.</span>, <span
@@ -351,6 +379,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Тюмень</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Тюменская обл.</span>, <span
@@ -367,6 +397,8 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб-Вс 10:00-16:00</span></div>
         </div>
         <div class="points__items">
+            <div class="points__title text_grey text_bold">Тольятти</div>
+
             <div class="points__address points__item">
                 <div class="points__icon">@include('icon::country.city.map-marker')</div>
                 <span class="points__country">Россия</span>, <span class="points__region">Самарская обл.</span>, <span

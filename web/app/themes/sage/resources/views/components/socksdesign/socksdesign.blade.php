@@ -9,12 +9,18 @@
         самостоятельным товаром.
     </div>
     <div class="threeimage">
-        <img class="threeimage__image" src="@asset('images/defaultpages/Noski_Na_Zakaz-1.jpg')"
-             alt="Носки с принтом на заказ">
-        <img class="threeimage__image" src="@asset('images/defaultpages/noski_na_zakaz-1.png')"
-             alt="Носки с принтом на заказ">
-        <img class="threeimage__image" src="@asset('images/defaultpages/noski_na_zakaz_optom.jpg')"
-             alt="Носки с принтом на заказ">
+        <div class="threeimage__image">
+            <img src="@asset('images/defaultpages/Noski_Na_Zakaz-1.jpg')"
+                 alt="Носки с принтом на заказ">
+        </div>
+        <div class="threeimage__image">
+            <img src="@asset('images/defaultpages/noski_na_zakaz-1.png')"
+                 alt="Носки с принтом на заказ">
+        </div>
+        <div class="threeimage__image">
+            <img src="@asset('images/defaultpages/noski_na_zakaz_optom.jpg')"
+                 alt="Носки с принтом на заказ">
+        </div>
     </div>
 </div>
 

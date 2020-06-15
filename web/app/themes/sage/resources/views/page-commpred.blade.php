@@ -26,7 +26,7 @@
     @endcomponent
 
     <div class="block-text pdng35">
-        <div class="title title_large">Отрисовка дизайна носков</div>
+        <div class="title title_large pdng15-bottom">Отрисовка дизайна носков</div>
         <div class="block-text__text block-text__text_padding-away">
             Техническая отрисовка эскиза клиента – 3000 рублей, в эту стоимость включена стоимость производства опытного
             образца (1 пара носков), доставка опытного образца оплачивается клиентом отдельно при получении. Каждое
@@ -36,7 +36,7 @@
     </div>
 
 
-    <div class="title title_large">Носки на заказ по вашему дизайну от 100 пар</div>
+    <div class="title title_large pdng15-bottom">Носки на заказ по вашему дизайну от 100 пар</div>
     <div class="block-text">
         <div class="block-text__text block-text__text_padding-away">
             Стоимость 100 пар гладких носков (классический вид носка)<br/>
@@ -44,17 +44,23 @@
             130 рублей за пару, сроки изготовления 14 календарных дней, после согласования дизайна;
         </div>
         <div class="threeimage">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_0163.jpg')"
-                 alt="Стоимость 100 пар гладких носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_0159.jpg')"
-                 alt="Стоимость 100 пар гладких носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_0177.jpg')"
-                 alt="Стоимость 100 пар гладких носков">
+            <div class="threeimage__image">
+                <img src="@asset('images/components/kommpred/IMG_0163.jpg')"
+                     alt="Стоимость 100 пар гладких носков">
+            </div>
+            <div class="threeimage__image">
+                <img src="@asset('images/components/kommpred/IMG_0159.jpg')"
+                     alt="Стоимость 100 пар гладких носков"></div>
+            <div class="threeimage__image">
+                <img src="@asset('images/components/kommpred/IMG_0177.jpg')"
+                     alt="Стоимость 100 пар гладких носков"></div>
+
+
         </div>
     </div>
 
 
-    <div class="title title_large">Носки на заказ по вашему дизайну от 1000 пар</div>
+    <div class="title title_large pdng15-bottom">Носки на заказ по вашему дизайну от 1000 пар</div>
     <div class="block-text">
         <div class="block-text__text block-text__text_padding-away">
             Стоимость 1000 пар гладких носков (классический вид носка)<br/>
@@ -62,17 +68,17 @@
             65 рублей за пару, сроки изготовления от 20 — 30 календарных дней, после согласования дизайна;
         </div>
         <div class="threeimage">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_3259.jpg')"
-                 alt="Стоимость 1000 пар гладких носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_3255.jpg')"
-                 alt="Стоимость 1000 пар гладких носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_3201.jpg')"
-                 alt="Стоимость 1000 пар гладких носков">
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3259.jpg')"
+                                                alt="Стоимость 1000 пар гладких носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3255.jpg')"
+                                                alt="Стоимость 1000 пар гладких носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3201.jpg')"
+                                                alt="Стоимость 1000 пар гладких носков"></div>
         </div>
     </div>
 
 
-    <div class="title title_large">Спортивные носки на заказ по вашему дизайну от 100 пар</div>
+    <div class="title title_large pdng15-bottom">Спортивные носки на заказ по вашему дизайну от 100 пар</div>
     <div class="block-text">
         <div class="block-text__text block-text__text_padding-away">
             Стоимость 100 пар спортивных носков (с высокой резинкой)<br/>
@@ -80,17 +86,19 @@
             140 рублей за пару, сроки изготовления 14 календарных дней после согласования дизайна;
         </div>
         <div class="threeimage">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_5469.jpg')"
-                 alt="Стоимость 100 пар спортивных носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_0265.jpg')"
-                 alt="Стоимость 100 пар спортивных носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_3092.jpg')"
-                 alt="Стоимость 100 пар спортивных носков">
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5469.jpg')"
+                                                alt="Стоимость 100 пар спортивных носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_0265.jpg')"
+                                                alt="Стоимость 100 пар спортивных носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3092.jpg')"
+                                                alt="Стоимость 100 пар спортивных носков"></div>
+
+
         </div>
     </div>
 
 
-    <div class="title title_large">Спортивные носки на заказ по вашему дизайну от 1000 пар</div>
+    <div class="title title_large pdng15-bottom">Спортивные носки на заказ по вашему дизайну от 1000 пар</div>
     <div class="block-text">
         <div class="block-text__text block-text__text_padding-away">
             Стоимость 1000 пар спортивных носков (с высокой резинкой)<br/>
@@ -98,17 +106,19 @@
             75 рублей за пару, сроки изготовления от 20 — 30 календарных дней;
         </div>
         <div class="threeimage">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_5473.jpg')"
-                 alt="Стоимость 1000 пар спортивных носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_5477.jpg')"
-                 alt="Стоимость 1000 пар спортивных носков">
-            <img class="threeimage__image" src="@asset('images/components/kommpred/IMG_9292.jpg')"
-                 alt="Стоимость 1000 пар спортивных носков">
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5473.jpg')"
+                                                alt="Стоимость 1000 пар спортивных носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5477.jpg')"
+                                                alt="Стоимость 1000 пар спортивных носков"></div>
+            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_9292.jpg')"
+                                                alt="Стоимость 1000 пар спортивных носков"></div>
+
+
         </div>
     </div>
 
 
-    <div class="title title_large">Доставка носочно-чулочной продукции оптом</div>
+    <div class="title title_large pdng15-bottom">Доставка носочно-чулочной продукции оптом</div>
     <div class="block-text">
         <div class="block-text__text block-text__text_padding-away">
             Доставка готовой продукции осуществляется за счет клиента, изготовитель обязуется доставить изделия до точки

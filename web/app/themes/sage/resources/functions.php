@@ -226,3 +226,7 @@ require_once dirname(__DIR__) . '/resources/functions/last-modified.php';
 require_once dirname(__DIR__) . '/resources/functions/colors.php';
 require_once dirname(__DIR__) . '/resources/functions/product-tools.php';
 require_once dirname(__DIR__) . '/resources/functions/breadcrumb-separator.php';
+require_once dirname(__DIR__) . '/resources/functions/coupon.php';
+require_once dirname(__DIR__) . '/resources/functions/add-to-cart-text.php';
+
+

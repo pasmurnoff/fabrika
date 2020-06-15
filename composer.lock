@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e108efdc7e0a6bd8417dafe319fde3e9",
+    "content-hash": "ac9848c64356bb6597914cb4a01e20ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -615,6 +615,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-term-order",
+            "version": "0.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-term-order/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-term-order.zip?timestamp=1590770163"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-term-order/"
         },
         {
             "name": "wpackagist-plugin/wp-translitera",

@@ -12,7 +12,8 @@
         <div class="banner_manager-text"> Мы всегда заинтересованы в том, чтобы работать с нами было не только
             удобно, но и выгодно! Продавай носки онлайн и оффлайн!
         </div>
-        <span class="banner_manager-action button button_transparent">Хочу работать с вами</span>
+        <a href="/menedzher-po-prodazham" class="banner_manager-action button button_transparent">Хочу работать с
+            вами</a>
     @endslot
     @slot('icon')
         <img width="200" src="@asset('images/components/banners/manager.png')"

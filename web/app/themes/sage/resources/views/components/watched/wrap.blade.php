@@ -1,5 +1,5 @@
 @if (isset($_COOKIE['watched']) && is_product())
-    @component('components.category-output.single-output', ['title' => 'Вы смотрели', 'button' => 'Перейти в каталог'])
+    @component('components.category-output.single-output', ['title' => 'Вы смотрели', 'button' => 'Перейти в магазин'])
         @slot('href')
             @php echo get_permalink(wc_get_page_id('shop')) @endphp
         @endslot

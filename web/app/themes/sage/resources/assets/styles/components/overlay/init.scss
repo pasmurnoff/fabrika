@@ -10,7 +10,7 @@
   transition-property: visibility, opacity;
   opacity: 0;
   visibility: hidden;
-  z-index: 3;
+  z-index: 7;
 
   &.active {
     visibility: visible;

@@ -42,16 +42,24 @@
   }
 
   &-action {
-    width: max-content;
-    background-color: #fff;
-    margin-top: 10px;
-    border: none;
+    position: relative;
     display: flex !important;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background-color ease 200ms;
+    width: max-content;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 38px;
+    transition: background-color, color ease 200ms;
+    padding: 0 20px;
 
     &:hover {
-      background-color: #eee;
+      color: $black;
+      background-color: #fff;
     }
   }
 
