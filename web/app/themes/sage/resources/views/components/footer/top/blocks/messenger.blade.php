@@ -1,8 +1,7 @@
 <div class="footer-messenger">
     <div class="footer-messenger__wrap container">
         <div class="footer-messenger__msg text text_large text_black">
-            <div class="footer-messenger__text">Есть вопросы? Звоните!</div>
-            <div class="footer-messenger__text">Круглосуточно</div>
+            <div class="footer-messenger__text">У вас остались вопросы? Звоните:</div>
             <a class="footer-messenger__text footer-messenger__phone text_link text_bold" href="tel:+78004441156">
                 8 (800) 444-11-56</a>
 
