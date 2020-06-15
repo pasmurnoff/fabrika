@@ -126,7 +126,8 @@
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
                             'name' => 'name',
-                            'label' => 'Иван Иванов' ])
+                            'label' => 'Иван Иванов',
+                             'attr' => 'required'])
             @endslot
         @endcomponent
 
@@ -136,7 +137,8 @@
                             'positionClass' => 'labelwrap_single',
                             'name' => 'email',
                             'type' => 'email',
-                            'label' => 'primer@mail.ru' ])
+                            'label' => 'primer@mail.ru',
+                             'attr' => 'required'])
             @endslot
         @endcomponent
 
@@ -146,7 +148,8 @@
                             'positionClass' => 'labelwrap_single',
                             'name' => 'phone',
                             'type' => 'tel',
-                            'label' => '+7 (999) 999-99-99' ])
+                            'label' => '+7 (999) 999-99-99',
+                             'attr' => 'required'])
             @endslot
         @endcomponent
 
