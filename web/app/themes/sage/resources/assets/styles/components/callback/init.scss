@@ -193,6 +193,7 @@
   bottom: 20px !important;
   right: 15px !important;
   transition: bottom ease 200ms;
+  z-index: 4 !important;
 }
 
 .sticky_active {
