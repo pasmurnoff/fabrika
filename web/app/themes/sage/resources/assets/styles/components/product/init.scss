@@ -109,4 +109,24 @@
       padding-left: 30px;
     }
   }
+
+  &__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .share {
+      margin-right: 20px;
+      margin-bottom: 15px;
+      flex-basis: 160px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__price-description {
+    flex-basis: calc(100% - 180px);
+    min-width: 200px;
+    line-height: 1.4;
+  }
 }

@@ -1,0 +1,29 @@
+.product__download {
+  position: relative;
+  margin: 35px 0;
+
+  .download {
+    &__wrap {
+      text-decoration: none;
+      transition: color ease 200ms;
+      padding-left: 40px;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &__pdf {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: max-content;
+      margin-right: 15px;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

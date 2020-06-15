@@ -1,7 +1,6 @@
 .share {
-  margin-top: 15px;
-  margin-bottom: 15px;
   position: relative;
+  width: max-content;
 
   &__icon {
     display: flex;
@@ -34,6 +33,12 @@
 
     .share__icon {
       border-color: white;
+    }
+  }
+
+  &.active {
+    .share__wrapper {
+      background-color: #eee;
     }
   }
 

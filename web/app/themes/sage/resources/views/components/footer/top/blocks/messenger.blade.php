@@ -10,11 +10,14 @@
         <div class="footer-messenger__icons-wrap">
             <div class="text text_bold text_middle">Ответим на ваши вопросы в мессенджерах</div>
             <div class="footer-messenger__icons">
-                <a href="#"
+                <a href="viber://chat?number=79274519036"
+                   target="_blank"
                    class="footer-messenger__icon footer-messenger__icon_viber">@include('icon::social.viber')</a>
-                <a href="#"
+                <a href="tg://resolve?domain=fabrikanoskov_sotrudnik"
+                   target="_blank"
                    class="footer-messenger__icon footer-messenger__icon_telegram">@include('icon::social.telegram')</a>
-                <a href="#"
+                <a href="https://wa.me/79274519036"
+                   target="_blank"
                    class="footer-messenger__icon footer-messenger__icon_whatsapp">@include('icon::social.whatsapp')</a>
             </div>
         </div>

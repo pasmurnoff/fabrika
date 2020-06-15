@@ -22,6 +22,13 @@
 @endphp
 
 @php do_action( 'woocommerce_share' ); @endphp
+<div class="product__block mrgn35">
+    @include('components.share.share')
+    <div class="text text_grey product__price-description">Цена действительна только для интернет-магазина и может
+        отличаться от
+        цен в розничных магазинах
+    </div>
+</div>
+@include('components.download.wrap')
 @include('components.single-product.delivery')
-@include('components.share.share')
 @include('components.single-product.views')
