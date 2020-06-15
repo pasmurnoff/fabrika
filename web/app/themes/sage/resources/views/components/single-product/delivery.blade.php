@@ -36,7 +36,7 @@
 
 <div class="product__delivery mrgn35">
     <div class="text text_bold pdng5-bottom">Доставка</div>
-    <p class="delivery__city title">В Казань</p>
+   {{-- <p class="delivery__city title">В Казань</p>--}}
     <ul class="delivery__items">
         @php
             global $product;

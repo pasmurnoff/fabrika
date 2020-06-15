@@ -36,4 +36,11 @@ function filter_yith_wcwl_wishlist_view_quantity_heading($var)
 add_filter('yith_wcwl_wishlist_view_stock_heading', 'filter_yith_wcwl_wishlist_view_quantity_heading', 10, 1);
 
 
+function filter_yith_wcwl_wishlist_view_out_of_stock($var)
+{
+    return __('Out of stock', 'woocommerce');
+}
+
+add_filter('yith_wcwl_out_of_stock_label', 'filter_yith_wcwl_wishlist_view_out_of_stock', 10, 1);
+
 

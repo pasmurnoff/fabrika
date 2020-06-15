@@ -1,0 +1,36 @@
+.showcoupon {
+  color: $greytext;
+}
+
+.checkout_coupon {
+  display: flex;
+  align-items: flex-start;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  .coupon__text {
+    width: 220px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .input-text {
+    @extend .input;
+
+    width: 230px;
+  }
+
+  .button {
+    background-color: $black;
+    color: white;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $secondcolor;
+    }
+  }
+}

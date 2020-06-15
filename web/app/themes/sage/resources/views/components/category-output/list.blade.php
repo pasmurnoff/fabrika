@@ -5,7 +5,7 @@
             @php
                 $products = wc_get_products([
                     "product_cat" => $prodCat->slug,
-                    "posts_per_page" => 12
+                    "posts_per_page" => isset($count) ? $count : 12,
                     ])
             @endphp
 

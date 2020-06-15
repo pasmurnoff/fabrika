@@ -5,7 +5,23 @@
 
 @section('content')
     <div class="defaultpage">
-        @include('components.category-output.output-all', ['button' => 'Показать все носки', 'class' => 'mrgn15-bottom'])
+        <div class="work-order mrgn50">
+            <div class="title title_large pdng35-bottom">
+                Порядок работы со склада
+            </div>
+            <ol class="text work-order__list">
+                <li>Поступление запроса по необходимому артикулу, размеру и цвету</li>
+                <li>Подтверждение наличия на складе, если необходимый артикул отсутствуют на складе в нужном количестве,
+                    производителем предлагаются условия производства
+                </li>
+                <li>Заключение договора</li>
+                <li>Оплата стоимости тиража</li>
+                <li>Отгрузка или производство тиража</li>
+                <li>Доставка</li>
+            </ol>
+        </div>
+        @include('components.category-output.all.wrap')
+
         <div class="defaultpage__imgwrap">
             <img class="defaultpage__image" src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')"
                  alt="Купить носки оптом">
@@ -123,20 +139,4 @@
     </div>
 
     @include('components.whyus.whyus')
-
-    <div class="work-order mrgn50">
-        <div class="title title_large pdng35-bottom">
-            Порядок работы со склада
-        </div>
-        <ol class="text work-order__list">
-            <li>Поступление запроса по необходимому артикулу, размеру и цвету</li>
-            <li>Подтверждение наличия на складе, если необходимый артикул отсутствуют на складе в нужном количестве,
-                производителем предлагаются условия производства
-            </li>
-            <li>Заключение договора</li>
-            <li>Оплата стоимости тиража</li>
-            <li>Отгрузка или производство тиража</li>
-            <li>Доставка</li>
-        </ol>
-    </div>
 @endsection

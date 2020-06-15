@@ -11,6 +11,7 @@
   display: inline-block;
   text-decoration: none;
   transition: background-color ease 200ms;
+  outline: none;
 
   &:hover {
     background-color: #e4ebf3;
