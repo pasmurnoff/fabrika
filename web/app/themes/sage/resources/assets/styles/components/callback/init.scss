@@ -195,11 +195,3 @@
   transition: bottom ease 200ms;
   z-index: 4 !important;
 }
-
-.sticky_active {
-  @media screen and (max-width: 587px) {
-    .wrap_0b7 {
-      bottom: 131px !important;
-    }
-  }
-}
