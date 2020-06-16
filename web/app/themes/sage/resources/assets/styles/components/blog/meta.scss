@@ -8,7 +8,8 @@
 
   &__views,
   &__author,
-  &__time {
+  &__time,
+  &__rating {
     margin-right: 15px;
     margin-bottom: 15px;
 
@@ -49,6 +50,15 @@
   &_single {
     .blog__meta {
       align-items: flex-start;
+    }
+  }
+
+  &__rating {
+    font-weight: 600;
+
+    i {
+      color: #ffca00;
+      margin-right: 5px;
     }
   }
 }

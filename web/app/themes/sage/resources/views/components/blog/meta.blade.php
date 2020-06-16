@@ -2,14 +2,20 @@
     @php
         $name = get_the_author_meta('display_name');
         $authorImg = get_avatar_url(get_post(),['size' => 48]);
-        $views = get_post_meta(get_post()->ID, 'views', true);
+     /*   $views = get_post_meta(get_post()->ID, 'views', true);*/
+        $rating = wp__get_data('vote-total', get_post()->ID);
     @endphp
-    @if($views)
-        <div class="blog__views">
-            <div class="views text">
-                <i class="fas fa-eye"></i>
-                <span class="views__text text">{{ $views }}</span>
+    {{--    @if($views)
+            <div class="blog__views">
+                <div class="views text">
+                    <i class="fas fa-eye"></i>
+                    <span class="views__text text">{{ $views }}</span>
+                </div>
             </div>
+        @endif--}}
+    @if($rating > 0)
+        <div class="blog__rating text">
+            <i class="fas fa-star"></i>{!! $rating !!}
         </div>
     @endif
     @if($name)

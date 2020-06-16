@@ -22,6 +22,10 @@
         @php the_content(); @endphp
       </div>
 
+      <div class="article__rating">
+        @php rating() @endphp
+      </div>
+
     </div>
     @endwhile
   </div>

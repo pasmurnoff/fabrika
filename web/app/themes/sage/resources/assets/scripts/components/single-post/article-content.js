@@ -1,5 +1,5 @@
 export default function () {
-    const $titles = $('.blog_single h3');
+    const $titles = $('.blog_single h3, .blog_single p strong');
 
     $titles.length > 0 ? $titles.each(function (index) {
         let $item = $(this).clone();
