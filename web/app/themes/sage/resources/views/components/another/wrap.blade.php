@@ -19,5 +19,5 @@
 @php $prodCat =$productCategories[$random]@endphp
 <div class="category-output mrgn35-top">
     @include('components.category-output.title')
-    @include('components.category-output.list')
+    @include('components.category-output.list', ['overflow' => ''])
 </div>

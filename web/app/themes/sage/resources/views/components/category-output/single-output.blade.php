@@ -5,7 +5,7 @@
            class="button button_transparent">{{ $button or '' }}</a>
     </div>
 
-    <ul class="category-output__list products columns-6">
+    <ul class="category-output__list  @php echo isset($overflow) ? 'products_overflow' : '' @endphp products columns-6">
         {{ $productLoop or '' }}
     </ul>
 </div>

@@ -1,19 +1,26 @@
 .archive {
   &__wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .products {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      }
+    }
   }
 
   &__content {
     width: 100%;
+    flex-basis: calc(100% - 325px);
   }
 
   &__description {
     width: 100%;
     font-family: $font;
     font-size: 14px;
-    padding-top: 60px;
     color: $greytext;
     line-height: 1.7;
 

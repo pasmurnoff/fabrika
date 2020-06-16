@@ -7,6 +7,6 @@
 @foreach($productCategories as $prodCat)
     <div class="category-output mrgn35-top">
         @include('components.category-output.all.title')
-        @include('components.category-output.list', ['count' => 18])
+        @include('components.category-output.list', ['count' => 18, 'overflow' => ''])
     </div>
 @endforeach
