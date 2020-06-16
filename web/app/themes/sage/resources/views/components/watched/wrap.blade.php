@@ -1,4 +1,6 @@
-@if (isset($_COOKIE['watched']) && is_product())
+@php $checkIfAlone = count($_COOKIE['watched']) == 1 ? true : false @endphp
+
+@if (isset($_COOKIE['watched']) && is_product() && !$checkIfAlone)
     @component('components.category-output.single-output', ['title' => 'Вы смотрели', 'button' => 'Перейти в магазин' , 'overflow' => ''])
         @slot('href')
             @php echo get_permalink(wc_get_page_id('shop')) @endphp
