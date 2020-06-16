@@ -14,6 +14,9 @@
                 <div class="blog__excerpt">
                     @php the_excerpt(); @endphp
                 </div>
+                <div class="mrgn15-top">
+                    @include('components.blog.meta')
+                </div>
             </div>
             <div class="blog__side">
                 <div class="blog__thumb blog__thumb_loop">
@@ -25,8 +28,7 @@
     </div>
     @php the_posts_pagination([
         'screen_reader_text' => ' ',
-        'prev_text' => '<i class="archive__pagination-icon fas fa-angle-double-left"></i>',
-        'next_text' => '<i class="archive__pagination-icon fas fa-angle-double-right"></i>',
+        'prev_next' => false,
         'end_size' => 3,
         'mid_size' => 3,
 ]) @endphp

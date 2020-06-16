@@ -1,0 +1,103 @@
+.comment {
+  &-respond {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    padding: 25px 30px 5px 30px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    textarea,
+    input {
+      font-family: $font;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 14px;
+      border: solid 1px #c6c6c6;
+      padding: 10px;
+      outline: none;
+      line-height: 20px;
+      margin: 0;
+      color: $black;
+      border-radius: 5px;
+      transition: border-color ease 200ms;
+
+      &:focus {
+        border-color: $black;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+
+      &.submit {
+        outline: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 40px;
+        color: white;
+        background: $black;
+        cursor: pointer;
+        border: 0;
+        width: max-content;
+        margin-bottom: 15px;
+        font-weight: 400;
+        border-radius: 5px;
+        transition: background-color ease 200ms;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+
+    &-comment {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-author {
+      width: 50%;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-reply {
+    &-title {
+      margin: 0;
+      text-transform: capitalize;
+      color: $black;
+      float: left;
+      width: 100%;
+      margin-bottom: 15px !important;
+    }
+  }
+}
+
+#cancel-comment-reply-link {
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #cecece;
+  color: $black;
+  margin-left: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 100px;
+}
