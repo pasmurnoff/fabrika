@@ -49,6 +49,7 @@
         формой для связи с нами.
       @endslot
     @endcomponent
+      @php $cityName = get_field('city-name') @endphp
       <h2 class="title titl_large mrgn35-bottom">Пункты выдачи в {{ get_field('city-rod') }}</h2>
       @if( have_rows('city-contact') )
           <div class="points points_contact">
@@ -63,6 +64,9 @@
                   @endphp
                   @if($address || $phone || $mail || $time)
                       <div class="points__items">
+                          @if($cityName)
+                          <div class="points__title text_grey text_bold">{!! $cityName !!}</div>
+                          @endif
                           @if($address)
                               <div class="points__address points__item">
                                   <div class="points__icon">@include('icon::country.city.map-marker')</div>

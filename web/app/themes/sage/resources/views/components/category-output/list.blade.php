@@ -1,7 +1,7 @@
 @isset($class)
     <div class="{{$class}}">
         @endisset
-        <ul class="category-output__list products columns-6">
+        <ul class="category-output__list products @php echo isset($overflow) ? 'products_overflow' : ''  @endphp">
             @php
                 $products = wc_get_products([
                     "product_cat" => $prodCat->slug,

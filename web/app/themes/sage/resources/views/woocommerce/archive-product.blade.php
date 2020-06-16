@@ -71,6 +71,21 @@ the readme will list any important changes.
       @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
     </div>
   </div>
+      @if (!have_posts())
+        @php
+          $productCategories = get_terms([
+              'taxonomy' => "product_cat",
+              'orderby' => 'count',
+              'parent' => 0
+          ])
+        @endphp
+        @foreach($productCategories as $prodCat)
+          <div class="category-output">
+            @include('components.category-output.title')
+            @include('components.category-output.list' , ['overflow' => '', 'count' => 10])
+          </div>
+        @endforeach
+      @endif
   @php
     do_action('woocommerce_after_main_content');
     do_action('get_sidebar', 'shop');
