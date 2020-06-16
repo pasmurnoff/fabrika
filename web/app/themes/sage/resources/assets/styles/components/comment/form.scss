@@ -68,7 +68,8 @@
       flex-direction: column;
     }
 
-    &-author {
+    &-author,
+    &-email {
       width: 50%;
 
       @media screen and (max-width: 767px) {
