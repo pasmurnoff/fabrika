@@ -1,0 +1,60 @@
+.single-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .title {
+    width: 70%;
+    color: $greytext;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $black;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
+  }
+
+  &_next {
+    justify-content: flex-end;
+  }
+
+  &__navs {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 48%;
+
+    &_next {
+      align-items: flex-end;
+
+      @media screen and (max-width: 767px) {
+        align-self: flex-end;
+      }
+
+      a {
+        text-align: right;
+      }
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 17px;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &_prev {
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    color: $greytext;
+  }
+}

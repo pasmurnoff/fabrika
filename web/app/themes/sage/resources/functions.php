@@ -231,3 +231,4 @@ require_once dirname(__DIR__) . '/resources/functions/add-to-cart-text.php';
 require_once dirname(__DIR__) . '/resources/functions/orderby.php';
 require_once dirname(__DIR__) . '/resources/functions/read-timing.php';
 require_once dirname(__DIR__) . '/resources/functions/rating.php';
+require_once dirname(__DIR__) . '/resources/functions/comment.php';

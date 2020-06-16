@@ -3,6 +3,7 @@
 @import "pagination";
 @import "meta";
 @import "article-content";
+@import "navigation";
 
 .blog {
   &_loop {
@@ -52,10 +53,7 @@
       width: 100%;
       object-fit: cover;
       border-radius: 6px;
-
-      @media screen and (max-width: 1023px) {
-        height: 600px;
-      }
+      height: 450px;
 
       @media screen and (max-width: 767px) {
         height: 350px;
