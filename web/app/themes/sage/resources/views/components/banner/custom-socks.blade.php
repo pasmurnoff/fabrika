@@ -1,4 +1,7 @@
-@component('components.banner.banner', ['classes' => 'banner__order banner_bg mrgn35', 'title' => 'Носки на заказ с Вашим дизайном от 35 рублей', 'href' => '/konstruktor-zakaza-noskov', 'buttonText' => 'Заказать носки' ])
+@component('components.banner.banner', ['classes' => 'banner__order banner_bg mrgn35', 'href' => '/konstruktor-zakaza-noskov', 'buttonText' => 'Заказать носки' ])
+    @slot('title')
+        Носки на заказ с Вашим дизайном <br> от 35 рублей
+        @endslot
     @slot('text')
         <ul class="banner__order-list">
             <li class="banner__order-item">Носки для магазинов шоурумов</li>
