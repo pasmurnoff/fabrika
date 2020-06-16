@@ -31,6 +31,7 @@
     @media screen and (max-width: 587px) {
       align-items: flex-start;
       padding-top: 15px;
+      height: 120px;
     }
   }
 
@@ -53,6 +54,16 @@
   .sticky-cart {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media screen and (max-width: 587px) {
+    .wrap_0b7 {
+      bottom: 145px !important;
+    }
+
+    .mswipe__trigger {
+      bottom: 145px !important;
+    }
   }
 
   #main {

@@ -16,5 +16,4 @@
         <a href="@php echo get_term_link($prodCat) @endphp"
            class="button button_transparent">Открыть мужскую коллекцию</a>
     @endif
-
 </div>

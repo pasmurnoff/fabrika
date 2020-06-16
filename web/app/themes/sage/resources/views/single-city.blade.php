@@ -7,60 +7,9 @@
 
 @section('content')
   <div class="city">
-
-    @if( have_rows('city-contact') )
-      <div class="points points_contact">
-
-        @while (have_rows('city-contact'))
-          @php the_row();
-
-                $address = get_sub_field('address');
-                $phone = get_sub_field('phone');
-                $mail = get_sub_field('mail');
-                $time = get_sub_field('work-time');
-          @endphp
-          @if($address || $phone || $mail || $time)
-            <div class="points__items">
-              @if($address)
-                <div class="points__address points__item">
-                  <div class="points__icon">@include('icon::country.city.map-marker')</div>
-                  @php echo $address @endphp
-                </div>
-              @endif
-
-              @if($phone)
-                <div class="points__phone points__item">
-                  <div class="points__icon">@include('icon::country.city.phone')</div>
-                  <a class="points__link"
-                     href="tel:@php echo preg_replace('/[^0-9]/', '', $phone) @endphp">@php echo $phone @endphp</a>
-                </div>
-              @endif
-
-              @if($mail)
-                <div class="points__mail points__item">
-                  <div class="points__icon">@include('icon::country.city.envelope')</div>
-                  <a class="points__link" href="mailto:@php echo $mail @endphp">@php echo $mail @endphp</a>
-                </div>
-              @endif
-
-              @if($time)
-                <div class="points__work points__item">
-                  <div class="points__icon">@include('icon::country.city.clock')</div>
-                  @php echo $time @endphp
-                </div>
-              @endif
-            </div>
-          @endif
-        @endwhile
-
+      <div class="mrgn35">
+          @include('components.banner.banner-duo')
       </div>
-    @endif
-    @component('components.banner.simple', ['href' =>'/magazin', 'buttonText' =>'Оптовый магазин носков'])
-      @slot('title')
-        <div class="mrgn15-bottom">Продажа носков оптом от производителя</div>
-        <div>Минимальная партия заказа 100 пар</div>
-      @endslot
-    @endcomponent
 
     <div class="text city__text">
       <h2 class="title title_large">Где в городе {{ get_field('city-rod') }} купить носки оптом</h2>
@@ -91,12 +40,7 @@
     {{--            </ul>--}}
     {{--        @endif--}}
 
-    @component('components.banner.simple', ['href' =>'/magazin', 'buttonText' =>'Заказать носки'])
-      @slot('title')
-        <div class="mrgn15-bottom">Изготовление носков по вашему дизайну</div>
-        <div>Минимальная партия заказа 100 пар</div>
-      @endslot
-    @endcomponent
+        @include('components.banner.custom-socks')
 
     @component('components.form.default', ['title' => 'Напишите нам'])
       @slot('text')
@@ -105,5 +49,53 @@
         формой для связи с нами.
       @endslot
     @endcomponent
+      <h2 class="title titl_large mrgn35-bottom">Пункты выдачи в {{ get_field('city-rod') }}</h2>
+      @if( have_rows('city-contact') )
+          <div class="points points_contact">
+
+              @while (have_rows('city-contact'))
+                  @php the_row();
+
+                $address = get_sub_field('address');
+                $phone = get_sub_field('phone');
+                $mail = get_sub_field('mail');
+                $time = get_sub_field('work-time');
+                  @endphp
+                  @if($address || $phone || $mail || $time)
+                      <div class="points__items">
+                          @if($address)
+                              <div class="points__address points__item">
+                                  <div class="points__icon">@include('icon::country.city.map-marker')</div>
+                                  @php echo $address @endphp
+                              </div>
+                          @endif
+
+                          @if($phone)
+                              <div class="points__phone points__item">
+                                  <div class="points__icon">@include('icon::country.city.phone')</div>
+                                  <a class="points__link"
+                                     href="tel:@php echo preg_replace('/[^0-9]/', '', $phone) @endphp">@php echo $phone @endphp</a>
+                              </div>
+                          @endif
+
+                          @if($mail)
+                              <div class="points__mail points__item">
+                                  <div class="points__icon">@include('icon::country.city.envelope')</div>
+                                  <a class="points__link" href="mailto:@php echo $mail @endphp">@php echo $mail @endphp</a>
+                              </div>
+                          @endif
+
+                          @if($time)
+                              <div class="points__work points__item">
+                                  <div class="points__icon">@include('icon::country.city.clock')</div>
+                                  @php echo $time @endphp
+                              </div>
+                          @endif
+                      </div>
+                  @endif
+              @endwhile
+
+          </div>
+      @endif
   </div>
 @endsection

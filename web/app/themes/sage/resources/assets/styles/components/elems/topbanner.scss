@@ -19,6 +19,10 @@
     font-family: "noski", sans-serif;
     text-decoration: none;
     font-size: 14px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 13px;
+    }
   }
 
   &__mobilefix {
@@ -32,6 +36,10 @@
     padding: 8px 20px;
     font-weight: 700;
     border-radius: 6px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__cross {
@@ -48,6 +56,10 @@
     width: 12px;
     fill: #fff;
     transform: scale(1.3);
+
+    @media screen and (max-width: 767px) {
+      transform: scale(1);
+    }
   }
 }
 

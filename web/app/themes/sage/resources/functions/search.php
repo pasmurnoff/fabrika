@@ -9,6 +9,11 @@ function data_fetch()
         'posts_per_page' => 20,
         's' => esc_attr($_POST['keyword']),
         'post_type' => 'product',
+        "meta_query" => [
+            "key" => "_sku",
+            "value" => esc_attr($_POST['keyword']),
+            "compare" => "LIKE"
+        ]
     ]);
 
     if ($the_query->have_posts()) :

@@ -6,7 +6,7 @@
                      src="{{ get_the_post_thumbnail_url($productId) }}"
                      class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                      alt="{!! get_the_title($productId) !!}">
-                <object type="owo/uwu">
+                <object>
                     @include('components.product.tools')
                 </object>
             </div>
