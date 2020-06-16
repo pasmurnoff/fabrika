@@ -11,3 +11,41 @@
   font-family: "noski";
   src: url("/app/themes/sage/resources/assets/fonts/noski-bold.woff2") format("woff2"), url("/app/themes/sage/resources/assets/fonts/noski-bold.woff") format("woff");
 }
+
+/* stylelint-disable */
+
+@font-face {
+  font-family: "SF";
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: local("SF UI Text Regular"),
+  local("SFUIText-Regular"),
+  url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/SFUIText-Regular.woff") format("woff"),
+  url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("../fonts/SFUIText-Semibold.eot");
+  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"),
+  url("../fonts/SFUIText-Semibold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/SFUIText-Semibold.woff") format("woff"),
+  url("../fonts/SFUIText-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("../fonts/SFUIText-Bold.eot");
+  src: local("SF UI Text Bold"), local("SFUIText-Bold"),
+  url("../fonts/SFUIText-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/SFUIText-Bold.woff") format("woff"),
+  url("../fonts/SFUIText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* stylint-enable */
