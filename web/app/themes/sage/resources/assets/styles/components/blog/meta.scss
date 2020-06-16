@@ -45,4 +45,10 @@
       }
     }
   }
+
+  &_single {
+    .blog__meta {
+      align-items: flex-start;
+    }
+  }
 }

@@ -1,0 +1,33 @@
+.article {
+  &__content {
+    margin: 20px 0;
+    padding: 35px 45px;
+    background-color: #f2f4f9;
+    border-radius: 15px;
+
+    &-title {
+      margin-bottom: 15px;
+    }
+
+    &-item {
+      margin-bottom: 10px;
+
+      a {
+        line-height: 1.4;
+        text-decoration: none;
+        font-size: 15px;
+        color: $black;
+        transition: color ease 200ms;
+
+        &:hover {
+          color: $greytext;
+        }
+      }
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}

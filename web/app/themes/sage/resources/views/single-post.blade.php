@@ -6,12 +6,12 @@
 @section('content')
   <div class="blog blog_single">
     @while(have_posts()) @php the_post() @endphp
+    @include('components.blog.meta')
     <div class="blog__item blog__item_single">
-      @include('components.blog.meta')
 
       <div class="article__content hidden">
         <h2 class="article__content-title title title_large">Содержание</h2>
-        <div class="article__list"></div>
+        <ul class="article__list"></ul>
       </div>
 
       <div class="blog__thumb blog__thumb_single">

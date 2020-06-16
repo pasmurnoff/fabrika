@@ -7,7 +7,7 @@ export default function () {
         $(this).wrap(function () {
             return '<div id="paragraph' + index + '">';
         })
-        $('<a class="text article__content-item" href="#paragraph' + index + '">' + $item.html() + '</a>')
+        $('<li class="article__content-item"><a class="text" href="#paragraph' + index + '">' + $item.html() + '</a></li>')
             .appendTo('.article__list')
 
     }) && $('.article__content').removeClass('hidden') : '';
