@@ -1,4 +1,10 @@
 .related {
+  width: 100%;
+
+  .products {
+    @extend .products_overflow;
+  }
+
   &_title {
     border-bottom: 1px solid $grey;
   }

@@ -21,7 +21,7 @@
 @endif
 @include('components.watched.wrap')
 @if($related_products)
-    <section class="related products mrgn35-top">
+    <section class="related mrgn35-top">
         <?php
         $heading = apply_filters('woocommerce_product_related_products_heading', __('Related products', 'woocommerce'));
 

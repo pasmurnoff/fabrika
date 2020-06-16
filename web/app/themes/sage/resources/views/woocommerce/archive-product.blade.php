@@ -64,13 +64,15 @@ the readme will list any important changes.
 
   </div>
   <div class="archive__description">
-    @php
-      do_action('woocommerce_archive_description');
-    @endphp
     <div class="archive__form">
       @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
     </div>
+    @php
+      do_action('woocommerce_archive_description');
+    @endphp
   </div>
+
+  {{-- Если не найдены товары --}}
       @if (!have_posts())
         @php
           $productCategories = get_terms([
@@ -86,6 +88,7 @@ the readme will list any important changes.
           </div>
         @endforeach
       @endif
+  {{-- Если не найдены товары --}}
   @php
     do_action('woocommerce_after_main_content');
     do_action('get_sidebar', 'shop');
