@@ -229,5 +229,5 @@ require_once dirname(__DIR__) . '/resources/functions/breadcrumb-separator.php';
 require_once dirname(__DIR__) . '/resources/functions/coupon.php';
 require_once dirname(__DIR__) . '/resources/functions/add-to-cart-text.php';
 require_once dirname(__DIR__) . '/resources/functions/orderby.php';
-
+require_once dirname(__DIR__) . '/resources/functions/read-timing.php';
 
