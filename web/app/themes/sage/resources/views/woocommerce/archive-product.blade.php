@@ -14,84 +14,99 @@ the readme will list any important changes.
 @extends('layouts.app')
 
 @section('content')
-  @php
-    do_action('get_header', 'shop');
-    do_action('woocommerce_before_main_content');
-  @endphp
+    @php
+        do_action('get_header', 'shop');
+        do_action('woocommerce_before_main_content');
+    @endphp
 
-  @if(apply_filters('woocommerce_show_page_title', true))
-    <h1 class="woocommerce-products-header__title page-title">{!! woocommerce_page_title(false) !!}</h1>
-  @endif
-
-  @php do_action('custom_woocommerce_before_sidebar') @endphp
-
-  @if(is_dynamic_sidebar('filter-sidebar'))
-    @include('components.filter.filter')
-  @endif
-
-  <div class="archive__content">
-
-    {{--  @if (function_exists('dynamic_sidebar'))
-          @php dynamic_sidebar('tags-cloud') @endphp
-      @endif--}}
-    @include('components.tags.wrap')
-
-    @if(woocommerce_product_loop())
-      @php
-        do_action('woocommerce_before_shop_loop');
-        woocommerce_product_loop_start();
-      @endphp
-
-      @if(wc_get_loop_prop('total'))
-        @while(have_posts())
-          @php
-            the_post();
-            do_action('woocommerce_shop_loop');
-            wc_get_template_part('content', 'product');
-          @endphp
-        @endwhile
-      @endif
-
-      @php
-        woocommerce_product_loop_end();
-        do_action('woocommerce_after_shop_loop');
-      @endphp
-    @else
-      @php
-        do_action('woocommerce_no_products_found');
-      @endphp
+    @if(apply_filters('woocommerce_show_page_title', true))
+        <h1 class="woocommerce-products-header__title page-title">{!! woocommerce_page_title(false) !!}</h1>
     @endif
 
-  </div>
-  <div class="archive__description">
-    <div class="archive__form">
-      @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
-    </div>
-    @php
-      do_action('woocommerce_archive_description');
-    @endphp
-  </div>
+    @php do_action('custom_woocommerce_before_sidebar') @endphp
 
-  {{-- Если не найдены товары --}}
-      @if (!have_posts())
+    @if(is_dynamic_sidebar('filter-sidebar'))
+        @include('components.filter.filter')
+    @endif
+
+    <div class="archive__content">
+
+        {{--  @if (function_exists('dynamic_sidebar'))
+              @php dynamic_sidebar('tags-cloud') @endphp
+          @endif--}}
+        @include('components.tags.wrap')
+
+        @if(woocommerce_product_loop())
+            @php
+                do_action('woocommerce_before_shop_loop');
+                woocommerce_product_loop_start();
+            @endphp
+
+            @if(wc_get_loop_prop('total'))
+                @while(have_posts())
+                    @php
+                        the_post();
+                        do_action('woocommerce_shop_loop');
+                        wc_get_template_part('content', 'product');
+                    @endphp
+                @endwhile
+            @endif
+
+            @php
+                woocommerce_product_loop_end();
+                do_action('woocommerce_after_shop_loop');
+            @endphp
+        @else
+            @php
+                do_action('woocommerce_no_products_found');
+            @endphp
+        @endif
+
+        {{-- Within subcategories --}}
         @php
-          $productCategories = get_terms([
-              'taxonomy' => "product_cat",
-              'orderby' => 'count',
-              'parent' => 0
-          ])
+            $term = get_queried_object();
+            $children = get_terms( $term->taxonomy, array(
+                    'parent'    => $term->term_id,
+                    'hide_empty' => true
+                ));
+        @endphp
+        @foreach($children as $prodCat)
+                <div class="category-output mrgn35-top">
+                    @include('components.category-output.title')
+                    @include('components.category-output.list', ['overflow' => '', 'count' => 10])
+                </div>
+        @endforeach
+        {{-- Within subcategories --}}
+    </div>
+    <div class="archive__description">
+        <div class="archive__form">
+            @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
+        </div>
+        @php
+            do_action('woocommerce_archive_description');
+        @endphp
+    </div>
+
+    {{-- Если не найдены товары --}}
+    @if (!have_posts())
+        @php
+            $productCategories = get_terms([
+                'taxonomy' => "product_cat",
+                'orderby' => 'count',
+                'parent' => 0
+            ])
         @endphp
         @foreach($productCategories as $prodCat)
-          <div class="category-output">
-            @include('components.category-output.title')
-            @include('components.category-output.list' , ['overflow' => '', 'count' => 10])
-          </div>
+            <div class="category-output">
+                @include('components.category-output.title')
+                @include('components.category-output.list' , ['overflow' => '', 'count' => 10])
+            </div>
         @endforeach
-      @endif
-  {{-- Если не найдены товары --}}
-  @php
-    do_action('woocommerce_after_main_content');
-    do_action('get_sidebar', 'shop');
-    do_action('get_footer', 'shop');
-  @endphp
+    @endif
+    {{-- Если не найдены товары --}}
+    @php
+        do_action('woocommerce_after_main_content');
+        do_action('get_sidebar', 'shop');
+        do_action('get_footer', 'shop');
+    @endphp
 @endsection
