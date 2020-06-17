@@ -1,5 +1,7 @@
-.product {
-  &__img-wrap {
-    position: relative;
+.products {
+  .product {
+    &__img-wrap {
+      position: relative;
+    }
   }
 }

@@ -1,0 +1,31 @@
+.single-product {
+  #comments {
+    margin-bottom: 15px;
+  }
+
+  .woocommerce-noreviews {
+    margin-bottom: 15px;
+  }
+
+  .comment-reply-title {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .comment-form {
+    &-author,
+    &-email {
+      margin: 10px 0;
+    }
+
+    &-comment {
+      label {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .form-submit {
+    margin-top: 15px;
+  }
+}
