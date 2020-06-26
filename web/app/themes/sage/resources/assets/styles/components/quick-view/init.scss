@@ -24,7 +24,7 @@
     }
 
     &::after {
-      content: url("resources/assets/images/components/quick-view/expand.svg");
+      content: url("../images/components/quick-view/expand.svg");
       position: absolute;
       width: 50%;
       height: 50%;
@@ -34,8 +34,10 @@
     }
 
     .blockUI {
-      border-radius: 50%;
-      opacity: 0.3 !important;
+      background: url("../images/ajax-loader.svg") !important;
+      background-position: center !important;
+      background-size: 40px !important;
+      background-repeat: no-repeat !important;
     }
   }
 }
