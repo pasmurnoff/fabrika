@@ -28,6 +28,7 @@ import pageCdek from './routes/pageCdek';
 import singleProduct from './routes/singleProduct';
 import pageMaket from './routes/pageMaket';
 import singlePost from './routes/singlePost';
+import pageNaZakaz from './routes/pageNaZakaz';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -41,6 +42,8 @@ const routes = new Router({
     singleProduct,
 
     singlePost,
+
+    pageNaZakaz,
 });
 
 // Load Events

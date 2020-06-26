@@ -1,0 +1,148 @@
+.price-filter {
+  &__wrapper {
+    box-shadow: 3px 3px 10px #cac9de;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 30px 0;
+    padding-right: 100px;
+    background-color: #fff;
+  }
+
+  &__per-one {
+    color: #ff2468;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  &__slider-wrap {
+    width: 100%;
+  }
+
+  &__values {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__value {
+    @extend .text;
+
+    font-size: 11px;
+    flex-basis: max-content;
+    color: $black;
+    font-weight: 600;
+    margin-top: 7px;
+  }
+
+  /* stylelint-disable */
+  &__content {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__count {
+    border: 2px solid #d1d1d1;
+    padding: 0 12px;
+    width: max-content;
+    color: $black;
+    font-weight: 600;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(120%, -50%);
+  }
+
+  &__input {
+    -webkit-appearance: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    margin-left: 0;
+  }
+
+  &__lower-fill {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    top: calc(50% - 4px);
+    right: 0;
+    background: #8ac1ef;
+    border-radius: 6px;
+    z-index: 2;
+  }
+
+  &__upper-fill {
+    position: absolute;
+    height: 4px;
+    top: calc(50% - 4px);
+    right: 0;
+    background-color: #d8d8d8;
+    border-radius: 6px;
+    z-index: 2;
+  }
+
+  /* IE */
+  &__input::-ms {
+    &-track {
+      width: 100%;
+      height: 5px;
+      background: transparent;
+      color: transparent;
+      border-color: transparent;
+      border-width: 14px 0;
+    }
+
+    .price-filter__fill-lower {
+      background: transparent;
+    }
+
+    &-thumb {
+      border: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ff2468;
+      cursor: pointer;
+      position: relative;
+      z-index: 4;
+      margin-top: 4px;
+    }
+
+    &-tooltip {
+      display: none;
+    }
+  }
+
+  /* Chrome */
+  &__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ff2468;
+    cursor: pointer;
+  }
+
+  /* Firefox */
+  &__input::-moz {
+    &-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ff2468;
+      cursor: pointer;
+    }
+
+    &-focus-outer {
+      border: 0;
+    }
+  }
+
+  /* stylelint-enable */
+}

@@ -13,7 +13,6 @@
             @foreach ($products as $product)
                 @php setup_postdata($product) @endphp
                 @php
-                    $productId = $product->get_id();
                     $inStock = $product->is_in_stock();
                 @endphp
                 @include('components.product.product')
