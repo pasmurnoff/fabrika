@@ -115,6 +115,7 @@
     width: max-content;
     padding-bottom: 15px;
     border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 15px;
   }
 
   &__item {
@@ -176,14 +177,18 @@
 #itlcb-wrapper {
   z-index: 6 !important;
 
+  @media screen and (max-width: 1023px) {
+    z-index: 1000 !important;
+  }
+
   .itlcb-call-btn {
     left: 15px !important;
     bottom: 20px !important;
     right: auto !important;
-  }
 
-  @media screen and (max-width: 1023px) {
-    display: none !important;
+    @media screen and (max-width: 1023px) {
+      display: none !important;
+    }
   }
 }
 

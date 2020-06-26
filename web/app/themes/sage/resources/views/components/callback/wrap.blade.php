@@ -58,6 +58,12 @@
     </div>
 
     <div class="mswipe__points">
+        <div class="mswipe__point megafon-callback">
+            <div class="mswipe__point-inner">
+                <div class="mswipe__intext">Заказать звонок</div>
+                <div class="mswipe__inicon"></div>
+            </div>
+        </div>
         <div class="mswipe__point">
             <div class="mswipe__point-inner">
                 <div class="mswipe__intext">Скопировать ссылку</div>

@@ -1,4 +1,6 @@
 .category-output {
+  width: 100%;
+
   &_title {
     @media screen and (max-width: 567px) {
       padding-bottom: 15px;

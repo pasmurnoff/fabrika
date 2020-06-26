@@ -41,12 +41,10 @@
 
     @slot('productLoop')
         @foreach ($products as $product)
-            @php setup_postdata($product) @endphp
             @php $productId = $product->get_id() @endphp
             @if (get_the_ID() !== intval($productId))
-                @include('components.product.product', ['productId' => $productId])
+                @include('components.product.product')
             @endif
         @endforeach
-        @php wp_reset_postdata() @endphp
     @endslot
 @endcomponent

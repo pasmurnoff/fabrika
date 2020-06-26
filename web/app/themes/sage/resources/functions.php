@@ -143,9 +143,6 @@ require dirname(__DIR__) . '/resources/functions/product.php';
 require dirname(__DIR__) . '/resources/functions/change-rub.php';
 
 /* Изменяем количество колонок в выводе товаров */
-require dirname(__DIR__) . '/resources/functions/column-count.php';
-
-/* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
 
 add_action('wp_enqueue_scripts', 'add_custom_dropdown');
@@ -182,25 +179,26 @@ require_once dirname(__DIR__) . '/resources/functions/quantity-input.php';
  *
  * @return $args
  */
-function prefix_product_relationship_query_mods( $args, $field, $post_id ) {
+function prefix_product_relationship_query_mods($args, $field, $post_id)
+{
 
     $args['post_status'] = 'publish';
 
-    if( ! empty( $args['s'] ) ) {
+    if (!empty($args['s'])) {
 
-        $args['meta_query'] = array( array(
-            'key'		=> '_sku',
-            'value'		=> $args['s'],
-            'compare'	=> 'LIKE',
-        ) );
+        $args['meta_query'] = array(array(
+            'key' => '_sku',
+            'value' => $args['s'],
+            'compare' => 'LIKE',
+        ));
 
     }
 
     return $args;
 
 }
-add_filter( 'acf/fields/relationship/query/name=field_name', 'prefix_product_relationship_query_mods', 10, 3 );
 
+add_filter('acf/fields/relationship/query/name=field_name', 'prefix_product_relationship_query_mods', 10, 3);
 
 
 /* search ajax */
@@ -213,18 +211,16 @@ require_once dirname(__DIR__) . '/resources/functions/product-views.php';
 require_once dirname(__DIR__) . '/resources/functions/ajax_wp.php';
 
 /* Remove slug from cities, products, and woo_categories */
-require_once dirname(__DIR__) .'/resources/functions/remove-slugs.php';
+require_once dirname(__DIR__) . '/resources/functions/remove-slugs.php';
 
 /* Set default variation for all Products */
-require_once dirname(__DIR__) .'/resources/functions/default-variation.php';
+require_once dirname(__DIR__) . '/resources/functions/default-variation.php';
 
 /* Custom field for woocommerce product */
-require_once dirname(__DIR__) .'/resources/functions/woo-custom-field.php';
+require_once dirname(__DIR__) . '/resources/functions/woo-custom-field.php';
 
 /* Add last modified for all pages */
 require_once dirname(__DIR__) . '/resources/functions/last-modified.php';
-require_once dirname(__DIR__) . '/resources/functions/colors.php';
-require_once dirname(__DIR__) . '/resources/functions/product-tools.php';
 require_once dirname(__DIR__) . '/resources/functions/breadcrumb-separator.php';
 require_once dirname(__DIR__) . '/resources/functions/coupon.php';
 require_once dirname(__DIR__) . '/resources/functions/add-to-cart-text.php';

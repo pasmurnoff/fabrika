@@ -18,6 +18,7 @@ import './components/main-sidebar'
 import './components/manager-sku'
 import './forms/ajax-search'
 import './components/stories/init'
+import './components/callback/init'
 /*import './components/maket/comparison'*/
 
 // import local dependencies
@@ -27,6 +28,7 @@ import pageCdek from './routes/pageCdek';
 import singleProduct from './routes/singleProduct';
 import pageMaket from './routes/pageMaket';
 import singlePost from './routes/singlePost';
+import pageNaZakaz from './routes/pageNaZakaz';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -40,6 +42,8 @@ const routes = new Router({
     singleProduct,
 
     singlePost,
+
+    pageNaZakaz,
 });
 
 // Load Events

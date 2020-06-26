@@ -1,3 +1,4 @@
+@php $productId = $product->get_id(); @endphp
 @if($productId)
     <li class="product">
         <a href="{{ get_the_permalink($productId) }}" class="woocommerce-loop-product__link">

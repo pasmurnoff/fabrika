@@ -4,6 +4,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('components.price-filter.wrap')
     <div class="block-text">
         <div class="text">
             Наша фабрика может отвязать для вас носки на заказ. Любых расцветок и дизайнов. У нас своё производство и
