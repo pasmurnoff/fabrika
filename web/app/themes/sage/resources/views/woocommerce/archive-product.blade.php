@@ -63,19 +63,21 @@ the readme will list any important changes.
         @endif
 
         {{-- Within subcategories --}}
-        @php
-            $term = get_queried_object();
-            $children = get_terms( $term->taxonomy, array(
-                    'parent'    => $term->term_id,
-                    'hide_empty' => true
-                ));
-        @endphp
-        @foreach($children as $prodCat)
+        @if(!is_shop())
+            @php
+                $term = get_queried_object();
+                $children = get_terms( $term->taxonomy, array(
+                        'parent'    => $term->term_id,
+                        'hide_empty' => true
+                    ));
+            @endphp
+            @foreach($children as $prodCat)
                 <div class="category-output mrgn35-top">
                     @include('components.category-output.title')
                     @include('components.category-output.list', ['overflow' => '', 'count' => 10])
                 </div>
-        @endforeach
+            @endforeach
+        @endif
         {{-- Within subcategories --}}
     </div>
     <div class="archive__description">

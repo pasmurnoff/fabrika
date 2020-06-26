@@ -18,6 +18,7 @@ import './components/main-sidebar'
 import './components/manager-sku'
 import './forms/ajax-search'
 import './components/stories/init'
+import './components/callback/init'
 /*import './components/maket/comparison'*/
 
 // import local dependencies
