@@ -14,6 +14,11 @@
     font-size: 13px;
   }
 
+  &__old-price {
+    color: $black;
+    margin-right: 15px;
+  }
+
   &__slider-wrap {
     width: 100%;
   }
@@ -145,4 +150,17 @@
   }
 
   /* stylelint-enable */
+
+  &__summary {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__estimate {
+    padding-right: 35px;
+  }
+
+  &__sum {
+    color: #ff2468;
+  }
 }
