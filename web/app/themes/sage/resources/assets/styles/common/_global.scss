@@ -46,6 +46,32 @@ body {
   padding-top: 45px;
 }
 
+.mrgn50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &-top {
+    margin-top: 50px;
+  }
+
+  &-bottom {
+    margin-bottom: 50px;
+  }
+}
+
+.pdng50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-top {
+    padding-top: 50px;
+  }
+
+  &-bottom {
+    padding-bottom: 50px;
+  }
+}
+
 .mrgn35 {
   margin-top: 35px;
   margin-bottom: 35px;

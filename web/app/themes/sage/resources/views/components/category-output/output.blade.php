@@ -3,7 +3,6 @@
         $productCategories = get_terms([
             'taxonomy' => "product_cat",
             'orderby' => 'count',
-            'parent' => 0
         ])
 @endphp
 @foreach($productCategories as $prodCat)

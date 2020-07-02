@@ -33,7 +33,7 @@
     </li>
     <li class="menu__item footer__li">
         <a class="menu__link menu__link_grey footer__link" href="/fabrikanoskov-tehnicheskoe_zadanie.pdf"
-           target="_blank">Скачать техническое задание</a>
+        >Скачать техническое задание</a>
     </li>
     <li class="menu__item footer__li">
         <a class="menu__link menu__link_grey footer__link" href="/podarochnye-sertifikaty">Подарочные сертификаты</a>
@@ -46,10 +46,14 @@
     </li>
     <li class="menu__item footer__li">
         <a class="menu__link menu__link_grey footer__link" href="/polozhenie-o-razrabotke-disajna-ot-2019.jpg"
-           target="_blank">Положение о разработке дизайна</a>
+        >Положение о разработке дизайна</a>
     </li>
     <li class="menu__item footer__li">
         <a class="menu__link menu__link_grey footer__link" href="/prjazha"
-           target="_blank">Пряжа</a>
+        >Пряжа</a>
+    </li>
+    <li class="menu__item footer__li">
+        <a class="menu__link menu__link_grey footer__link" href="/tenderi"
+        >Участие в тендерах</a>
     </li>
 </ul>
