@@ -154,6 +154,10 @@
   &__summary {
     display: flex;
     align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__estimate {

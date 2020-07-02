@@ -11,6 +11,8 @@
 /* External libraries */
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "~@fortawesome/fontawesome-free/css/brands.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 /** Общие стили */
 @import "common/fonts";
@@ -186,3 +188,4 @@
 @import "components/comment/init";
 @import "components/price-filter/init";
 @import "components/tenders/init";
+@import "components/blocks/zakaz/init";
