@@ -3,7 +3,7 @@
 add_filter('woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text');
 function woocommerce_custom_single_add_to_cart_text()
 {
-    return __('Купить', 'woocommerce');
+    return __('Добавить в корзину', 'woocommerce');
 }
 
 // To change add to cart text on product archives(Collection) page
