@@ -1,10 +1,10 @@
-export default function () {
-    const dropdown = '[data-attribute_name]:not([data-attribute_name="attribute_pa_cvet"], select)',
+export default function (addSelector = '') {
+    let dropdown = addSelector + ' [data-attribute_name]:not([data-attribute_name="attribute_pa_cvet"], select)',
         selector = dropdown + ' .wcvs-swatch';
-    let $current = $('<div class="swatches__current-value"></div>');
+    let $current = $(document).find(addSelector + ' .swatches__current-value'),
+        $element = $(document).find(dropdown)
 
-    $current.html($(selector + '.selected').data('value'))
-    $(dropdown).parent().prepend($current)
+/*    $current.html($(selector + '.selected').data('value'))*/
 
 
     /* Choice size */
@@ -14,13 +14,13 @@ export default function () {
 
     /* Toggle dropdown */
     $current.on('click', function () {
-        $(dropdown).toggleClass('active_dropdown');
+        $element.toggleClass('active_dropdown');
         $(this).toggleClass('active')
     })
 
     $(document).mouseup(function (e) {
         if ($current.has(e.target).length === 0) {
-            $(dropdown).removeClass('active_dropdown');
+            $element.removeClass('active_dropdown');
             $current.removeClass('active');
         }
     });
