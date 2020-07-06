@@ -32,6 +32,34 @@
       flex-direction: column;
       padding-bottom: 0;
     }
+
+    &__cart {
+      &-right {
+        margin-right: 0;
+
+        @media screen and (max-width: 967px) and (min-width: 768px) {
+          flex-basis: 100%;
+        }
+
+        @media screen and (max-width: 420px) {
+          flex-basis: 100%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 450px;
+      }
+    }
+
+    &__counter {
+      @media screen and (max-width: 967px) and (min-width: 768px) {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: 420px) {
+        margin-right: 0;
+      }
+    }
   }
 
   .title {
@@ -55,6 +83,7 @@
 
   .product__add-cart {
     min-width: 100px;
+    margin-right: 0;
   }
 
   .woocommerce-product-gallery {
