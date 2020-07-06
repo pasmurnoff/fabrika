@@ -4,12 +4,12 @@ export default function (addSelector = '') {
     let $current = $(document).find(addSelector + ' .swatches__current-value'),
         $element = $(document).find(dropdown)
 
-/*    $current.html($(selector + '.selected').data('value'))*/
+    $current.html($(selector + '.selected').attr('title'));
 
 
     /* Choice size */
     $(document).on('click', selector, function () {
-        $current.html($(this).data('value'));
+        $current.text($(this).attr('title'));
     })
 
     /* Toggle dropdown */

@@ -15,7 +15,7 @@ export default function dropdownSizesForQuickView() {
             },
             type: 'POST',
             success: function () {
-                setTimeout(callSizes, 1000);
+                setTimeout(callSizes, 500);
             },
             error: function () {
                 console.log('ooops')
