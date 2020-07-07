@@ -5,9 +5,9 @@
 
 @section('content')
   <div class="defaultpage">
-    <div class="defaultpage__imgwrap">
+    <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
       <img class="defaultpage__image" src="@asset('images/defaultpages/uslovia_vozvrata_noskov.jpg')"
-           alt="Условия возврата носков">
+           alt="Условия возврата носков" itemprop="contentUrl">
     </div>
     <div class="block-text">
       <div class="block-text__text">

@@ -14,8 +14,8 @@
                 <ul class="article__list"></ul>
             </div>
 
-            <div class="blog__thumb blog__thumb_single">
-                @php the_post_thumbnail(); @endphp
+            <div class="blog__thumb blog__thumb_single" itemscope itemtype="http://schema.org/ImageObject">
+                <img src="{{ get_the_post_thumbnail_url() }}" alt="{!! get_the_title() !!}" itemprop="contentUrl">
             </div>
 
             <div class="blog__content">

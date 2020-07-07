@@ -44,16 +44,16 @@
             130 рублей за пару, сроки изготовления 14 календарных дней, после согласования дизайна;
         </div>
         <div class="threeimage">
-            <div class="threeimage__image">
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="@asset('images/components/kommpred/IMG_0163.jpg')"
-                     alt="Стоимость 100 пар гладких носков">
+                     alt="Стоимость 100 пар гладких носков" itemprop="contentUrl">
             </div>
-            <div class="threeimage__image">
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="@asset('images/components/kommpred/IMG_0159.jpg')"
-                     alt="Стоимость 100 пар гладких носков"></div>
-            <div class="threeimage__image">
+                     alt="Стоимость 100 пар гладких носков" itemprop="contentUrl"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="@asset('images/components/kommpred/IMG_0177.jpg')"
-                     alt="Стоимость 100 пар гладких носков"></div>
+                     alt="Стоимость 100 пар гладких носков" itemprop="contentUrl"></div>
 
 
         </div>
@@ -68,12 +68,15 @@
             65 рублей за пару, сроки изготовления от 20 — 30 календарных дней, после согласования дизайна;
         </div>
         <div class="threeimage">
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3259.jpg')"
-                                                alt="Стоимость 1000 пар гладких носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3255.jpg')"
-                                                alt="Стоимость 1000 пар гладких носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3201.jpg')"
-                                                alt="Стоимость 1000 пар гладких носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        src="@asset('images/components/kommpred/IMG_3259.jpg')" itemprop="contentUrl"
+                        alt="Стоимость 1000 пар гладких носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        src="@asset('images/components/kommpred/IMG_3255.jpg')" itemprop="contentUrl"
+                        alt="Стоимость 1000 пар гладких носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        src="@asset('images/components/kommpred/IMG_3201.jpg')" itemprop="contentUrl"
+                        alt="Стоимость 1000 пар гладких носков"></div>
         </div>
     </div>
 
@@ -86,12 +89,15 @@
             140 рублей за пару, сроки изготовления 14 календарных дней после согласования дизайна;
         </div>
         <div class="threeimage">
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5469.jpg')"
-                                                alt="Стоимость 100 пар спортивных носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_0265.jpg')"
-                                                alt="Стоимость 100 пар спортивных носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_3092.jpg')"
-                                                alt="Стоимость 100 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_5469.jpg')"
+                        alt="Стоимость 100 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_0265.jpg')"
+                        alt="Стоимость 100 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_3092.jpg')"
+                        alt="Стоимость 100 пар спортивных носков"></div>
 
 
         </div>
@@ -106,12 +112,15 @@
             75 рублей за пару, сроки изготовления от 20 — 30 календарных дней;
         </div>
         <div class="threeimage">
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5473.jpg')"
-                                                alt="Стоимость 1000 пар спортивных носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_5477.jpg')"
-                                                alt="Стоимость 1000 пар спортивных носков"></div>
-            <div class="threeimage__image"><img src="@asset('images/components/kommpred/IMG_9292.jpg')"
-                                                alt="Стоимость 1000 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_5473.jpg')"
+                        alt="Стоимость 1000 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_5477.jpg')"
+                        alt="Стоимость 1000 пар спортивных носков"></div>
+            <div class="threeimage__image" itemscope itemtype="http://schema.org/ImageObject"><img
+                        itemprop="contentUrl" src="@asset('images/components/kommpred/IMG_9292.jpg')"
+                        alt="Стоимость 1000 пар спортивных носков"></div>
 
 
         </div>

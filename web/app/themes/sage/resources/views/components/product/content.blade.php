@@ -1,6 +1,7 @@
 <div class="woocommerce-loop-product__wrapper">
     @include('components.product.colors')
     <h2 class="woocommerce-loop-product__title">{!! get_the_title($productId) !!}</h2>
+    <meta itemprop="name"/>
     @if(wc_get_product( $productId )->get_price())
         <span class="price">
                     <span class="woocommerce-Price-amount amount">

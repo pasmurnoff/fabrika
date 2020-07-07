@@ -26,7 +26,8 @@
     "product_cat" => $slug,
     "orderby" => 'rand',
     "posts_per_page" => 12,
-    "parent" => 0
+    "parent" => 0,
+    'post_status' => 'publish'
 ]);
 @endphp
 

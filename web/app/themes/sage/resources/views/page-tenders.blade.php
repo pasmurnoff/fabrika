@@ -40,9 +40,9 @@
                     предложение.
                 </div>
             </div>
-            <div class="tenders__block-right">
+            <div class="tenders__block-right" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="@asset('images/components/tenders/go_tenders.jpg')"
-                     alt="Фабрика носков. Участвуем в тендерах на производство носков, кологоток и чулок">
+                     alt="Фабрика носков. Участвуем в тендерах на производство носков, кологоток и чулок" itemprop="contentUrl">
             </div>
         </div>
         <div class="tenders__block mrgn50-bottom pdng50">
