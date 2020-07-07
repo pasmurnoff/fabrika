@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="blog__side">
-                <div class="blog__thumb blog__thumb_loop">
-                    @php the_post_thumbnail(); @endphp
+                <div class="blog__thumb blog__thumb_loop" itemscope itemtype="http://schema.org/ImageObject">
+                    <img src="{{ get_the_post_thumbnail_url() }}" alt="{!! get_the_title() !!}" itemprop="contentUrl">
                 </div>
             </div>
         </div>

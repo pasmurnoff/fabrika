@@ -112,18 +112,19 @@ Template Name: Макет носков
     <div class="maket__drag mrgn35">
         <div class="mainSection">
             <div id="comparison-slider-1" class="bal-container">
-                <div class="bal-after">
-                    <img src="@asset('images/components/maket/fabrikanoskov_after.jpg')" alt="Фабрика носков макет">
-                    <div class="bal-afterPosition afterLabel">
+                <div class="bal-after" itemscope itemtype="http://schema.org/ImageObject">
+                    <img src="@asset('images/components/maket/fabrikanoskov_after.jpg')" alt="Фабрика носков макет"
+                         itemprop="contentUrl">
+                    <div class="bal-afterPosition afterLabel" itemprop="name">
                         Адаптация в BMP
                     </div>
                 </div>
 
                 <div class="bal-before">
-                    <div class="bal-before-inset">
+                    <div class="bal-before-inset" itemscope itemtype="http://schema.org/ImageObject">
                         <img src="@asset('images/components/maket/fabrikanoskov_before.jpg')"
-                             alt="Фабрика носков макет">
-                        <div class="bal-beforePosition beforeLabel">
+                             alt="Фабрика носков макет" itemprop="contentUrl">
+                        <div class="bal-beforePosition beforeLabel" itemprop="name">
                             Оригинал в JPG
                         </div>
                     </div>

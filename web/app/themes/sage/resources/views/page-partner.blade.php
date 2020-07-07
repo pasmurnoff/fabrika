@@ -5,8 +5,8 @@
 
 @section('content')
   <div class="defaultpage">
-    <div class="defaultpage__imgwrap">
-      <img class="defaultpage__image" src="@asset('images/defaultpages/fabrikanoskov_partnerskaja-programma.jpg')"
+    <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
+      <img class="defaultpage__image" itemprop="contentUrl" src="@asset('images/defaultpages/fabrikanoskov_partnerskaja-programma.jpg')"
            alt="Подключиться к партнерской программе фабрики носков">
     </div>
     <div class="block-text">
@@ -44,7 +44,6 @@
         <li class="block-text__point">Предоставление всех необходимых имиджевых материалов</li>
         <li class="block-text__point">Предоставление результатов маркетинговых исследований и аналитики продаж в разрезе дизайнов и размеров</li>
       </ul>
-
     </div>
   </div>
 @endsection

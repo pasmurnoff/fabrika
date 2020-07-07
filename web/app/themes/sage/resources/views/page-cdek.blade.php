@@ -5,9 +5,9 @@ Template Name: Статус заказа по номеру
 
 @section('content')
     <div class="defaultpage">
-        <div class="defaultpage__imgwrap">
+        <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
             <img class="defaultpage__image" src="@asset('images/defaultpages/status_zakaza_fabrika_noskov.jpg')"
-                 alt="Статус заказа по номеру">
+                 alt="Статус заказа по номеру" itemprop="contentUrl">
         </div>
 
         <div class="block-text">

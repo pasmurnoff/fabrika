@@ -22,8 +22,8 @@
         </div>
         @include('components.category-output.all.wrap')
 
-        <div class="defaultpage__imgwrap">
-            <img class="defaultpage__image" src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')"
+        <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
+            <img class="defaultpage__image" itemprop="contentUrl" src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')"
                  alt="Купить носки оптом">
         </div>
 
