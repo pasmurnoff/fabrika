@@ -2,6 +2,7 @@
     $terms = get_terms('pa_cvet');
         $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $constUrl = $url;
+
 @endphp
 <section class="mrgn35-top">
     <h3 class="title title_middle">Цвета</h3>

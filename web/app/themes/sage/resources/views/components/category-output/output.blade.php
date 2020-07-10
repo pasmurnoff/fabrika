@@ -18,7 +18,7 @@
 $publishedProductIds = [];
 @endphp
 
-@foreach($productCategories as $prodCat)
+@foreach(array_reverse($productCategories) as $prodCat)
     @php
         $products = wc_get_products([
             "product_cat" => $prodCat->slug,

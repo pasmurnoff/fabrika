@@ -10,4 +10,7 @@
     @include('components.category-output.output', ['overflow' => ''])
     @include('components.content.page-index-content')
     @include('components.blog.wrap')
+    {{-- @php bullshit1() @endphp--}}
+    {{--@php bullshit2() @endphp--}}
+
 @endsection
