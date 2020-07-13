@@ -31,10 +31,10 @@ the readme will list any important changes.
 
     <div class="archive__content">
 
-        {{--  @if (function_exists('dynamic_sidebar'))
-              @php dynamic_sidebar('tags-cloud') @endphp
-          @endif--}}
-        @include('components.tags.wrap')
+        @if (function_exists('dynamic_sidebar'))
+            @php dynamic_sidebar('tags-cloud') @endphp
+        @endif
+        {{-- @include('components.tags.wrap')--}}
 
         @if(woocommerce_product_loop())
             @php

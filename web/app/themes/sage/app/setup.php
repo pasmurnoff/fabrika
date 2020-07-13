@@ -18,7 +18,7 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
     if (is_single()) {
-        wp_enqueue_script('share2', 'https://yastatic.net/share2/share.js' );
+        wp_enqueue_script('share2', 'https://yastatic.net/share2/share.js');
     }
 }, 100);
 
@@ -94,6 +94,8 @@ add_action('widgets_init', function () {
         'name' => __('Tags', 'sage'),
         'id' => 'tags-cloud',
         'class' => 'tags',
+        'before_widget' => '<div class="tags-cloud">',
+        'after_widget' => '</div>',
 
     ]);
 
