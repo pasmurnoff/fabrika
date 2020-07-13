@@ -20,7 +20,7 @@
                 <li>Доставка</li>
             </ol>
         </div>
-        @include('components.category-output.all.wrap')
+        @include('components.category-output.all.wrap', ['overflow' => ''])
 
         <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
             <img class="defaultpage__image" itemprop="contentUrl" src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')"

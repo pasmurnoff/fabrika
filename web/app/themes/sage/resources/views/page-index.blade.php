@@ -7,7 +7,7 @@
     {{--    @include('components.tags.wrap')--}}
     {{--    @include('components.card.stories.wrap')--}}
     @include('components.banner.banner-duo')
-    @include('components.category-output.output')
+    @include('components.category-output.output', ['overflow' => ''])
     @include('components.content.page-index-content')
     @include('components.blog.wrap')
 @endsection

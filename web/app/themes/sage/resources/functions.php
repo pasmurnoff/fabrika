@@ -230,3 +230,4 @@ require_once dirname(__DIR__) . '/resources/functions/rating.php';
 require_once dirname(__DIR__) . '/resources/functions/comment.php';
 require_once dirname(__DIR__) . '/resources/functions/new-custom-tabs.php';
 require_once dirname(__DIR__) . '/resources/functions/productSizeTable.php';
+require_once dirname(__DIR__) . '/resources/functions/new-attributes.php';
