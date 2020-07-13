@@ -415,4 +415,7 @@ Template Name: Контакты
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>
         </div>
     </div>
+
+    {{-- @php bullshit1() @endphp--}}
+    {{--@php bullshit2() @endphp--}}
 @endsection
