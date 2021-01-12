@@ -13,7 +13,7 @@
     ]
   },
   "publicPath": "/app/themes/sage",
-  "devUrl": "http://fabrika.loc",
+  "devUrl": "http://fabrikanoskov.loc",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

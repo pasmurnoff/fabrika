@@ -185,6 +185,9 @@
     left: 15px !important;
     bottom: 20px !important;
     right: auto !important;
+    margin: 0 !important;
+    width: 65px !important;
+    height: 65px !important;
 
     @media screen and (max-width: 1023px) {
       display: none !important;
