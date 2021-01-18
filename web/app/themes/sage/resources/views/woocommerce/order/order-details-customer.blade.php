@@ -30,17 +30,30 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<h2 class="woocommerce-column__title"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
 
-	<address>
-		<?php echo wp_kses_post( $order->get_formatted_billing_address( esc_html__( 'N/A', 'woocommerce' ) ) ); ?>
+	<div class="woocommerce-customer-details__meta">
+		<p class="name">
+			ФИО: <span>{!! $order->get_billing_first_name()!!} {!! $order->get_billing_last_name()!!}</span>
+		</p>
+		@if ($order->get_billing_company())
+			<p class="company">
+				Организация: <span>{!! $order->get_billing_company() !!}</span>
+			</p>
+		@endif
+		@if ($order->get_billing_address_1())
+			<p class="addres">
+				Адрес: <span>{!! $order->get_billing_country() !!}, {!! $order->get_billing_city() !!}, {!! $order->get_billing_address_1() !!}</span>
+			</p>
+		@endif
+		
 
 		<?php if ( $order->get_billing_phone() ) : ?>
-			<p class="woocommerce-customer-details--phone"><?php echo esc_html( $order->get_billing_phone() ); ?></p>
+			<p class="woocommerce-customer-details--phone">Телефон: <span>{!! $order->get_billing_phone() !!}</span></p>
 		<?php endif; ?>
 
 		<?php if ( $order->get_billing_email() ) : ?>
-			<p class="woocommerce-customer-details--email"><?php echo esc_html( $order->get_billing_email() ); ?></p>
+			<p class="woocommerce-customer-details--email">Email: <span>{!! $order->get_billing_email() !!}</span></p>
 		<?php endif; ?>
-	</address>
+	</div>
 
 	<?php if ( $show_shipping ) : ?>
 
