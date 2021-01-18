@@ -9,7 +9,31 @@
   }
 
   .form-row {
+    @extend .labelwrap;
+
     flex-basis: 48%;
+
+    .select2-container {
+      width: 100% !important;
+    }
+
+    label {
+      @extend .label;
+
+      &.label_filled {
+        @extend .label_filled;
+      }
+    }
+
+    input,
+    textarea {
+      &::placeholder {
+        color: transparent;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+    }
 
     @media screen and (max-width: 767px) {
       flex-basis: 100%;
@@ -21,6 +45,14 @@
 
     .optional {
       display: none;
+    }
+  }
+}
+
+body.woocommerce-checkout {
+  .select2 {
+    &-search__field {
+      border-radius: 6px;
     }
   }
 }

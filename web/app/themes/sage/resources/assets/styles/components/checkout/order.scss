@@ -9,6 +9,7 @@
 
   &-table {
     flex-basis: 48%;
+    width: auto;
 
     @media screen and (max-width: 1023px) {
       flex-basis: 100%;
@@ -77,6 +78,10 @@
     td {
       padding: 15px 0;
       text-align: right;
+
+      .woocommerce-Price-amount {
+        white-space: nowrap;
+      }
     }
   }
 
