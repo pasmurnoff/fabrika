@@ -18,6 +18,7 @@
         border-radius: 6px 0 0 6px;
         padding: 20px 6px 18px 12px;
         padding-right: 0;
+        margin: 0;
       }
     }
 
@@ -67,11 +68,17 @@
 .payments {
   display: flex;
   flex-flow: wrap;
+  align-items: center;
   justify-content: flex-start;
   padding-top: 10px;
 
   svg {
     width: 50px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__text {

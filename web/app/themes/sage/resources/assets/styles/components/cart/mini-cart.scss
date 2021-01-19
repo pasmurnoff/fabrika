@@ -69,6 +69,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+    // padding-bottom: 55px;
 
     .amount {
       @extend .text_bold;
@@ -84,10 +85,16 @@
     .button {
       padding: 10px 12px;
       box-sizing: border-box;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       @media screen and (max-width: 400px) {
         width: 100%;
         padding: 8px 12px;
+        margin-right: 0;
 
         &:first-child {
           margin-bottom: 10px;

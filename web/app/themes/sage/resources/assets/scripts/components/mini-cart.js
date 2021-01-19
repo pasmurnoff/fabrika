@@ -95,6 +95,7 @@ export default function miniCart() {
                             if (!$thisbutton.hasClass('checkout-button')) {
                                 $('.mini-cart').addClass('active');
                                 $('.overlay').addClass('active');
+                                $('body').addClass('close_jivo');
                             } else {
                                 window.location.href = window.wp_data.checkout_url;
                             }
@@ -113,6 +114,7 @@ export default function miniCart() {
             const block = $(this).data('minicart');
             $('.' + block).removeClass('active');
             $('.overlay').removeClass('active');
+            $('body').removeClass('close_jivo');
         });
     });
 }

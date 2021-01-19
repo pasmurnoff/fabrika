@@ -5,4 +5,3 @@ $('body').on('focusout', '.labelwrap', function () {
 }).on('click', '.labelwrap', function () {
     $(this).find('.label').addClass('label_filled');
 });
-

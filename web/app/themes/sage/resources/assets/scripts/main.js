@@ -30,6 +30,7 @@ import singleProduct from './routes/singleProduct';
 import pageMaket from './routes/pageMaket';
 import singlePost from './routes/singlePost';
 import pageNaZakaz from './routes/pageNaZakaz';
+import zakazTovara from './routes/zakazTovara';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -45,6 +46,8 @@ const routes = new Router({
     singlePost,
 
     pageNaZakaz,
+
+    zakazTovara,
 });
 
 // Load Events

@@ -30,6 +30,10 @@ textarea:focus:-ms-input-placeholder {
   color: transparent !important;
 }
 
+* {
+  font-family: $font;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -161,4 +165,12 @@ body {
 
 .preload * {
   transition: none !important;
+}
+
+.close_jivo {
+  /* stylelint-disable */
+  jdiv {
+    display: none !important;
+  }
+  /* stylelint-enable */
 }
