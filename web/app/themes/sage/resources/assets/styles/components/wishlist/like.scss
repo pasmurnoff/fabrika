@@ -1,0 +1,77 @@
+.wishlist {
+  &__like {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    pointer-events: auto;
+    background-color: rgba(34, 34, 34, 0.7);
+    border-radius: 50%;
+    transition: background-color ease 0.3s;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid transparent;
+      border-top-color: #fff;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      background-color: black;
+    }
+
+    &-icon {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
+      stroke: #fff;
+      transition: fill 0.3s ease, stroke 0.3s ease, fill-opacity 0.3s ease, opacity 0.3s ease;
+    }
+
+    &.added {
+      .wishlist__like {
+        &-icon {
+          fill-opacity: 1;
+          opacity: 1;
+        }
+      }
+    }
+
+    &.loading {
+      &::before {
+        opacity: 1;
+        animation: like_spin 1s linear infinite;
+      }
+
+      .wishlist__like {
+        &-icon {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes like_spin {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

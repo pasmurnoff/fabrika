@@ -159,7 +159,7 @@ require_once dirname(__DIR__) . '/resources/functions/checkout.php';
 /* mini-cart */
 require_once dirname(__DIR__) . '/resources/functions/mini-cart.php';
 /* wishlist */
-require_once dirname(__DIR__) . '/resources/functions/wishlist.php';
+//require_once dirname(__DIR__) . '/resources/functions/wishlist.php';
 
 /* Custom walker nav menu */
 require_once dirname(__DIR__) . '/resources/functions/WalkerMenu.php';
@@ -231,3 +231,4 @@ require_once dirname(__DIR__) . '/resources/functions/comment.php';
 require_once dirname(__DIR__) . '/resources/functions/new-custom-tabs.php';
 require_once dirname(__DIR__) . '/resources/functions/productSizeTable.php';
 require_once dirname(__DIR__) . '/resources/functions/new-attributes.php';
+require_once dirname(__DIR__) . '/resources/functions/wishlist/init.php';

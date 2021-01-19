@@ -39,7 +39,7 @@ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
 /* remove responsive wishlist */
-add_action('yith_wcwl_is_wishlist_responsive', '__return_false');
+// add_action('yith_wcwl_is_wishlist_responsive', '__return_false');
 
 /* remove add to cart message */
 add_filter( 'wc_add_to_cart_message_html', '__return_null' );

@@ -1,0 +1,32 @@
+.info {
+  &-popup {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    max-width: max-content;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition-timing-function: ease;
+    transition-duration: 300ms;
+    transition-property: bottom, visibility, opacity;
+    white-space: nowrap;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      bottom: 30px;
+    }
+  }
+}
