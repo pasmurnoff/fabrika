@@ -40,14 +40,26 @@
       width: 100%;
 
       path {
-        transition: fill ease 200ms;
         fill: $greytext;
+        transition: stroke 0.3s ease, fill 0.3s ease;
       }
+    }
+
+    &_heart {
+      stroke-width: 50;
+      stroke: $greytext;
+      transition: stroke 0.3s ease, fill 0.3s ease;
     }
 
     &:hover {
       svg path {
         fill: $red;
+      }
+
+      .panel__icon {
+        &_heart {
+          stroke: $red;
+        }
       }
     }
   }

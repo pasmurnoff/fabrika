@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d779d8777c2b16233040e5db4fe6369",
+    "content-hash": "f5b220d8f3faeb880734dcc4580a7ff0",
     "packages": [
         {
             "name": "composer/installers",
@@ -793,24 +793,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/yith-woocommerce-quick-view/"
-        },
-        {
-            "name": "wpackagist-plugin/yith-woocommerce-wishlist",
-            "version": "3.0.17",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/yith-woocommerce-wishlist/",
-                "reference": "tags/3.0.17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/yith-woocommerce-wishlist.3.0.17.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/yith-woocommerce-wishlist/"
         }
     ],
     "packages-dev": [

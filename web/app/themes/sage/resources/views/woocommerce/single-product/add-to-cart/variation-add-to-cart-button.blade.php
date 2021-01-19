@@ -28,7 +28,7 @@ global $product;
     <div class="product__cart-right">
         <button type="submit"
                 class="ajax_add_to_cart single_add_to_cart_button button alt product__add-cart"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
-        @php echo do_shortcode('[yith_wcwl_add_to_wishlist]') @endphp
+        {{-- @php echo do_shortcode('[yith_wcwl_add_to_wishlist]') @endphp --}}
     </div>
 
     <!--    <button href="#" class="ajax_add_to_cart checkout-button single_add_to_cart_button product__add-cart button alt wc-forward">

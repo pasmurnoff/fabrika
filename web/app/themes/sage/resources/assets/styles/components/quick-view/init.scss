@@ -1,36 +1,19 @@
 @import "popup";
 
-.yith-wcqv-button {
-  display: none;
-}
-
 .product__tools {
   .yith-wcqv-button {
-    display: block !important;
-    position: absolute;
-    right: 50%;
-    bottom: 8%;
-    transform: translateX(150%);
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    pointer-events: auto;
-    background-color: rgba(34, 34, 34, 0.7);
-    border-radius: 50%;
-    transition: background-color ease 200ms;
+    @extend .wishlist__like;
 
-    &:hover {
-      background-color: black;
-    }
+    position: relative;
 
     &::after {
       content: url("../images/components/quick-view/expand.svg");
       position: absolute;
-      width: 50%;
-      height: 50%;
-      top: 48%;
-      right: 49%;
-      transform: translate(50%, -50%);
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .blockUI {
