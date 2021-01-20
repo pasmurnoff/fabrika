@@ -4,139 +4,85 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="defaultpage">
-        <div class="work-order mrgn50">
-            <div class="title title_large pdng35-bottom">
-                Порядок работы со склада
-            </div>
-            <ol class="text work-order__list">
-                <li>Поступление запроса по необходимому артикулу, размеру и цвету</li>
-                <li>Подтверждение наличия на складе, если необходимый артикул отсутствуют на складе в нужном количестве,
-                    производителем предлагаются условия производства
-                </li>
-                <li>Заключение договора</li>
-                <li>Оплата стоимости тиража</li>
-                <li>Отгрузка или производство тиража</li>
-                <li>Доставка</li>
-            </ol>
-        </div>
-        @include('components.category-output.all.wrap', ['overflow' => ''])
+  <div class="defaultpage">
+    <div class="work-order mrgn50">
+      <div class="title title_large pdng35-bottom">
+        Порядок работы со склада
+      </div>
+      <ol class="text work-order__list">
+        <li>Поступление запроса по необходимому артикулу, размеру и цвету</li>
+        <li>Подтверждение наличия на складе, если необходимый артикул отсутствуют на складе в нужном количестве,
+          производителем предлагаются условия производства
+        </li>
+        <li>Заключение договора</li>
+        <li>Оплата стоимости тиража</li>
+        <li>Отгрузка или производство тиража</li>
+        <li>Доставка</li>
+      </ol>
+    </div>
+    @include('components.category-output.all.wrap', ['overflow' => ''])
 
-        <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
-            <img class="defaultpage__image" itemprop="contentUrl" src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')"
-                 alt="Купить носки оптом">
-        </div>
-
-        <div class="block-text">
-            <div class="block-text__text">
-                Fabrikanoskov.ru всегда готова к сотрудничеству и рада новым партнерам. Ассортимент фабрики более 500
-                моделей
-                мужских, женских и детских носков и колгот. Для своей продукции мы выбираем лучшее сырье от мировых
-                производителей.
-            </div>
-            <br/>
-            <div class="block-text__text">
-                Для постоянных клиентов предусмотрена система индивидуальных скидок
-            </div>
-            <br/>
-            <div class="block-text__text">
-                Минимальный заказ – 100 изделий одного дизайна и размера.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">Услуга индивидуального дизайна</div>
-            <br/>
-            <div class="block-text__text">
-                Вы можете заказать свой <a class="block-text__link" href="/polozhenie-o-razrabotke-disajna-ot-2019.jpg">уникальный
-                    дизайн</a>. Наши дизайнеры подготовят технический дизайн по вашим эскизам, а
-                производственная часть изготовит опытный образец, который будет доставлен до вашего адреса. Стоимость
-                пересылки
-                входит в стоимость и распространяется только на города РФ.
-                <br/><br/>
-                Носки по вашему макету выпускаются в количестве от 100 шт. на каждый дизайн/цвет. Стоимость разработки
-                технического макета и образца — 2000 руб.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">Сроки разработки образцов</div>
-            <br/>
-            <div class="block-text__text">
-                От 3 до 7 дней, в зависимости от сложности. Сроки производства носков с логотипом, при наличии пряжи на
-                складе
-                1- 4 недели. Если пряжу нужно заказывать у поставщика, срок изготовления увеличивается до 6-14 недель.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">
-                Дополнительно предлагаем <a class="block-text__link" href="/etiketka-i-upakovka-noskov">услугу
-                    упаковки</a> с
-                учетом ваших требований и пожеланий.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">
-                Для крупных оптовых покупателей
-            </div>
-            <br/>
-            <div class="block-text__text">
-                Отгрузка товара зависит от загруженности сотрудников склада, менеджеров и наличия товара на складе.
-                Заказ
-                собирается не больше 5-7 рабочих дней. Перед праздниками и в сезон, сроки отгрузки немного
-                увеличиваются. Но
-                наша команда старается сокращать сроки и отгружать заказы быстрее.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">
-                Помощь со стороны наших менеджеров во время выбора компании, которая будет осуществлять <a
-                        class="block-text__link" href="/uslovija-dostavki">доставку товара</a>
-                непосредственно в ваш регион проживания
-            </div>
-            <br/>
-            <div class="block-text__text">
-                Можно быть уверенным в том, что товар не потеряется в пути, а время доставки не увеличится из-за
-                недостаточно
-                профессиональной работы сотрудников службы доставки товаров. Доставка со склада по всей России.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">
-                Юридические лица и индивидуальные предприниматели
-            </div>
-            <br/>
-            <div class="block-text__text">
-                <a class="block-text__link" href="/konstruktor-zakaza-noskov">Создаете заявку на сайте</a>, указывая
-                форму
-                оплаты и способ доставки и получаете от менеджера подтверждение того,
-                что заказ принят, сумму к оплате и счет для оплаты. Подтвержденный заказ можно оплатить в течении 5
-                суток. На
-                этот срок бронируется товар на складе. Отгружаем товар НЕ ПОЗДНЕЕ 5-7 СУТОК с момента поступления денег
-                на наш
-                счет. Предоставляем полный пакет документов: договор, счет, сертификаты, накладные. Напоминаем
-                плательщикам
-                НДС,
-                что мы работаем по упрощенной системе налогообложения — без НДС.
-            </div>
-            <br/>
-            <div class="block-text__text block-text__text_bold">
-                <a class="block-text__link block-text__link_bold" href="/uslovija-oplaty">Способы оплаты</a> для
-                физических
-                лиц
-            </div>
-            <ul class="block-text__list">
-                <li class="block-text__point">Оплата через платежный терминал на сайте</li>
-            </ul>
-
-            <div class="block-text__text">
-                Если у Вас возникли вопросы, можете их задать нам на электронную почту:
-                <a class="block-text__link" href="mailto:mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a> или
-                проконсультироваться по бесплатному телефону <a class="block-text__link" href="tel:88004441156">8 800
-                    444 11
-                    56</a>
-            </div>
-        </div>
-
-        <div class="block-text">
-            <a href="/kommercheskoe_predlozhenie_fabrikanoskov.ru.pdf" class="link-with-icon">
-                @include('icon::pdf')
-                Коммерческое предложение на носки и колготки оптом от fabrikanoskov.ru
-            </a>
-        </div>
+    <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
+      <img class="defaultpage__image" itemprop="contentUrl"
+        src="@asset('images/defaultpages/fabrikanoskov.ru_noski_optom.jpg')" alt="Купить носки оптом">
     </div>
 
-    @include('components.whyus.whyus')
+    <div class="block-text">
+      <h4 class="title title_large pdng15-bottom">Купить носки оптом от производителя дешево</h4>
+      <p class="block-text__text">Мы готовы к сотрудничеству и будем рады обрести новых партнеров. Ассортимент нашей фабрики составляет более 500 для мужчин, женщин и детей.</p>
+      <p class="block-text__text">Минимальная партия на заказ - 1000 пар одного дизайна и размера.</p>
+      <br />
+      <h5 class="title title_middle pdng10-bottom">Услуга индивидуального дизайна</h5>
+      <p class="block-text__text">Бывает так, что на сайте не оказалось изделия, которое вы искали. Не беда! Мы свяжем для Вас носки с индивидуальным дизайном – свяжитесь с нашими менеджерами и они подскажут, как купить носки оптом от производителя. Наши дизайнеры подготовят технический дизайн по вашим эскизам, а производственная часть изготовит опытный образец, который будет доставлен до вашего адреса.</p>
+      <p class="block-text__text">Носки по вашему макету выпускаются в количестве от 100 шт. на каждый дизайн/цвет. Стоимость разработки технического макета и образца — 3000 руб.</p>
+      <br />
+      <h5 class="title title_middle pdng10-bottom">Сколько времени занимает изготовление</h5>
+      <p class="block-text__text">Чтобы изготовить образец, потребуется от 3 до 7 дней в зависимости от сложности дизайна. </p>
+      <p class="block-text__text">Сроки производства носков варьируется от 1- 4 недель до 6-14, в зависимости от наличия необходимой пряжи на складе фабрики.</p>
+      <p class="block-text__text">Предупреждаем, что в период праздников сроки отгрузки могут увеличиться.</p>
+      <br>
+      <h5 class="title title_middle pdng10-bottom">Упаковка</h5>
+      <p class="block-text__text">Если ваш заказ нужно упаковать определенным образом, сообщите нам об этом. Мы сделаем нужную Вам этикетку и упакуем товар так, как Вы этого хотите.</p>
+      <br />
+      <h5 class="title title_middle pdng10-bottom">Юридические лица и индивидуальные предприниматели</h5>
+      <p class="block-text__text">Воспользуйтесь специальной форой оформления заявки на сайте, чтобы заказать носки оптом дешево. Укажите в ней как вы хотите оплатить заказ и каким образом будет удобно его получить. После отправки заявки с вами свяжется ваш персональный менеджер, чтобы подтвердить заказ.</p>
+      <p class="block-text__text">Подтвержденный заказ бронируется на складе на 5 дней, в течение которых он должен быть оплачен. Заказ отгружается НЕ ПОЗДНЕЕ 7 СУТОК с момента поступления оплаты.</p>
+      <p class="block-text__text">Мы работаем по упрощенной системе налогообложения, т.е Вам не придется платить НДС.</p>
+      <p class="block-text__text">По заказу предоставляется полный пакет документов, в который входят:</p>
+      <ul class="block-text__list">
+        <li class="block-text__point">Договор</li>
+        <li class="block-text__point">Счет</li>
+        <li class="block-text__point">Сертификаты</li>
+        <li class="block-text__point">Накладные</li>
+      </ul>
+      <br />
+      <h5 class="title title_middle pdng10-bottom">Способ оплаты для физических лиц</h5>
+      <ul class="block-text__list">
+        <li class="block-text__point">Оплата через платежный терминал на сайте</li>
+      </ul>
+      <br />
+      <p class="block-text__text pdng35-bottom">Если у Вас возникли вопросы, можете их задать нам на электронную почту: <a href="mailto:{!! get_option('admin_email') !!}">{!! get_option('admin_email') !!}</a> или проконсультироваться по бесплатному телефону <a href="tel:88004441156">8 800 444 11 56</a></p>
+      <h4 class="title title_large pdng15-bottom">Почему Fabrikanoskov.ru?</h4>
+      <h5 class="title title_middle pdng5-bottom">Качество</h5>
+      <p class="block-text__text">Мы хотим, чтобы наши носки ассоциировались с комфортом и уютом. Поэтому мы закупаем сырье из Турции, Узбекистана, Италии и Египта, испытываем его в начале производственного цикла, а готовые изделия проходят ручной контроль качества.</p>
+      <br />
+      <h5 class="title title_middle pdng5-bottom">Цена</h5>
+      <p class="block-text__text">Мы вяжем носки на собственной фабрике. Поэтому приобретая носки у нас вы покупаете модные носки оптом от производителя без посредников.</p>
+      <br />
+      <h5 class="title title_middle pdng5-bottom">Доставка</h5>
+      <p class="block-text__text">Бесплатно доставим до любой транспортной компании.</p>
+      <br />
+      <h5 class="title title_middle pdng5-bottom">Размерный ряд включен</h5>
+      <p class="block-text__text">В минимальный тираж на один дизайн можно включить размерную сетку без увеличения стоимости заказа.</p>
+    </div>
+
+    <div class="block-text">
+      <a href="/kommercheskoe_predlozhenie_fabrikanoskov.ru.pdf" class="link-with-icon">
+        @include('icon::pdf')
+        Коммерческое предложение на носки и колготки оптом от fabrikanoskov.ru
+      </a>
+    </div>
+  </div>
+
+  @include('components.whyus.whyus')
 @endsection
