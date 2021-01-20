@@ -5,6 +5,7 @@
     @extend .wishlist__like;
 
     position: relative;
+    margin-right: 0 !important;
 
     &::after {
       content: url("../images/components/quick-view/expand.svg");

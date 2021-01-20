@@ -132,6 +132,23 @@ body {
   }
 }
 
+.pdng10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &-top {
+    padding-top: 10px;
+  }
+
+  &-bottom {
+    padding-bottom: 10px;
+  }
+
+  &-left {
+    padding-left: 10px;
+  }
+}
+
 .pdng5 {
   padding-bottom: 5px;
   padding-top: 5px;
