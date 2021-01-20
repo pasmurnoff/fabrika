@@ -9,6 +9,7 @@
       @php
         $products = wc_get_products([
           'include' => $products,
+          'limit' => -1,
         ])
       @endphp
 
