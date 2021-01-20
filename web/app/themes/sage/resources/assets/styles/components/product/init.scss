@@ -44,68 +44,44 @@
         margin-right: 0;
       }
 
-      .yith-wcwl-add-to-wishlist {
+      .wishlist__like {
         height: 55px;
         width: 55px;
         border-radius: 6px;
         margin-bottom: 10px;
         background-color: #eef2f7;
-        opacity: 1;
-        transform: none;
-        top: 0;
-        left: 0;
-        bottom: 0;
 
-        i {
-          color: $secondcolor;
-
-          &::before {
-            content: url("../images/components/wishlist/heart-product_colored.svg");
-            transform: scale(1.2) translate(50%, -50%);
-            top: 58%;
-            right: 51%;
-          }
+        &::before {
+          border-top-color: $secondcolor;
         }
 
-        .delete_item {
-          padding-left: 55px !important;
-          padding-top: 55px !important;
-          top: 40px;
+        &-icon {
+          stroke: $secondcolor;
+          fill: #eef2f7;
+        }
 
-          .blockUI {
-            width: 100% !important;
-            height: 100% !important;
-            background-position: center !important;
+        &.added {
+          background-color: $secondcolor;
+
+          &::before {
+            border-top-color: #fff;
           }
 
-          i {
-            color: $secondcolor;
-
-            &::before {
-              content: url("../images/components/wishlist/heart-fill-product_colored.svg");
-              transform: scale(1.2) translate(50%, -50%);
-              top: 58%;
-              right: 51%;
-            }
+          .wishlist__like-icon {
+            stroke: #fff;
           }
         }
 
         &:hover {
           background-color: $secondcolor;
-          color: white;
 
-          i {
-            &::before {
-              content: url("../images/components/wishlist/heart-product.svg");
-            }
+          &::before {
+            border-top-color: #fff !important;
           }
 
-          .delete_item {
-            i {
-              &::before {
-                content: url("../images/components/wishlist/heart-fill-product.svg");
-              }
-            }
+          .wishlist__like-icon {
+            stroke: #fff;
+            fill: #fff;
           }
         }
       }
@@ -151,7 +127,7 @@
 
   &__add-cart {
     height: 55px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     outline: none;
     margin-right: 10px;

@@ -26,7 +26,7 @@ export default function () {
                     $(this).remove();
 
                     if(result.liststatus == 'empty') {
-                        $('.wishlist-block').find('.container').html(result.render)
+                        $('.wishlist-block').html(result.render)
                     }
                 })
             }
