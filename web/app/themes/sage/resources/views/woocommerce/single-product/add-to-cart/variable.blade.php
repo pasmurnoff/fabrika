@@ -43,6 +43,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
             </td>
             <td class="value text_black pdng15-bottom">
                 @if($attribute_name !== 'pa_cvet')
+                    @dump($options)
                     <div class="swatches__current-value">{{ $options[0] }}</div>
                 @endif
                 <?php
