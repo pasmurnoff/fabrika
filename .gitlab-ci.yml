@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+      - sudo su - fabrikanoskov.ru -c "sh /var/www/fabrikanoskov.ru/data/www/fabrikanoskov.ru/deploy.sh"
+  only:
+    - master
