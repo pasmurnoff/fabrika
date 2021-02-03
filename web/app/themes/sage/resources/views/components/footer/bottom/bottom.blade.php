@@ -24,7 +24,7 @@
         © {!! date('Y') !!} Фабрика Носков,ООО "Фабрика Носков", ИНН: 1655432469, КПП 165501001, ОРГН: 1201600008103
     </div>
     <ul class="menu footer__menu_bottom">
-        <li class="menu__item">
+        <li class="menu__item footer__menu_item-padding">
             <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/karta-saita" target="_blank">Карта
                 сайта</a>
         </li>

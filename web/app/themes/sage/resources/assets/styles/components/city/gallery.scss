@@ -1,3 +1,9 @@
+body.single-city {
+  .content {
+    padding-top: 0;
+  }
+}
+
 .city {
   &-gallery {
     display: flex;
@@ -40,6 +46,24 @@
   &__video {
     iframe {
       width: 100%;
+    }
+  }
+
+  .category-output {
+    &__title {
+      &-wrap {
+        .title {
+          margin-right: 15px;
+
+          @media screen and (max-width: 567px) {
+            margin-right: 0;
+          }
+        }
+
+        .button {
+          min-width: 150px;
+        }
+      }
     }
   }
 }

@@ -1,46 +1,48 @@
 {{--
-    Template Name: Страница города
-    Template post type: city
+  Template Name: Страница города
+  Template post type: city
 --}}
 
 @extends('layouts.app')
 
 @section('content')
   <div class="city">
-      <div class="mrgn35">
-          @include('components.banner.banner-duo')
-      </div>
+    <div class="mrgn35">
+      @include('components.banner.banner-duo')
+    </div>
 
-    <div class="text city__text">
+    @include('components.category-output.output', ['overflow' => ''])
+
+    <div class="text city__text mrgn35-top">
       <h2 class="title title_large">Где в городе {{ get_field('city-rod') }} купить носки оптом</h2>
       @php echo get_field('city-description'); @endphp
     </div>
 
-{{--    @if(get_field('city-video'))--}}
-{{--      <div class="text city__video">--}}
-{{--        @php the_field('city-video') @endphp--}}
-{{--      </div>--}}
-{{--    @endif--}}
+    {{-- @if(get_field('city-video'))
+      <div class="text city__video">
+        @php the_field('city-video') @endphp
+      </div>
+    @endif --}}
 
-    {{--        @php--}}
-    {{--            $images = get_field('city-gallery');--}}
-    {{--        @endphp--}}
-    {{--        @if( $images )--}}
-    {{--            <ul class="city-gallery">--}}
-    {{--                @foreach( $images as $image )--}}
-    {{--                    <li class="city-gallery__item">--}}
-    {{--                        <a class="city-gallery__link" href="@php echo esc_url($image['url']) @endphp">--}}
-    {{--                            <img--}}
-    {{--                                    class="city-gallery__img"--}}
-    {{--                                    src="@php echo esc_url($image['sizes']['large']) @endphp"--}}
-    {{--                                    alt="@php the_title() @endphp"/>--}}
-    {{--                        </a>--}}
-    {{--                    </li>--}}
-    {{--                @endforeach--}}
-    {{--            </ul>--}}
-    {{--        @endif--}}
+    {{-- @php
+        $images = get_field('city-gallery');
+    @endphp --}}
+    {{-- @if( $images )
+        <ul class="city-gallery">
+            @foreach( $images as $image )
+                <li class="city-gallery__item">
+                    <a class="city-gallery__link" href="@php echo esc_url($image['url']) @endphp">
+                        <img
+                                class="city-gallery__img"
+                                src="@php echo esc_url($image['sizes']['large']) @endphp"
+                                alt="@php the_title() @endphp"/>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    @endif --}}
 
-        @include('components.banner.custom-socks')
+    @include('components.banner.custom-socks')
 
     @component('components.form.default', ['title' => 'Напишите нам'])
       @slot('text')
@@ -49,57 +51,63 @@
         формой для связи с нами.
       @endslot
     @endcomponent
-      @php $cityName = get_field('city-name') @endphp
+
+    @php $cityName = get_field('city-name') @endphp
+    @if( have_rows('city-contact') )
       <h2 class="title titl_large mrgn35-bottom">Пункты выдачи в {{ get_field('city-rod') }}</h2>
-      @if( have_rows('city-contact') )
-          <div class="points points_contact">
+    @endif
 
-              @while (have_rows('city-contact'))
-                  @php the_row();
+    @if( have_rows('city-contact') )
+      <div class="points points_contact">
 
-                $address = get_sub_field('address');
-                $phone = get_sub_field('phone');
-                $mail = get_sub_field('mail');
-                $time = get_sub_field('work-time');
-                  @endphp
-                  @if($address || $phone || $mail || $time)
-                      <div class="points__items">
-                          @if($cityName)
-                          <div class="points__title text_grey text_bold">{!! $cityName !!}</div>
-                          @endif
-                          @if($address)
-                              <div class="points__address points__item">
-                                  <div class="points__icon">@include('icon::country.city.map-marker')</div>
-                                  @php echo $address @endphp
-                              </div>
-                          @endif
+        @while (have_rows('city-contact'))
+          @php 
+            the_row();
 
-                          @if($phone)
-                              <div class="points__phone points__item">
-                                  <div class="points__icon">@include('icon::country.city.phone')</div>
-                                  <a class="points__link"
-                                     href="tel:@php echo preg_replace('/[^0-9]/', '', $phone) @endphp">@php echo $phone @endphp</a>
-                              </div>
-                          @endif
+            $address = get_sub_field('address');
+            $phone = get_sub_field('phone');
+            $mail = get_sub_field('mail');
+            $time = get_sub_field('work-time');
+          @endphp
+          @if($address || $phone || $mail || $time)
+            <div class="points__items">
+                @if($cityName)
+                  <div class="points__title text_grey text_bold">{!! $cityName !!}</div>
+                @endif
 
-                          @if($mail)
-                              <div class="points__mail points__item">
-                                  <div class="points__icon">@include('icon::country.city.envelope')</div>
-                                  <a class="points__link" href="mailto:@php echo $mail @endphp">@php echo $mail @endphp</a>
-                              </div>
-                          @endif
+                @if($address)
+                  <div class="points__address points__item">
+                    <div class="points__icon">@include('icon::country.city.map-marker')</div>
+                    @php echo $address @endphp
+                  </div>
+                @endif
 
-                          @if($time)
-                              <div class="points__work points__item">
-                                  <div class="points__icon">@include('icon::country.city.clock')</div>
-                                  @php echo $time @endphp
-                              </div>
-                          @endif
-                      </div>
-                  @endif
-              @endwhile
+                @if($phone)
+                  <div class="points__phone points__item">
+                    <div class="points__icon">@include('icon::country.city.phone')</div>
+                    <a class="points__link"
+                        href="tel:@php echo preg_replace('/[^0-9]/', '', $phone) @endphp">@php echo $phone @endphp</a>
+                  </div>
+                @endif
 
-          </div>
-      @endif
+                @if($mail)
+                  <div class="points__mail points__item">
+                    <div class="points__icon">@include('icon::country.city.envelope')</div>
+                    <a class="points__link" href="mailto:@php echo $mail @endphp">@php echo $mail @endphp</a>
+                  </div>
+                @endif
+
+                @if($time)
+                  <div class="points__work points__item">
+                    <div class="points__icon">@include('icon::country.city.clock')</div>
+                    @php echo $time @endphp
+                  </div>
+                @endif
+            </div>
+          @endif
+        @endwhile
+
+      </div>
+    @endif
   </div>
 @endsection
