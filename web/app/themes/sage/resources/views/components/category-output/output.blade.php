@@ -47,7 +47,9 @@ $publishedProductIds = [];
                 @endforeach
             </ul>
 
-            @include('components.page-index-banners.banners')
+            @if (!is_singular('city'))
+                @include('components.page-index-banners.banners')
+            @endif
         </div>
     @endif
 @endforeach

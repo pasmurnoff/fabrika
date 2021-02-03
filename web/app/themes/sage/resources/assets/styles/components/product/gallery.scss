@@ -68,17 +68,27 @@
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
 
-      @media screen and (min-width: 1024px) {
-        img {
+      img {
+        border: 1px solid transparent;
+        object-fit: contain;
+        align-self: flex-start;
+        transition: border-color 0.3s ease;
+        cursor: pointer;
+
+        &.flex-active {
+          border-color: $secondcolor;
+        }
+
+        @media screen and (min-width: 1024px) {
           width: 80px;
           height: 80px;
         }
-      }
 
-      @media screen and (max-width: 1023px) {
-        img {
+        @media screen and (max-width: 1023px) {
           width: 100%;
           height: 100%;
         }
