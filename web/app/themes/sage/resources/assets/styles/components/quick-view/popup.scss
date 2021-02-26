@@ -103,6 +103,26 @@
 
   .wishlist__like {
     margin-left: 10px;
+
+    @media screen and (max-width: 1044px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 968px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 967px) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 442px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-right: 0;
+    }
   }
 
   .woocommerce-product-gallery {
