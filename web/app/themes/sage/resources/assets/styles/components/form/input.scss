@@ -145,11 +145,10 @@
 }
 
 .submit {
+  -webkit-appearance: none;
   outline: none;
-  background-color: #ecf1f7;
   color: $secondcolor;
   opacity: 1;
-  border-width: 0;
   padding: 10px 20px;
   border-radius: 6px;
   text-align: center;
@@ -160,6 +159,8 @@
   transition: background-color 0.2s ease;
   text-decoration: none;
   font-family: $font;
+  border: 0;
+  background: #ecf1f7;
 
   &_line {
     height: 100%;
