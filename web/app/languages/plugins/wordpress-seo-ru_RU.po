@@ -45,7 +45,7 @@ msgid "Google preview"
 msgstr "Предпросмотр Google"
 
 #: languages/wordpress-seojs.php:153
-msgid "When you click OK we will open our HelpScout beacon where you can find answers to your questions. This beacon will load our support data and also potentially set cookies."
+msgid "When you click OK we will open our HelpScout beacon where you can find answers to your questions. This beacon will load our support-modal data and also potentially set cookies."
 msgstr "Когда вы нажмете OK, мы загрузим наш маяк HelpScout, который загрузит данные из HelpScout. Этот маяк может также устанавливать куки."
 
 #: admin/metabox/class-metabox.php:163
@@ -55,7 +55,7 @@ msgstr "Если вы хотите применить расширенные н�
 #. translators: 1: link to Firefox website; 2: link to Chrome website; 3: link
 #. to Edge website; 4: link close tag.
 #: admin/taxonomy/class-taxonomy.php:103 admin/metabox/class-metabox.php:127
-msgid "The browser you are currently using is unfortunately rather dated. Since we strive to give you the best experience possible, we no longer support this browser. Instead, please use %1$sFirefox%4$s, %2$sChrome%4$s or %3$sMicrosoft Edge%4$s."
+msgid "The browser you are currently using is unfortunately rather dated. Since we strive to give you the best experience possible, we no longer support-modal this browser. Instead, please use %1$sFirefox%4$s, %2$sChrome%4$s or %3$sMicrosoft Edge%4$s."
 msgstr "Браузер, которым вы пользуетесь, к сожалению, устарел. Поскольку мы стремимся предоставить вам наилучшие возможности, мы больше не поддерживаем этот браузер. Вместо этого используйте %1$sFirefox%4$s, %2$sChrome%4$s or %3$sMicrosoft Edge%4$s."
 
 #. translators: %1$s expands to Yoast SEO academy
@@ -2167,7 +2167,7 @@ msgstr "%s данные не найдены."
 
 #: admin/class-premium-upsell-admin-block.php:58 admin/views/sidebar.php:38
 #: languages/wordpress-seojs.php:129
-msgid "24/7 email support"
+msgid "24/7 email support-modal"
 msgstr "Поддержка по e-mail 24/7 "
 
 #: admin/views/sidebar.php:37
@@ -2841,7 +2841,7 @@ msgstr "Фильтровать по оценке читаемости"
 #. translators: %1$s expands to the product name. %2$s expands to a link to My
 #. Yoast
 #: admin/class-license-page-manager.php:206
-msgid "You are not receiving updates or support! Fix this problem by adding this site and enabling %1$s for it in %2$s."
+msgid "You are not receiving updates or support-modal! Fix this problem by adding this site and enabling %1$s for it in %2$s."
 msgstr "Вы не получаете обновления или поддержку! Решите эту проблему, добавив этот сайт и включив %1$s для него в %2$s."
 
 #. translators: %1$s expands to the request method
@@ -2952,7 +2952,7 @@ msgstr "Обновитесь до Премиум"
 
 #. translators: %1$s resolves to Yoast SEO Premium
 #: admin/config-ui/components/class-component-suggestions.php:36
-msgid "Do you want to outrank your competition? %1$s gives you awesome additional features that'll help you to set up your SEO strategy like a professional. Add synonyms and related keywords, use our Premium SEO analysis, the redirect manager and our internal linking tool. %1$s will also give you access to premium support."
+msgid "Do you want to outrank your competition? %1$s gives you awesome additional features that'll help you to set up your SEO strategy like a professional. Add synonyms and related keywords, use our Premium SEO analysis, the redirect manager and our internal linking tool. %1$s will also give you access to premium support-modal."
 msgstr "Хотите ли вы иметь более высокий ранг по сравнению с конкурентами? %1$s предоставляет отличные дополнительные возможности, которые помогут вам профессионально построить вашу SEO стратегию. Используйте функцию добавления множества ключевых слов, менеджера редиректов и наш инструмент внутренней перелинковки. %1$s также предоставит вам доступ к премиум поддержке."
 
 #. translators: %s resolves to Yoast SEO Premium
@@ -2988,7 +2988,7 @@ msgstr "Сохранить изменения"
 #: admin/class-multiple-keywords-modal.php:41
 #: admin/formatter/class-metabox-formatter.php:216
 #: admin/class-premium-popup.php:88 languages/wordpress-seojs.php:141
-msgid "1 year free support and updates included!"
+msgid "1 year free support-modal and updates included!"
 msgstr "1 год бесплатных обновлений и улучшений включен!"
 
 #. translators: %2$s expands to 'RS Head Cleaner' plugin name of possibly
@@ -3283,7 +3283,7 @@ msgstr "Предупреждение: переменная %1$s не может 
 #. translators: %1$s expands anchor to premium plugin page, %2$s expands to
 #. </a>
 #: admin/class-product-upsell-notice.php:128
-msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keyphrases. It also comes with 24/7 personal support."
+msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support-modal for multiple keyphrases. It also comes with 24/7 personal support-modal."
 msgstr "Знаете ли вы, что у нас также есть %1$sпремиум-плагин%2$s? Он предлагает расширенные функции, такие как переадресация и поддержка нескольких ключевых слов. Он поставляется с персональной поддержкой 24/7."
 
 #: admin/class-bulk-editor-list-table.php:791
@@ -3492,11 +3492,11 @@ msgid "Installed"
 msgstr "Установлено"
 
 #: admin/views/licenses.php:151
-msgid "gain access to our 24/7 support team."
+msgid "gain access to our 24/7 support-modal team."
 msgstr "получить доступ к нашей службе поддержки 24/7."
 
 #: admin/views/licenses.php:150
-msgid "Premium support"
+msgid "Premium support-modal"
 msgstr "Премиум-поддержка"
 
 #: admin/views/licenses.php:147
@@ -4631,7 +4631,7 @@ msgstr "Оптимизируйте свои видео-записи, чтобы 
 
 #. translators: %1$s expands to Yoast SEO
 #: admin/class-plugin-availability.php:38 admin/views/licenses.php:27
-msgid "The premium version of %1$s with more features & support."
+msgid "The premium version of %1$s with more features & support-modal."
 msgstr "Премиум-версия плагина %1$s с дополнительными функциями и поддержкой."
 
 #: admin/config-ui/fields/class-field-company-or-person.php:24
@@ -4664,7 +4664,7 @@ msgstr "«Хлебные крошки»"
 #. Translators: %1$s: expands to 'Yoast SEO Premium', %2$s: links to Yoast SEO
 #. Premium plugin page.
 #: admin/google_search_console/views/gsc-redirect-nopremium.php:22
-msgid "To be able to create a redirect and fix this issue, you need %1$s. You can buy the plugin, including one year of support and updates, on %2$s."
+msgid "To be able to create a redirect and fix this issue, you need %1$s. You can buy the plugin, including one year of support-modal and updates, on %2$s."
 msgstr "Чтобы создать перенаправление и исправить эту проблему, необходим %1$s. Купить этот плагин, а также год поддержки и обновлений, можно на %2$s."
 
 #. Translators: %s: expands to Yoast SEO Premium

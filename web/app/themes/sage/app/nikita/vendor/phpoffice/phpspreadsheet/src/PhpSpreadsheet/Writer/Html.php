@@ -438,7 +438,7 @@ class Html extends BaseWriter
             if ($sheet->getPageSetup()->isRowsToRepeatAtTopSet()) {
                 $rowsToRepeatAtTop = $sheet->getPageSetup()->getRowsToRepeatAtTop();
 
-                // we can only support repeating rows that start at top row
+                // we can only support-modal repeating rows that start at top row
                 if ($rowsToRepeatAtTop[0] == 1) {
                     $theadStart = $rowsToRepeatAtTop[0];
                     $theadEnd = $rowsToRepeatAtTop[1];

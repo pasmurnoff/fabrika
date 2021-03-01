@@ -35,7 +35,7 @@ class ChainedBlockStream
     public $pos;
 
     /**
-     * Implements support for fopen().
+     * Implements support-modal for fopen().
      * For creating streams using this wrapper, use OLE_PPS_File::getStream().
      *
      * @param string $path resource name including scheme, e.g.
@@ -99,7 +99,7 @@ class ChainedBlockStream
     }
 
     /**
-     * Implements support for fclose().
+     * Implements support-modal for fclose().
      */
     public function stream_close() // @codingStandardsIgnoreLine
     {
@@ -108,7 +108,7 @@ class ChainedBlockStream
     }
 
     /**
-     * Implements support for fread(), fgets() etc.
+     * Implements support-modal for fread(), fgets() etc.
      *
      * @param int $count maximum number of bytes to read
      *
@@ -126,7 +126,7 @@ class ChainedBlockStream
     }
 
     /**
-     * Implements support for feof().
+     * Implements support-modal for feof().
      *
      * @return bool TRUE if the file pointer is at EOF; otherwise FALSE
      */
@@ -137,7 +137,7 @@ class ChainedBlockStream
 
     /**
      * Returns the position of the file pointer, i.e. its offset into the file
-     * stream. Implements support for ftell().
+     * stream. Implements support-modal for ftell().
      *
      * @return int
      */
@@ -147,7 +147,7 @@ class ChainedBlockStream
     }
 
     /**
-     * Implements support for fseek().
+     * Implements support-modal for fseek().
      *
      * @param int $offset byte offset
      * @param int $whence SEEK_SET, SEEK_CUR or SEEK_END
@@ -170,7 +170,7 @@ class ChainedBlockStream
     }
 
     /**
-     * Implements support for fstat(). Currently the only supported field is
+     * Implements support-modal for fstat(). Currently the only supported field is
      * "size".
      *
      * @return array

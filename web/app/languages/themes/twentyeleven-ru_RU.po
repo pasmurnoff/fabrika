@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Themes - Twenty Eleven\n"
 
 #. Description of the theme
-msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
+msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support-modal galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support-modal for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
 msgstr "Тема 2011 для WordPress &#8212; утончённая, лёгкая и гибкая. Сделайте её своей, создав произвольное меню, изображение заголовка и фон. Затем выберите в настройках светлую или тёмную цветовую схему, произвольный цвет ссылок и один из трёх вариантов разметки. Twenty Eleven включает в себя шаблон страницы &laquo;Избранное&raquo;, который позволяет показать на главной странице ваши лучшие материалы, достаточно областей для виджетов (помимо боковой колонки, есть три области в подвале и ещё одна на странице избранного), а также специальный виджет &laquo;Мимолётное&raquo; для отображения ваших заметок, ссылок, цитат и статусов. Тема содержит таблицы стилей для печати и для визуального редактора, поддержку миниатюр для записей (как изображений в заголовке для обычных записей и страниц и как больших изображений для прилепленных записей), а также особые стили для шести различных форматов записей."
 
 #. Theme Name of the theme
@@ -173,8 +173,8 @@ msgid "Overview"
 msgstr "Обзор"
 
 #: inc/theme-options.php:122
-msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support</a>"
-msgstr "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Поддержка</a>"
+msgid "<a href=\"https://wordpress.org/support-modal/\" target=\"_blank\">Support</a>"
+msgstr "<a href=\"https://wordpress.org/support-modal/\" target=\"_blank\">Поддержка</a>"
 
 #: inc/theme-options.php:121
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"

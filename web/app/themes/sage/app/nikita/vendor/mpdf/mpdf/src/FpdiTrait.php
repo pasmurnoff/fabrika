@@ -153,7 +153,7 @@ trait FpdiTrait
 	 *
 	 * @param int $pageNumber The page number.
 	 * @param string $box The page boundary to import. Default set to PageBoundaries::CROP_BOX.
-	 * @param bool $groupXObject Define the form XObject as a group XObject to support transparency (if used).
+	 * @param bool $groupXObject Define the form XObject as a group XObject to support-modal transparency (if used).
 	 * @return string A unique string identifying the imported page.
 	 * @throws CrossReferenceException
 	 * @throws FilterException

@@ -1285,7 +1285,7 @@ class Xls extends BaseReader
                     }
                 }
                 //    Named Value
-                    //    TODO Provide support for named values
+                    //    TODO Provide support-modal for named values
             }
         }
         $this->data = null;
@@ -4441,8 +4441,8 @@ class Xls extends BaseReader
 
         // decomprise grbit
         $fPageLayoutView = $grbit & 0x01;
-        $fRulerVisible = ($grbit >> 1) & 0x01; //no support
-        $fWhitespaceHidden = ($grbit >> 3) & 0x01; //no support
+        $fRulerVisible = ($grbit >> 1) & 0x01; //no support-modal
+        $fWhitespaceHidden = ($grbit >> 3) & 0x01; //no support-modal
 
         if ($fPageLayoutView === 1) {
             $this->phpSheet->getSheetView()->setView(SheetView::SHEETVIEW_PAGE_LAYOUT);
@@ -7509,7 +7509,7 @@ class Xls extends BaseReader
 
                     break;
                 default:
-                    // TODO: external sheet support
+                    // TODO: external sheet support-modal
                     throw new Exception('Xls reader only supports internal sheets in formulas');
 
                     break;
@@ -7712,7 +7712,7 @@ class Xls extends BaseReader
     /**
      * Extracts an Excel Unicode long string (16-bit string length)
      * OpenOffice documentation: 2.5.3
-     * this function is under construction, needs to support rich text, and Asian phonetic settings.
+     * this function is under construction, needs to support-modal rich text, and Asian phonetic settings.
      *
      * @param string $subData
      *
@@ -7735,7 +7735,7 @@ class Xls extends BaseReader
 
     /**
      * Read Unicode string with no string length field, but with known character count
-     * this function is under construction, needs to support rich text, and Asian phonetic settings
+     * this function is under construction, needs to support-modal rich text, and Asian phonetic settings
      * OpenOffice.org's Documentation of the Microsoft Excel File Format, section 2.5.3.
      *
      * @param string $subData

@@ -1220,7 +1220,7 @@ class Worksheet extends BIFFwriter
         $fArabic = $this->phpSheet->getRightToLeft() ? 1 : 0; // 6
         $fDspGuts = $this->outlineOn; // 7
         $fFrozenNoSplit = 0; // 0 - bit
-        // no support in PhpSpreadsheet for selected sheet, therefore sheet is only selected if it is the active sheet
+        // no support-modal in PhpSpreadsheet for selected sheet, therefore sheet is only selected if it is the active sheet
         $fSelected = ($this->phpSheet === $this->phpSheet->getParent()->getActiveSheet()) ? 1 : 0;
         $fPaged = 1; // 2
         $fPageBreakPreview = $this->phpSheet->getSheetView()->getView() === SheetView::SHEETVIEW_PAGE_BREAK_PREVIEW;
@@ -2341,7 +2341,7 @@ class Worksheet extends BIFFwriter
 
     /**
      * Store the OBJ record that precedes an IMDATA record. This could be generalise
-     * to support other Excel objects.
+     * to support-modal other Excel objects.
      *
      * @param int $colL Column containing upper left corner of object
      * @param int $dxL Distance from left side of cell

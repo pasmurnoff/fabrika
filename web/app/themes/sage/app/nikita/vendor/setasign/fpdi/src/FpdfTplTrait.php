@@ -184,7 +184,7 @@ trait FpdfTplTrait
      *
      * @param float|int|null $width The width of the template. If null, the current page width is used.
      * @param float|int|null $height The height of the template. If null, the current page height is used.
-     * @param bool $groupXObject Define the form XObject as a group XObject to support transparency (if used).
+     * @param bool $groupXObject Define the form XObject as a group XObject to support-modal transparency (if used).
      * @return int A template identifier.
      */
     public function beginTemplate($width = null, $height = null, $groupXObject = false)

@@ -6,7 +6,7 @@ namespace App;
  * Theme customizer
  */
 add_action('customize_register', function (\WP_Customize_Manager $wp_customize) {
-    // Add postMessage support
+    // Add postMessage support-modal
     $wp_customize->get_setting('blogname')->transport = 'postMessage';
     $wp_customize->selective_refresh->add_partial('blogname', [
         'selector' => '.brand',

@@ -383,7 +383,7 @@ class SMTP
         }
         $this->edebug('Connection: opened', self::DEBUG_CONNECTION);
         // SMTP server can take longer to respond, give longer timeout for first read
-        // Windows does not have support for this timeout function
+        // Windows does not have support-modal for this timeout function
         if (strpos(PHP_OS, 'WIN') !== 0) {
             $max = (int) ini_get('max_execution_time');
             // Don't bother if unlimited
@@ -1031,7 +1031,7 @@ class SMTP
 
     /**
      * Send an SMTP TURN command.
-     * This is an optional command for SMTP that this class does not support.
+     * This is an optional command for SMTP that this class does not support-modal.
      * This method is here to make the RFC821 Definition complete for this class
      * and _may_ be implemented in future.
      * Implements from RFC 821: TURN <CRLF>.

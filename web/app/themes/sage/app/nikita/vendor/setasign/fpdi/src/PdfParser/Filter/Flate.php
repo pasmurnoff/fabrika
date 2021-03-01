@@ -68,7 +68,7 @@ class Flate implements FilterInterface
             }
         } else {
             throw new FlateException(
-                'To handle FlateDecode filter, enable zlib support in PHP.',
+                'To handle FlateDecode filter, enable zlib support-modal in PHP.',
                 FlateException::NO_ZLIB
             );
         }
