@@ -103,6 +103,26 @@
 
   .wishlist__like {
     margin-left: 10px;
+
+    @media screen and (max-width: 1044px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 968px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 967px) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 442px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-right: 0;
+    }
   }
 
   .woocommerce-product-gallery {
@@ -199,40 +219,6 @@
 
   box-shadow: none !important;
 
-  #yith-quick-view-close {
-    border: none;
-    text-decoration: none;
-    font-family: $font;
-    width: 20px;
-    height: 20px;
-    right: 20px;
-    top: 15px;
-    color: transparent;
-
-    &::after {
-      position: absolute;
-      cursor: pointer;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      content: url("resources/assets/images/components/quick-view/times.svg");
-      color: red;
-
-      svg {
-        fill: $greytext;
-        width: 100%;
-        height: 100%;
-      }
-
-      &:hover {
-        svg {
-          fill: $black;
-        }
-      }
-    }
-  }
-
   .single-product {
     padding: 0;
 
@@ -263,6 +249,55 @@
       width: calc(100% - 30px) !important;
       min-width: 290px !important;
       max-width: 470px;
+    }
+  }
+}
+
+#yith-quick-view-close {
+  border: 0;
+  text-decoration: none;
+  font-family: $font;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 15px;
+  margin: 50px;
+  color: transparent;
+
+  @media screen and (max-width: 1024px) {
+    border: 0;
+    text-decoration: none;
+    font-family: $font;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+    bottom: 15px;
+    margin: 0;
+    color: transparent;
+  }
+
+  &::after {
+    fill: white;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: url("resources/assets/images/components/quick-view/times.svg");
+    color: red;
+
+    svg {
+      fill: white;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      svg {
+        fill: white;
+      }
     }
   }
 }

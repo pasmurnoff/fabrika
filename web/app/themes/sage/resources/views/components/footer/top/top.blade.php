@@ -21,6 +21,7 @@
 
     @component('components.footer.top.column')
         @slot('include')
+            @include('components.footer.top.blocks.support')
             @include('components.footer.top.blocks.callback')
             @include('components.footer.top.blocks.socials')
             @include('components.footer.top.blocks.employee')

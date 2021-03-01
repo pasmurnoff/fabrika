@@ -57,7 +57,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
 
     /**
-     * Enable HTML5 markup support
+     * Enable HTML5 markup support-modal
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
      */
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);

@@ -41,7 +41,7 @@ msgid "Sorry, you are not allowed to customize headers."
 msgstr "Извините, вам не разрешено редактировать заголовок."
 
 #: wp-admin/custom-header.php:935
-msgid "The current theme does not support a flexible sized header image."
+msgid "The current theme does not support-modal a flexible sized header image."
 msgstr "Текущая тема не поддерживает изображение заголовка с гибкими размерами."
 
 #: wp-admin/custom-header.php:892
@@ -78,7 +78,7 @@ msgid "Image could not be processed. Please go back and try again."
 msgstr "Не удалось обработать изображение. Пожалуйста, попробуйте ещё раз."
 
 #: wp-admin/custom-header.php:763 wp-admin/custom-header.php:927
-msgid "The current theme does not support uploading a custom header image."
+msgid "The current theme does not support-modal uploading a custom header image."
 msgstr "Текущая тема не поддерживает произвольное изображение заголовка."
 
 #: wp-admin/custom-header.php:725
@@ -259,11 +259,11 @@ msgid "Repairs complete. Please remove the following line from wp-config.php to 
 msgstr "Ремонт завершён. Пожалуйста, удалите следующую строчку из wp-config.php, чтобы посторонние пользователи не могли воспользоваться этой страницей."
 
 #: wp-admin/maint/repair.php:144
-msgid "https://wordpress.org/support/forum/how-to-and-troubleshooting"
-msgstr "https://ru.wordpress.org/support/forum/how-to-and-troubleshooting/"
+msgid "https://wordpress.org/support-modal/forum/how-to-and-troubleshooting"
+msgstr "https://ru.wordpress.org/support-modal/forum/how-to-and-troubleshooting/"
 
 #: wp-admin/maint/repair.php:144
-msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">WordPress support forums</a> to get additional assistance."
+msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">WordPress support-modal forums</a> to get additional assistance."
 msgstr "Некоторые проблемы в базе данных не удалось исправить. Пожалуйста, скопируйте список ошибок и обратитесь на <a href=\"%s\">форумы поддержки WordPress</a> за дальнейшей помощью."
 
 #. translators: 1: table name, 2: error message,
@@ -1425,7 +1425,7 @@ msgstr "Создание JavaScript"
 
 #. translators: 1: wp_body_open 2: <body>
 #: wp-admin/about.php:219
-msgid "5.2 introduces a %1$s hook, which lets themes support injecting code right at the beginning of the %2$s element."
+msgid "5.2 introduces a %1$s hook, which lets themes support-modal injecting code right at the beginning of the %2$s element."
 msgstr "WordPress 5.2 предоставляет новый хук %1$s, позволяющий темам выводить код прямо в начале элемента %2$s."
 
 #: wp-admin/about.php:214
@@ -3718,7 +3718,7 @@ msgid "Copy site info to clipboard"
 msgstr "Скопировать информацию в буфер обмена"
 
 #: wp-admin/site-health-info.php:88
-msgid "If you want to export a handy list of all the information on this page, you can use the button below to copy it to the clipboard. You can then paste it in a text file and save it to your harddrive, or paste it in an email exchange with a support engineer or theme/plugin developer for example."
+msgid "If you want to export a handy list of all the information on this page, you can use the button below to copy it to the clipboard. You can then paste it in a text file and save it to your harddrive, or paste it in an email exchange with a support-modal engineer or theme/plugin developer for example."
 msgstr "Если вам нужно экспортировать информацию с этой страницы, вы можете воспользоваться кнопкой ниже для копирования её в буфер обмена. Вы можете вставить ее в текстовый файл и сохранить на диск или, например, отправить в сообщении сотрудникам поддержки или разработчикам темы или плагина."
 
 #: wp-admin/site-health-info.php:85
@@ -4422,7 +4422,7 @@ msgstr "На этом экране вы можете:"
 #. translators: 1: Widgets admin screen URL, 2 and 3: The name of the default
 #. themes
 #: wp-admin/nav-menus.php:538
-msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support by following the Documentation link to the side."
+msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support-modal the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support-modal by following the Documentation link to the side."
 msgstr "Меню могут отображаться в областях, предусмотренных темой оформления, или в областях для виджетов, если добавить туда виджет &#8220;Меню навигации&#8221; на экране <a href=\"%1$s\">&laquo;Виджеты&raquo;</a>. Если ваша тема не поддерживает произвольные меню (темы по умолчанию %2$s и %3$s поддерживают), вы можете узнать как добавить поддержку самостоятельно, прочитав документацию по ссылке на боковой панели."
 
 #: wp-admin/nav-menus.php:536
@@ -4430,7 +4430,7 @@ msgid "This screen is used for managing your navigation menus."
 msgstr "Этот экран используется для управления вашими меню навигации."
 
 #: wp-admin/nav-menus.php:532
-msgid "Your theme does not natively support menus, but you can use them in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
+msgid "Your theme does not natively support-modal menus, but you can use them in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
 msgstr "Ваша тема не поддерживает произвольные меню, однако вы можете использовать их в боковых колонках, добавив туда виджет &#8220;Меню навигации&#8221; на странице управлния <a href=\"%s\">виджетами</a>."
 
 #: wp-admin/nav-menus.php:405
@@ -4454,7 +4454,7 @@ msgid "The menu item has been successfully deleted."
 msgstr "Элемент меню успешно удалён."
 
 #: wp-admin/nav-menus.php:19
-msgid "Your theme does not support navigation menus or widgets."
+msgid "Your theme does not support-modal navigation menus or widgets."
 msgstr "Ваша тема не поддерживает меню навигации и виджеты."
 
 #: wp-admin/plugin-editor.php:309
@@ -5189,7 +5189,7 @@ msgid "The primary site you chose does not exist."
 msgstr "Сайта, выбранного основным, не существует."
 
 #: wp-admin/my-sites.php:13 wp-admin/ms-delete-site.php:13
-msgid "Multisite support is not enabled."
+msgid "Multisite support-modal is not enabled."
 msgstr "Поддержка сети не включена."
 
 #: wp-admin/includes/class-file-upload-upgrader.php:56
@@ -6220,7 +6220,7 @@ msgid ".htaccess (for rewrite rules )"
 msgstr ".htaccess (для правил перенаправления)"
 
 #: wp-admin/includes/file.php:58
-msgid "my-hacks.php (legacy hacks support)"
+msgid "my-hacks.php (legacy hacks support-modal)"
 msgstr "my-hacks.php (поддержка устаревших заплаток)"
 
 #: wp-admin/includes/file.php:56
@@ -6813,7 +6813,7 @@ msgid ""
 "This debugging email is sent when you are using a development version of WordPress.\n"
 "\n"
 "If you think these failures might be due to a bug in WordPress, could you report it?\n"
-" * Open a thread in the support forums: https://wordpress.org/support/forum/alphabeta\n"
+" * Open a thread in the support-modal forums: https://wordpress.org/support-modal/forum/alphabeta\n"
 " * Or, if you're comfortable writing a bug report: https://core.trac.wordpress.org/\n"
 "\n"
 "Thanks! -- The WordPress Team"
@@ -6825,7 +6825,7 @@ msgstr ""
 "\n"
 "Если вы считаете, что эти проблемы могут быть вызваны ошибкой в WordPress --\n"
 "пожалуйста, сообщите о ней.\n"
-" * Создайте тему на форуме поддержки: https://ru.wordpress.org/support/forum/alphabeta/\n"
+" * Создайте тему на форуме поддержки: https://ru.wordpress.org/support-modal/forum/alphabeta/\n"
 " * Или напишите в багтрекер: https://core.trac.wordpress.org/\n"
 "\n"
 "Спасибо! -- Команда WordPress"
@@ -6885,7 +6885,7 @@ msgid "Error code: %s"
 msgstr "Код ошибки: %s"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:766
-msgid "Your hosting company, support forum volunteers, or a friendly developer may be able to use this information to help you:"
+msgid "Your hosting company, support-modal forum volunteers, or a friendly developer may be able to use this information to help you:"
 msgstr "Эта информация позволит вашему хостинг-провайдеру, волонтёрам на форуме поддержки или знакомому разработчику помочь вам:"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:765
@@ -6915,7 +6915,7 @@ msgid "Keeping your site updated is important for security. It also makes the in
 msgstr "Своевременно обновлять сайт важно из соображений безопасности. Это также делает Интернет более безопасным местом для вас и ваших читателей."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:740
-msgid "If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help."
+msgid "If you experience any issues or need support-modal, the volunteers in the WordPress.org support-modal forums may be able to help."
 msgstr "Если вы столкнётесь с проблемами и вам понадобится поддержка, вам помогут волонтёры на форумах WordPress.org."
 
 #. translators: %s: Support e-mail
@@ -8077,7 +8077,7 @@ msgid "HTTPS status"
 msgstr "Статус HTTPS"
 
 #: wp-admin/includes/class-wp-site-health.php:1765
-msgid "MySQL utf8mb4 support"
+msgid "MySQL utf8mb4 support-modal"
 msgstr "MySQL поддержка кодировки utf8mb4"
 
 #: wp-admin/includes/class-wp-site-health.php:1761
@@ -8232,7 +8232,7 @@ msgid "Scheduled events are running"
 msgstr "Запланированные задания работают"
 
 #: wp-admin/includes/class-wp-site-health.php:1365
-msgid "Talk to your web host about OpenSSL support for PHP."
+msgid "Talk to your web host about OpenSSL support-modal for PHP."
 msgstr "Обратитесь в техническую поддержку хостинга для включения OpenSSL в PHP."
 
 #: wp-admin/includes/class-wp-site-health.php:1361
@@ -8270,8 +8270,8 @@ msgstr "Узнайте больше, почему вам следует испо
 
 #. translators: Documentation explaining HTTPS and why it should be used.
 #: wp-admin/includes/class-wp-site-health.php:1288
-msgid "https://wordpress.org/support/article/why-should-i-use-https/"
-msgstr "https://ru.wordpress.org/support/article/why-should-i-use-https/"
+msgid "https://wordpress.org/support-modal/article/why-should-i-use-https/"
+msgstr "https://ru.wordpress.org/support-modal/article/why-should-i-use-https/"
 
 #: wp-admin/includes/class-wp-site-health.php:1283
 msgid "An HTTPS connection is needed for many features on the web today, it also gains the trust of your visitors by helping to protecting their online privacy."
@@ -8305,8 +8305,8 @@ msgstr "Узнайте больше про отладку в WordPress."
 
 #. translators: Documentation explaining debugging in WordPress.
 #: wp-admin/includes/class-wp-site-health.php:1219
-msgid "https://wordpress.org/support/article/debugging-in-wordpress/"
-msgstr "https://wordpress.org/support/article/debugging-in-wordpress/"
+msgid "https://wordpress.org/support-modal/article/debugging-in-wordpress/"
+msgstr "https://wordpress.org/support-modal/article/debugging-in-wordpress/"
 
 #: wp-admin/includes/class-wp-site-health.php:1214
 msgid "Debug mode is often enabled to gather more details about an error or site failure, but may contain sensitive information which should not be available on a publicly available website."
@@ -8322,8 +8322,8 @@ msgstr "Получите помощь в решении этой проблем�
 
 #. translators: Localized Support reference.
 #: wp-admin/includes/class-wp-site-health.php:1181
-msgid "https://wordpress.org/support"
-msgstr "https://ru.wordpress.org/support"
+msgid "https://wordpress.org/support-modal"
+msgstr "https://ru.wordpress.org/support-modal"
 
 #. translators: 1: The IP address WordPress.org resolves to. 2: The error
 #. returned by the lookup.
@@ -8346,7 +8346,7 @@ msgstr "WordPress.org доступен"
 #. translators: 1: Name of the library, 2: Number of version.
 #: wp-admin/includes/class-wp-site-health.php:1101
 #: wp-admin/includes/class-wp-site-health.php:1117
-msgid "WordPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator."
+msgid "WordPress&#8217; utf8mb4 support-modal requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator."
 msgstr "Поддержка utf8mb4 требует клиентскую библиотеку MySQL (%1$s) версии %2$s или выше. Пожалуйста, обратитесь в техническую поддержку хостинга."
 
 #: wp-admin/includes/class-wp-site-health.php:1095
@@ -8360,7 +8360,7 @@ msgstr "Ваша версия MariaDB поддерживает utf8mb4."
 
 #. translators: %s: Version number.
 #: wp-admin/includes/class-wp-site-health.php:1066
-msgid "WordPress&#8217; utf8mb4 support requires MariaDB version %s or greater. Please contact your server administrator."
+msgid "WordPress&#8217; utf8mb4 support-modal requires MariaDB version %s or greater. Please contact your server administrator."
 msgstr "Поддержка utf8mb4 требует MariaDB версии %s или выше. Пожалуйста, обратитесь в техническую поддержку хостинга."
 
 #: wp-admin/includes/class-wp-site-health.php:1060
@@ -8373,7 +8373,7 @@ msgstr "Ваша версия MySQL поддерживает utf8mb4."
 
 #. translators: %s: Version number.
 #: wp-admin/includes/class-wp-site-health.php:1046
-msgid "WordPress&#8217; utf8mb4 support requires MySQL version %s or greater. Please contact your server administrator."
+msgid "WordPress&#8217; utf8mb4 support-modal requires MySQL version %s or greater. Please contact your server administrator."
 msgstr "Поддержка utf8mb4 требует MySQL версии %s или выше. Пожалуйста, обратитесь в техническую поддержку хостинга."
 
 #: wp-admin/includes/class-wp-site-health.php:1040
@@ -9252,8 +9252,8 @@ msgid "<strong>ERROR</strong>: Please enter a nickname."
 msgstr "<strong>ОШИБКА</strong>: Пожалуйста, введите ник."
 
 #: wp-admin/includes/ms.php:1176
-msgid "<a href=\"https://wordpress.org/support/forum/multisite/\">Support Forums</a>"
-msgstr "<a href=\"https://ru.wordpress.org/support/forum/multisite/\" target=\"_blank\">Форумы поддержки</a>"
+msgid "<a href=\"https://wordpress.org/support-modal/forum/multisite/\">Support Forums</a>"
+msgstr "<a href=\"https://ru.wordpress.org/support-modal/forum/multisite/\" target=\"_blank\">Форумы поддержки</a>"
 
 #: wp-admin/includes/ms.php:1175
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\">Documentation on Site Management</a>"
@@ -11185,8 +11185,8 @@ msgstr "Доступен <a href=\"%1$s\">WordPress %2$s</a>! <a href=\"%3$s\" a
 #: wp-admin/includes/update.php:267 wp-admin/install.php:239
 #: wp-admin/update-core.php:75 wp-admin/upgrade.php:84 wp-admin/about.php:72
 #: wp-admin/about.php:97 wp-admin/about.php:122
-msgid "https://wordpress.org/support/wordpress-version/version-%s/"
-msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
+msgid "https://wordpress.org/support-modal/wordpress-version/version-%s/"
+msgstr "https://wordpress.org/support-modal/wordpress-version/version-%s/"
 
 #: wp-admin/includes/update.php:236
 msgid "Get Version %s"
@@ -12438,7 +12438,7 @@ msgid "Unable to determine PHP version"
 msgstr "Невозможно определить версию PHP"
 
 #: wp-admin/includes/class-wp-debug-data.php:566
-msgid "(Does not support 64bit values)"
+msgid "(Does not support-modal 64bit values)"
 msgstr "(64-битные значения не поддерживаются)"
 
 #: wp-admin/includes/class-wp-debug-data.php:566
@@ -13232,8 +13232,8 @@ msgstr "Кодировка страниц и лент"
 #: wp-admin/theme-install.php:130 wp-admin/options-discussion.php:32
 #: wp-admin/edit.php:260 wp-admin/edit.php:285 wp-admin/plugin-install.php:106
 #: wp-admin/export.php:58 wp-admin/custom-header.php:130
-msgid "<a href=\"https://wordpress.org/support/\">Support</a>"
-msgstr "<a href=\"https://ru.wordpress.org/support/\">Форумы поддержки</a>"
+msgid "<a href=\"https://wordpress.org/support-modal/\">Support</a>"
+msgstr "<a href=\"https://ru.wordpress.org/support-modal/\">Форумы поддержки</a>"
 
 #: wp-admin/options-reading.php:43
 msgid "<a href=\"https://codex.wordpress.org/Settings_Reading_Screen\">Documentation on Reading Settings</a>"

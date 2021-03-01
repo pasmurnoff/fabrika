@@ -1026,7 +1026,7 @@ msgid "Showing large initial letter."
 msgstr "Отображение большой начальной буквы."
 
 #: wp-includes/js/dist/block-library.js:5395
-msgid "Your site doesn’t include support for this block."
+msgid "Your site doesn’t include support-modal for this block."
 msgstr "Ваш сайт не поддерживает этот блок."
 
 #: wp-includes/js/dist/block-library.js:5394
@@ -1034,7 +1034,7 @@ msgid "Unrecognized Block"
 msgstr "Нераспознанный блок"
 
 #: wp-includes/js/dist/block-library.js:5367
-msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact or remove it entirely."
+msgid "Your site doesn’t include support-modal for the \"%s\" block. You can leave this block intact or remove it entirely."
 msgstr "Ваш сайт не поддерживает \"%s\" блок. Вы можете оставить этот блок нетронутым или полностью удалить его."
 
 #: wp-includes/js/dist/block-library.js:5365
@@ -1042,7 +1042,7 @@ msgid "Keep as HTML"
 msgstr "Сохранить как HTML"
 
 #: wp-includes/js/dist/block-library.js:5359
-msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact, convert its content to a Custom HTML block, or remove it entirely."
+msgid "Your site doesn’t include support-modal for the \"%s\" block. You can leave this block intact, convert its content to a Custom HTML block, or remove it entirely."
 msgstr "Ваш сайт не поддерживает \"%s\" блок. Вы можете оставить этот блок нетронутым, преобразовать его содержимое в произвольный HTML-блок или полностью удалить его."
 
 #: wp-includes/js/dist/block-library.js:4496
@@ -4524,7 +4524,7 @@ msgid "Insert"
 msgstr "Вставить"
 
 #: wp-includes/class-wp-editor.php:1263
-msgid "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
+msgid "Your browser does not support-modal direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
 msgstr "Ваш браузер не поддерживает прямой доступ к буферу обмена. Используйте горячие клавиши или меню «Правка» вашего браузера."
 
 #: wp-includes/class-wp-editor.php:1259
@@ -6220,8 +6220,8 @@ msgstr "Данная ссылка предоставлена вашим хост
 
 #: wp-includes/functions.php:6928
 msgctxt "localized PHP upgrade information page"
-msgid "https://wordpress.org/support/update-php/"
-msgstr "https://ru.wordpress.org/support/upgrade-php/"
+msgid "https://wordpress.org/support-modal/update-php/"
+msgstr "https://ru.wordpress.org/support-modal/upgrade-php/"
 
 #. translators: deleted long text
 #: wp-includes/functions.php:6756
@@ -7210,8 +7210,8 @@ msgid "No themes found. Try a different search."
 msgstr "Тем не найдено. Попробуйте другой поиск."
 
 #: wp-includes/customize/class-wp-customize-themes-section.php:84
-msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
-msgstr "Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href=\"https://ru.wordpress.org/support/\">форумы поддержки</a>."
+msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support-modal/\">support-modal forums</a>."
+msgstr "Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href=\"https://ru.wordpress.org/support-modal/\">форумы поддержки</a>."
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:135
 msgid "Install &amp; Preview"
@@ -10701,10 +10701,10 @@ msgstr "%d обновление WordPress"
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(Не удалось установить защищённое соединение с WordPress.org. Пожалуйста, свяжитесь с администратором сервера.)"
 
-#. translators: %s: support forums URL
+#. translators: %s: support-modal forums URL
 #: wp-includes/update.php:157 wp-includes/update.php:381
 #: wp-includes/update.php:566
-msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
+msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support-modal forums</a>."
 msgstr "Произошла непредвиденная ошибка. Возможно, что-то не так с сайтом WordPress.org или с настройками вашего сервера. Если проблема не решится, обратитесь на <a href=\"%s\">форумы поддержки</a>."
 
 #. translators: 1: error type, 2: error line number, 3: error file name, 4:
@@ -11251,7 +11251,7 @@ msgstr "Это значит, что связь с сервером базы да
 msgid "Error reconnecting to the database"
 msgstr "Ошибка повторного подключения к базе данных"
 
-#. translators: %s: support forums URL
+#. translators: %s: support-modal forums URL
 #: wp-includes/wp-db.php:1675 wp-includes/wp-db.php:1833
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Если вы не знаете, что означают эти термины &#8212; возможно, стоит обратиться к хостинг-провайдеру. Если и после этого вам понадобится помощь &#8212; всегда можно посетить <a href=\"%s\">форум поддержки WordPress</a>."
@@ -11317,10 +11317,10 @@ msgstr "Класс %s должен указать соединение, испо
 
 #: wp-includes/wp-db.php:1131 wp-includes/wp-db.php:1676
 #: wp-includes/wp-db.php:1834
-msgid "https://wordpress.org/support/forums/"
-msgstr "https://ru.wordpress.org/support/forums/"
+msgid "https://wordpress.org/support-modal/forums/"
+msgstr "https://ru.wordpress.org/support-modal/forums/"
 
-#. translators: %s: support forums URL
+#. translators: %s: support-modal forums URL
 #: wp-includes/wp-db.php:1130
 msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Если вы не знаете, как настроить доступ к базе данных, следует <strong>обратиться к хостинг-провайдеру</strong>. Если проблему так и не удалось решить &#8212; возможно, вам помогут на <a href=\"%s\">форуме поддержки WordPress</a>."
@@ -11402,7 +11402,7 @@ msgstr "Элемент не может быть удален."
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:622
-msgid "Terms do not support trashing. Set '%s' to delete."
+msgid "Terms do not support-modal trashing. Set '%s' to delete."
 msgstr "Элементы нельзя переместить в корзину. Установите '%s' для удаления."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:391
@@ -11418,7 +11418,7 @@ msgid "Sorry, you are not allowed to edit terms in this taxonomy."
 msgstr "Извините, вам не разрешено редактировать элементы этой таксономии."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:128
-msgid "Required to be true, as terms do not support trashing."
+msgid "Required to be true, as terms do not support-modal trashing."
 msgstr "Должно быть истинно, так как элементы не поддерживают перемещение в корзину."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:102
@@ -11682,7 +11682,7 @@ msgstr "Неверное значение ID пользователя для п�
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:788
-msgid "Users do not support trashing. Set '%s' to delete."
+msgid "Users do not support-modal trashing. Set '%s' to delete."
 msgstr "Пользователей нельзя переместить в корзину. Установите '%s' для удаления."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:774
@@ -11751,7 +11751,7 @@ msgstr "Переназначить удаленные записи пользо�
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:100
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:139
-msgid "Required to be true, as users do not support trashing."
+msgid "Required to be true, as users do not support-modal trashing."
 msgstr "Должно быть истинным, так как пользователей нельзя переместить в корзину."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:74
@@ -12147,7 +12147,7 @@ msgstr "Запись уже была удалена."
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:843
-msgid "The post does not support trashing. Set '%s' to delete."
+msgid "The post does not support-modal trashing. Set '%s' to delete."
 msgstr "Запись нельзя переместить в корзину. Установите '%s' для удаления."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:654
@@ -12195,7 +12195,7 @@ msgstr "ID автора объекта."
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:408
-msgid "Revisions do not support trashing. Set '%s' to delete."
+msgid "Revisions do not support-modal trashing. Set '%s' to delete."
 msgstr "Ревизии нельзя переместить в корзину. Установите '%s' для удаления."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:282
@@ -12232,7 +12232,7 @@ msgid "Invalid post parent ID."
 msgstr "Неверный ID родительской записи."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:118
-msgid "Required to be true, as revisions do not support trashing."
+msgid "Required to be true, as revisions do not support-modal trashing."
 msgstr "Должно быть истинно, так как редакции не поддерживают перемещение в корзину. "
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:194
@@ -12520,7 +12520,7 @@ msgstr "Комментарий уже был перемещен в корзин�
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:843
-msgid "The comment does not support trashing. Set '%s' to delete."
+msgid "The comment does not support-modal trashing. Set '%s' to delete."
 msgstr "Комментарий нельзя переместить в корзину. Установите '%s' для удаления."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:740
@@ -12686,7 +12686,7 @@ msgid "Invalid JSONP callback function."
 msgstr "Неверная функция обратного вызова JSONP."
 
 #: wp-includes/rest-api/class-wp-rest-server.php:288
-msgid "JSONP support is disabled on this site."
+msgid "JSONP support-modal is disabled on this site."
 msgstr "Поддержка JSONP на этом сайте отключена."
 
 #: wp-includes/rest-api/class-wp-rest-server.php:272
@@ -13322,7 +13322,7 @@ msgid "Taxonomy:"
 msgstr "Таксономия:"
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:153
-msgid "The tag cloud will not be displayed since there are no taxonomies that support the tag cloud widget."
+msgid "The tag cloud will not be displayed since there are no taxonomies that support-modal the tag cloud widget."
 msgstr "Облако меток не будет отображено, потому что ни одна из таксономий его не поддерживает."
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:146
@@ -14176,7 +14176,7 @@ msgid "Customizer"
 msgstr "Настройка темы"
 
 #: wp-includes/theme.php:2557
-msgid "Theme support for %1$s should be registered before the %2$s hook."
+msgid "Theme support-modal for %1$s should be registered before the %2$s hook."
 msgstr "Поддержка функции %1$s в теме дожна быть зарегистрирована раньше действия %2$s."
 
 #: wp-includes/theme.php:2381
@@ -15024,7 +15024,7 @@ msgid "Allowed Files"
 msgstr "Разрешённые файлы"
 
 #: wp-includes/script-loader.php:1452
-msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
+msgid "This theme doesn&#8217;t support-modal video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "Эта тема не поддерживает видео заголовки на этой странице. Перейдите на главную или другую страницу, которая поддерживает видео заголовки."
 
 #. translators: %s: URL to the Customizer to load the autosaved version
@@ -15712,7 +15712,7 @@ msgid "You have attempted to queue too many files."
 msgstr "Вы поставили в очередь слишком много файлов."
 
 #: wp-includes/script-loader.php:1107
-msgid "This feature requires inline frames. You have iframes disabled or your browser does not support them."
+msgid "This feature requires inline frames. You have iframes disabled or your browser does not support-modal them."
 msgstr "Эта функция требует поддержки плавающих фреймов. У вас отключены теги iframe, либо ваш браузер их не поддерживает."
 
 #: wp-includes/script-loader.php:1106 wp-includes/script-loader.php:1208
@@ -16130,8 +16130,8 @@ msgid "Menu"
 msgstr "Меню"
 
 #: wp-includes/admin-bar.php:184
-msgid "https://wordpress.org/support/forum/requests-and-feedback"
-msgstr "https://ru.wordpress.org/support/forum/requests-and-feedback/"
+msgid "https://wordpress.org/support-modal/forum/requests-and-feedback"
+msgstr "https://ru.wordpress.org/support-modal/forum/requests-and-feedback/"
 
 #: wp-includes/admin-bar.php:183
 msgid "Feedback"
@@ -16363,8 +16363,8 @@ msgid "You have logged in successfully."
 msgstr "Вы успешно вошли в систему."
 
 #: wp-login.php:954
-msgid "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
-msgstr "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
+msgid "https://wordpress.org/support-modal/article/cookies/#enable-cookies-in-your-browser"
+msgstr "https://wordpress.org/support-modal/article/cookies/#enable-cookies-in-your-browser"
 
 #. translators: %s: Browser cookie documentation URL
 #: wp-login.php:953
@@ -16373,16 +16373,16 @@ msgstr "<strong>ОШИБКА</strong>: Cookies либо заблокирован
 
 #: wp-login.php:944 wp-includes/admin-bar.php:174 wp-includes/update.php:158
 #: wp-includes/update.php:382 wp-includes/update.php:567
-msgid "https://wordpress.org/support/"
-msgstr "https://ru.wordpress.org/support/"
+msgid "https://wordpress.org/support-modal/"
+msgstr "https://ru.wordpress.org/support-modal/"
 
 #: wp-login.php:943
-msgid "https://wordpress.org/support/article/cookies/"
-msgstr "https://wordpress.org/support/article/cookies/"
+msgid "https://wordpress.org/support-modal/article/cookies/"
+msgstr "https://wordpress.org/support-modal/article/cookies/"
 
 #. translators: 1: Browser cookie documentation URL, 2: Support forums URL
 #: wp-login.php:942
-msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
+msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support-modal forums</a>."
 msgstr "<strong>ОШИБКА</strong>: Cookies заблокированы из-за неожиданного вывода на экран. Посмотрите <a href=\"%1$s\">документацию</a> или обратитесь за помощью на <a href=\"%2$s\">форумы поддержки</a>."
 
 #: wp-login.php:893

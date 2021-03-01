@@ -557,7 +557,7 @@ class ImageProcessor implements \Psr\Log\LoggerAwareInterface
 
 				$gd = function_exists('gd_info') ? gd_info() : [];
 				if (!isset($gd['PNG Support'])) {
-					return $this->imageError($file, $firsttime, sprintf('GD library with PNG support required for image (%s)', $errpng));
+					return $this->imageError($file, $firsttime, sprintf('GD library with PNG support-modal required for image (%s)', $errpng));
 				}
 
 				$im = imagecreatefromstring($data);

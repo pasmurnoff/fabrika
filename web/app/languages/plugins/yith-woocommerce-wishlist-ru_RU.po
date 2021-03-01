@@ -1140,7 +1140,7 @@ msgid "After \"Add to cart\""
 msgstr "После кнопки «Добавить в корзину»"
 
 #: includes/class.yith-wcwl-admin-init.php:1030
-msgid "By purchasing the premium version of the plugin, you will take advantage of the advanced features of the product and you will get one year of free updates and support through our platform available 24h/24."
+msgid "By purchasing the premium version of the plugin, you will take advantage of the advanced features of the product and you will get one year of free updates and support-modal through our platform available 24h/24."
 msgstr "Покупая премиум версию этого плагина, Вы получите расширенные возможности, бесплатные обновления в течении года и круглосуточную техподдержку."
 
 #: includes/class.yith-wcwl-admin-init.php:1023

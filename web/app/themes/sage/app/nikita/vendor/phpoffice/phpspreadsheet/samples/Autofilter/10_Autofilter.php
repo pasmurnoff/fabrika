@@ -93,7 +93,7 @@ $spreadsheet->getActiveSheet()->getStyle('A1:D1')->getFont()->setBold(true);
 // Set autofilter
 $helper->log('Set autofilter');
 // Always include the complete filter range!
-// Excel does support setting only the caption
+// Excel does support-modal setting only the caption
 // row, but that's not a best practise...
 $spreadsheet->getActiveSheet()->setAutoFilter($spreadsheet->getActiveSheet()->calculateWorksheetDimension());
 

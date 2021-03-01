@@ -18398,7 +18398,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 					}
 					break;
 
-				case 'FONT-WEIGHT': // normal bold // Does not support: bolder, lighter, 100..900(step value=100)
+				case 'FONT-WEIGHT': // normal bold // Does not support-modal: bolder, lighter, 100..900(step value=100)
 					switch (strtoupper($v)) {
 						case 'BOLD':
 							$this->SetStyle('B', true);
@@ -18610,7 +18610,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 				/* -- END OTL -- */
 
 
-				case 'TEXT-TRANSFORM': // none uppercase lowercase // Does support: capitalize
+				case 'TEXT-TRANSFORM': // none uppercase lowercase // Does support-modal: capitalize
 					switch (strtoupper($v)) { // Not working 100%
 						case 'CAPITALIZE':
 							$this->textvar = ($this->textvar | TextVars::FT_CAPITALIZE); // mPDF 5.7.1
@@ -18709,7 +18709,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 		// mPDF 5.7.3  inline text-decoration parameters
 		// Needs to be set at the end - after vertical-align = super/sub, so that textparam['text-baseline'] is set
 		if (isset($arrayaux['TEXT-DECORATION'])) {
-			$v = $arrayaux['TEXT-DECORATION']; // none underline line-through (strikeout) // Does not support: blink
+			$v = $arrayaux['TEXT-DECORATION']; // none underline line-through (strikeout) // Does not support-modal: blink
 			if (stristr($v, 'LINE-THROUGH')) {
 				$this->textvar = ($this->textvar | TextVars::FD_LINETHROUGH);
 				// mPDF 5.7.3  inline text-decoration parameters

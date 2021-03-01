@@ -277,7 +277,7 @@ class Cell
             }
 
             if ($result === '#Not Yet Implemented') {
-                return $this->calculatedValue; // Fallback if calculation engine does not support the formula.
+                return $this->calculatedValue; // Fallback if calculation engine does not support-modal the formula.
             }
 
             return $result;

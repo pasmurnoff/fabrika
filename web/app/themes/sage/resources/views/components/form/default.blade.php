@@ -13,7 +13,7 @@
                 @include('components.form.elements.input', [
                'positionClass' => 'labelwrap_single',
                'type' => 'text',
-               'name' => 'name',
+               'name' => 'ФИО',
                'label' => 'Фамилия Имя Отчество*'
              ])
             </div>
@@ -23,7 +23,7 @@
                     @include('components.form.elements.input', [
                           'positionClass' => 'labelwrap_dual',
                           'type' => 'tel',
-                          'name' => 'phone',
+                          'name' => 'Телефон',
                           'label' => 'Мобильный телефон*'
                         ])
 
@@ -38,7 +38,7 @@
                     @include('components.form.elements.input', [
                  'positionClass' => 'labelwrap_single',
                  'type' => 'text',
-                 'name' => 'birthday',
+                 'name' => 'День Рождения',
                  'label' => 'Дата рождения*'
                ])
                 </div>
@@ -48,7 +48,7 @@
             @include('components.form.elements.textarea', [
       'textareaClass' => 'textarea_large',
       'positionClass' => 'labelwrap_single textarea_large',
-      'name' => 'additional',
+      'name' => 'Дополнительно',
       'label' => 'Любая дополнительная информация'
   ])
         </div>

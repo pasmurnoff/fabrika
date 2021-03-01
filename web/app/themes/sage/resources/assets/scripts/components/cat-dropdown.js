@@ -7,3 +7,4 @@ $('body').on('click', '.cat-parent', function (e) {
         $(this).children('.children').animate({height: 'toggle'});
     }
 });
+

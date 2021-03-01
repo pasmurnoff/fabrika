@@ -266,7 +266,7 @@ class LookupRef
      * Excel Function:
      *        =INDIRECT(cellAddress)
      *
-     * NOTE - INDIRECT() does not yet support the optional a1 parameter introduced in Excel 2010
+     * NOTE - INDIRECT() does not yet support-modal the optional a1 parameter introduced in Excel 2010
      *
      * @param null|array|string $cellAddress $cellAddress The cell address of the current cell (containing this formula)
      * @param Cell $pCell The current cell (containing this formula)

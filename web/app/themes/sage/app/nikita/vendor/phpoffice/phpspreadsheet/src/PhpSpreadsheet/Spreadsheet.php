@@ -128,7 +128,7 @@ class Spreadsheet
 
     /**
      * List of unparsed loaded data for export to same format with better compatibility.
-     * It has to be minimized when the library start to support currently unparsed data.
+     * It has to be minimized when the library start to support-modal currently unparsed data.
      *
      * @var array
      */
@@ -338,7 +338,7 @@ class Spreadsheet
 
     /**
      * List of unparsed loaded data for export to same format with better compatibility.
-     * It has to be minimized when the library start to support currently unparsed data.
+     * It has to be minimized when the library start to support-modal currently unparsed data.
      *
      * @internal
      *
@@ -351,7 +351,7 @@ class Spreadsheet
 
     /**
      * List of unparsed loaded data for export to same format with better compatibility.
-     * It has to be minimized when the library start to support currently unparsed data.
+     * It has to be minimized when the library start to support-modal currently unparsed data.
      *
      * @internal
      *

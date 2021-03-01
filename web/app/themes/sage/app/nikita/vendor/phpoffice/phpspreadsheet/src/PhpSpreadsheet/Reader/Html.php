@@ -702,7 +702,7 @@ class Html extends BaseReader
 
         $cellStyle = $sheet->getStyle($column . $row);
 
-        // add color styles (background & text) from dom element,currently support : td & th, using ONLY inline css style with RGB color
+        // add color styles (background & text) from dom element,currently support-modal : td & th, using ONLY inline css style with RGB color
         $styles = explode(';', $attributeArray['style']);
         foreach ($styles as $st) {
             $value = explode(':', $st);

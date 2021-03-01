@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@fontawesome-pro/fontawesome-pro@https://github.com/erlementovich/fontawesome-pro-1.git":
+  version "1.0.0"
+  resolved "https://github.com/erlementovich/fontawesome-pro-1.git#a039198ab69555df390fe3d03aff0cc042034e59"
+
 "@fortawesome/fontawesome-free@^5.13.0":
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.13.0.tgz#fcb113d1aca4b471b709e8c9c168674fbd6e06d9"

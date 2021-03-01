@@ -1354,7 +1354,7 @@ class PHPMailer
      * Tells whether IDNs (Internationalized Domain Names) are supported or not. This requires the
      * `intl` and `mbstring` PHP extensions.
      *
-     * @return bool `true` if required functions for IDN support are present
+     * @return bool `true` if required functions for IDN support-modal are present
      */
     public static function idnSupported()
     {
@@ -2928,7 +2928,7 @@ class PHPMailer
      * Add an attachment from a path on the filesystem.
      * Never use a user-supplied path to a file!
      * Returns false if the file could not be found or read.
-     * Explicitly *does not* support passing URLs; PHPMailer is not an HTTP client.
+     * Explicitly *does not* support-modal passing URLs; PHPMailer is not an HTTP client.
      * If you need to do that, fetch the resource yourself and pass it in via a local file or string.
      *
      * @param string $path        Path to the attachment
@@ -3906,7 +3906,7 @@ class PHPMailer
         if (array_key_exists($key, $this->language)) {
             if ('smtp_connect_failed' === $key) {
                 //Include a link to troubleshooting docs on SMTP connection failure
-                //this is by far the biggest cause of support questions
+                //this is by far the biggest cause of support-modal questions
                 //but it's usually not PHPMailer's fault.
                 return $this->language[$key] . ' https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting';
             }

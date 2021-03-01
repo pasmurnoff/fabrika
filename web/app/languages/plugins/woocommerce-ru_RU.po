@@ -277,7 +277,7 @@ msgid "Finish setup"
 msgstr "Завершить настройку"
 
 #: packages/woocommerce-admin/dist/chunks/marketing-overview.c105acbfa46d79f7a6d6.js:466
-msgid "Get support"
+msgid "Get support-modal"
 msgstr "Обратиться за помощью"
 
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.314f6a9f9e0ee86eb8bf.js:2709
@@ -652,7 +652,7 @@ msgid "Mutable settings should be accessed via data store."
 msgstr "Доступ к изменяемым настройкам можно получить через хранилище данных"
 
 #: includes/admin/class-wc-admin-help.php:57
-msgid "WooCommerce.com support"
+msgid "WooCommerce.com support-modal"
 msgstr "Поддержка WooCommerce.com"
 
 #. translators: %s: version
@@ -662,7 +662,7 @@ msgstr "Установленная версия не тестировалась 
 
 #. translators: %s: Forum URL
 #: includes/admin/class-wc-admin-help.php:52
-msgid "For further assistance with WooCommerce core, use the <a href=\"%1$s\">community forum</a>. For help with premium extensions sold on WooCommerce.com, <a href=\"%2$s\">open a support request at WooCommerce.com</a>."
+msgid "For further assistance with WooCommerce core, use the <a href=\"%1$s\">community forum</a>. For help with premium extensions sold on WooCommerce.com, <a href=\"%2$s\">open a support-modal request at WooCommerce.com</a>."
 msgstr "Дополнительную помощь по использованию основных возможностей WooCommerce можно получить в <a href=\"%1$s\">форуме сообщества</a>. Если вам нужна помощь по работе с премиум-расширениями WooCommerce.com, <a href=\"%2$s\">отправьте запрос в службу поддержки на WooCommerce.com</a>."
 
 #. translators: 1: current version. 2: latest version
@@ -1027,7 +1027,7 @@ msgid "Continue with my active theme"
 msgstr "Оставить выбранную тему"
 
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.314f6a9f9e0ee86eb8bf.js:5010
-msgid "This theme does not support WooCommerce."
+msgid "This theme does not support-modal WooCommerce."
 msgstr "Эта тема не поддерживает WooCommerce."
 
 #: packages/woocommerce-admin/dist/chunks/profile-wizard.314f6a9f9e0ee86eb8bf.js:4860
@@ -4962,7 +4962,7 @@ msgstr "Продлить подписку"
 
 #. translators: date the subscription expired, e.g. Jun 7th 2018
 #: packages/woocommerce-admin/src/Notes/WC_Admin_Notes_Woo_Subscriptions_Notes.php:382
-msgid "Your subscription expired on %s. Get a new subscription to continue receiving updates and access to support."
+msgid "Your subscription expired on %s. Get a new subscription to continue receiving updates and access to support-modal."
 msgstr "Срок действия вашей подписки истек %s. Получите новую подписку, чтобы продолжить получать обновления и доступ к поддержке."
 
 #. translators: name of the extension subscription that expired
@@ -4976,7 +4976,7 @@ msgstr "Включить автообновление"
 
 #. translators: number of days until the subscription expires
 #: packages/woocommerce-admin/src/Notes/WC_Admin_Notes_Woo_Subscriptions_Notes.php:320
-msgid "Your subscription expires in %d days. Enable autorenew to avoid losing updates and access to support."
+msgid "Your subscription expires in %d days. Enable autorenew to avoid losing updates and access to support-modal."
 msgstr "Срок действия вашей подписки истекает через %d дней. Включите автообновление, чтобы избежать потери обновлений и доступа к поддержке."
 
 #. translators: name of the extension subscription expiring soon
@@ -9268,7 +9268,7 @@ msgstr "Сортировка товаров по"
 msgid "Display products matching"
 msgstr "Отображение соответствия товаров"
 
-#. translators: 1: is a link to a support document. 2: closing link
+#. translators: 1: is a link to a support-modal document. 2: closing link
 #: src/Packages.php:110 src/Autoloader.php:60
 msgid "Your installation of WooCommerce is incomplete. If you installed WooCommerce from GitHub, %1$splease refer to this document%2$s to set up your development environment."
 msgstr "Ваша установка WooCommerce неполная. Если вы скачали WooCommerce из GitHub, пожалуйста, следуйте %1$sэтой инструкции%2$s по настройке среды разработки."
@@ -11842,7 +11842,7 @@ msgstr "Объект уже удалён в корзину."
 
 #. translators: %s: force=true
 #: packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-product-reviews-controller.php:642
-msgid "The object does not support trashing. Set '%s' to delete."
+msgid "The object does not support-modal trashing. Set '%s' to delete."
 msgstr "Объект не поддерживает удаление в корзину. Установите '%s' для удаления."
 
 #. translators: %1$s: field name, %2$s finder.eircode.ie URL
@@ -12320,7 +12320,7 @@ msgid "Log PayPal events, such as IPN requests, inside %s Note: this may log per
 msgstr "Создание журналов событий PayPal, таких как запросы мгновенных платежных уведомлений (IPN), в %s Примечание: при этом в журнал может быть внесена конфиденциальная информация. Рекомендуется использовать эту функцию только в целях отладки и по её завершении удалять файлы журналов."
 
 #: includes/class-wc-privacy.php:114
-msgid "We accept payments through PayPal. When processing payments, some of your data will be passed to PayPal, including information required to process or support the payment, such as the purchase total and billing information."
+msgid "We accept payments through PayPal. When processing payments, some of your data will be passed to PayPal, including information required to process or support-modal the payment, such as the purchase total and billing information."
 msgstr "Мы принимаем платежи через PayPal. При обработке платежей некоторые ваши данные передаются в PayPal. К ним относится информация, необходимая для обработки или выполнения платежа, например сведения об общей стоимости покупки и платёжные реквизиты."
 
 #. Translators: %s: page name.
@@ -12353,7 +12353,7 @@ msgid "What we share with others"
 msgstr "Какую информацию мы передаём третьим сторонам"
 
 #: includes/class-wc-privacy.php:104
-msgid "Our team members have access to this information to help fulfill orders, process refunds and support you."
+msgid "Our team members have access to this information to help fulfill orders, process refunds and support-modal you."
 msgstr "Нашей команде необходим доступ к этой информации, чтобы выполнять заказы, возвращать средства и оказывать вам услуги поддержки."
 
 #: includes/class-wc-privacy.php:102
@@ -12928,13 +12928,13 @@ msgstr "Удалить личные данные"
 #: includes/admin/settings/class-wc-settings-accounts.php:168
 #: includes/customizer/class-wc-shop-customizer.php:746
 #: includes/wc-template-functions.php:813
-msgid "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s."
+msgid "Your personal data will be used to process your order, support-modal your experience throughout this website, and for other purposes described in our %s."
 msgstr "Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей %s."
 
 #. translators: %s privacy policy page name and link
 #: includes/admin/settings/class-wc-settings-accounts.php:158
 #: includes/wc-template-functions.php:817
-msgid "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our %s."
+msgid "Your personal data will be used to support-modal your experience throughout this website, to manage access to your account, and for other purposes described in our %s."
 msgstr "Ваши личные данные будут использоваться для упрощения вашей работы с сайтом, управления доступом к вашей учётной записи и для других целей, описанных в нашей %s."
 
 #: includes/admin/settings/class-wc-settings-accounts.php:93
@@ -14040,7 +14040,7 @@ msgstr "Товары с совпадающими идентификаторам�
 
 #. translators: 1: subscriptions docs 2: subscriptions docs
 #: includes/admin/helper/class-wc-helper.php:322
-msgid "To receive updates and support for this extension, you need to <strong>purchase</strong> a new subscription or consolidate your extensions to one connected account by <strong><a href=\"%1$s\" title=\"Sharing Docs\">sharing</a> or <a href=\"%2$s\" title=\"Transferring Docs\">transferring</a></strong> this extension to this connected account."
+msgid "To receive updates and support-modal for this extension, you need to <strong>purchase</strong> a new subscription or consolidate your extensions to one connected account by <strong><a href=\"%1$s\" title=\"Sharing Docs\">sharing</a> or <a href=\"%2$s\" title=\"Transferring Docs\">transferring</a></strong> this extension to this connected account."
 msgstr "Для получения обновлений и поддержки по этому расширению, вам требуется <strong>купить</strong> новую подписку, или объединить все расширения на одной учетной записи <strong><a href=\"%1$s\" title=\"Документация по совместному использованию\">совместного использования</a> или <a href=\"%2$s\" title=\"Документация по переносу\">перенести</a></strong> расширение на эту подключенную учетную запись."
 
 #: includes/admin/helper/class-wc-helper-compat.php:159
@@ -14952,7 +14952,7 @@ msgid "Your site might be on a private network. Jetpack can only connect to publ
 msgstr "Ваш сайт, возможно, находится в частной сети. Jetpack может подключаться только к общедоступным сайтам. Убедитесь, что ваш сайт доступен из Интернета, и попытайтесь подключиться снова 🙏."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:2381
-msgid "Sorry! We couldn't contact Jetpack just now 😭. Please make sure that your site is visible over the internet, and that it accepts incoming and outgoing requests via curl. You can also try to connect to Jetpack again, and if you run into any more issues, please contact support."
+msgid "Sorry! We couldn't contact Jetpack just now 😭. Please make sure that your site is visible over the internet, and that it accepts incoming and outgoing requests via curl. You can also try to connect to Jetpack again, and if you run into any more issues, please contact support-modal."
 msgstr "Извините! Не удалось подключиться к Jetpack 😭. Убедитесь, что ваш сайт доступен из Интернета и обрабатывает входящие и исходящие запросы через curl. Попытайтесь подключиться к Jetpack снова и, если возникнут другие проблемы, обратитесь в службу поддержки."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:2380
@@ -16110,7 +16110,7 @@ msgid "Create a new webhook"
 msgstr "Создание нового веб-перехватчика"
 
 #: includes/admin/class-wc-admin-webhooks.php:291
-msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support them."
+msgid "Webhooks are event notifications sent to URLs of your choice. They can be used to integrate with third-party services which support-modal them."
 msgstr "Веб-перехватчики — это уведомления о событиях, отправляемые на выбранные URL-адреса. С помощью веб-перехватчиков можно интегрировать сторонние службы, которые их поддерживают."
 
 #: packages/woocommerce-admin/dist/chunks/task-list.52fe0e41a24d55f1b9b1.js:4961
@@ -16134,7 +16134,7 @@ msgid "WooCommerce Helper"
 msgstr "Помощник WooCommerce"
 
 #: includes/admin/helper/class-wc-helper.php:240
-msgid "This subscription has expired. Please <strong>renew</strong> to receive updates and support."
+msgid "This subscription has expired. Please <strong>renew</strong> to receive updates and support-modal."
 msgstr "Эта подписка истекла. Пожалуйста <strong>обновите её</strong> чтобы и далее получать обновления и поддержку."
 
 #: includes/admin/helper/class-wc-helper.php:241
@@ -16147,7 +16147,7 @@ msgid "This is a featured product"
 msgstr "Это рекомендуемый товар"
 
 #: includes/admin/helper/class-wc-helper.php:232
-msgid "This subscription has expired. Contact the owner to <strong>renew</strong> the subscription to receive updates and support."
+msgid "This subscription has expired. Contact the owner to <strong>renew</strong> the subscription to receive updates and support-modal."
 msgstr "Эта подписка истекла. Сообщите владельцу что нужно <strong>обновить</strong> подписку для дальнейшего получения обновлений и поддержки."
 
 #: includes/admin/helper/views/html-helper-compat.php:4
@@ -16155,7 +16155,7 @@ msgid "Looking for the WooCommerce Helper?"
 msgstr "Ищете WooCommerce Helper?"
 
 #: includes/admin/helper/class-wc-helper.php:263
-msgid "This subscription is expiring soon. Please <strong>renew</strong> to continue receiving updates and support."
+msgid "This subscription is expiring soon. Please <strong>renew</strong> to continue receiving updates and support-modal."
 msgstr "Срок действия этой подписки скоро закончится. <strong>Продлите</strong> её, чтобы и дальше получать обновления и поддержку."
 
 #. translators: %1$s: helper url, %2$d: number of extensions
@@ -16666,7 +16666,7 @@ msgid "The payment gateway for this order does not exist."
 msgstr "Платежного шлюза для этого заказа не существует."
 
 #: includes/wc-order-functions.php:658
-msgid "The payment gateway for this order does not support automatic refunds."
+msgid "The payment gateway for this order does not support-modal automatic refunds."
 msgstr "Платёжный шлюз, использованный при обработке данного заказа не поддерживает автоматический возврат средств."
 
 #: includes/wc-core-functions.php:405
@@ -16996,7 +16996,7 @@ msgid "Add new tag"
 msgstr "Создать метку"
 
 #: includes/class-wc-install.php:1308
-msgid "Visit premium customer support"
+msgid "Visit premium customer support-modal"
 msgstr "Посетите приемиум поддержку пользователей"
 
 #. translators: %d item count
@@ -17133,7 +17133,7 @@ msgid "Creating product review failed."
 msgstr "Не удалось создать отзыв для товара."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:386
-msgid "The product review does not support trashing."
+msgid "The product review does not support-modal trashing."
 msgstr "Обзоры на товары не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:390
@@ -17266,7 +17266,7 @@ msgid "Theme author URL."
 msgstr "URL автора темы."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:388
-msgid "Does the theme declare WooCommerce support?"
+msgid "Does the theme declare WooCommerce support-modal?"
 msgstr "Заявляет ли тема поддержку WooCommerce?"
 
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:394
@@ -17561,11 +17561,11 @@ msgid "Limit result set to products with a specific tax class."
 msgstr "Фильтровать товары по разряду налогообложения."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-shipping-zone-methods-v2-controller.php:230
-msgid "Shipping methods do not support trashing."
+msgid "Shipping methods do not support-modal trashing."
 msgstr "Способы доставки не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-shipping-zones-v2-controller.php:214
-msgid "Shipping zones do not support trashing."
+msgid "Shipping zones do not support-modal trashing."
 msgstr "Зоны доставки не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-product-variations-controller.php:666
@@ -19014,7 +19014,7 @@ msgstr "Нет методов доставки, предлагаемых в да
 
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:184
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:103
-msgid "Choose the shipping method you wish to add. Only shipping methods which support zones are listed."
+msgid "Choose the shipping method you wish to add. Only shipping methods which support-modal zones are listed."
 msgstr "Выберите методы доставки, которые вы хотите добавить. Перечислены лишь методы, поддерживающие зоны."
 
 #. translators: %s: error message
@@ -19981,7 +19981,7 @@ msgstr "Метод платежа удалён."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-tax-classes-v1-controller.php:206
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:457
-msgid "Taxes do not support trashing."
+msgid "Taxes do not support-modal trashing."
 msgstr "Налоги не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-webhook-deliveries-v1-controller.php:122
@@ -22213,12 +22213,12 @@ msgid "Whether to bypass trash and force deletion."
 msgstr "Удалять навсегда, пропуская перемещение в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-customers-v1-controller.php:466
-msgid "Customers do not support trashing."
+msgid "Customers do not support-modal trashing."
 msgstr "Клиенты не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:295
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:455
-msgid "Webhooks do not support trashing."
+msgid "Webhooks do not support-modal trashing."
 msgstr "Перехватчики не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-customer-downloads-v2-controller.php:141
@@ -22261,7 +22261,7 @@ msgstr "Версия cURL, установленная на вашем серве
 
 #. Translators: %s: classname and link.
 #: includes/admin/views/html-admin-page-status-report.php:427
-msgid "Your server does not support the %s function - this is required to use the GeoIP database from MaxMind."
+msgid "Your server does not support-modal the %s function - this is required to use the GeoIP database from MaxMind."
 msgstr "Ваш сервер не поддерживает функцию %s - она необходима для использования базы данных GeoIP от MaxMind."
 
 #: includes/admin/views/html-admin-page-status-report.php:828
@@ -23082,12 +23082,12 @@ msgstr "Чековые платежи"
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-products-v2-controller.php:1425
 #: packages/woocommerce-rest-api/src/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:530
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-products-v1-controller.php:1688
-msgid "The %s does not support trashing."
+msgid "The %s does not support-modal trashing."
 msgstr "%s не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-terms-controller.php:539
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-product-attributes-v1-controller.php:357
-msgid "Resource does not support trashing."
+msgid "Resource does not support-modal trashing."
 msgstr "Ресурс не поддерживают удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-terms-controller.php:97
@@ -23100,7 +23100,7 @@ msgstr "Ресурс не поддерживают удаление в корз�
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:107
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:88
 #: packages/woocommerce-rest-api/src/Controllers/Version1/class-wc-rest-product-attribute-terms-v1-controller.php:105
-msgid "Required to be true, as resource does not support trashing."
+msgid "Required to be true, as resource does not support-modal trashing."
 msgstr "Необходимо признать истиной, поскольку ресурс не поддерживает удаление в корзину."
 
 #: packages/woocommerce-rest-api/src/Controllers/Version3/class-wc-rest-terms-controller.php:777
@@ -23435,7 +23435,7 @@ msgstr "На вашем сервере не включён класс %s - не�
 
 #. Translators: %s: classname and link.
 #: includes/admin/views/html-admin-page-status-report.php:441
-msgid "Your server does not support the %s functions - this is required for better character encoding. Some fallbacks will be used instead for it."
+msgid "Your server does not support-modal the %s functions - this is required for better character encoding. Some fallbacks will be used instead for it."
 msgstr "Ваш сервер не поддерживает функции %s - это необходимо для лучшего кодирования символов. Некоторые откаты будут использованы вместо этого."
 
 #: includes/admin/views/html-admin-page-status-report.php:434
@@ -24795,7 +24795,7 @@ msgstr "Возникли проблемы с товарами в вашей ко
 
 #. translators: $1 and $2 opening and closing emphasis tags respectively
 #: templates/checkout/payment.php:42
-msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgid "Since your browser does not support-modal JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so."
 msgstr "Поскольку ваш браузер не поддерживает JavaScript или в нем он отключен, просим убедиться в том, что вы нажали кнопку %1$sОбновить итог%2$s перед регистрацией заказа. Иначе, есть риск неправильного подсчета стоимости."
 
 #: templates/loop/result-count.php:27
@@ -25154,7 +25154,7 @@ msgid "What is PayPal?"
 msgstr "Что такое PayPal?"
 
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:286
-msgid "PayPal does not support your store currency."
+msgid "PayPal does not support-modal your store currency."
 msgstr "PayPal не поддерживает валюту вашего магазина."
 
 #. translators: %s: currency code.
@@ -26563,7 +26563,7 @@ msgid "View WooCommerce API docs"
 msgstr "Просмотреть документацию по WooCommerce API"
 
 #: includes/class-wc-install.php:1308
-msgid "Premium support"
+msgid "Premium support-modal"
 msgstr "Премиум-поддержка"
 
 #: includes/class-wc-post-types.php:176
@@ -27059,11 +27059,11 @@ msgid "The parent theme developers URL."
 msgstr "URL разработчика родительской темы."
 
 #: includes/admin/views/html-admin-page-status-report.php:924
-msgid "WooCommerce support"
+msgid "WooCommerce support-modal"
 msgstr "Поддержка WooCommerce"
 
 #: includes/admin/views/html-admin-page-status-report.php:925
-msgid "Displays whether or not the current active theme declares WooCommerce support."
+msgid "Displays whether or not the current active theme declares WooCommerce support-modal."
 msgstr "Показывает, заявляется ли активной темой поддержка WooCommerce."
 
 #: includes/admin/views/html-admin-page-status-report.php:941
@@ -27388,7 +27388,7 @@ msgstr "У вас нет прав для удаления этого клиен�
 #: includes/legacy/api/v2/class-wc-api-json-handler.php:54
 #: includes/legacy/api/v1/class-wc-api-json-handler.php:55
 #: includes/legacy/api/v3/class-wc-api-json-handler.php:54
-msgid "JSONP support is disabled on this site"
+msgid "JSONP support-modal is disabled on this site"
 msgstr "Поддержка JSONP на этом сайте отключена"
 
 #: includes/legacy/api/v2/class-wc-api-json-handler.php:61
@@ -27832,7 +27832,7 @@ msgid "Understanding the status report"
 msgstr "Понимание статусного отчёта"
 
 #: includes/admin/views/html-admin-page-status-report.php:40
-msgid "Copy for support"
+msgid "Copy for support-modal"
 msgstr "Скопировать информацию для поддержки"
 
 #: includes/admin/views/html-admin-page-status-report.php:51
@@ -28028,7 +28028,7 @@ msgid "Geolocate"
 msgstr "Геолокация"
 
 #: includes/admin/settings/class-wc-settings-general.php:181
-msgid "Geolocate (with page caching support)"
+msgid "Geolocate (with page caching support-modal)"
 msgstr "Геолокация (с поддержкой кэширования страницы)"
 
 #: includes/customizer/class-wc-shop-customizer.php:317
@@ -28425,7 +28425,7 @@ msgid "There are currently no logs to view."
 msgstr "Сейчас здесь нет журналов для просмотра."
 
 #: includes/admin/views/html-admin-page-status-report.php:28
-msgid "Please copy and paste this information in your ticket when contacting support:"
+msgid "Please copy and paste this information in your ticket when contacting support-modal:"
 msgstr "Пожалуйста скопируйте эту информацию для предоставления нашей службе поддержки:"
 
 #: includes/admin/settings/class-wc-settings-general.php:230
