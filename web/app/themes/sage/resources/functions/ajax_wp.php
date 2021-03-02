@@ -5,9 +5,9 @@ function send_mail()
     $headers = array('Content-Type: text/html; charset=UTF-8');
 
     if (isset($_POST['director'])) {
-        $to = 'spasmurnov@gmail.com';
+        $to = 'director@fabrikanoskov.ru';
     } else
-        $to = 'spasmurnov@gmail.com';
+        $to = 'mail@fabrikanoskov.ru';
 
     $html = '';
 
