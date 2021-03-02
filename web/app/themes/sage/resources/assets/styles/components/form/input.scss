@@ -145,7 +145,7 @@
 }
 
 .submit {
-  -webkit-appearance: none;
+  appearance: none;
   outline: none;
   color: $secondcolor;
   opacity: 1;
@@ -156,7 +156,7 @@
   line-height: 1.8;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: 0.2s ease;
   text-decoration: none;
   font-family: $font;
   border: 0;

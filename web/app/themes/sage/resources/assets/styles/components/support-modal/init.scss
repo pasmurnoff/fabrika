@@ -1,147 +1,17 @@
-.support-modal {
-  visibility: hidden;
-  position: fixed;
-  max-width: 940px;
-  z-index: 100;
-  top: 50%;
-  right: 50%;
-  background: white;
-  border-radius: 10px;
-  padding: 25px 30px 30px;
-  transform: translate(50%, -50%);
+@import "support-modal";
+@import "action-item";
+@import "support-action";
 
+.make-call {
   &.active {
-    visibility: visible;
-  }
-
-  &__call {
-    display: none;
-  }
-
-  &__message {
-    display: none;
-  }
-
-  &__back-btn {
-    width: 21px;
-    margin-right: 20px;
-
-    svg {
-      transform: rotate(90deg);
-    }
-  }
-
-  &__title {
-    font-family: $font;
-    font-size: 30px;
-    line-height: 1.4;
-    font-weight: 700;
-    padding-right: 30px;
-    display: flex;
-  }
-
-  &__text {
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 1.4;
-    font-family: $font;
-  }
-
-  &__info-list {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -20px;
-    margin-bottom: -20px;
-  }
-
-  &__action-container {
-    margin-top: 30px;
-    display: flex;
-    margin-right: -30px;
-  }
-}
-
-.support-item {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-  margin-bottom: 20px;
-
-  &__icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #efefef;
-  }
-
-  &__text-container {
-    margin-left: 15px;
-  }
-
-  &__title {
-    font-size: 21px;
-    line-height: 1.2;
-    font-weight: 700;
-    font-family: $font;
-  }
-
-  &__item {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-}
-
-.action-item {
-  display: flex;
-  max-width: 940px;
-
-  &__call-back {
-    background: url("../images/components/support/support-call.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-right: 30px;
-    width: 425px;
     display: block;
-    border-radius: 10px;
-    min-height: 150px;
-    padding: 20px 30px;
-  }
-
-  &__message {
-    background: url("../images/components/support/support-mes.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-right: 30px;
-    width: 425px;
-    display: block;
-    border-radius: 10px;
-    min-height: 150px;
-    padding: 20px 30px;
-  }
-
-  &__title {
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.4;
-    font-weight: 700;
-    text-decoration: underline;
-  }
-
-  &__subtitle {
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.4;
   }
 }
 
-.tab-show {
-  display: block;
+.make-msg {
+  &.active {
+    display: block;
+  }
 }
 
 .tab-hide {
