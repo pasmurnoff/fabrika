@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
         $('.mini-cart.active').removeClass('active');
         $('.togglesidebar.active').removeClass('active');
         $('.support-modal.active').removeClass('active');
+        $('.consultation-modal.active').removeClass('active');
         $('body').removeClass('close_jivo');
     });
 });

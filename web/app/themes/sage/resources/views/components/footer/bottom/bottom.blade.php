@@ -1,6 +1,7 @@
 <div class="footer__bottom">
+    <div class="container">
     <ul class="menu footer__menu_bottom">
-        <li class="menu__item">
+        <li class="menu__item footer__menu_item-padding">
             <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/o-fabrike">О фабрике</a>
         </li>
         <li class="menu__item footer__menu_item-padding">
@@ -38,5 +39,6 @@
     </ul>
     <div class="footer__brand">
         @include('icon::made-russia')
+    </div>
     </div>
 </div>
