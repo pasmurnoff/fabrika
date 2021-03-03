@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // phpcs:disable WordPress.WP.EnqueuedResources.NonEnqueuedStylesheet
-?><!DOCTYPE html>
+?> <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta name="viewport" content="width=device-width" />

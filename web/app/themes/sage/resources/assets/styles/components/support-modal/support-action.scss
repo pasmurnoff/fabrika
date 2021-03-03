@@ -1,0 +1,32 @@
+.support-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 20px;
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+  }
+
+  &__text-container {
+    margin-left: 15px;
+  }
+
+  &__title {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: $font;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

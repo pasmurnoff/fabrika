@@ -1,5 +1,5 @@
 <div class="support-modal">
-
+<div class="support-modal__close">@include("icon::cross")</div>
     <div class="support-modal__main">
         <div class="support-modal__title">Служба поддержки</div>
         <div class="support-modal__text">Выберите удобный для себя способ связи</div>
@@ -28,11 +28,11 @@
         </div>
         <div class="support-modal__action-container">
             <div class="action-item">
-                <div class="action-item__call-back">
-                    <div class="action-item__title tab-call">Заказать звонок</div>
+                <div class="action-item__call-back tab-call" data-popup="make-call">
+                    <div class="action-item__title">Заказать звонок</div>
                     <div class="action-item__subtitle">Мы вам перезвоним</div>
                 </div>
-                <div class="action-item__message">
+                <div class="action-item__message tab-call" data-popup="make-msg">
                     <div class="action-item__title tab-message">Написать сообщение</div>
                     <div class="action-item__subtitle">Письменный вопрос</div>
                 </div>
@@ -40,18 +40,18 @@
         </div>
     </div>
 
-    <div class="support-modal__call">
+    <div class="support-modal__call make-call">
         <div class="support-modal__title">
-            <div class="support-modal__back-btn">@include('icon::single-product.angle')</div>
+            <div class="support-modal__back-btn" data-popup="make-call">@include('icon::single-product.angle')</div>
             Заказать звонок
         </div>
         <div class="support-modal__text">Оставьте свои контакты, и мы свяжемся с Вами в удобное для Вас время</div>
         <div class="support-modal__body">@include('components.support-modal.back-call')</div>
     </div>
 
-    <div class="support-modal__message">
+    <div class="support-modal__message make-msg">
         <div class="support-modal__title">
-            <div class="support-modal__back-btn">@include('icon::single-product.angle')</div>
+            <div class="support-modal__back-btn" data-popup="make-msg">@include('icon::single-product.angle')</div>
             Написать сообщение
         </div>
         <div class="support-modal__text">Ответ на свой вопрос Вы получите на электронную почту</div>

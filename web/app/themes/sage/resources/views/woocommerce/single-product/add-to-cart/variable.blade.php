@@ -39,7 +39,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
         <?php foreach ($attributes as $attribute_name => $options) : ?>
         <tr>
             <td class="label text_black pdng15-bottom"><label
-                        for="<?php echo esc_attr(sanitize_title($attribute_name)); ?>"><?php echo wc_attribute_label($attribute_name); // WPCS: XSS ok. ?></label>
+                        for="<?php echo esc_attr(sanitize_title($attribute_name)); ?>"><b><?php echo wc_attribute_label($attribute_name); // WPCS: XSS ok. ?></b></label>
             </td>
             <td class="value text_black pdng15-bottom">
                 @if($attribute_name !== 'pa_cvet')
@@ -61,6 +61,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
     </table>
 
     <div class="single_variation_wrap">
+        <b>
         <?php
         /**
          * Hook: woocommerce_before_single_variation.
@@ -81,6 +82,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
          */
         do_action('woocommerce_after_single_variation');
         ?>
+        </b>
     </div>
     <?php endif; ?>
 

@@ -28,15 +28,22 @@ function send_mail()
     }
 
 
-    $attachments = [];
+    if (!function_exists('wp_handle_upload')) {
+        require_once(ABSPATH . 'wp-admin/includes/file.php');
+    }
 
-    foreach ($_FILES as $item)
-        foreach ($item['name'] as $name)
-            $attachments[] = $name;
+    $uploadedfile = $_FILES['Attached'];
+    $upload_overrides = array('test_form' => false);
+    $movefile = wp_handle_upload($uploadedfile, $upload_overrides);
+
+    if ($movefile) {
+        $attachments = $movefile['file'];
+        wp_mail($to, $subject, $html, $headers, $attachments);
+    } else {
+        echo "Possible file upload attack!\n";
+    }
 
 
-    wp_mail($to, $subject, $html, $headers, $attachments);
-    var_dump($html, $attachments);
     die();
 }
 

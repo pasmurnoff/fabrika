@@ -134,7 +134,7 @@ Template Name: О фабрике
         <div class="forwhom__item">
             <div class="title title_middle forwhom__title">Коммерческим организациям</div>
             <div class="forwhom__sep"></div>
-            <div class="forwhom__text">Работаем по безналичному расчёту с НДС. Выставляем счёт и образец договора, ваша
+            <div class="forwhom__text">Работаем по безналичному расчёту без НДС. Выставляем счёт и образец договора, ваша
                 организация переводит деньги на наш расчётный счёт.
             </div>
         </div>
