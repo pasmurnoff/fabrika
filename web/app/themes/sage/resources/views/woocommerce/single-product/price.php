@@ -23,4 +23,10 @@ global $product;
 
 ?>
 <p class="title title_middle mrgn15-bottom <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) );?>"><?php echo $product->get_price_html(); ?></p>
-<span class="button mrgn15-bottom">Цена завышена?</span>
+<span class="button mrgn15-bottom callpopup" data-popup="overcharge-modal">Цена завышена?</span>
+
+<div class="overcharge-modal">
+    <div class="consultation-modal__main">
+        <div class="consultation-modal__title">Заявка на консультацию</div>
+    </div>
+</div>

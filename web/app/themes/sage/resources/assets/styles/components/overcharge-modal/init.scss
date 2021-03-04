@@ -1,0 +1,114 @@
+.overcharge-modal {
+  visibility: hidden;
+  position: fixed;
+  max-width: 940px;
+  z-index: 100;
+  top: 50%;
+  right: 50%;
+  background: white;
+  border-radius: 10px;
+  padding: 25px 30px 30px;
+  transform: translate(50%, -50%);
+
+  @media screen and (max-width: 920px) {
+    & {
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+  }
+
+  &__call {
+    display: none;
+
+    @media screen and (max-width: 920px) {
+      & {
+        padding: 25px;
+      }
+    }
+  }
+
+  &__message {
+    display: none;
+
+    @media screen and (max-width: 920px) {
+      & {
+        padding: 25px;
+      }
+    }
+  }
+
+  &__back-btn {
+    width: 21px;
+    margin-right: 20px;
+
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__title {
+    font-family: $font;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    padding-right: 30px;
+    display: flex;
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: $font;
+  }
+
+  &__info-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+
+  &__action-container {
+    margin-top: 30px;
+    display: flex;
+    margin-right: -30px;
+  }
+
+  &__close {
+    display: none;
+
+    @media screen and (max-width: 920px) {
+      & {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 50px;
+        margin-top: 20px;
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: black;
+      fill: black;
+    }
+  }
+
+  &__main {
+    @media screen and (max-width: 920px) {
+      & {
+        padding: 25px;
+      }
+    }
+  }
+}
+

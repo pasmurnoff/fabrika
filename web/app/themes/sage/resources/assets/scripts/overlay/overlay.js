@@ -8,6 +8,7 @@ jQuery(document).ready(function () {
         $('.togglesidebar.active').removeClass('active');
         $('.support-modal.active').removeClass('active');
         $('.consultation-modal.active').removeClass('active');
+        $('.overcharge-modal.active').removeClass('active');
         $('body').removeClass('close_jivo');
     });
 });
