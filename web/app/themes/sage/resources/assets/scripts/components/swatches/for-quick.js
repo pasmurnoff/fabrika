@@ -3,7 +3,7 @@ import dropdownSizes from './init'
 export default function dropdownSizesForQuickView() {
     $(document).on('click', '.yith-wcqv-button', function () {
         function callSizes() {
-            dropdownSizes('#yith-quick-view-modal.open')
+            dropdownSizes('#yith-quick-view-support-modal.open')
         }
 
         $.ajax({

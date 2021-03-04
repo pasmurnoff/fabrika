@@ -22391,7 +22391,7 @@ msgstr "Вы можете добавить несколько способов �
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:178
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:97
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:367
-msgid "Close modal panel"
+msgid "Close support-modal panel"
 msgstr "Закрыть модальную панель"
 
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:15
