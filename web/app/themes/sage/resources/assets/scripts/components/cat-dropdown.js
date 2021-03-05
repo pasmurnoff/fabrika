@@ -8,3 +8,7 @@ $('body').on('click', '.cat-parent', function (e) {
     }
 });
 
+$(document).ready(function() {
+    $('.cat-parent').toggleClass('active');
+    $('.children').css({ display: 'block' });
+})

@@ -22,7 +22,8 @@ if (!defined('ABSPATH')) {
 global $product;
 ?>
 <div class="product_meta mrgn15-bottom">
-
+    <span class="button callpopup mrgn15-bottom" data-popup="consultation-modal"><i class="fas fa-info" style="margin-right: 15px;"></i> Консультация по этому товару</i></span>
+    @include('components.consultation-modal.consultation-modal')
     <?php do_action('woocommerce_product_meta_start'); ?>
 
     <?php if (wc_product_sku_enabled() && ($product->get_sku() || $product->is_type('variable'))) : ?>
@@ -39,3 +40,4 @@ global $product;
     <?php do_action('woocommerce_product_meta_end'); ?>
 
 </div>
+@include('components.overcharge-modal.overcharge-modal')

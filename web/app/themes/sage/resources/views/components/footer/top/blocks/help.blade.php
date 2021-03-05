@@ -56,4 +56,12 @@
         <a class="menu__link menu__link_grey footer__link" href="/tenderi"
         >Участие в тендерах</a>
     </li>
+    <li class="menu__item footer__li">
+        <a class="menu__link menu__link_grey footer__link" href="/pechat-na-noskah"
+        >Печать на носках</a>
+    </li>
+    <li class="menu__item footer__li">
+        <a class="menu__link menu__link_grey footer__link" href="/upakovka-na-zakaz"
+        >Упаковка на заказ</a>
+    </li>
 </ul>

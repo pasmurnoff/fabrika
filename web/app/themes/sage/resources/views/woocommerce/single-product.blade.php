@@ -13,13 +13,11 @@ the readme will list any important changes.
 --}}
 
 @extends('layouts.app')
-
 @section('content')
     @php
         do_action('get_header', 'shop');
         do_action('woocommerce_before_main_content');
     @endphp
-
     @while(have_posts())
         @php
             the_post();

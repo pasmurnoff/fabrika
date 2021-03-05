@@ -21,6 +21,7 @@ import './forms/ajax-search'
 import './components/stories/init'
 import './components/callback/init'
 import './components/support-modal/init'
+import './components/consultation-modal/init'
 import wishlist from './components/wishlist/init';
 /*import './components/maket/comparison'*/
 

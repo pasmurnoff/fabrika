@@ -31,6 +31,7 @@
           echo 'no';
         }
       } elseif(is_product()) {
+          the_title('<h1>','</h1>');
           function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<p class="breadcrumbs breadcrumbs_mrgn15-top">', '</p>') : '';
       }
     @endphp

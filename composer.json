@@ -46,6 +46,7 @@
     "wpackagist-plugin/wc-variation-swatches": "^1.0.1",
     "wpackagist-plugin/woo-permalink-manager": "^2.1.12",
     "wpackagist-plugin/woocommerce": "^3.9",
+    "wpackagist-plugin/woocommerce-product-sku-generator": "2.4.5",
     "wpackagist-plugin/wordpress-seo": "^13.0",
     "wpackagist-plugin/wp-term-order": "1.0.0",
     "wpackagist-plugin/wp-translitera": "^170510",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5b220d8f3faeb880734dcc4580a7ff0",
+    "content-hash": "ef8f92f6a12d81a0764d59e474149930",
     "packages": [
         {
             "name": "composer/installers",
@@ -721,6 +721,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-product-sku-generator",
+            "version": "2.4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-product-sku-generator/",
+                "reference": "tags/2.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-product-sku-generator.2.4.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-product-sku-generator/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
