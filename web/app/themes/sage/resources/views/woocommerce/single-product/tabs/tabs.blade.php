@@ -58,7 +58,6 @@ if (!empty($product_tabs)) : ?>
         </li>
         <?php endforeach; ?>
     </ul>
-
     <?php do_action('woocommerce_product_after_tabs'); ?>
 </div>
 

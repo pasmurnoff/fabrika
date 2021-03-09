@@ -153,8 +153,7 @@ Template Name: Контакты
                 <a class="points__link" href="tel:88004441156">8 800 444 11 56</a></div>
             <div class="points__mail points__item">
                 <div class="points__icon">@include('icon::country.city.envelope')</div>
-                <a class="points__link" href="mailto:nizhniy novgorod@fabrikanoskov.ru">nizhniy
-                    novgorod@fabrikanoskov.ru</a></div>
+                <a class="points__link" href="mailto:nizhniynovgorod@fabrikanoskov.ru">nizhniynovgorod@fabrikanoskov.ru</a></div>
             <div class="points__work points__item">
                 <div class="points__icon">@include('icon::country.city.clock')</div>
                 <span>Пн-Пт 10:00-20:00</span> <span>Сб 10:00-16:00</span> <span>Вс 10:00-16:00</span></div>

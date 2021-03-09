@@ -9,6 +9,7 @@ function data_fetch()
         'posts_per_page' => 20,
         's' => esc_attr($_POST['keyword']),
         'post_type' => 'product',
+        's_meta_keys' => array('meta','_sku'),
         "meta_query" => [
             "key" => "_sku",
             "value" => esc_attr($_POST['keyword']),
