@@ -84,6 +84,16 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
         $classes = empty($item->classes) ? array() : (array)$item->classes;
         $classes[] = 'menu__item-' . $item->ID;
 
+        /** если среди классов есть callpopup, то добавляем data атрибут и классы ссылке */
+        $item_popup_data='';
+        $item_popup_class='';
+        $key_search_result = array_search('callpopup', $classes);
+        if ($key_search_result) {
+            unset($classes[$key_search_result]);
+            $item_popup_data = 'data-popup="support-modal"';
+            $item_popup_class = ' button menu__item-button callpopup';
+        }
+
         /**
          * Filters the arguments for a single nav menu item.
          *
@@ -180,10 +190,14 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
          */
         $title = apply_filters('nav_menu_item_title', $title, $item, $args, $depth);
 
+        /** если к ссылке добавили описание, то выводим его */
+        $item_desc = empty($item->description) ? '' : '<span class="menu__item-desc">' . $item->description . '</span>';
+
         $item_output = $args->before;
-        $item_output .= '<a class="menu__item-link"' . $attributes . '>';
+        $item_output .= '<a class="menu__item-link'. $item_popup_class .'"' . $attributes . $item_popup_data . '>';
         $item_output .= $args->link_before . $title . $args->link_after;
         $item_output .= '</a>';
+        $item_output .= $item_desc;
         $item_output .= $args->after;
 
         /**

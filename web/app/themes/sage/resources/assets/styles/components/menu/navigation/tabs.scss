@@ -1,0 +1,113 @@
+.menu-navigation {
+  .menu__tabs.menu-item-has-children {
+    position: static;
+
+    .sub-menu {
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+      left: calc(50% - 630px);
+      width: 1260px;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 30px;
+      justify-content: space-between;
+      padding: 40px 30px 10px;
+
+      @media screen and (max-width: 1260px) {
+        left: 0;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -35px;
+        height: 35px;
+        width: 100%;
+      }
+
+      .menu__item {
+        &_main {
+          line-height: normal;
+        }
+
+        &-link {
+          display: inline-block;
+          padding: 0;
+          margin-bottom: 30px;
+          cursor: text;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: normal;
+
+          &:hover {
+            color: $black;
+          }
+        }
+
+        &-desc {
+          display: block;
+          font-size: 14px;
+          line-height: 20px;
+          color: #9198a0;
+        }
+
+        &:hover {
+          background: none;
+        }
+      }
+
+      .sub-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: block;
+        box-shadow: none;
+
+        .menu__item {
+          margin-bottom: 30px;
+
+          &-link {
+            width: auto;
+            margin-bottom: 4px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.1;
+
+            &:hover {
+              color: $red;
+            }
+          }
+
+          &-button {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: $secondcolor;
+            font-weight: normal;
+
+            &:hover {
+              color: $secondcolor;
+            }
+          }
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .menu-item-has-children {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

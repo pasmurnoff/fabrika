@@ -50,4 +50,12 @@
     padding-left: 21px;
     display: none;
   }
+
+  .menu__tabs.menu-item-has-children {
+    display: inline-block;
+
+    &::after {
+      display: none;
+    }
+  }
 }
