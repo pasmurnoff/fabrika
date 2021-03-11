@@ -5,12 +5,13 @@
     .sub-menu {
       //opacity: 1;
       //visibility: visible;
+      display: none;
+      //display: grid;
       top: 100%;
       left: calc(50% - 630px);
       width: 1260px;
       max-width: 100%;
       box-sizing: border-box;
-      display: grid;
       grid-template-columns: repeat(4, auto);
       grid-gap: 30px;
       justify-content: space-between;
@@ -106,6 +107,16 @@
       .menu-item-has-children {
         &::after {
           display: none;
+        }
+      }
+    }
+
+    &:hover {
+      .sub-menu {
+        display: grid;
+
+        .sub-menu {
+          display: block;
         }
       }
     }
