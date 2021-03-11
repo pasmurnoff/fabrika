@@ -88,7 +88,7 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
         $item_popup_data='';
         $item_popup_class='';
         $key_search_result = array_search('callpopup', $classes);
-        if ($key_search_result) {
+        if (is_int($key_search_result)) {
             unset($classes[$key_search_result]);
             $item_popup_data = ' data-popup="support-modal"';
             $item_popup_class = ' button menu__item-button callpopup';
