@@ -15,7 +15,8 @@ export default function () {
         dynamicOutput(price.data('price2'), price.data('value2'))
     }
 
-    function dynamicOutput(price, value) {
+    function dynamicOutput(price, value)
+    {
         output.innerHTML = formatStr(value);
         dynamicPrice.innerText = price;
         sum.innerText = formatStr(price * value);
