@@ -4,6 +4,6 @@
     <div class="container">
         @include('components.footer.top.top')
     </div>
-        @include('components.footer.bottom.bottom')
-        @include('components.callback.wrap')
+    @include('components.footer.bottom.bottom')
+    @include('components.callback.wrap')
 </footer>

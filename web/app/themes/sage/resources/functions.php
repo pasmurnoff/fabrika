@@ -145,6 +145,9 @@ require dirname(__DIR__) . '/resources/functions/change-rub.php';
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
 
+/* Добавляем нужные классы в body */
+require dirname(__DIR__) . '/resources/functions/add-body-class.php';
+
 add_action('wp_enqueue_scripts', 'add_custom_dropdown');
 function add_custom_dropdown()
 {
