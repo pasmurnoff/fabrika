@@ -3,7 +3,7 @@
     @component('components.form.elements.form-item', ['title' => 'Выберите тип консультации','class' => 'radio singlerow'])
         @slot('content')
             @include('components.form.elements.radio', ['name' => 'Тип-связи', 'value' => 'Видеоконсультация из магазина Фабрика Носков'])
-            @include('components.form.elements.radio', ['name' => 'Тип-связи', 'value' => 'Аудиозвонок специалиста Фаюрика Носков', 'attr' => 'checked="checked"'])
+            @include('components.form.elements.radio', ['name' => 'Тип-связи', 'value' => 'Аудиозвонок специалиста Фабрика Носков', 'attr' => 'checked="checked"'])
         @endslot
     @endcomponent
 
@@ -21,6 +21,7 @@
                         'name' => 'Имя',
                         'label' => 'Иван Иванов',
                          'attr' => 'required'])
+                <input type="hidden" name="Артикул" value="{!! $product->get_sku() !!}">
         @endslot
     @endcomponent
 
