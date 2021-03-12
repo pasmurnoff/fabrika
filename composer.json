@@ -38,6 +38,7 @@
     "php": ">=7.1",
     "composer/installers": "^1.7",
     "oscarotero/env": "^1.2.0",
+    "phpoffice/phpspreadsheet": "^1.17",
     "roots/wordpress": "5.4.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
