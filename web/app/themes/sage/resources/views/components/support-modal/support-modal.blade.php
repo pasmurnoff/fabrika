@@ -7,14 +7,14 @@
             <div class="support-item">
                 <div class="support-item__icon"><i class="fas fa-phone"></i></div>
                 <div class="support-item__text-container">
-                    <div class="support-item__title">8 800 444 11 56</div>
+                    <div class="support-item__title">8-800-444-11-56</div>
                     <div class="support-item__text">Для звонков по россии</div>
                 </div>
             </div>
             <div class="support-item">
                 <div class="support-item__icon"><i class="fas fa-phone"></i></div>
                 <div class="support-item__text-container">
-                    <div class="support-item__title">+7 960 036-71-76</div>
+                    <div class="support-item__title">+7-927-451-90-36</div>
                     <div class="support-item__text">Международные звонки</div>
                 </div>
             </div>
