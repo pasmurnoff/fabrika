@@ -15,7 +15,7 @@
                 <div class="support-item__icon"><i class="fas fa-phone"></i></div>
                 <div class="support-item__text-container">
                     <div class="support-item__title">+7-927-451-90-36</div>
-                    <div class="support-item__text">Международные звонки</div>
+                    <div class="support-item__text">Телефон с мессенджерами</div>
                 </div>
             </div>
             <div class="support-item">
