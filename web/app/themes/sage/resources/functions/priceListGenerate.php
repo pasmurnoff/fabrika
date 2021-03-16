@@ -7,10 +7,14 @@ function generatePriceList()
 {
     $spreadsheet = new Spreadsheet();
 
+    $filePath = './app/uploads/price-list/'; //куда ложить наши файлы
+    $fileName = date('Y-m-d') . '_fabrikanoskov_price';
+    $fileName = date('H-i-s');
+    $columnPositionStart = 'B'; //Начальная координата x
 
     $about_company = [
         'phones' => "Горячая линия: 8 (800) 444-11-56 \nТелефон с мессенджерами: +7 (927) 451-90-36",
-        'url' => 'www.fabrikanoskov.ru',
+        'url' => $_SERVER['HTTP_HOST'],
         'date' => 'Цены указаны на ' . date('d-m-Y'),
     ];
 
@@ -85,6 +89,14 @@ function generatePriceList()
             ],
         ],
     ];
+    $style_link = [
+        'font' => array(
+            'color' => array(
+                'rgb' => '0000FF'
+            ),
+            'underline' => 'single'
+        )
+    ];
 
     $sheet = $spreadsheet->getActiveSheet();//наш лист
     $sheet->setTitle('Прайс-лист');//название листа
@@ -100,6 +112,7 @@ function generatePriceList()
     // ссылка
     $sheet->setCellValue('C7', $about_company['url']);
     $sheet->getCell('C7')->getHyperlink()->setUrl('https://' . $about_company['url']);
+    $sheet->getStyle('C7')->applyFromArray($style_link);
     // дата
     $sheet->setCellValue('C9', $about_company['date']);
 
@@ -116,8 +129,9 @@ function generatePriceList()
 
     /* формируем шапку таблицы цен
     ----------------------------------------------------------------- */
-    $columnPosition = 'B'; // Начальная координата x
+    $columnPosition = $columnPositionStart; // Начальная координата x
     $linePosition = 12; // Начальная координата y
+    $columnMerge = '';
     foreach ($columns_table as $column) {
         // ширина колонок
         if (isset($column['width'])) {
@@ -130,9 +144,12 @@ function generatePriceList()
         // ячейки
         $sheet->setCellValue($columnPosition . $linePosition, $column['name']);
         $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_columns);
+        //для объединения ячеек в дальнейшем определяем последний столбец
+        if (!next($columns_table)) {
+            $columnMerge = $columnPosition;
+        }
         $columnPosition++;
     }
-
 
     /* генерируем строки таблицы цен
     ----------------------------------------------------------------- */
@@ -148,21 +165,12 @@ function generatePriceList()
         if (!$category->count) {
             continue; //если товаров нет, то перескакиваем
         }
-        $columnPosition = 'B';
+        $columnPosition = $columnPositionStart;
         $linePosition++;
-        $columnMerge = 'C'; //объединяем ячейки
-        $sheet->mergeCells($columnPosition . $linePosition . ':' . $columnMerge . $linePosition);
+        $sheet->mergeCells($columnPosition . $linePosition . ':' . $columnMerge . $linePosition);//объединяем
         $sheet->setCellValue($columnPosition . $linePosition, $category->name);
         $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_category_title);
-        // далее для красоты заполняем строку стилями
-//        for ($i = 2; $i <= $columns_name_count; $i++) {
-//            $columnPosition++;
-//            if ($i == 3) { // если это столбец цены, то задаем ячейке фон
-//                $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_price);
-//            } else {
-//                $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_category_title);
-//            }
-//        }
+        $sheet->getRowDimension($linePosition)->setRowHeight(30);
 
         $products = wc_get_products([
             'post_status' => 'publish',
@@ -173,11 +181,13 @@ function generatePriceList()
         foreach ($products as $product) {
             $linePosition++;
             //артикул
-            $columnPosition = 'B';
+            $columnPosition = $columnPositionStart;
             $sheet->setCellValue($columnPosition . $linePosition, $product->get_sku());
             //название
             $columnPosition++;
             $sheet->setCellValue($columnPosition . $linePosition, $product->get_title());
+            $sheet->getCell($columnPosition . $linePosition)->getHyperlink()->setUrl(get_permalink($product->get_id()));
+            $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_link);
             //цена
             $columnPosition++;
             $sheet->setCellValue($columnPosition . $linePosition, $product->get_price() . ' руб.');
@@ -195,23 +205,12 @@ function generatePriceList()
 
     /* Сохраняем файл
     ----------------------------------------------------------------- */
-// Redirect output to a client’s web browser (Xlsx)
-//    header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-//    header('Content-Disposition: attachment;filename="01simple.xlsx"');
-//    header('Cache-Control: max-age=0');
-// If you're serving to IE 9, then the following may be needed
-//    header('Cache-Control: max-age=1');
-
     $writer = new Xlsx($spreadsheet);
-    $writer->save('hello.xlsx');
+    $writer->save($filePath . $fileName . '.xlsx');
     //error_log(print_r($writer));
     //$writer->save('php://output');
+    $zip = new ZipArchive();
+    $zip->open($filePath . $fileName . '.zip', ZIPARCHIVE::CREATE);
+    $zip->addFile($filePath . $fileName . '.xlsx', $fileName . '.xlsx');
+    $zip->close();
 }
-
-function generateByButton()
-{
-    if (isset($_POST['XLSGenerate'])) {
-        generatePriceList();
-    }
-}
-add_action('generateXLS', 'generateByButton');
