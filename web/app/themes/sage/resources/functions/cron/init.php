@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__  . '/manager.php';
+
 class CronManager
 {
     protected $arguments;
@@ -49,37 +51,3 @@ class CronManager
         }
     }
 }
-
-//function test2()
-//{
-//    wp_insert_post([
-//        'post_title' => date('H-i-s'),
-//        'post_content' => 'test',
-//        'post_status' => 'publish',
-//        'post_author' => 1,
-//        'post_type' => 'post',
-//    ]);
-//}
-//
-//new CronManager([
-//    'timeName' => 'pyatak',
-//    'timeDisplay' => 'pyatak',
-//    'taskName' => 'pyatak',
-//    'time' => 60,
-//], 'test2');
-
-function generateByButton()
-{
-//    if (isset($_POST['XLSGenerate'])) {
-//        generatePriceList();
-//    }
-    generatePriceList();
-}
-add_action('generateXLS', 'generateByButton');
-
-new CronManager([
-    'timeName' => 'vinny',
-    'timeDisplay' => 'vinny',
-    'taskName' => 'vinny',
-    'time' => 60,
-], 'generateByButton');

@@ -7,9 +7,12 @@ function generatePriceList()
 {
     $spreadsheet = new Spreadsheet();
 
-    $filePath = './app/uploads/price-list/'; //куда ложить наши файлы
+    $upload_dir = (object) wp_upload_dir();
+    if (!file_exists($upload_dir->basedir . '/price-list/')) {
+        mkdir($upload_dir->basedir . '/price-list/', 0777, true);
+    }
+    $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
     $fileName = date('Y-m-d') . '_fabrikanoskov_price';
-    $fileName = date('H-i-s');
     $columnPositionStart = 'B'; //Начальная координата x
 
     $about_company = [
