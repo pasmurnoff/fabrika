@@ -236,4 +236,5 @@ require_once dirname(__DIR__) . '/resources/functions/productSizeTable.php';
 require_once dirname(__DIR__) . '/resources/functions/new-attributes.php';
 require_once dirname(__DIR__) . '/resources/functions/wishlist/init.php';
 require_once dirname(__DIR__) . '/resources/functions/priceListGenerate.php';
+require_once dirname(__DIR__) . '/resources/functions/priceListLink.php';
 require_once dirname(__DIR__) . '/resources/functions/cron/init.php';
