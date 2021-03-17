@@ -8,13 +8,14 @@ function generatePriceList()
     $spreadsheet = new Spreadsheet();
 
     $upload_dir = (object) wp_upload_dir();
-    if (!file_exists($upload_dir->basedir . '/price-list/')) {
-        mkdir($upload_dir->basedir . '/price-list/', 0777, true);
-    }
     $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
     $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
     $fileDeletionTime = 60 * 60 * 24 * 7; //старше этого периода файлы удаляются
     $columnPositionStart = 'B'; //Начальная координата x
+
+    if (!file_exists($filePath)) {
+        mkdir($filePath, 0777, true);
+    }
 
     $about_company = [
         'phones' => "Горячая линия: 8 (800) 444-11-56 \nТелефон с мессенджерами: +7 (927) 451-90-36",
