@@ -74,7 +74,7 @@ function generatePriceList()
             //'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_GRADIENT_LINEAR,
             'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
             'startColor' => [
-                'argb' => 'b4b4b4',
+                'argb' => 'c3c3c3',
             ],
         ],
     ];
@@ -91,7 +91,7 @@ function generatePriceList()
             //'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_GRADIENT_LINEAR,
             'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
             'startColor' => [
-                'argb' => 'c3c3c3',
+                'argb' => 'dddddd',
             ],
         ],
     ];
