@@ -12,7 +12,8 @@ function generatePriceList()
         mkdir($upload_dir->basedir . '/price-list/', 0777, true);
     }
     $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
-    $fileName = date('Y-m-d') . '_fabrikanoskov_price';
+    $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
+    $fileDeletionTime = 60 * 60 * 24 * 7; //старше этого периода файлы удаляются
     $columnPositionStart = 'B'; //Начальная координата x
 
     $about_company = [
@@ -45,7 +46,8 @@ function generatePriceList()
         ],
     ];
 
-// СТИЛИ:
+    /* СТИЛИ
+    ----------------------------------------------------------------- */
     $style_global = [
         'alignment' => [
             'wrapText' => true,//включает переносы строк и авто высоту
@@ -59,7 +61,7 @@ function generatePriceList()
             'size' => 26,
         ],
     ];
-// заголовки столбцов
+    // заголовки столбцов
     $style_columns = [
         'font' => [
             'bold' => true,
@@ -75,7 +77,7 @@ function generatePriceList()
             ],
         ],
     ];
-// заголовок категории
+    // заголовок категории
     $style_category_title = [
         'font' => [
             'bold' => true,
@@ -128,7 +130,7 @@ function generatePriceList()
         $drawing->setCoordinates('C2');
         $drawing->setWorksheet($sheet);
     }
-    $sheet->getRowDimension("2")->setRowHeight(50);
+    $sheet->getRowDimension('2')->setRowHeight(50);
 
     /* формируем шапку таблицы цен
     ----------------------------------------------------------------- */
@@ -206,14 +208,27 @@ function generatePriceList()
         }
     }
 
-    /* Сохраняем файл
+    /* сохраняем файлы
     ----------------------------------------------------------------- */
     $writer = new Xlsx($spreadsheet);
     $writer->save($filePath . $fileName . '.xlsx');
-    //error_log(print_r($writer));
-    //$writer->save('php://output');
+
     $zip = new ZipArchive();
     $zip->open($filePath . $fileName . '.zip', ZIPARCHIVE::CREATE);
     $zip->addFile($filePath . $fileName . '.xlsx', $fileName . '.xlsx');
     $zip->close();
+
+    /* удаляем старые файлы
+    ----------------------------------------------------------------- */
+    $filesInFolder = scandir($filePath);
+    $nowTime   = time();
+    foreach ($filesInFolder as $file) {
+        $file = $filePath . $file;
+        if (!is_file($file)) {
+            continue;
+        }
+        if ($nowTime - filemtime($file) >= $fileDeletionTime) {
+            unlink($file);
+        }
+    }
 }
