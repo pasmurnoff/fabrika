@@ -25,6 +25,7 @@
             @include('components.footer.top.blocks.callback')
             @include('components.footer.top.blocks.socials')
             @include('components.footer.top.blocks.employee')
+            @include('components.footer.top.blocks.price-list')
         @endslot
     @endcomponent
 </div>
