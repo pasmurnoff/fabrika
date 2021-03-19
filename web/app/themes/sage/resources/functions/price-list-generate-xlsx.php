@@ -1,6 +1,9 @@
 <?php
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Style\Fill;
+use PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 function generatePriceList()
@@ -46,7 +49,7 @@ function generatePriceList()
     $style_global = [
         'alignment' => [
             'wrapText' => true,//включает переносы строк и авто высоту
-            'vertical' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER,//выравнивание по вертикали
+            'vertical' => Alignment::VERTICAL_CENTER,//выравнивание по вертикали
         ],
     ];
 
@@ -62,11 +65,10 @@ function generatePriceList()
             'bold' => true,
         ],
         'alignment' => [
-            'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+            'horizontal' => Alignment::HORIZONTAL_CENTER,
         ],
         'fill' => [
-            //'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_GRADIENT_LINEAR,
-            'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+            'fillType' => Fill::FILL_SOLID,
             'startColor' => [
                 'argb' => 'c3c3c3',
             ],
@@ -79,11 +81,10 @@ function generatePriceList()
             'size' => 18,
         ],
         'alignment' => [
-            'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+            'horizontal' => Alignment::HORIZONTAL_CENTER,
         ],
         'fill' => [
-            //'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_GRADIENT_LINEAR,
-            'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+            'fillType' => Fill::FILL_SOLID,
             'startColor' => [
                 'argb' => 'dddddd',
             ],
@@ -119,9 +120,9 @@ function generatePriceList()
 
     /* ставим лого
     ----------------------------------------------------------------- */
-    $logoPath = './app/themes/sage/resources/assets/images/logo-for-price-list.png';
+    $logoPath = get_template_directory() . '/assets/images/logo-for-price-list.png';
     if (file_exists($logoPath)) {
-        $drawing = new \PhpOffice\PhpSpreadsheet\Worksheet\Drawing();
+        $drawing = new Drawing();
         $drawing->setPath($logoPath);
         $drawing->setCoordinates('C2');
         $drawing->setWorksheet($sheet);
