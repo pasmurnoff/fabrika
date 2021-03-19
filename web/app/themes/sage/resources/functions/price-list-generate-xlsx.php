@@ -5,8 +5,6 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 function generatePriceList()
 {
-    $spreadsheet = new Spreadsheet();
-
     $upload_dir = (object) wp_upload_dir();
     $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
     $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
@@ -104,6 +102,7 @@ function generatePriceList()
         )
     ];
 
+    $spreadsheet = new Spreadsheet();
     $sheet = $spreadsheet->getActiveSheet();//наш лист
     $sheet->setTitle('Прайс-лист');//название листа
     $spreadsheet->getDefaultStyle()->applyFromArray($style_global);//стили ко всем ячейкам
@@ -181,7 +180,7 @@ function generatePriceList()
         $products = wc_get_products([
             'post_status' => 'publish',
             'posts_per_page' => -1, // количество товаров для отображения
-            'product_cat' => 'zhenskoe',
+            'product_cat' => $category->slug,
         ]);
 
         foreach ($products as $product) {

@@ -1,5 +1,5 @@
 <?php
-function priceListLink($fileType, $class = '')
+function priceListLink($fileType, $titleLink = '', $class = '')
 {
     $upload_dir = (object) wp_upload_dir();
     $fileFolderUrl = $upload_dir->baseurl . '/price-list/';
@@ -8,7 +8,7 @@ function priceListLink($fileType, $class = '')
     $fileNameYesterday = 'fabrikanoskov_price_' . date('Y-m-d', time()-60*60*24) . '.' . $fileType;
 
     $classLink = empty($class) ? '' : ' class="' . $class . '"';
-    $titleLink = $fileType == 'xlsx' ? 'Microsoft Excel' : 'Zip-архив';
+    //$titleLink = $fileType == 'xlsx' ? 'Microsoft Excel' : 'Zip-архив';
 
     $link = '';
     if (is_file($filePath . $fileNameToday)) { //сегодняшний файл
