@@ -7,10 +7,6 @@ function priceListPdf()
     $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
     $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
 
-    if (!file_exists($filePath)) {
-        mkdir($filePath, 0777, true);
-    }
-
     $mpdf = new Mpdf([
         'mode' => 'utf-8', // кодировка
         'format' => 'A4', // - формат документа
@@ -72,5 +68,8 @@ function priceListPdf()
 
     /* сохраняем файл
     ----------------------------------------------------------------- */
+    if (!file_exists($filePath)) {
+        mkdir($filePath, 0777, true);
+    }
     $mpdf->Output($filePath . $fileName . '.pdf', 'F');
 }
