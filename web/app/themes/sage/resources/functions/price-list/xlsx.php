@@ -29,7 +29,7 @@ function generatePriceListXlsx($filePath)
         ],
         [
             'name' => 'Цена',
-            'width' => 10
+            'width' => 15
         ],
         [
             'name' => 'Размеры',
@@ -155,15 +155,12 @@ function generatePriceListXlsx($filePath)
     $categories = get_terms(
         [
             'taxonomy' => 'product_cat',
-            'hide_empty' => false,
+            'hide_empty' => true,//только с товарами
             'parent' => 0, //только родители
             'pad_counts' => true, //коллич записей себя и детей
         ]
     );
     foreach ($categories as $category) {
-        if (!$category->count) {
-            continue; //если товаров нет, то перескакиваем
-        }
         $columnPosition = $columnPositionStart;
         $linePosition++;
         $sheet->mergeCells($columnPosition . $linePosition . ':' . $columnMerge . $linePosition);//объединяем
@@ -178,6 +175,8 @@ function generatePriceListXlsx($filePath)
         ]);
 
         foreach ($products as $product) {
+            $price = (empty($product->get_price())) ? 'По запросу' : $product->get_price() . ' руб.';
+            $sizes = (empty($product->get_attribute('razmer-noskov'))) ? 'По запросу' : $product->get_attribute('razmer-noskov');
             $linePosition++;
             //артикул
             $columnPosition = $columnPositionStart;
@@ -189,10 +188,10 @@ function generatePriceListXlsx($filePath)
             $sheet->getStyle($columnPosition . $linePosition)->applyFromArray($style_link);
             //цена
             $columnPosition++;
-            $sheet->setCellValue($columnPosition . $linePosition, $product->get_price() . ' руб.');
+            $sheet->setCellValue($columnPosition . $linePosition, $price);
             //размеры
             $columnPosition++;
-            $sheet->setCellValue($columnPosition . $linePosition, $product->get_attribute('razmer-noskov'));
+            $sheet->setCellValue($columnPosition . $linePosition, $sizes);
             //состав
             $columnPosition++;
             $desc = $product->get_description();

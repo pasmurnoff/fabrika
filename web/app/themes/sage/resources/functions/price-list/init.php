@@ -4,29 +4,30 @@ require_once __DIR__  . '/pdf.php';
 
 function generatePriceLists()
 {
-    $upload_dir = (object) wp_upload_dir();
-    $filePath = $upload_dir->basedir . '/price-list/';
-    if (!file_exists($filePath)) {
-        // если нет папки, то создаем
-        mkdir($filePath, 0777, true);
-    }
+    $filePath = price_list_path('dir');
 
     generatePriceListXlsx($filePath);
     generatePriceListPdf($filePath);
     deletePriceLists($filePath);
 }
 
-/* СДЕЛАТЬ:
-Лого можно вызвать так @asset('images/logo-for-price-list.png')
-Можно убрать проверку на пустую категорию, изменив свойство 'hide_empty' => true
-+ Заменить все array() на []
-Здесь необходимо проверять на существование данные значения, если их нет, тогда ничего не пишем
-'images_ids' => $product->get_gallery_image_ids(),Если нет галереи выводим просто thumbnail
-Если вдруг нет ни вчерашнего, ни сегодняшнего, тогда тоже ничего не выыводим в футере
-Используем asset_path('images/........')
-+ Если нет одно цены или размеров, то пишем По запросу
-+ сделать функцию обертку, а удаление вынести в отдельную
+/* путь до нашей папки
 ----------------------------------------------------------------- */
+function price_list_path($type): string
+{
+    $path = '';
+    $folder = '/price-list/';
+    $upload_dir = (object) wp_upload_dir();
+    if ($type === 'url') {
+        $path = $upload_dir->baseurl . $folder;
+    } elseif ($type === 'dir') {
+        $path = $upload_dir->basedir . $folder;
+        if (!file_exists($path)) {// если нет папки, то создаем
+            mkdir($path, 0777, true);
+        }
+    }
+    return $path;
+}
 
 /* удаляем все старые файлы
 ----------------------------------------------------------------- */
@@ -49,24 +50,34 @@ function deletePriceLists($filePath)
 
 /* генерируем ссылки в подвале сайта
 ----------------------------------------------------------------- */
-function priceListLink($fileType, $titleLink = '', $class = '')
+function priceListLinks($files, $li_class = '', $link_class = '')
 {
-    $upload_dir = (object) wp_upload_dir();
-    $fileFolderUrl = $upload_dir->baseurl . '/price-list/';
-    $filePath = $upload_dir->basedir . '/price-list/';
-    $fileNameToday = 'fabrikanoskov_price_' . date('Y-m-d') . '.' . $fileType;
-    $fileNameYesterday = 'fabrikanoskov_price_' . date('Y-m-d', time()-60*60*24) . '.' . $fileType;
-
-    $classLink = empty($class) ? '' : ' class="' . $class . '"';
-    //$titleLink = $fileType == 'xlsx' ? 'Microsoft Excel' : 'Zip-архив';
-
-    $link = '';
-    if (is_file($filePath . $fileNameToday)) { //сегодняшний файл
-        $fileSize = number_format(filesize($filePath . $fileNameToday) / 1048576, 2);
-        $link = '<a href="' . $fileFolderUrl . $fileNameToday .'" '. $classLink .' download>'. $titleLink .' (' . $fileSize . ' Мб)</a>';
-    } elseif (is_file($filePath . $fileNameYesterday)) { //вчерашний файл
-        $fileSize = number_format(filesize($filePath . $fileNameYesterday) / 1048576, 2);
-        $link = '<a href="' . $fileFolderUrl . $fileNameYesterday .'" '. $classLink .' download>'. $titleLink .' (' . $fileSize . ' Мб)</a>';
+    if (!is_array($files)) {
+        return;
     }
-    echo $link;
+    $liClass = empty($li_class) ? '' : ' class="' . $li_class . '"';
+    $linkClass = empty($link_class) ? '' : ' class="' . $link_class . '"';
+    $fileFolderDir = price_list_path('dir');
+    $fileFolderUrl = price_list_path('url');
+    $fileNameToday = 'fabrikanoskov_price_' . date('Y-m-d');
+    $fileNameYesterday = 'fabrikanoskov_price_' . date('Y-m-d', time()-60*60*24);
+
+    foreach ($files as $extension => $titleLink) {
+        $item = '';
+        $today = $fileNameToday . '.' . $extension;
+        $yesterday = $fileNameYesterday . '.' . $extension;
+
+        if (is_file($fileFolderDir . $today)) { //сегодняшний файл
+            $fileSize = number_format(filesize($fileFolderDir . $today) / 1048576, 2);
+            $item .= '<li' . $liClass . '>';
+            $item .= '<a href="' . $fileFolderUrl . $today .'"'. $linkClass .' download>'. $titleLink .' (' . $fileSize . ' Мб)</a>';
+            $item .= '</li>';
+        } elseif (is_file($fileFolderDir . $yesterday)) { // вчерашний файл
+            $fileSize = number_format(filesize($fileFolderDir . $yesterday) / 1048576, 2);
+            $item .= '<li' . $liClass . '>';
+            $item .= '<a href="' . $fileFolderUrl . $yesterday .'"'. $linkClass .' download>'. $titleLink .' (' . $fileSize . ' Мб)</a>';
+            $item .= '</li>';
+        }
+        echo $item;
+    }
 }

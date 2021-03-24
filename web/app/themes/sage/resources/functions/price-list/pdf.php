@@ -25,16 +25,13 @@ function generatePriceListPdf($filePath)
     $categories = get_terms(
         [
             'taxonomy' => 'product_cat',
-            'hide_empty' => false,
+            'hide_empty' => true,//только с товарами
             'parent' => 0, //только родители
             'pad_counts' => true, //коллич записей себя и детей
             //'fields' => 'id=>name',
         ]
     );
     foreach ($categories as $category) {
-        if (!$category->count) {
-            continue; //если товаров нет, то перескакиваем
-        }
         $products = wc_get_products([
             'post_status' => 'publish',
             'posts_per_page' => -1, // количество товаров для отображения

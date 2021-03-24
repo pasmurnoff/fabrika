@@ -7,9 +7,8 @@ function generateProductPdf($productID)
         return; // не число? стоп
     }
 
-    $upload_dir = (object) wp_upload_dir();
-    $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
-    $fileUrl = $upload_dir->baseurl . '/price-list/'; //путь ссылкой
+    $filePath = price_list_path('dir'); //куда ложить наши файлы
+    $fileUrl = price_list_path('url'); //путь ссылкой
     $fileName = 'fabrikanoskov_product_' . $productID;
 
     $mpdf = new Mpdf([

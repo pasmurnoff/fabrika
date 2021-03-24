@@ -24,6 +24,8 @@
         font-size: 14px;
         color: #666;
         transition: color ease 200ms;
+        white-space: normal;
+        text-align: left;
 
         &:hover {
           color: $black;

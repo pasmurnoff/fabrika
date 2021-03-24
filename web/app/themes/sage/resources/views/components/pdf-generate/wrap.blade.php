@@ -22,19 +22,43 @@
     <table class="product font">
         <tr>
             <td class="product__left">
-                @foreach($value['images_ids'] as $img)
-                    <img src="{{ wp_get_attachment_image_url($img, 'thumbnail') }}" class="product__left-image">
-                    @if ($loop->index >= 2)
-                        @break
-                    @endif
-                @endforeach
+                @if ($value['images_ids'])
+                    @foreach($value['images_ids'] as $img)
+                        <img src="{{ wp_get_attachment_image_url($img, 'thumbnail') }}" class="product__left-image">
+                        @if ($loop->index >= 2)
+                            @break
+                        @endif
+                    @endforeach
+                @else
+                    {{-- если нет галереи, то ставим превью картинку --}}
+                    <img src="{{ wp_get_attachment_image_url($product->get_image_id(), 'thumbnail') }}" class="product__left-image">
+                @endif
             </td>
             <td class="product__right">
-                Цена: {{ $value['price'] }} рублей<br>
-                Размеры: {{ $value['size'] }}<br>
-                Цвета: {{ $value['color'] }}<br>
-                Наименование: {{ $value['title'] }}<br>
-                Артикул: {{ $value['vendor_code'] }}<br>
+                @if ($value['price'])
+                    Цена: {{ $value['price'] }} рублей<br>
+                @else
+                    Цена: По запросу<br>
+                @endif
+
+                @if ($value['size'])
+                    Размеры: {{ $value['size'] }}<br>
+                @else
+                    Размеры: По запросу<br>
+                @endif
+
+                @if ($value['color'])
+                    Цвета: {{ $value['color'] }}<br>
+                @endif
+
+                @if ($value['title'])
+                    Наименование: {{ $value['title'] }}<br>
+                @endif
+
+                @if ($value['vendor_code'])
+                    Артикул: {{ $value['vendor_code'] }}<br>
+                @endif
+
                 {{ $desc }}
             </td>
         </tr>
