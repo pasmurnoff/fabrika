@@ -238,4 +238,5 @@ require_once dirname(__DIR__) . '/resources/functions/wishlist/init.php';
 require_once dirname(__DIR__) . '/resources/functions/price-list-generate-xlsx.php';
 require_once dirname(__DIR__) . '/resources/functions/price-list-generate-pdf.php';
 require_once dirname(__DIR__) . '/resources/functions/price-list-link.php';
+require_once dirname(__DIR__) . '/resources/functions/product-generate-pdf.php';
 require_once dirname(__DIR__) . '/resources/functions/cron/init.php';
