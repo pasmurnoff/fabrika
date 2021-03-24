@@ -6,12 +6,9 @@ use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-function generatePriceList()
+function generatePriceListXlsx($filePath)
 {
-    $upload_dir = (object) wp_upload_dir();
-    $filePath = $upload_dir->basedir . '/price-list/'; //куда класть наши файлы
     $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
-    $fileDeletionTime = 60 * 60 * 24 * 7; //старше этого периода файлы удаляются
     $columnPositionStart = 'B'; //Начальная координата x
 
     $about_company = [
@@ -207,9 +204,6 @@ function generatePriceList()
 
     /* сохраняем файлы
     ----------------------------------------------------------------- */
-    if (!file_exists($filePath)) {
-        mkdir($filePath, 0777, true);
-    }
     $writer = new Xlsx($spreadsheet);
     $writer->save($filePath . $fileName . '.xlsx');
 
@@ -217,18 +211,4 @@ function generatePriceList()
     $zip->open($filePath . $fileName . '.zip', ZIPARCHIVE::CREATE);
     $zip->addFile($filePath . $fileName . '.xlsx', $fileName . '.xlsx');
     $zip->close();
-
-    /* удаляем старые файлы
-    ----------------------------------------------------------------- */
-    $filesInFolder = scandir($filePath);
-    $nowTime   = time();
-    foreach ($filesInFolder as $file) {
-        $file = $filePath . $file;
-        if (!is_file($file)) {
-            continue;
-        }
-        if ($nowTime - filemtime($file) >= $fileDeletionTime) {
-            unlink($file);
-        }
-    }
 }

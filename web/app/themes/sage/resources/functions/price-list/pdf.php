@@ -1,10 +1,8 @@
 <?php
 use Mpdf\Mpdf;
 
-function priceListPdf()
+function generatePriceListPdf($filePath)
 {
-    $upload_dir = (object) wp_upload_dir();
-    $filePath = $upload_dir->basedir . '/price-list/'; //куда ложить наши файлы
     $fileName = 'fabrikanoskov_price_' . date('Y-m-d');
 
     $mpdf = new Mpdf([
@@ -68,8 +66,5 @@ function priceListPdf()
 
     /* сохраняем файл
     ----------------------------------------------------------------- */
-    if (!file_exists($filePath)) {
-        mkdir($filePath, 0777, true);
-    }
     $mpdf->Output($filePath . $fileName . '.pdf', 'F');
 }

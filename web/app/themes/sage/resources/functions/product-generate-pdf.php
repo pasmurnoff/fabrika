@@ -26,33 +26,20 @@ function generateProductPdf($productID)
     // генерация файла
     $mpdf->Output($filePath . $fileName . '.pdf');
     // возвращаем ссылку на файл
-    echo $fileUrl . $fileName . '.pdf';
+    $url = $fileUrl . $fileName . '.pdf';
+    $url = parse_url($url, PHP_URL_PATH);
+    $response = [
+        'url' => $url,
+    ];
+    echo wp_json_encode($response);
 }
 
-function generateByButton()
-{
-    if (isset($_POST['productPDF'])) {
-        $productID = get_the_ID();
-        //var_dump($productID);
-        $productID = 24423;
-        generateProductPdf($productID);
-    }
-}
-add_action('generateXLS', 'generateByButton');
-
-/* ajax
------------------------------------------------------------------ */
 function ajaxProductPdf()
 {
     if (!empty($_POST['product_id'])) {
         generateProductPdf($_POST['product_id']);
     }
-
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-    echo date('i-s') . '<br>';
+    wp_die();
 }
-
 add_action('wp_ajax_nopriv_ajax_pdf_order', 'ajaxProductPdf');
 add_action('wp_ajax_ajax_pdf_order', 'ajaxProductPdf');

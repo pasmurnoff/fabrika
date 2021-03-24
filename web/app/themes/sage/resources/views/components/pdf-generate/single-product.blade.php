@@ -219,12 +219,8 @@
     </tr>
 </table>
 
-
 <div class="footnote font">
     Более подробно см. на <a href="{{$value['url']}}" class="footnote__link">{{$value['url']}}</a>
-    @php
-    echo '<br>' . date('i-s');
-    @endphp
 </div>
 
 

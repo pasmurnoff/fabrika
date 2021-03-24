@@ -7,6 +7,7 @@
       text-decoration: none;
       transition: color ease 200ms;
       padding-left: 40px;
+      border: 1px solid green;
 
       &:hover {
         color: $black;
@@ -14,15 +15,32 @@
     }
 
     &__pdf {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: max-content;
-      margin-right: 15px;
+      &-button {
+        padding-left: 40px;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+        transition: color ease 200ms;
 
-      svg {
-        width: 25px;
-        height: 25px;
+        &:hover {
+          color: $black;
+        }
+      }
+
+      &-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: max-content;
+        margin-right: 15px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }
