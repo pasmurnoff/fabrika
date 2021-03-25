@@ -1,5 +1,6 @@
 <?php
 use Mpdf\Mpdf;
+use function App\template;
 
 function generateProductPdf($productID)
 {
@@ -21,7 +22,7 @@ function generateProductPdf($productID)
         'margin_bottom' => 5,
     ]);
     // генерация контента
-    $mpdf->WriteHTML(\App\template('components.pdf-generate.single-product', ['productID'=>$productID]));
+    $mpdf->WriteHTML(template('components.pdf-generate.single-product-wrap', ['productID'=>$productID]));
     // генерация файла
     $mpdf->Output($filePath . $fileName . '.pdf');
     // возвращаем ссылку на файл

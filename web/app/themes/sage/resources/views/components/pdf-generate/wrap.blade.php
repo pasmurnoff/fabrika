@@ -35,17 +35,9 @@
                 @endif
             </td>
             <td class="product__right">
-                @if ($value['price'])
-                    Цена: {{ $value['price'] }} рублей<br>
-                @else
-                    Цена: По запросу<br>
-                @endif
+                Цена: {{ $value['price'] ? $value['price'] . ' рублей' : 'По запросу' }}<br>
 
-                @if ($value['size'])
-                    Размеры: {{ $value['size'] }}<br>
-                @else
-                    Размеры: По запросу<br>
-                @endif
+                Размеры: {{ $value['size'] ? $value['size'] : 'По запросу' }}<br>
 
                 @if ($value['color'])
                     Цвета: {{ $value['color'] }}<br>

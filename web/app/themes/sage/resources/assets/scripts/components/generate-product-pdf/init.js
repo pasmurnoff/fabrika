@@ -1,4 +1,4 @@
-function generateProductPdf()
+export default function generateProductPdf()
 {
     $('#download__pdf-form').submit(
         function (e) {
@@ -24,5 +24,3 @@ function generateProductPdf()
         }
     );
 }
-
-generateProductPdf();
