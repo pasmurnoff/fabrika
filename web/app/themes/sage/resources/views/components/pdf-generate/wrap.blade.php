@@ -4,11 +4,20 @@
     @if (is_int($item)){{-- товар --}}
     @php
         $product = new WC_Product($item);
+        //тип размера
+        $size_type = 'pa_razmer-noskov';
+        foreach ($product->get_attributes() as $key => $value) {
+            if (strpos($key, 'pa_razmer') !== false) {
+                $size_type = $key;
+                break;
+            }
+        }
+        //все значения
         $value = [
             'title' => $product->get_title(),
             'price' => $product->get_price(),
             'vendor_code' => $product->get_sku(),
-            'size'  => $product->get_attribute('razmer-noskov'),
+            'size'  => $product->get_attribute($size_type),
             'color'  => $product->get_attribute('cvet'),
             'images_ids' => $product->get_gallery_image_ids(),
         ];

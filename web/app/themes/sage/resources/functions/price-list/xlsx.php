@@ -175,9 +175,17 @@ function generatePriceListXlsx($filePath)
         ]);
 
         foreach ($products as $product) {
-            $price = (empty($product->get_price())) ? 'По запросу' : $product->get_price() . ' руб.';
-            $sizes = (empty($product->get_attribute('razmer-noskov'))) ? 'По запросу' : $product->get_attribute('razmer-noskov');
             $linePosition++;
+            $price = (empty($product->get_price())) ? 'По запросу' : $product->get_price() . ' руб.';
+            //определяем тип размера и достаем его
+            $size_type = 'pa_razmer-noskov';
+            foreach ($product->get_attributes() as $key => $value) {
+                if (strpos($key, 'pa_razmer') !== false) {
+                    $size_type = $key;
+                    break;
+                }
+            }
+            $sizes = (empty($product->get_attribute($size_type))) ? 'По запросу' : $product->get_attribute($size_type);
             //артикул
             $columnPosition = $columnPositionStart;
             $sheet->setCellValue($columnPosition . $linePosition, $product->get_sku());

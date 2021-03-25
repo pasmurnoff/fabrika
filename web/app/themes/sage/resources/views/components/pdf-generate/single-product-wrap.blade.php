@@ -1,14 +1,21 @@
 @php
     $product = new WC_Product($productID);
+    $size_type = 'pa_razmer-noskov';
+    foreach ($product->get_attributes() as $key => $value) {
+        if (strpos($key, 'pa_razmer') !== false) {
+            $size_type = $key;
+            break;
+        }
+    }
     $value = [
-    'title' => $product->get_title(),
-    'url' => get_permalink($productID),
-    'price' => $product->get_price(),
-    'vendor_code' => $product->get_sku(),
-    'size'  => $product->get_attribute('razmer-noskov'),
-    'color'  => $product->get_attribute('cvet'),
-    'image_id' => $product->get_image_id(),
-    'images_ids' => $product->get_gallery_image_ids(),
+        'title' => $product->get_title(),
+        'url' => get_permalink($productID),
+        'price' => $product->get_price(),
+        'vendor_code' => $product->get_sku(),
+        'size'  => $product->get_attribute($size_type),
+        'color'  => $product->get_attribute('cvet'),
+        'image_id' => $product->get_image_id(),
+        'images_ids' => $product->get_gallery_image_ids(),
     ];
     //достаем и очищаем "состав" от мусора
     $desc = $product->get_description();
