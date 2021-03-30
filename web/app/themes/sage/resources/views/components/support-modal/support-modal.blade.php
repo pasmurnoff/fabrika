@@ -1,5 +1,5 @@
 <div class="support-modal">
-<div class="support-modal__close">@include("icon::cross")</div>
+    <div class="support-modal__close closepopup" data-popup="support-modal">@include("icon::cross")</div>
     <div class="support-modal__main">
         <div class="support-modal__title">Служба поддержки</div>
         <div class="support-modal__text">Выберите удобный для себя способ связи</div>
@@ -7,14 +7,14 @@
             <div class="support-item">
                 <div class="support-item__icon"><i class="fas fa-phone"></i></div>
                 <div class="support-item__text-container">
-                    <div class="support-item__title">8-800-444-11-56</div>
+                    <a href="tel:88004441156" class="support-item__title">8-800-444-11-56</a>
                     <div class="support-item__text">Для звонков по россии</div>
                 </div>
             </div>
             <div class="support-item">
                 <div class="support-item__icon"><i class="fas fa-phone"></i></div>
                 <div class="support-item__text-container">
-                    <div class="support-item__title">+7-927-451-90-36</div>
+                    <a href="tel:+79274519036" class="support-item__title">+7-927-451-90-36</a>
                     <div class="support-item__text">Телефон с мессенджерами</div>
                 </div>
             </div>

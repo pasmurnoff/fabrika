@@ -1,5 +1,6 @@
 .overcharge-modal {
   visibility: hidden;
+  opacity: 0;
   position: fixed;
   max-width: 940px;
   z-index: 100;
@@ -9,6 +10,9 @@
   border-radius: 10px;
   padding: 25px 30px 30px;
   transform: translate(50%, -50%);
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  transition-property: visibility, opacity;
 
   @media screen and (max-width: 920px) {
     & {
@@ -16,10 +20,6 @@
       height: 100%;
       overflow: scroll;
     }
-  }
-
-  &.active {
-    visibility: visible;
   }
 
   &__call {
@@ -58,6 +58,10 @@
     font-weight: 700;
     padding-right: 30px;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      line-height: 1.1;
+    }
   }
 
   &__text {
@@ -82,17 +86,20 @@
   }
 
   &__close {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    transition-property: transform;
+    transform: rotate(0);
 
-    @media screen and (max-width: 920px) {
-      & {
-        display: block;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        right: 50px;
-        margin-top: 20px;
-      }
+    @media screen and (min-width: 920px) {
+      display: none;
     }
 
     svg {
@@ -100,6 +107,15 @@
       height: 20px;
       color: black;
       fill: black;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+
+    .overcharge-modal__close {
+      transform: rotate(90deg);
     }
   }
 
