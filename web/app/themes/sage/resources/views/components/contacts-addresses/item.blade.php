@@ -2,7 +2,7 @@
     $opening = $contact['opening'] ? explode("\n", $contact['opening']) : [];
 @endphp
 <div class="points__items">
-    <div class="points__title text_grey text_bold">Москва</div>
+    <div class="points__title text_grey text_bold">{{ $contact['city'] }}</div>
     <div class="points__address points__item">
         <div class="points__icon">@include('icon::country.city.map-marker')</div>
         <span class="points__country">{{ $country }}</span>,

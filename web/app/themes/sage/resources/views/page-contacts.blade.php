@@ -64,7 +64,7 @@ Template Name: Контакты
 
     <div class="title title_large">Горячая линия</div>
     <div class="pdng15 text">
-        <span class="text_bold">Телефон:</span> <a class="text_link" href="tel:88004441156">8 800 444 11 56</a><br/>
+        <span class="text_bold">Телефон:</span> @include('common.phone', ['class' => 'text_link'])<br/>
         <span class="text_bold">Почта:</span> <a class="text_link" href="mailto@mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
     </div>
 
@@ -72,15 +72,17 @@ Template Name: Контакты
         $contacts = get_field('contacts_addresses', get_the_ID());
     @endphp
 
-    <div class="points points_contact mrgn15-top">
-        @foreach($contacts AS $contact)
-            @php
-                $phone = $contact['phone'] ? $contact['phone'] : $contacts[0]['phone'];
-                $country = $contact['country'] ? $contact['country'] : $contacts[0]['country'];
-            @endphp
-            @include('components.contacts-addresses.item', [ 'contact' => $contact, 'phone' => $phone, 'country' => $country ])
-        @endforeach
-    </div>
+    @if($contacts)
+        <div class="points points_contact mrgn15-top">
+            @foreach($contacts AS $contact)
+                @php
+                    $phone = $contact['phone'] ? $contact['phone'] : $contacts[0]['phone'];
+                    $country = $contact['country'] ? $contact['country'] : $contacts[0]['country'];
+                @endphp
+                @include('components.contacts-addresses.item', [ 'contact' => $contact, 'phone' => $phone, 'country' => $country ])
+            @endforeach
+        </div>
+    @endif
 
     {{-- @php bullshit1() @endphp--}}
     {{--@php bullshit2() @endphp--}}
