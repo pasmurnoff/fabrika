@@ -65,7 +65,7 @@ Template Name: Контакты
     <div class="title title_large">Горячая линия</div>
     <div class="pdng15 text">
         <span class="text_bold">Телефон:</span> @include('common.phone', ['class' => 'text_link'])<br/>
-        <span class="text_bold">Почта:</span> <a class="text_link" href="mailto@mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
+        <span class="text_bold">Почта:</span> <a class="text_link" href="mailto:mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
     </div>
 
     @php
