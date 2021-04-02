@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cb5bca2cdb7d60e78c1874effc9a3d0",
+    "content-hash": "5f5ad8a0f21cc27b9ac6a55ccc4548f5",
     "packages": [
         {
             "name": "composer/installers",
@@ -1756,6 +1756,24 @@
                 }
             ],
             "time": "2020-07-14T19:04:52+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/image-watermark",
+            "version": "1.6.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/image-watermark/",
+                "reference": "tags/1.6.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/image-watermark.1.6.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/image-watermark/"
         },
         {
             "name": "wpackagist-plugin/rss-for-yandex-turbo",
