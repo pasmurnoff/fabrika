@@ -132,6 +132,7 @@ require dirname(__DIR__) . '/resources/functions/js_vars.php';
 
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/remove.php';
+require dirname(__DIR__ . '/resources') . '/functions/bem-menu.php';
 
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/support.php';

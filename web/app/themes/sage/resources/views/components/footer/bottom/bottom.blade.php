@@ -1,16 +1,8 @@
 <div class="footer__bottom">
     <div class="container">
-    <ul class="menu footer__menu_bottom">
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/o-fabrike">О фабрике</a>
-        </li>
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/vakansii">Вакансии</a>
-        </li>
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/blog">Блог</a>
-        </li>
-    </ul>
+    <div class="footer-menu__bottom">
+        {!! bem_menu('footer_bottom_1','footer-menu') !!}
+    </div>
     <div class="footer__privacy">
         Обращаем внимание, что сайт "fabrikanoskov.ru" по продаже чулочно-носочных изделий оптом носит исключительно
         информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи
@@ -24,19 +16,9 @@
         <br/><br/>
         © {!! date('Y') !!} Фабрика Носков,ООО "Фабрика Носков", ИНН: 1655432469, КПП 165501001, ОРГН: 1201600008103
     </div>
-    <ul class="menu footer__menu_bottom">
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/karta-saita" target="_blank">Карта
-                сайта</a>
-        </li>
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/oferta">Договор-оферта</a>
-        </li>
-        <li class="menu__item footer__menu_item-padding">
-            <a class="menu__link menu__link_grey footer__menu_link-bottom" href="/politika-konfidencialnosti">Политика
-                конфиденциальности</a>
-        </li>
-    </ul>
+    <div class="footer-menu__bottom">
+        {!! bem_menu('footer_bottom_2','footer-menu') !!}
+    </div>
     <div class="footer__brand">
         @include('icon::made-russia')
     </div>

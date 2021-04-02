@@ -48,6 +48,12 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'main_navigation' => __('Main navigation', 'sage'),
+        'footer_top_1' => __('footer -> help', 'sage'),
+        'footer_top_2' => __('footer -> categories', 'sage'),
+        'footer_top_3' => __('footer -> for partners', 'sage'),
+        'footer_top_4' => __('footer -> for staff', 'sage'),
+        'footer_bottom_1' => __('footer -> bottom 1', 'sage'),
+        'footer_bottom_2' => __('footer -> bottom 2', 'sage'),
     ]);
 
     /**
