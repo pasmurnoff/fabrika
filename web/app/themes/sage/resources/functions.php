@@ -145,6 +145,9 @@ require dirname(__DIR__) . '/resources/functions/change-rub.php';
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
 
+/* генерация ссылки из номера телефона */
+require dirname(__DIR__) . '/resources/functions/generation-phone-link.php';
+
 /* Добавляем нужные классы в body */
 require dirname(__DIR__) . '/resources/functions/add-body-class.php';
 
