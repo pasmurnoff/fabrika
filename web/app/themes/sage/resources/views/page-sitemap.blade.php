@@ -104,9 +104,8 @@ Template Name: Карта сайта
             <div class="sitemap__block sitemap__woo">
                 @php
                     foreach ($wooCategories as $wooCat) {
-                      $catLink = $wooCat->parent !== 0 ? findParent($wooCategories,
-                          $wooCat->parent) . '/' . $wooCat->slug : $wooCat->slug;
-                      echo '<a href="/' . $catLink . '" class="sitemap__single">' . $wooCat->name . '</a>';
+                      $catLink = get_category_link( $wooCat->cat_ID );
+                      echo '<a href="' . $catLink . '" class="sitemap__single">' . $wooCat->name . '</a>';
                     }
                 @endphp
             </div>
