@@ -45,6 +45,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^3.4.0",
+    "wpackagist-plugin/image-watermark": "1.6.6",
     "wpackagist-plugin/rss-for-yandex-turbo": "1.27",
     "wpackagist-plugin/wc-variation-swatches": "^1.0.1",
     "wpackagist-plugin/woo-permalink-manager": "^2.1.12",
