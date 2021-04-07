@@ -18,8 +18,8 @@
             @endslot
             @slot('text')
                 80% Хлопок <br>
-                18% Полиэстер <br>
-                2% Спандекс
+                17% Полиамид <br>
+                3% Эластан
             @endslot
         @endcomponent
 
