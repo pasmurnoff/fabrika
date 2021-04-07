@@ -77,7 +77,7 @@
     </div>
 
     <div class="block-text">
-      <a href="/kommercheskoe_predlozhenie_fabrikanoskov.ru.pdf" class="link-with-icon">
+      <a href="#" class="link-with-icon">
         @include('icon::pdf')
         Коммерческое предложение на носки и колготки оптом от fabrikanoskov.ru
       </a>

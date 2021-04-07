@@ -20,7 +20,7 @@
         <li class="block-text__point">Для получения условий сотрудничества, необходимо воспользоваться <a class="block-text__link" href="/podkljuchitsja-k-partnjorskoj-programme">соответствующим разделом</a></li>
         <li class="block-text__point">Для предложения своих услуг, просим написать письмо на почту <a class="block-text__link" href="mailto:mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a></li>
         <li class="block-text__point">Для получения условий по возврату продукции, необходимо воспользоваться соответствующим разделом <a class="block-text__link" href="/uslovija-vozvrata">«Условия возврата»</a></li>
-        <li class="block-text__point">Получить пример технического задания на уникальный дизайн можно по <a class="block-text__link" href="/fabrikanoskov-tehnicheskoe_zadanie.pdf">данной ссылке</a></li>
+        <li class="block-text__point">Получить пример технического задания на уникальный дизайн можно по <a class="block-text__link" href="/app/uploads/2021/04/tekhnicheskoe_zadanie_fabrikanoskov.ru_.zip" download>данной ссылке</a></li>
       </ul>
     </div>
   </div>
