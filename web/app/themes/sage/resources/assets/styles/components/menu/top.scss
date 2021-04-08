@@ -1,0 +1,42 @@
+.menu-top {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__bold {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
