@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-09 10:07+0300\n"
+"PO-Revision-Date: 2021-04-09 15:24+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,18 +18,54 @@ msgstr ""
 "Last-Translator: \n"
 "Language: en_US\n"
 
-#: components.header.menu:1
+#: form:1
+msgid "Отправить"
+msgstr "Submit"
+
+#: views.components.header.menu:1
 msgid "Бесплатная консультация"
 msgstr "Free consultation"
 
-#: components.footer.top.blocks.header:1
+#: views.components.footer.top.blocks.header:1
 msgid "Для бесплатных звонков по России"
 msgstr "For free calls in Russia"
 
-#: components.footer.top.blocks.messenger:1
+#: views.components.footer.top.blocks.messenger:1
 msgid "У вас остались вопросы? Звоните"
 msgstr "Do you have any questions? Call us"
 
 #: views.page-about:1
 msgid "За 30 лет работы мы отвязали носки для"
 msgstr "In the past 30 years of work, we have manufactured socks for"
+
+#: views.page-faq:1
+msgid "Задать вопрос на Фабрику Носков"
+msgstr "Send your question to Socks Factory"
+
+#: views.page-faq:2
+msgid "Задать вопрос"
+msgstr "Submit"
+
+#: views.components.form.elements.privacy:1
+msgid "Отправляя форму я соглашаюсь с <a class=\"form__privacy_link\" href=\"/uslovija-peredachi-informacii/\">условиями передачи информации</a>"
+msgstr "I agree to the <a class=\"form__privacy_link\" href=\"/uslovija-peredachi-informacii/\">data transfer conditions</a> by submitting the form"
+
+#: views.components.form.default:1
+msgid "Фамилия Имя Отчество"
+msgstr "Full name"
+
+#: views.components.form.default:2
+msgid "Мобильный телефон"
+msgstr "Mobile phone number"
+
+#: views.components.form.default:3
+msgid "Электронная почта"
+msgstr "Email"
+
+#: views.components.form.default:4
+msgid "Дата рождения"
+msgstr "Date of birth"
+
+#: views.components.form.default:5
+msgid "Любая дополнительная информация"
+msgstr "Any additional information"

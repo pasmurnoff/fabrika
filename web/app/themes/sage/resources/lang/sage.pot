@@ -18,18 +18,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: components.header.menu:1
+#: form:1
+msgid "Отправить"
+msgstr ""
+
+#: views.components.header.menu:1
 msgid "Бесплатная консультация"
 msgstr ""
 
-#: components.footer.top.blocks.header:1
+#: views.components.footer.top.blocks.header:1
 msgid "Для бесплатных звонков по России"
 msgstr ""
 
-#: components.footer.top.blocks.messenger:1
+#: views.components.footer.top.blocks.messenger:1
 msgid "У вас остались вопросы? Звоните"
 msgstr ""
 
 #: views.page-about:1
 msgid "За 30 лет работы мы отвязали носки для"
+msgstr ""
+
+#: views.page-faq:1
+msgid "Задать вопрос на Фабрику Носков"
+msgstr ""
+
+#: views.page-faq:2
+msgid "Задать вопрос"
+msgstr ""
+
+#: views.components.form.elements.privacy:1
+msgid "Отправляя форму я соглашаюсь с <a class=\"form__privacy_link\" href=\"/uslovija-peredachi-informacii/\">условиями передачи информации</a>"
+msgstr ""
+
+#: views.components.form.default:1
+msgid "Фамилия Имя Отчество"
+msgstr ""
+
+#: views.components.form.default:2
+msgid "Мобильный телефон"
+msgstr ""
+
+#: views.components.form.default:3
+msgid "Электронная почта"
+msgstr ""
+
+#: views.components.form.default:4
+msgid "Дата рождения"
+msgstr ""
+
+#: views.components.form.default:5
+msgid "Любая дополнительная информация"
 msgstr ""

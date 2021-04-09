@@ -4,102 +4,29 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="defaultpage">
-    @component('components.banner.banner', ['href' => '#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
-      @slot('title')
-        Задайте свой вопрос<br/>
-        и мы вам обязательно ответим
-      @endslot
-      @slot('text')
-        Вопросы нумеруются по мере их поступления, одинаковые вопросы от одного отправителя удаляются. Ответы на вопросы
-        публикуются на портале или отправляются на указанный адрес электронной почты.
-      @endslot
-      @slot('icon')
-              <img width="350"src="@asset('images/components/banners/voprosi_fabrika_noskov.png')" alt="Носки на заказ с Вашим дизайном от 1000 пар">
-      @endslot
-      @slot('buttonText')
-        Задать вопрос
-      @endslot
-    @endcomponent
-    <div class="block-text">
-      <ul class="block-text__list">
+    @php
+        $banner_buttons = get_field( "banner_buttons" );
+    @endphp
+    <div class="defaultpage">
+        @component('components.banner.banner', ['buttons' => $banner_buttons, 'href' => '#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
+            @slot('title')
+                {!! get_field( 'banner_title' ) !!}
+            @endslot
+            @slot('text')
+                {!! get_field( 'banner_text' ) !!}
+            @endslot
+            @slot('icon')
+                <img width="350" src="@asset('images/components/banners/voprosi_fabrika_noskov.png')"
+                     alt="Носки на заказ с Вашим дизайном от 1000 пар">
+            @endslot
+        @endcomponent
 
-        <li class="block-text__point faq__li">Может ли физическое лицо купить у вас продукцию?</li>
-        <div class="block-text__text">
-          Да, наша фабрика сотрудничает с физическими и юридическими лицами, а также с индивидуальными
-          предпринимателями. ИП и Юридические лица могут оплатить продукцию по выставленному счету, физическое лицо
-          может воспользоваться встроенным в сайт платежным терминалом, а также все покупатели могут воспользоваться
-          услугой оплаты наложенным платежом.
-        </div>
+        @while(have_posts()) @php the_post() @endphp
+          <div class="the-content the-content__black-marker">
+              @php the_content() @endphp
+          </div>
+        @endwhile
 
-        <li class="block-text__point faq__li">Как осуществляется доставка готовой продукции?</li>
-        <div class="block-text__text">
-          Забор продукции либо силами покупателя, либо отправляется транспортной компанией.
-        </div>
-
-        <li class="block-text__point faq__li">Можно ли заказать носочно-чулочную продукцию с собственным дизайном?</li>
-        <div class="block-text__text">
-          Да можно, для этого необходимо заполнить бланк технического задания, который вы можете найти на
-          соответствующей странице сайта, либо получить от нас по электронной почте.
-        </div>
-
-        <li class="block-text__point faq__li">Можно ли заказать индивидуальную этикетку/упаковку?</li>
-        <div class="block-text__text">
-          Да можно, для этого необходимо заполнить бланк технического задания, который вы можете найти на
-          соответствующей странице сайта, либо получить от нас по электронной почте. Просим обратить внимание, что даже
-          на этикетке с вашим логотипом, необходимо будет указать адрес нашего производства в силу условий текущего
-          законодательства и органов сертификации.
-        </div>
-
-        <li class="block-text__point faq__li">Какая минимальная партия заказа носочно-чулочной продукции в вашем
-          магазине?
-        </li>
-        <div class="block-text__text">
-          Минимальный заказ начинается от 1000 пар одного дизайна.
-        </div>
-
-        <li class="block-text__point faq__li">Какое максимальное количество цветов может быть на одном носке?</li>
-        <div class="block-text__text">
-          Максимальное количество цветов – 7.
-        </div>
-
-        <li class="block-text__point faq__li">Каковы сроки пошива носочно-чулочной продукции?</li>
-        <div class="block-text__text">
-          Минимальный заказ в 100 пар выполняется в течении недели, при наличии необходимых цветов пряжи. В случае
-          отсутствия необходимых цветов, срок поставки увеличивается на 2-3 недели.
-        </div>
-
-        <li class="block-text__point faq__li">Каковы сроки доставки готовой продукции?</li>
-        <div class="block-text__text">
-          От 3 дней в зависимости от региона РФ.
-        </div>
-
-        <li class="block-text__point faq__li">Каковы сроки выполнения индивидуального дизайна продукции?</li>
-        <div class="block-text__text">
-          От 1 до 3 рабочих дней.
-        </div>
-
-        <li class="block-text__point faq__li">Что делать, если мне не понравилось качество продукции?</li>
-        <div class="block-text__text">
-          Перед покупкой рекомендуем воспользоваться нашей услугой пробный тираж, вы можете выбрать 20 пар разных
-          дизайнов и размеров.
-          <br/>
-          В течении 14 дней вы можете вернуть всю партию приобретенного товара, при условии, что этикетка, упаковка и
-          товарный вид изделия не нарушены.
-        </div>
-
-        <li class="block-text__point faq__li">Хочу предложить свои услуги, товары. Что мне делать?</li>
-        <div class="block-text__text">
-          По всем вопросам просим писать на наша электронную почту <a class="block-text__link" href="mailto:mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
-        </div>
-
-        <li class="block-text__point faq__li">Где находится ваше производство?</li>
-        <div class="block-text__text">
-          Производство находится в Республике Башкортостан
-        </div>
-
-      </ul>
+        @include('components.form.default', ['title' => __('Задать вопрос на Фабрику Носков', 'sage'), 'submit' => __('Задать вопрос', 'sage'), 'id' =>'toform'])
     </div>
-    @include('components.form.default', ['title' =>'Задать вопрос на Фабрику Носков' , 'submit' => 'Задать вопрос', 'id' =>'toform'])
-  </div>
 @endsection

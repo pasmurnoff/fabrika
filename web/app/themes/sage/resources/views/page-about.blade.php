@@ -22,7 +22,6 @@ Template Name: О фабрике
             <img width="210" src="@asset('images/components/banners/Fabrika_Noskov_O_Kompanii.png')"
                  alt="Производство и продажа носков по низким ценам">
         @endslot
-
     @endcomponent
 
     @while(have_posts()) @php the_post() @endphp

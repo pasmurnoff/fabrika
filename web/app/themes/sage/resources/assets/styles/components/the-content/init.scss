@@ -14,6 +14,16 @@
     color: #666;
   }
 
+  a {
+    color: #666;
+    text-decoration: underline;
+
+    &:hover {
+      color: #222;
+      text-decoration: none;
+    }
+  }
+
   strong {
     color: #000;
   }
@@ -26,5 +36,13 @@
   li {
     font-size: 14px;
     line-height: 1.8;
+  }
+
+  &__black-marker li {
+    margin-bottom: 30px;
+
+    &::marker {
+      color: #000;
+    }
   }
 }
