@@ -18,10 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: components.footer.top.blocks.header:18
+#: components.header.menu:1
+msgid "Бесплатная консультация"
+msgstr ""
+
+#: components.footer.top.blocks.header:1
 msgid "Для бесплатных звонков по России"
 msgstr ""
 
-#: components.footer.top.blocks.messenger:27
+#: components.footer.top.blocks.messenger:1
 msgid "У вас остались вопросы? Звоните"
+msgstr ""
+
+#: views.page-about:1
+msgid "За 30 лет работы мы отвязали носки для"
 msgstr ""

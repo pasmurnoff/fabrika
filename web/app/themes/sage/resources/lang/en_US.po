@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-08 10:39+0300\n"
+"PO-Revision-Date: 2021-04-09 10:07+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,10 +18,18 @@ msgstr ""
 "Last-Translator: \n"
 "Language: en_US\n"
 
-#: components.footer.top.blocks.header:18
+#: components.header.menu:1
+msgid "Бесплатная консультация"
+msgstr "Free consultation"
+
+#: components.footer.top.blocks.header:1
 msgid "Для бесплатных звонков по России"
 msgstr "For free calls in Russia"
 
-#: components.footer.top.blocks.messenger:27
+#: components.footer.top.blocks.messenger:1
 msgid "У вас остались вопросы? Звоните"
 msgstr "Do you have any questions? Call us"
+
+#: views.page-about:1
+msgid "За 30 лет работы мы отвязали носки для"
+msgstr "In the past 30 years of work, we have manufactured socks for"
