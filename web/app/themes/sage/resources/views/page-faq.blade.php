@@ -8,7 +8,7 @@
         $banner_buttons = get_field( "banner_buttons" );
     @endphp
     <div class="defaultpage">
-        @component('components.banner.banner', ['buttons' => $banner_buttons, 'href' => '#toform', 'classes' => 'mrgn35 banner_bg banner_faq'])
+        @component('components.banner.banner', ['buttons' => $banner_buttons, 'classes' => 'mrgn35 banner_bg banner_faq'])
             @slot('title')
                 {!! get_field( 'banner_title' ) !!}
             @endslot

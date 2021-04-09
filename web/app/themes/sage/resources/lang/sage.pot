@@ -69,3 +69,27 @@ msgstr ""
 #: views.components.form.default:5
 msgid "Любая дополнительная информация"
 msgstr ""
+
+#: views.page-pryazha:1
+msgid "Проконсультируйтесь с нами"
+msgstr ""
+
+#: views.page-pryazha:2
+msgid "Наши специалисты подробно расскажут вам о вариациях товара, а также об оборудовании"
+msgstr ""
+
+#: views.page-pryazha:3
+msgid "Цветовая гамма нашей пряжи"
+msgstr ""
+
+#: views.page-pryazha:4
+msgid "Хлопок"
+msgstr ""
+
+#: views.page-pryazha:5
+msgid "Полиэстер"
+msgstr ""
+
+#: views.page-pryazha:6
+msgid "Вискоза"
+msgstr ""
