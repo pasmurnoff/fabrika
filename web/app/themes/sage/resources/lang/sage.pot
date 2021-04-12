@@ -22,6 +22,14 @@ msgstr ""
 msgid "Отправить"
 msgstr ""
 
+#: form:2
+msgid "Написать на Фабрику Носков"
+msgstr ""
+
+#: form:3
+msgid "Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой для связи с нами."
+msgstr ""
+
 #: views.components.header.menu:1
 msgid "Бесплатная консультация"
 msgstr ""
@@ -68,6 +76,14 @@ msgstr ""
 
 #: views.components.form.default:5
 msgid "Любая дополнительная информация"
+msgstr ""
+
+#: views.components.writeus.writeus:1
+msgid "Тема (необязательно)"
+msgstr ""
+
+#: views.components.writeus.writeus:2
+msgid "Задайте ваш вопрос"
 msgstr ""
 
 #: views.page-pryazha:1

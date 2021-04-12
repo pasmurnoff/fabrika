@@ -20,7 +20,7 @@ Template Name: Контакты
                                   'type' => 'tel',
                                   'name' => 'Телефон',
                                   'attr' => 'required',
-                                  'label' => 'Мобильный телефон*'
+                                  'label' => __('Мобильный телефон', 'sage') . '*'
                                 ])
 
                             @include('components.form.elements.input', [
@@ -37,7 +37,7 @@ Template Name: Контакты
                            'type' => 'email',
                            'name' => 'Email',
                            'attr' => 'required',
-                           'label' => 'Электронная почта*'
+                           'label' => __('Электронная почта', 'sage') . '*'
                          ])
                             @include('components.form.elements.input', [
                            'positionClass' => 'labelwrap_dual',
