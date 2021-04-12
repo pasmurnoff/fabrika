@@ -129,3 +129,15 @@ msgstr ""
 #: views.page-pryazha:6
 msgid "Вискоза"
 msgstr ""
+
+#: views.page-cdek:1
+msgid "Статус заказа по номеру"
+msgstr ""
+
+#: views.page-cdek:2
+msgid "Введите трек код вашего заказа"
+msgstr ""
+
+#: views.page-cdek:3
+msgid "Отследить"
+msgstr ""

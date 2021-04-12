@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-12 10:56+0300\n"
+"PO-Revision-Date: 2021-04-12 16:44+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -129,3 +129,15 @@ msgstr "Polyester"
 #: views.page-pryazha:6
 msgid "Вискоза"
 msgstr "Viscose"
+
+#: views.page-cdek:1
+msgid "Статус заказа по номеру"
+msgstr "Track your order"
+
+#: views.page-cdek:2
+msgid "Введите трек код вашего заказа"
+msgstr "Enter the tracking number"
+
+#: views.page-cdek:3
+msgid "Отследить"
+msgstr "Track"
