@@ -17,11 +17,6 @@
   a {
     color: #666;
     text-decoration: underline;
-
-    &:hover {
-      color: #222;
-      text-decoration: none;
-    }
   }
 
   strong {
@@ -44,5 +39,16 @@
     &::marker {
       color: #000;
     }
+  }
+
+  &__none-decoration {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  a:hover {
+    color: #222;
+    text-decoration: none;
   }
 }

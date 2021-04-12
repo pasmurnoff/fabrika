@@ -6,9 +6,9 @@ Template Name: Контакты
 @section('content')
     @include('components.writeus.writeus')
     @component('components.form.elements.form-item',
-        ['class' => 'mrgn35-top', 'title' => 'Написать директору ООО "Фабрика Носков"', 'titleClass' => 'title_huge', 'textClass' => 'pdng15-top pdng35-bottom'])
+        ['class' => 'mrgn35-top', 'title' => __('Написать директору ООО "Фабрика Носков"', 'sage'), 'titleClass' => 'title_huge', 'textClass' => 'pdng15-top pdng35-bottom'])
         @slot('text')
-            Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.
+            {{ __('Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.', 'sage') }}
         @endslot
         @slot('content')
             <form class="form" method="post">
@@ -28,7 +28,7 @@ Template Name: Контакты
                                 'type' => 'text',
                                 'name' => 'Имя',
                                 'attr' => 'required',
-                                'label' => 'Ваше имя*'
+                                'label' => __('Ваше имя', 'sage') . '*'
                               ])
                         </div>
                         <div class="dualrow">
@@ -43,7 +43,7 @@ Template Name: Контакты
                            'positionClass' => 'labelwrap_dual',
                            'type' => 'text',
                            'name' => 'Тема',
-                           'label' =>'Тема письма'
+                           'label' => __('Тема письма', 'sage')
                          ])
                         </div>
                     </div>
@@ -52,7 +52,7 @@ Template Name: Контакты
                               'textareaClass' => 'textarea_large',
                               'positionClass' => 'labelwrap_single textarea_large',
                               'name' => 'Описание',
-                              'label' => 'Описание вашего вопроса'
+                              'label' => __('Описание вашего вопроса', 'sage')
                           ])
                     </div>
                 </div>
@@ -62,11 +62,11 @@ Template Name: Контакты
         @endslot
     @endcomponent
 
-    <div class="title title_large">Горячая линия</div>
-    <div class="pdng15 text">
-        <span class="text_bold">Телефон:</span> @include('common.phone', ['class' => 'text_link'])<br/>
-        <span class="text_bold">Почта:</span> <a class="text_link" href="mailto:mail@fabrikanoskov.ru">mail@fabrikanoskov.ru</a>
-    </div>
+    @while(have_posts()) @php the_post() @endphp
+        <div class="the-content the-content__none-decoration">
+            @php the_content() @endphp
+        </div>
+    @endwhile
 
     @php
         $contacts = get_field('contacts_addresses', get_the_ID());

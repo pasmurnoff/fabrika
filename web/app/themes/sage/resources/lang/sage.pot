@@ -86,6 +86,26 @@ msgstr ""
 msgid "Задайте ваш вопрос"
 msgstr ""
 
+#: views.page-contacts:1
+msgid "Написать директору ООО \"Фабрика Носков\""
+msgstr ""
+
+#: views.page-contacts:2
+msgid "Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже."
+msgstr ""
+
+#: views.page-contacts:3
+msgid "Ваше имя"
+msgstr ""
+
+#: views.page-contacts:4
+msgid "Тема письма"
+msgstr ""
+
+#: views.page-contacts:5
+msgid "Описание вашего вопроса"
+msgstr ""
+
 #: views.page-pryazha:1
 msgid "Проконсультируйтесь с нами"
 msgstr ""
