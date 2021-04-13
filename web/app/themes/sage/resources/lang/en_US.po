@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-12 16:44+0300\n"
+"PO-Revision-Date: 2021-04-13 11:26+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -141,3 +141,15 @@ msgstr "Enter the tracking number"
 #: views.page-cdek:3
 msgid "Отследить"
 msgstr "Track"
+
+#: views.page-freedelivery:1
+msgid "Бесплатная доставка носков"
+msgstr "Free delivery socks"
+
+#: views.components.header.banner:1
+msgid "<span class=\"topbanner__mobilefix\">Ограниченное предложение: </span>При заказе от 100 000 рублей скидка 20% <span class=\"topbanner__button\">Перейти в магазин</span>"
+msgstr "<span class=\"topbanner__mobilefix\">Limited offer: </span>20% off orders over $1,300 <span class=\"topbanner__button\">Shop now</span>"
+
+#: views.page-getsize:1
+msgid "Как выбрать размер носков"
+msgstr "How to choose the size of socks"

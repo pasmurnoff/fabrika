@@ -141,3 +141,15 @@ msgstr ""
 #: views.page-cdek:3
 msgid "Отследить"
 msgstr ""
+
+#: views.page-freedelivery:1
+msgid "Бесплатная доставка носков"
+msgstr ""
+
+#: views.components.header.banner:1
+msgid "<span class=\"topbanner__mobilefix\">Ограниченное предложение: </span>При заказе от 100 000 рублей скидка 20% <span class=\"topbanner__button\">Перейти в магазин</span>"
+msgstr ""
+
+#: views.page-getsize:1
+msgid "Как выбрать размер носков"
+msgstr ""
