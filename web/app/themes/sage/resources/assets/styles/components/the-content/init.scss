@@ -1,5 +1,5 @@
 .the-content {
-  padding: 35px 0;
+  margin: 35px 0;
   font-size: 14px;
   color: #666;
 
@@ -33,6 +33,11 @@
 
   ul {
     margin: -24px 0 25px;
+    padding-left: 15px;
+  }
+
+  ol {
+    margin: 0 0 25px;
     padding-left: 15px;
   }
 

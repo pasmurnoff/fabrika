@@ -30,6 +30,30 @@ msgstr ""
 msgid "Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой для связи с нами."
 msgstr ""
 
+#: link:1
+msgid "На главную"
+msgstr ""
+
+#: functions.orderby:1
+msgid "По цене"
+msgstr ""
+
+#: functions.orderby:2
+msgid "По популярности"
+msgstr ""
+
+#: functions.orderby:3
+msgid "По рейтингу"
+msgstr ""
+
+#: functions.orderby:4
+msgid "По дате"
+msgstr ""
+
+#: views.components.panel.wishlist:1
+msgid "Список желаний"
+msgstr ""
+
 #: views.components.header.menu:1
 msgid "Бесплатная консультация"
 msgstr ""
@@ -152,4 +176,56 @@ msgstr ""
 
 #: views.page-getsize:1
 msgid "Как выбрать размер носков"
+msgstr ""
+
+#: views.page-zakaz-produkcii:1
+msgid "Заказываем"
+msgstr ""
+
+#: views.page-zakaz-produkcii:2
+msgid "Какие носки"
+msgstr ""
+
+#: views.page-zakaz-produkcii:3
+msgid "Размеры"
+msgstr ""
+
+#: views.page-zakaz-produkcii:4
+msgid "Количество"
+msgstr ""
+
+#: views.page-zakaz-produkcii:5
+msgid "Проходная цена"
+msgstr ""
+
+#: views.page-zakaz-produkcii:7
+msgid "Срок изготовления"
+msgstr ""
+
+#: views.page-zakaz-produkcii:8
+msgid "Состав"
+msgstr ""
+
+#: views.page-zakaz-produkcii:9
+msgid "Фотография"
+msgstr ""
+
+#: views.page-zakaz-produkcii:10
+msgid "Менеджер"
+msgstr ""
+
+#: views.page-sockscare:1
+msgid "Уход за изделиями"
+msgstr ""
+
+#: views.components.wishlist.empty:1
+msgid "Список желаний пуст"
+msgstr ""
+
+#: views.page-sitemap:1
+msgid "Страницы"
+msgstr ""
+
+#: views.page-sitemap:2
+msgid "Магазин"
 msgstr ""
