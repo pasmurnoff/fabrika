@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-14 19:15+0300\n"
+"PO-Revision-Date: 2021-04-15 12:12+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,6 +29,10 @@ msgstr "Contact Socks Factory"
 #: form:3
 msgid "Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой для связи с нами."
 msgstr "If you have a question, suggestion, or comment regarding our work, you can use the form below to contact us."
+
+#: form:4
+msgid "Бесплатная консультация по поставке и производству"
+msgstr "Free consultation on supply and production"
 
 #: link:1
 msgid "На главную"
