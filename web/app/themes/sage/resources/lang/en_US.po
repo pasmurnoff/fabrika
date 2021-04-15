@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 09:52+0300\n"
-"PO-Revision-Date: 2021-04-15 12:12+0300\n"
+"PO-Revision-Date: 2021-04-15 17:34+0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -241,3 +241,15 @@ msgstr "Colors"
 #: views.woocommerce.product-searchform:1
 msgid "Что ищем"
 msgstr "What are you looking for"
+
+#: views.page-sertificates:1
+msgid "Купить подарочные сертификаты"
+msgstr "Buy gift certificates"
+
+#: views.page-sertificates:2
+msgid "Город"
+msgstr "City"
+
+#: views.page-sertificates:3
+msgid "Сумма подарочного сертификата"
+msgstr "Gift certificate amount"

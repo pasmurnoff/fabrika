@@ -241,3 +241,15 @@ msgstr ""
 #: views.woocommerce.product-searchform:1
 msgid "Что ищем"
 msgstr ""
+
+#: views.page-sertificates:1
+msgid "Купить подарочные сертификаты"
+msgstr ""
+
+#: views.page-sertificates:2
+msgid "Город"
+msgstr ""
+
+#: views.page-sertificates:3
+msgid "Сумма подарочного сертификата"
+msgstr ""
