@@ -229,3 +229,11 @@ msgstr ""
 #: views.page-sitemap:2
 msgid "Магазин"
 msgstr ""
+
+#: views.components.filter.filter-color:1
+msgid "Цвета"
+msgstr ""
+
+#: views.woocommerce.product-searchform:1
+msgid "Что ищем"
+msgstr ""
