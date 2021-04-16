@@ -1,4 +1,5 @@
 import 'jquery-validation/dist/jquery.validate';
+import {formRules} from './rules';
 
 function dynamicAnimate(elem) {
     elem.animate({opacity: 'toggle'}).delay(2000).animate({opacity: 'toggle'});
@@ -7,49 +8,7 @@ function dynamicAnimate(elem) {
 $(document).ready(function () {
     $('form.form').validate({
         errorClass: 'form-error',
-        rules: {
-            'Имя': {
-                required: true,
-            },
-            'ФИО': {
-                required: true,
-            },
-            'Телефон': {
-                required: true,
-                minlength: 16,
-            },
-            'Описание': {
-                required: true,
-            },
-            'email': {
-                required: true,
-            },
-            'День Рождения': {
-                required: true,
-            },
-            'Дополнительно': {
-                required: true,
-            },
-        },
-        messages: {
-            'ФИО': {
-                required: 'Введи своё имя',
-            },
-            'Телефон': {
-                required: 'Введи свой телефон',
-                minlength: 'Введи корректный номер телефона',
-            },
-            'email': {
-                required: 'Введите ваш e-mail',
-            },
-            'День Рождения': {
-                required: 'Введите дату',
-            },
-            'Дополнительно': {
-                required: 'Заполните это поле',
-            },
-        },
-
+        ...formRules,
         submitHandler: function (form) {
             let formData = new FormData(form);
             $.ajax({
