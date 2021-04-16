@@ -1,11 +1,63 @@
+import 'jquery-validation/dist/jquery.validate';
+
 function dynamicAnimate(elem) {
     elem.animate({opacity: 'toggle'}).delay(2000).animate({opacity: 'toggle'});
 }
 
 $(document).ready(function () {
-    $('form.form').submit(
+    $('form.form').validate({
+        errorClass: 'form-error',
+        rules: {
+            'Имя': {
+                required: true,
+            },
+            'ФИО': {
+                required: true,
+            },
+            'Телефон': {
+                required: true,
+                minlength: 16,
+            },
+            'Описание': {
+                required: true,
+                minlength: 50,
+            },
+            'email': {
+                required: true,
+                minlength: 50,
+            },
+            'День Рождения': {
+                required: true,
+                minlength: 50,
+            },
+            'Дополнительно': {
+                required: true,
+            },
+        },
+        messages: {
+            'ФИО': {
+                required: 'Введи своё имя',
+            },
+            'Телефон': {
+                required: 'Введи свой телефон',
+                minlength: 'Введи корректный номер телефона',
+            },
+            'Описание': {
+                required: 'Расскажи нам о себе',
+                minlength: 'Чуть более подробнее',
+            },
+            'email': {
+                required: 'Введите ваш e-mail',
+            },
+            'День Рождения': {
+                required: 'Введите дату',
+            },
+            'Дополнительно': {
+                required: 'Заполните это поле',
+            },
+        },
 
-        function (e) {
+        function(e) {
 
             let $form = $(this),
                 formData = new FormData($form.get(0));
@@ -31,8 +83,6 @@ $(document).ready(function () {
             });
 
             return false;
-        }
-    )
-    ;
+        },
+    });
 });
-

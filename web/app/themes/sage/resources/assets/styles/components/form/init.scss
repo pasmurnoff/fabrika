@@ -46,6 +46,14 @@
       margin-bottom: 0;
     }
   }
+
+  label {
+    &.form-error {
+      padding-top: 5px;
+      color: #e31c1c;
+      font-size: 13px;
+    }
+  }
 }
 
 .formline {
