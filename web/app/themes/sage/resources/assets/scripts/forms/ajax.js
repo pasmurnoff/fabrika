@@ -4,6 +4,7 @@ function dynamicAnimate(elem) {
 
 $(document).ready(function () {
     $('form.form').submit(
+
         function (e) {
 
             let $form = $(this),

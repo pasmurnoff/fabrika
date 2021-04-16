@@ -9,6 +9,7 @@
   border-radius: 10px;
   padding: 25px 30px 30px;
   transform: translate(50%, -50%);
+  animation: fadein 2s;
 
   @media screen and (max-width: 920px) {
     & {
@@ -20,6 +21,7 @@
 
   &.active {
     visibility: visible;
+    animation: fadein 2s;
   }
 
   &__call {
