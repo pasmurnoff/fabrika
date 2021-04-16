@@ -80,7 +80,7 @@ Template Name: Карта сайта
 @section('content')
     <div class="sitemap">
         <div class="sitemap__section">
-            <div class="title title_middle sitemap__title">Страницы:</div>
+            <div class="title title_middle sitemap__title">{{ __('Страницы', 'sage') }}:</div>
             <div class="sitemap__block sitemap__all">
                 @php
                     foreach ($allPages as $page) {
@@ -89,18 +89,20 @@ Template Name: Карта сайта
                 @endphp
             </div>
         </div>
-        <div class="sitemap__section">
-            <div class="title title_middle sitemap__title">Фабрика носков по городам:</div>
-            <div class="sitemap__block sitemap__cities">
-                @php
-                    foreach ($cities as $city) {
-                      echo '<a href="' . get_permalink($city->ID) . '" class="sitemap__single">' . get_the_title($city->ID) . '</a>';
-                    }
-                @endphp
+        @if(get_bloginfo('language') == 'ru-RU')
+            <div class="sitemap__section">
+                <div class="title title_middle sitemap__title">Фабрика носков по городам:</div>
+                <div class="sitemap__block sitemap__cities">
+                    @php
+                        foreach ($cities as $city) {
+                          echo '<a href="' . get_permalink($city->ID) . '" class="sitemap__single">' . get_the_title($city->ID) . '</a>';
+                        }
+                    @endphp
+                </div>
             </div>
-        </div>
+        @endif
         <div class="sitemap__section">
-            <div class="title title_middle sitemap__title">Магазин:</div>
+            <div class="title title_middle sitemap__title">{{ __('Магазин', 'sage') }}:</div>
             <div class="sitemap__block sitemap__woo">
                 @php
                     foreach ($wooCategories as $wooCat) {

@@ -7,13 +7,12 @@
                     <div class="banner__text">{{ $text or '' }}</div>
                 @endisset
             </div>
-            @if(isset($href2))
+            @if(!empty($buttons))
                 <div class="banner__btn-wrap">
-                    <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
-                    <a href="{{ $href2 }}" class="button banner__button">{{ $buttonText2 or '' }}</a>
+                    @foreach($buttons AS $button)
+                        <a href="{{ $button['link']['url'] or '#'}}" class="button banner__button">{{ $button['link']['title'] or '' }}</a>
+                    @endforeach
                 </div>
-            @else
-                <a href="{{ $href or '#'}}" class="button banner__button">{{ $buttonText or '' }}</a>
             @endif
         </div>
         <div class="banner__side banner__side_right">

@@ -18,10 +18,238 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: components.footer.top.blocks.header:18
+#: form:1
+msgid "Отправить"
+msgstr ""
+
+#: form:2
+msgid "Написать на Фабрику Носков"
+msgstr ""
+
+#: form:3
+msgid "Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой для связи с нами."
+msgstr ""
+
+#: form:4
+msgid "Бесплатная консультация по поставке и производству"
+msgstr ""
+
+#: link:1
+msgid "На главную"
+msgstr ""
+
+#: functions.orderby:1
+msgid "По цене"
+msgstr ""
+
+#: functions.orderby:2
+msgid "По популярности"
+msgstr ""
+
+#: functions.orderby:3
+msgid "По рейтингу"
+msgstr ""
+
+#: functions.orderby:4
+msgid "По дате"
+msgstr ""
+
+#: views.components.panel.wishlist:1
+msgid "Список желаний"
+msgstr ""
+
+#: views.components.header.menu:1
+msgid "Бесплатная консультация"
+msgstr ""
+
+#: views.components.footer.top.blocks.header:1
 msgid "Для бесплатных звонков по России"
 msgstr ""
 
-#: components.footer.top.blocks.messenger:27
+#: views.components.footer.top.blocks.messenger:1
 msgid "У вас остались вопросы? Звоните"
+msgstr ""
+
+#: views.page-about:1
+msgid "За 30 лет работы мы отвязали носки для"
+msgstr ""
+
+#: views.page-faq:1
+msgid "Задать вопрос на Фабрику Носков"
+msgstr ""
+
+#: views.page-faq:2
+msgid "Задать вопрос"
+msgstr ""
+
+#: views.components.form.elements.privacy:1
+msgid "Отправляя форму я соглашаюсь с <a class=\"form__privacy_link\" href=\"/uslovija-peredachi-informacii/\">условиями передачи информации</a>"
+msgstr ""
+
+#: views.components.form.default:1
+msgid "Фамилия Имя Отчество"
+msgstr ""
+
+#: views.components.form.default:2
+msgid "Мобильный телефон"
+msgstr ""
+
+#: views.components.form.default:3
+msgid "Электронная почта"
+msgstr ""
+
+#: views.components.form.default:4
+msgid "Дата рождения"
+msgstr ""
+
+#: views.components.form.default:5
+msgid "Любая дополнительная информация"
+msgstr ""
+
+#: views.components.writeus.writeus:1
+msgid "Тема (необязательно)"
+msgstr ""
+
+#: views.components.writeus.writeus:2
+msgid "Задайте ваш вопрос"
+msgstr ""
+
+#: views.page-contacts:1
+msgid "Написать директору ООО \"Фабрика Носков\""
+msgstr ""
+
+#: views.page-contacts:2
+msgid "Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже."
+msgstr ""
+
+#: views.page-contacts:3
+msgid "Ваше имя"
+msgstr ""
+
+#: views.page-contacts:4
+msgid "Тема письма"
+msgstr ""
+
+#: views.page-contacts:5
+msgid "Описание вашего вопроса"
+msgstr ""
+
+#: views.page-pryazha:1
+msgid "Проконсультируйтесь с нами"
+msgstr ""
+
+#: views.page-pryazha:2
+msgid "Наши специалисты подробно расскажут вам о вариациях товара, а также об оборудовании"
+msgstr ""
+
+#: views.page-pryazha:3
+msgid "Цветовая гамма нашей пряжи"
+msgstr ""
+
+#: views.page-pryazha:4
+msgid "Хлопок"
+msgstr ""
+
+#: views.page-pryazha:5
+msgid "Полиэстер"
+msgstr ""
+
+#: views.page-pryazha:6
+msgid "Вискоза"
+msgstr ""
+
+#: views.page-cdek:1
+msgid "Статус заказа по номеру"
+msgstr ""
+
+#: views.page-cdek:2
+msgid "Введите трек код вашего заказа"
+msgstr ""
+
+#: views.page-cdek:3
+msgid "Отследить"
+msgstr ""
+
+#: views.page-freedelivery:1
+msgid "Бесплатная доставка носков"
+msgstr ""
+
+#: views.components.header.banner:1
+msgid "<span class=\"topbanner__mobilefix\">Ограниченное предложение: </span>При заказе от 100 000 рублей скидка 20% <span class=\"topbanner__button\">Перейти в магазин</span>"
+msgstr ""
+
+#: views.page-getsize:1
+msgid "Как выбрать размер носков"
+msgstr ""
+
+#: views.page-zakaz-produkcii:1
+msgid "Заказываем"
+msgstr ""
+
+#: views.page-zakaz-produkcii:2
+msgid "Какие носки"
+msgstr ""
+
+#: views.page-zakaz-produkcii:3
+msgid "Размеры"
+msgstr ""
+
+#: views.page-zakaz-produkcii:4
+msgid "Количество"
+msgstr ""
+
+#: views.page-zakaz-produkcii:5
+msgid "Проходная цена"
+msgstr ""
+
+#: views.page-zakaz-produkcii:7
+msgid "Срок изготовления"
+msgstr ""
+
+#: views.page-zakaz-produkcii:8
+msgid "Состав"
+msgstr ""
+
+#: views.page-zakaz-produkcii:9
+msgid "Фотография"
+msgstr ""
+
+#: views.page-zakaz-produkcii:10
+msgid "Менеджер"
+msgstr ""
+
+#: views.page-sockscare:1
+msgid "Уход за изделиями"
+msgstr ""
+
+#: views.components.wishlist.empty:1
+msgid "Список желаний пуст"
+msgstr ""
+
+#: views.page-sitemap:1
+msgid "Страницы"
+msgstr ""
+
+#: views.page-sitemap:2
+msgid "Магазин"
+msgstr ""
+
+#: views.components.filter.filter-color:1
+msgid "Цвета"
+msgstr ""
+
+#: views.woocommerce.product-searchform:1
+msgid "Что ищем"
+msgstr ""
+
+#: views.page-sertificates:1
+msgid "Купить подарочные сертификаты"
+msgstr ""
+
+#: views.page-sertificates:2
+msgid "Город"
+msgstr ""
+
+#: views.page-sertificates:3
+msgid "Сумма подарочного сертификата"
 msgstr ""

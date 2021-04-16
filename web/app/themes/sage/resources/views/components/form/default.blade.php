@@ -14,7 +14,7 @@
                'positionClass' => 'labelwrap_single',
                'type' => 'text',
                'name' => 'ФИО',
-               'label' => 'Фамилия Имя Отчество*'
+               'label' => __('Фамилия Имя Отчество', 'sage') . '*'
              ])
             </div>
 
@@ -24,14 +24,14 @@
                           'positionClass' => 'labelwrap_dual',
                           'type' => 'tel',
                           'name' => 'Телефон',
-                          'label' => 'Мобильный телефон*'
+                          'label' => __('Мобильный телефон', 'sage') . '*'
                         ])
 
                     @include('components.form.elements.input', [
                     'positionClass' => 'labelwrap_dual',
                     'type' => 'email',
                     'name' => 'email',
-                    'label' => 'Электронная почта'
+                    'label' => __('Электронная почта', 'sage')
                   ])
                 </div>
                 <div class="singlerow">
@@ -39,7 +39,7 @@
                  'positionClass' => 'labelwrap_single',
                  'type' => 'text',
                  'name' => 'День Рождения',
-                 'label' => 'Дата рождения*'
+                 'label' => __('Дата рождения', 'sage') . '*'
                ])
                 </div>
             </div>
@@ -49,7 +49,7 @@
       'textareaClass' => 'textarea_large',
       'positionClass' => 'labelwrap_single textarea_large',
       'name' => 'Дополнительно',
-      'label' => 'Любая дополнительная информация'
+      'label' => __('Любая дополнительная информация', 'sage')
   ])
         </div>
 

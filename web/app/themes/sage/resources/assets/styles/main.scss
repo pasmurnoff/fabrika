@@ -51,6 +51,9 @@
 @import "components/header/init";
 // Общее хедера
 
+/** Для the_content() */
+@import "components/the-content/init";
+
 /** Футер */
 @import "components/footer/footer";
 // Общее нижней части футера
