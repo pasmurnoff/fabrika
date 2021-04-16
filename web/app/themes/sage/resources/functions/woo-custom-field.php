@@ -9,7 +9,7 @@ function art_woo_add_custom_fields()
         'label' => __('Артибут фабрики', 'woocommerce'),
         'placeholder' => 'Атрибут фабрики',
         'desc_tip' => 'true',
-        'custom_attributes' => array('required' => 'required'),
+        //'custom_attributes' => array('required' => 'required'),
         'description' => __('Введите здесь значение поля', 'woocommerce'),
     ));
     echo '</div>';

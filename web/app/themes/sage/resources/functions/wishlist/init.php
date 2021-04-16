@@ -5,6 +5,9 @@ require_once __DIR__  . '/addLocalToUser.php';
 function getUserList() {
     $current_user = get_current_user_id();
     $list = get_user_meta($current_user, 'wishlist', true);
+    if (empty($list)) {
+        $list = [];
+    }
 
     if ($list) {
         foreach ($list as $key => $value) {

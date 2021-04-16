@@ -1,5 +1,5 @@
 @php
-  $wishlist = get_permalink(get_page_by_title('Список желаний')->ID);
+  $wishlist = get_permalink(get_page_by_title( __('Список желаний', 'sage') )->ID);
 @endphp
 
 <div class="panel__item">

@@ -30,7 +30,7 @@ the readme will list any important changes.
     @include('components.another.wrap')
 
     <div class="mrgn35-top">
-        @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству'])
+        @include('components.form.default', ['title' => __('Бесплатная консультация по поставке и производству', 'sage')])
     </div>
     @php
         do_action('woocommerce_after_main_content');

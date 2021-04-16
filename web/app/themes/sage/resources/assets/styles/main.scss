@@ -51,12 +51,11 @@
 @import "components/header/init";
 // Общее хедера
 
+/** Для the_content() */
+@import "components/the-content/init";
+
 /** Футер */
 @import "components/footer/footer";
-// Общее верхней части футера
-@import "components/footer/__top/footer__top";
-// Общее верхней части футера
-@import "components/footer/__bottom/footer__bottom";
 // Общее нижней части футера
 @import "components/overlay/init";
 // overlay

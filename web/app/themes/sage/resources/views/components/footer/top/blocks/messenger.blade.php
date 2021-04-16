@@ -1,10 +1,8 @@
 <div class="footer-messenger">
     <div class="footer-messenger__wrap container">
         <div class="footer-messenger__msg text text_large text_black">
-            <div class="footer-messenger__text">У вас остались вопросы? Звоните:</div>
-            <a class="footer-messenger__text footer-messenger__phone text_link text_bold" href="tel:+78004441156">
-                8 (800) 444-11-56</a>
-
+            <div class="footer-messenger__text">{{ __('У вас остались вопросы? Звоните', 'sage') }}:</div>
+            @include('common.phone', ['class' => 'footer-messenger__text footer-messenger__phone text_link text_bold'])
         </div>
         <div class="footer-messenger__icons-wrap">
             <div class="text text_bold text_middle">Ответим на ваши вопросы в мессенджерах</div>

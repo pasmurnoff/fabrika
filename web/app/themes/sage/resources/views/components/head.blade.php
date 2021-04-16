@@ -5,7 +5,7 @@
     @php wp_head() @endphp
     @if (is_ssl())
         @include('components.head.jivosite')
-        @include('components.head.megafon-callback')
+        {{-- @include('components.head.megafon-callback') --}}
         @include('components.head.metrics-facebook')
         @include('components.head.metrics-google')
         @include('components.head.metrics-yandex')

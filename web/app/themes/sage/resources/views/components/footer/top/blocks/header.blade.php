@@ -15,8 +15,8 @@
             @endif
         </div>
         <div class="footer__phone footer__header_right">
-            <a href="tel:+78004441156" class="title title_large footer__phone-item">8 800 444 11 56</a>
-            <p class="text footer__header_text">Для бесплатных звонков по России</p>
+            @include('common.phone', ['class' => 'title title_large footer__phone-item'])
+            <p class="text footer__header_text">{{ __('Для бесплатных звонков по России', 'sage') }}</p>
         </div>
     </div>
 </div>

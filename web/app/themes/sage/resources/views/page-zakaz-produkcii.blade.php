@@ -7,7 +7,7 @@ Template Name: Заказ носков на фабриках
 @section('content')
   @php
     global $wpdb;
-      $fabrics = $wpdb->get_results('SELECT * FROM fv_vendors');
+      //$fabrics = $wpdb->get_results('SELECT * FROM fv_vendors');
       $managers = $wpdb->get_results('SELECT * FROM fv_contacts');
   @endphp
 
@@ -18,51 +18,51 @@ Template Name: Заказ носков на фабриках
   <div class="manager rmanager">
     <form id="form-send" method="POST" enctype='multipart/form-data'
           action="/app/themes/sage/app/nikita/send.php">
-      <h3 class="title title_huge rmanager__title">Заказываем</h3>
+      <h3 class="title title_huge rmanager__title">{{ __('Заказываем', 'sage') }}</h3>
       <div class="manager__sku">
         <div class="sku__item" id="item-0">
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][style]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Какие носки</div>
+            <div class="placeholder__first">{{ __('Какие носки', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][size]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Размеры</div>
+            <div class="placeholder__first">{{ __('Размеры', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][qty]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Количество</div>
+            <div class="placeholder__first">{{ __('Количество', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][price]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Проходная цена</div>
+            <div class="placeholder__first">{{ __('Проходная цена', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][term]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Срок изготовления</div>
+            <div class="placeholder__first">{{ __('Срок изготовления', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][compose]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">Состав</div>
+            <div class="placeholder__first">{{ __('Состав', 'sage') }}</div>
           </div>
           <div class="manager__item manager__item-single manager__file-wrap">
             <input type="file" name="photos_0[]" onclick="togglePlaceholder(this);" class="manager__file" multiple
                    onchange="showName(jQuery(this));" required>
-            <div class="placeholder__first">Фотография</div>
+            <div class="placeholder__first">{{ __('Фотография', 'sage') }}</div>
             <span class="filevalue"></span></div>
           <div class="itemRem" onclick="remItem(0);"><i class="fa fa-close"></i></div>
         </div>
       </div>
       <div class="itemAdd">+</div>
       <div class="manager-broke"></div>
-      <label style="font-weight:bold;">Название фабрики</label><br/><br/>
-      <label class="text">
-        <input type="checkbox" id="selectAll"/> Выбрать все
-      </label>
-      <hr/>
+
+      {{--<label style="font-weight:bold;">Название фабрики</label><br/><br/>--}}
+      {{--<label class="text">--}}
+      {{--<input type="checkbox" id="selectAll"/> Выбрать все--}}
+      {{--</label>--}}
+      {{--<hr/>--}}
+
       <div>
-
-
         @if(!empty($fabrics))
           @foreach($fabrics as $fabric)
             <label class="text">
@@ -71,11 +71,11 @@ Template Name: Заказ носков на фабриках
             </label><br/>
           @endforeach
         @endif
-
       </div>
+
       <div class="">
         <br/>
-        <label style="font-weight:bold;">Менеджер</label><br/><br/>
+        <label style="font-weight:bold;">{{ __('Менеджер', 'sage') }}</label><br/><br/>
         <select name="manager" required style="width:100%;min-height:30px; padding:5px;font-size:16px">
           @if (!empty($managers))
             @foreach($managers as $manager)
@@ -86,7 +86,7 @@ Template Name: Заказ носков на фабриках
       </div>
 
       <br/>
-      <input class="submit" id="sendnikita" type="submit" value="Отправить">
+      <input class="submit" id="sendnikita" type="submit" value="{{ __('Отправить', 'sage') }}">
     </form>
   </div>
 

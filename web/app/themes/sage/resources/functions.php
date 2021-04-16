@@ -132,6 +132,8 @@ require dirname(__DIR__) . '/resources/functions/js_vars.php';
 
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/remove.php';
+require dirname(__DIR__ . '/resources') . '/functions/bem-menu.php';
+require dirname(__DIR__ . '/resources') . '/functions/lazy-load.php';
 
 /* add custom functions */
 require dirname(__DIR__) . '/resources/functions/support.php';
@@ -144,6 +146,9 @@ require dirname(__DIR__) . '/resources/functions/change-rub.php';
 
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
+
+/* генерация ссылки из номера телефона */
+require dirname(__DIR__) . '/resources/functions/generation-phone-link.php';
 
 /* Добавляем нужные классы в body */
 require dirname(__DIR__) . '/resources/functions/add-body-class.php';
@@ -235,3 +240,6 @@ require_once dirname(__DIR__) . '/resources/functions/new-custom-tabs.php';
 require_once dirname(__DIR__) . '/resources/functions/productSizeTable.php';
 require_once dirname(__DIR__) . '/resources/functions/new-attributes.php';
 require_once dirname(__DIR__) . '/resources/functions/wishlist/init.php';
+require_once dirname(__DIR__) . '/resources/functions/price-list/init.php';
+require_once dirname(__DIR__) . '/resources/functions/product-generate-pdf.php';
+require_once dirname(__DIR__) . '/resources/functions/cron/init.php';

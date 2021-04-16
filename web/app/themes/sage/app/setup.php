@@ -48,6 +48,13 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'main_navigation' => __('Main navigation', 'sage'),
+        'header_top' => __('header -> top', 'sage'),
+        'footer_top_1' => __('footer -> help', 'sage'),
+        'footer_top_2' => __('footer -> categories', 'sage'),
+        'footer_top_3' => __('footer -> for partners', 'sage'),
+        'footer_top_4' => __('footer -> for staff', 'sage'),
+        'footer_bottom_1' => __('footer -> bottom 1', 'sage'),
+        'footer_bottom_2' => __('footer -> bottom 2', 'sage'),
     ]);
 
     /**
@@ -188,4 +195,9 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+
+    /**
+     * Подключаем перевод темы
+     */
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
 });

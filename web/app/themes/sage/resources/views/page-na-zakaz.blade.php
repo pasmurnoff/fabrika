@@ -178,7 +178,7 @@
 
     @include('components.workorder.workorder')
 
-    @include('components.form.default', ['title' => 'Бесплатная консультация по поставке и производству', 'submit' => 'Отправить'])
+    @include('components.form.default', ['title' => __('Бесплатная консультация по поставке и производству', 'sage')])
 
     @include('components.tables.table')
 
