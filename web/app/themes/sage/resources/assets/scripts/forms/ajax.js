@@ -20,15 +20,12 @@ $(document).ready(function () {
             },
             'Описание': {
                 required: true,
-                minlength: 50,
             },
             'email': {
                 required: true,
-                minlength: 50,
             },
             'День Рождения': {
                 required: true,
-                minlength: 50,
             },
             'Дополнительно': {
                 required: true,
@@ -42,10 +39,6 @@ $(document).ready(function () {
                 required: 'Введи свой телефон',
                 minlength: 'Введи корректный номер телефона',
             },
-            'Описание': {
-                required: 'Расскажи нам о себе',
-                minlength: 'Чуть более подробнее',
-            },
             'email': {
                 required: 'Введите ваш e-mail',
             },
@@ -57,12 +50,8 @@ $(document).ready(function () {
             },
         },
 
-        function(e) {
-
-            let $form = $(this),
-                formData = new FormData($form.get(0));
-            e.preventDefault();
-
+        submitHandler: function (form) {
+            let formData = new FormData(form);
             $.ajax({
                 contentType: false, // важно - убираем форматирование данных по умолчанию
                 processData: false, // важно - убираем преобразование строк по умолчанию
