@@ -18,6 +18,11 @@
   &-text {
     outline: none;
   }
+
+  &.form-error {
+    background: rgba($danger, 0.12);
+    border-color: transparent;
+  }
 }
 
 .dualrow {
@@ -128,6 +133,11 @@
   box-sizing: border-box;
   height: 150px;
   resize: none;
+
+  &.form-error {
+    background: rgba($danger, 0.12);
+    border-color: transparent;
+  }
 
   &_workwithyou {
     height: 225px;

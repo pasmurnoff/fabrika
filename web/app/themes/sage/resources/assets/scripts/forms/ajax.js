@@ -1,15 +1,16 @@
+import 'jquery-validation/dist/jquery.validate';
+import {formRules} from './rules';
+
 function dynamicAnimate(elem) {
     elem.animate({opacity: 'toggle'}).delay(2000).animate({opacity: 'toggle'});
 }
 
 $(document).ready(function () {
-    $('form.form').submit(
-        function (e) {
-
-            let $form = $(this),
-                formData = new FormData($form.get(0));
-            e.preventDefault();
-
+    $('form.form').validate({
+        errorClass: 'form-error',
+        ...formRules,
+        submitHandler: function (form) {
+            let formData = new FormData(form);
             $.ajax({
                 contentType: false, // важно - убираем форматирование данных по умолчанию
                 processData: false, // важно - убираем преобразование строк по умолчанию
@@ -30,8 +31,6 @@ $(document).ready(function () {
             });
 
             return false;
-        }
-    )
-    ;
+        },
+    });
 });
-
