@@ -2,7 +2,14 @@
 
 @section('content')
     @while(have_posts()) @php the_post() @endphp
-    @php the_content() @endphp
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+        <div class="defaultpage">
+
+            @include('components.thumbnail.wrap')
+
+            <div class="the-content">
+                @php the_content() @endphp
+            </div>
+
+        </div>
     @endwhile
 @endsection
