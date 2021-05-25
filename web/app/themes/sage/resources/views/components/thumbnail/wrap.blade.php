@@ -4,7 +4,7 @@
         $thumbnail = image_downsize( $thumbnail_id, 'full' ); // массив со всеми переменными картинки
         $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true ); // достаем альт
         if (empty($thumbnail_alt)) { // если нет альта, то подставляем h1
-            $thumbnail_alt = get_the_title();
+            $thumbnail_alt = get_the_title($post);
         }
     @endphp
     <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="defaultpage__imgwrap">
