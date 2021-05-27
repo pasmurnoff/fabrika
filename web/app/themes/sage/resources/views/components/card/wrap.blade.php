@@ -5,6 +5,6 @@
     <div class="card__bottom">
         <h3 class="title title_middle pdng15-bottom">{{ $title or '' }}</h3>
         <div class="text pdng15-bottom">{{ $text or '' }}</div>
-        <a class="button" target="_blank" href="{{ $href or '#' }}">{{ $buttonText or '' }}</a>
+        <a class="button" href="{{ $href or '#' }}">{{ $buttonText or '' }}</a>
     </div>
 </div>

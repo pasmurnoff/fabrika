@@ -34,6 +34,10 @@ msgstr ""
 msgid "Бесплатная консультация по поставке и производству"
 msgstr ""
 
+#: form:5
+msgid "Ваш телефон"
+msgstr ""
+
 #: link:1
 msgid "На главную"
 msgstr ""
@@ -252,4 +256,44 @@ msgstr ""
 
 #: views.page-sertificates:3
 msgid "Сумма подарочного сертификата"
+msgstr ""
+
+#: views.page-sotrudnik:1
+msgid "Рассчитать стоимость носков или колготок"
+msgstr ""
+
+#: views.page-sotrudnik:2
+msgid "Данные менеджера"
+msgstr ""
+
+#: views.page-sotrudnik:3
+msgid "Данные клиента"
+msgstr ""
+
+#: views.page-sotrudnik:4
+msgid "Дополнительная информация"
+msgstr ""
+
+#: views.page-sotrudnik:5
+msgid "Имя лица, принимающего решение"
+msgstr ""
+
+#: views.page-sotrudnik:6
+msgid "Телефон лица, принимающего решение"
+msgstr ""
+
+#: views.page-sotrudnik:7
+msgid "Наименование юр лица или ФИО заказчика"
+msgstr ""
+
+#: views.page-sotrudnik:8
+msgid "ИНН юр лица или физ лица заказчика"
+msgstr ""
+
+#: views.page-sotrudnik:9
+msgid "Артикул"
+msgstr ""
+
+#: views.page-sotrudnik:10
+msgid "Расскажите о себе"
 msgstr ""
