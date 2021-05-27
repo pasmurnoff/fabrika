@@ -3,6 +3,13 @@
   font-size: 14px;
   color: #666;
 
+  .alignnone {
+    display: block;
+    width: 100%;
+    max-width: 638px;
+    height: auto;
+  }
+
   h2 {
     margin-bottom: 15px;
     font-size: 20px;

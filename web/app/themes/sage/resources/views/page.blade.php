@@ -12,4 +12,5 @@
 
         </div>
     @endwhile
+    @include('components.writeus.writeus')
 @endsection

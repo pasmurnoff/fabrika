@@ -5,113 +5,93 @@ Template Name: Помощь сотрудникам
 @extends('layouts.app')
 
 @section('content')
-    <div class="cards">
-        @component('components.card.wrap', ['bgc' => '#F82F2F','title' => 'Готовые изделия', 'href' => '#', 'buttonText' => 'Разместить заказ'])
-            @slot('text')
-                Разместить заказ на продажу оптом готовых изделий
-            @endslot
-            @slot('img')
-                @include('icon::sotrudnik.sales')
-            @endslot
-        @endcomponent
-
-        @component('components.card.wrap', ['bgc' => '#7F25FC', 'title' => 'Продукция на заказ', 'href' => '/forma-zakaza-produkcii', 'buttonText' => 'Разместить заказ'])
-            @slot('text')
-                Разместить заказ на производство носков или колготок "Под заказ"
-            @endslot
-            @slot('img')
-                @include('icon::sotrudnik.nazakaz')
-            @endslot
-        @endcomponent
-
-        @component('components.card.wrap', ['bgc' => '#31D665', 'title' => 'Выставить счет на оплату', 'href' => '#', 'buttonText' => 'Выставить счет'])
-            @slot('text')
-                Если вы знаете сумму заказа, вы можете выставить счет на оплату
-            @endslot
-            @slot('img')
-                @include('icon::sotrudnik.naoplatu')
-            @endslot
-        @endcomponent
-
-        @component('components.card.wrap', ['bgc' => '#FFA523','title' => 'Договор на поставку', 'href' => '#', 'buttonText' => 'Получить договор'])
-            @slot('text')
-                Оформить договор на поставку продукции оптом
-            @endslot
-            @slot('img')
-                @include('icon::sotrudnik.dogovor')
-            @endslot
-        @endcomponent
-
-        @component('components.card.wrap', ['bgc' => '#1771e6','title' => 'Договор на изготовление под заказ', 'href' => '#', 'buttonText' => 'Получить договор'])
-            @slot('text')
-                Оформить договор на изготовление по собственному дизайну заказчика
-            @endslot
-            @slot('img')
-                @include('icon::sotrudnik.dogovor')
-            @endslot
-        @endcomponent
-    </div>
+    @php
+        $for_worker = get_field('for_worker');
+    @endphp
+    @if($for_worker)
+        <div class="cards">
+            @foreach($for_worker as $card)
+                @component('components.card.wrap', [
+                            'bgc' => $card['background'],
+                            'title' => $card['title'],
+                            'href' => $card['link']['url'] ?? '#',
+                            'buttonText' => $card['link']['title'] ?? 'Заказать',
+                        ])
+                    @slot('text')
+                        {!! $card['text'] or '' !!}
+                    @endslot
+                    @slot('img')
+                        @if($card['icon'])
+                            @include('icon::sotrudnik.' .  $card['icon'])
+                        @else
+                            @include('icon::sotrudnik.dogovor')
+                        @endif
+                    @endslot
+                @endcomponent
+            @endforeach
+        </div>
+    @endif
 
     <form class="form form_employee" method="post">
         <div class="form__col_third">
-            <div class="title title_large mrgn35">Рассчитать стоимость носков или колготок</div>
-            @component('components.form.elements.form-item', ['title' => 'Данные менеджера'])
+            <div class="title title_large mrgn35">{{ __('Рассчитать стоимость носков или колготок', 'sage') }}</div>
+            @component('components.form.elements.form-item', ['title' => __('Данные менеджера', 'sage')])
                 @slot('content')
                     <div class="dualrow mrgn15-top">
                         @include('components.form.elements.input',[
                       'positionClass' => 'labelwrap_dual',
                       'name' => 'name',
-                      'label' => 'Ваше имя*'
+                      'label' => __('Ваше имя', 'sage') . '*'
                       ])
                         @include('components.form.elements.input',[
                             'positionClass' => 'labelwrap_dual',
                             'name' => 'phone',
-                            'label' => 'Ваш телефон*'
+                            'label' => __('Ваш телефон', 'sage') . '*'
                             ])
                     </div>
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => 'Данные клиента'])
+            @component('components.form.elements.form-item', ['title' => __('Данные клиента', 'sage') ])
                 @slot('content')
                     <div class="dualrow mrgn15-top">
                         @include('components.form.elements.input',[
                           'positionClass' => 'labelwrap_dual',
                           'name' => 'client-name',
-                          'label' => 'Имя лица, принимающего решение'
+                          'label' => __('Имя лица, принимающего решение', 'sage')
                           ])
                         @include('components.form.elements.input',[
                             'positionClass' => 'labelwrap_dual',
                             'name' => 'client-phone',
-                            'label' => 'Телефон лица, принимающего решение'
+                            'label' => __('Телефон лица, принимающего решение', 'sage')
                             ])
                         @include('components.form.elements.input',[
                          'positionClass' => 'labelwrap_single',
                          'name' => 'client-fio',
-                         'label' => 'Наименование юр лица или ФИО заказчика'
+                         'label' => __('Наименование юр лица или ФИО заказчика', 'sage')
                          ])
                         @include('components.form.elements.input',[
                        'positionClass' => 'labelwrap_single',
                        'name' => 'client-inn',
-                       'label' => 'ИНН юр лица или физ лица заказчика'
+                       'label' => __('ИНН юр лица или физ лица заказчика', 'sage')
                        ])
                     </div>
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => 'Заказываем'])
+            @component('components.form.elements.form-item', ['title' => __('Заказываем', 'sage') ])
                 @slot('content')
                     @include('components.form.elements.sku', [
                         'positionClass' => 'mrgn15-top sku__element',
                        'name' => 'productSKU[]',
-                       'label' => 'Артикул'
+                       'label' => __('Артикул', 'sage')
                         ])
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => 'Дополнительная информация'])
+            @component('components.form.elements.form-item', ['title' => __('Дополнительная информация', 'sage') ])
                 @slot('content')
                     @include('components.form.elements.textarea',[
                         'positionClass' => 'mrgn15-top',
                         'name' => 'description',
-                        'label' => 'Расскажите о себе'
+                        'label' => __('Расскажите о себе', 'sage')
                         ])
 
                 @endslot
