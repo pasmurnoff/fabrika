@@ -1,3 +1,6 @@
+@php
+
+@endphp
 <div class="singlerow_privacy {{ $class or '' }}">
     <div class="form__privacy">
         {!! __('Отправляя форму я соглашаюсь с <a class="form__privacy_link" href="/uslovija-peredachi-informacii/">условиями передачи информации</a>', 'sage') !!}
