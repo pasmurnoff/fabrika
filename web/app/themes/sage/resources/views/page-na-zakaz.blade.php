@@ -188,6 +188,6 @@
     <img class="partner-image" src="@asset('images/defaultpages/dostavka_noski_kolgotki.jpg')"
          alt="Доставляем носки, колготки и прочие грузы">
 
-    @include('components.socksdesign.socksdesign')
+    @include('components.сommercial-offer.wrap', ['page_id' => get_the_ID()] )
 
 @endsection

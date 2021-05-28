@@ -2,6 +2,11 @@
   font-family: $font;
   padding-bottom: 35px;
 
+  &__button {
+    display: inline-flex;
+    margin-top: 15px;
+  }
+
   p {
     margin: 0;
   }
