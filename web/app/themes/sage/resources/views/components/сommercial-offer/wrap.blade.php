@@ -27,10 +27,10 @@
     @endforeach
 @endif
 
-<div class="title title_large mrgn15-bottom">{!! pll_e('Узнайте как будет выглядеть ваш носок') !!}</div>
+<div class="title title_large mrgn15-bottom">{!! pll__('Узнайте как будет выглядеть ваш носок') !!}</div>
 <div class="block-text block-text_nopad">
     <div class="block-text__text pdng15-bottom">
-        {!! pll_e('Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!') !!}
+        {!! pll__('Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!') !!}
     </div>
 </div>
 
@@ -39,15 +39,15 @@
         <div class="formline__inner">
             <div class="labelwrap labelwrap_line">
                 <input type="text" class="input" name="name">
-                <label class="label">{{ pll_e('Имя') }}*</label>
+                <label class="label">{{ pll__('Имя') }}*</label>
             </div>
             <div class="labelwrap labelwrap_line">
                 <input type="tel" class="input" name="phone">
-                <label class="label">{{ pll_e('Мобильный телефон') }}*</label>
+                <label class="label">{{ pll__('Мобильный телефон') }}*</label>
             </div>
             <div class="labelwrap labelwrap_line">
                 <input type="email" class="input" name="email">
-                <label class="label">{{ pll_e('Электронная почта') }}</label>
+                <label class="label">{{ pll__('Электронная почта') }}</label>
             </div>
         </div>
         @include('components.form.elements.privacy')
