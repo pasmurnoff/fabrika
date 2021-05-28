@@ -147,6 +147,9 @@ require dirname(__DIR__) . '/resources/functions/change-rub.php';
 /* Изменяем количество колонок в выводе товаров */
 require dirname(__DIR__) . '/resources/functions/archive.php';
 
+/* Переводимые строки */
+require dirname(__DIR__) . '/resources/functions/language-strings.php';
+
 /* генерация ссылки из номера телефона */
 require dirname(__DIR__) . '/resources/functions/generation-phone-link.php';
 
