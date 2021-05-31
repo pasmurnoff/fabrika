@@ -6,9 +6,9 @@ Template Name: Контакты
 @section('content')
     @include('components.writeus.writeus')
     @component('components.form.elements.form-item',
-        ['class' => 'mrgn35-top', 'title' => __('Написать директору ООО "Фабрика Носков"', 'sage'), 'titleClass' => 'title_huge', 'textClass' => 'pdng15-top pdng35-bottom'])
+        ['class' => 'mrgn35-top', 'title' => pll__('Написать директору ООО "Фабрика Носков"'), 'titleClass' => 'title_huge', 'textClass' => 'pdng15-top pdng35-bottom'])
         @slot('text')
-            {{ __('Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.', 'sage') }}
+            {{ pll__('Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.') }}
         @endslot
         @slot('content')
             <form class="form" method="post">
@@ -20,7 +20,7 @@ Template Name: Контакты
                                   'type' => 'tel',
                                   'name' => 'Телефон',
                                   'attr' => 'required',
-                                  'label' => __('Мобильный телефон', 'sage') . '*'
+                                  'label' => pll__('Мобильный телефон') . '*'
                                 ])
 
                             @include('components.form.elements.input', [
@@ -28,7 +28,7 @@ Template Name: Контакты
                                 'type' => 'text',
                                 'name' => 'Имя',
                                 'attr' => 'required',
-                                'label' => __('Ваше имя', 'sage') . '*'
+                                'label' => pll__('Ваше имя') . '*'
                               ])
                         </div>
                         <div class="dualrow">
@@ -37,13 +37,13 @@ Template Name: Контакты
                            'type' => 'email',
                            'name' => 'Email',
                            'attr' => 'required',
-                           'label' => __('Электронная почта', 'sage') . '*'
+                           'label' => pll__('Электронная почта') . '*'
                          ])
                             @include('components.form.elements.input', [
                            'positionClass' => 'labelwrap_dual',
                            'type' => 'text',
                            'name' => 'Тема',
-                           'label' => __('Тема письма', 'sage')
+                           'label' => pll__('Тема письма')
                          ])
                         </div>
                     </div>
@@ -52,7 +52,7 @@ Template Name: Контакты
                               'textareaClass' => 'textarea_large',
                               'positionClass' => 'labelwrap_single textarea_large',
                               'name' => 'Описание',
-                              'label' => __('Описание вашего вопроса', 'sage')
+                              'label' => pll__('Описание вашего вопроса')
                           ])
                     </div>
                 </div>
