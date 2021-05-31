@@ -3,6 +3,9 @@ export const formRules = {
         'name': {
             required: true,
         },
+        'one-model-quantity': {
+            max: false,
+        },
         'Имя': {
             required: true,
         },
@@ -17,10 +20,7 @@ export const formRules = {
             required: true,
             minlength: 16,
         },
-        'Email': {
-            required: true,
-        },
-        'email': {
+        'email_r': {
             required: true,
         },
         'additional': {
@@ -51,10 +51,7 @@ export const formRules = {
             required: 'Введите свой телефон',
             minlength: 'Введи корректный номер телефона',
         },
-        'Email': {
-            required: 'Введите ваш e-mail',
-        },
-        'email': {
+        'email_r': {
             required: 'Введите ваш e-mail',
         },
         'additional': {

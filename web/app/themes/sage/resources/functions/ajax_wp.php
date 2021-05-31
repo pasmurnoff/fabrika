@@ -11,6 +11,18 @@ function send_mail()
 
     $html = '';
 
+    //count_model
+    $replace_keys = [
+        'name'     => 'Имя',
+        'phone'    => 'Телефон',
+        'email'    => 'Email',
+        'email_r'  => 'Email',
+        'question' => 'Вопрос',
+        'model-quantity' => 'Количество моделей',
+        'one-model-quantity' => 'Количество одной модели',
+        'information' => 'Количество одной модели',
+    ];
+
     foreach ($_POST as $key => $value) {
         if (!empty($_POST[$key]))
             if (is_array($value)) {
@@ -23,7 +35,8 @@ function send_mail()
                     }
                 }
             } else {
-                $html .= '<span>' . $key . '</span>' . ': ' . '<span>' . $value . '</span><br>';
+                $title = (empty($replace_keys[$key])) ? $key : $replace_keys[$key];
+                $html .= '<strong>' . $title . '</strong>' . ': ' . '<span>' . $value . '</span><br>';
             }
     }
 

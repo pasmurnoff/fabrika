@@ -1,6 +1,6 @@
 <?php
 
-/* формы pll_e('Имя')
+/* формы pll__('Имя')
 ----------------------------------------------------------------- */
 pll_register_string('form', 'Отправить', 'fabrikanoskov');
 pll_register_string('form', 'Имя', 'fabrikanoskov');
