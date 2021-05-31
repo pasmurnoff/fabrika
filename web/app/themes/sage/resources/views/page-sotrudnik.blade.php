@@ -34,64 +34,64 @@ Template Name: Помощь сотрудникам
 
     <form class="form form_employee" method="post">
         <div class="form__col_third">
-            <div class="title title_large mrgn35">{{ __('Рассчитать стоимость носков или колготок', 'sage') }}</div>
-            @component('components.form.elements.form-item', ['title' => __('Данные менеджера', 'sage')])
+            <div class="title title_large mrgn35">{{ pll__('Рассчитать стоимость носков или колготок') }}</div>
+            @component('components.form.elements.form-item', ['title' => pll__('Данные менеджера')])
                 @slot('content')
                     <div class="dualrow mrgn15-top">
                         @include('components.form.elements.input',[
                       'positionClass' => 'labelwrap_dual',
                       'name' => 'name',
-                      'label' => __('Ваше имя', 'sage') . '*'
+                      'label' => pll__('Ваше имя') . '*'
                       ])
                         @include('components.form.elements.input',[
                             'positionClass' => 'labelwrap_dual',
                             'name' => 'phone',
-                            'label' => __('Ваш телефон', 'sage') . '*'
+                            'label' => pll__('Ваш телефон') . '*'
                             ])
                     </div>
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => __('Данные клиента', 'sage') ])
+            @component('components.form.elements.form-item', ['title' => pll__('Данные клиента')])
                 @slot('content')
                     <div class="dualrow mrgn15-top">
                         @include('components.form.elements.input',[
                           'positionClass' => 'labelwrap_dual',
                           'name' => 'client-name',
-                          'label' => __('Имя лица, принимающего решение', 'sage')
+                          'label' => pll__('Имя лица, принимающего решение')
                           ])
                         @include('components.form.elements.input',[
                             'positionClass' => 'labelwrap_dual',
                             'name' => 'client-phone',
-                            'label' => __('Телефон лица, принимающего решение', 'sage')
+                            'label' => pll__('Телефон лица, принимающего решение')
                             ])
                         @include('components.form.elements.input',[
                          'positionClass' => 'labelwrap_single',
                          'name' => 'client-fio',
-                         'label' => __('Наименование юр лица или ФИО заказчика', 'sage')
+                         'label' => pll__('Наименование юр лица или ФИО заказчика')
                          ])
                         @include('components.form.elements.input',[
                        'positionClass' => 'labelwrap_single',
                        'name' => 'client-inn',
-                       'label' => __('ИНН юр лица или физ лица заказчика', 'sage')
+                       'label' => pll__('ИНН юр лица или физ лица заказчика')
                        ])
                     </div>
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => __('Заказываем', 'sage') ])
+            @component('components.form.elements.form-item', ['title' => pll__('Заказываем')])
                 @slot('content')
                     @include('components.form.elements.sku', [
                         'positionClass' => 'mrgn15-top sku__element',
                        'name' => 'productSKU[]',
-                       'label' => __('Артикул', 'sage')
+                       'label' => pll__('Артикул')
                         ])
                 @endslot
             @endcomponent
-            @component('components.form.elements.form-item', ['title' => __('Дополнительная информация', 'sage') ])
+            @component('components.form.elements.form-item', ['title' => pll__('Дополнительная информация')])
                 @slot('content')
                     @include('components.form.elements.textarea',[
                         'positionClass' => 'mrgn15-top',
                         'name' => 'description',
-                        'label' => __('Расскажите о себе', 'sage')
+                        'label' => pll__('Расскажите о себе')
                         ])
 
                 @endslot

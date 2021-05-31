@@ -1,7 +1,7 @@
 <div class="footer-messenger">
     <div class="footer-messenger__wrap container">
         <div class="footer-messenger__msg text text_large text_black">
-            <div class="footer-messenger__text">{{ __('У вас остались вопросы? Звоните', 'sage') }}:</div>
+            <div class="footer-messenger__text">{{ pll__('У вас остались вопросы? Звоните') }}:</div>
             @include('common.phone', ['class' => 'footer-messenger__text footer-messenger__phone text_link text_bold'])
         </div>
         <div class="footer-messenger__icons-wrap">
