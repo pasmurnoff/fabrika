@@ -4,25 +4,8 @@ Template Name: О фабрике
 
 @extends('layouts.app')
 @section('content')
-    @php
-        $banner_buttons = get_field( "banner_buttons" );
-        $about_info = get_field( "about_info" );
-    @endphp
 
-    @component('components.banner.banner', ['buttons' => $banner_buttons])
-        @slot('title')
-            {!! get_field( 'banner_title' ) !!}
-        @endslot
-
-        @slot('text')
-            {!! get_field( 'banner_text' ) !!}
-        @endslot
-
-        @slot('icon')
-            <img width="210" src="@asset('images/components/banners/Fabrika_Noskov_O_Kompanii.png')"
-                 alt="Производство и продажа носков по низким ценам">
-        @endslot
-    @endcomponent
+    @include('components.banner.wrap')
 
     @while(have_posts()) @php the_post() @endphp
         <div class="the-content">
@@ -30,6 +13,9 @@ Template Name: О фабрике
         </div>
     @endwhile
 
+    @php
+        $about_info = get_field( "about_info" );
+    @endphp
     @if($about_info)
         <div class="forwhom forwhom_padding-bottom">
             @foreach($about_info as $info)
