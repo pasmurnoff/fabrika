@@ -11,7 +11,7 @@
     }
 @endphp
 <section class="mrgn35-top">
-    <h3 class="title title_middle">{{ __('Цвета', 'sage') }}</h3>
+    <h3 class="title title_middle">{{ pll__('Цвета') }}</h3>
 
     <ul class="filter__colors pdng15-top">
         @foreach ($terms as $term)

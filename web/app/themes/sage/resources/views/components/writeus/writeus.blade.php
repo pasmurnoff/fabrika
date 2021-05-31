@@ -11,26 +11,26 @@
                     'positionClass' => 'labelwrap_dual',
                     'type' => 'text',
                     'name' => 'name',
-                    'label' => __('Фамилия Имя Отчество', 'sage') . '*'
+                    'label' => pll__('Фамилия Имя Отчество') . '*'
                  ])
         @include('components.form.elements.input', [
                     'positionClass' => 'labelwrap_dual',
                     'type' => 'text',
                     'name' => 'email',
-                    'label' => __('Электронная почта', 'sage')
+                    'label' => pll__('Электронная почта')
                   ])
 
         @include('components.form.elements.input', [
               'positionClass' => 'labelwrap_single',
               'type' => 'text',
               'name' => 'theme',
-              'label' => __('Тема (необязательно)', 'sage')
+              'label' => pll__('Тема (необязательно)')
           ])
 
         @include('components.form.elements.textarea', [
               'positionClass' => 'labelwrap_single',
               'name' => 'additional',
-              'label' => __('Задайте ваш вопрос', 'sage')
+              'label' => pll__('Задайте ваш вопрос')
           ])
     </div>
 
