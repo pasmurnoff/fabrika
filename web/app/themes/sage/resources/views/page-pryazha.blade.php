@@ -41,9 +41,9 @@
 
     @include('components.pryazha.wrap')
 
-    @component('components.form.default', ['title' => __('Проконсультируйтесь с нами', 'sage')])
+    @component('components.form.default', ['title' => pll__('Проконсультируйтесь с нами')])
         @slot('text')
-            {{ __('Наши специалисты подробно расскажут вам о вариациях товара, а также об оборудовании', 'sage') }}
+            {{ pll__('Наши специалисты подробно расскажут вам о вариациях товара, а также об оборудовании') }}
         @endslot
     @endcomponent
 @endsection

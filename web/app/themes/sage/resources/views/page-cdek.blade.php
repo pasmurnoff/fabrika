@@ -20,13 +20,13 @@ Template Name: Статус заказа по номеру
             <form method="POST" class="cdek__form">
                 <div class="cdek__wrap">
                     <div class="labelwrap cdek__labelwrap">
-                        <label class="label">{{ __('Введите трек код вашего заказа', 'sage') }}</label>
+                        <label class="label">{{ pll__('Введите трек код вашего заказа') }}</label>
                         <input type="text" class="input cdek__input">
                         <div class="cdek__alert">
                             Введен некорректный номер
                         </div>
                     </div>
-                    <input type="submit" class="submit cdek__submit" value="{{ __('Отследить', 'sage') }}">
+                    <input type="submit" class="submit cdek__submit" value="{{ pll__('Отследить') }}">
                 </div>
             </form>
         </div>

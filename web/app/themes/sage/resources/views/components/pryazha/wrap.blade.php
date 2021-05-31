@@ -1,7 +1,7 @@
 <div class="pryazha__gallery">
-    <div class="title title_large mrgn35-bottom">{{ __('Цветовая гамма нашей пряжи', 'sage') }}</div>
+    <div class="title title_large mrgn35-bottom">{{ pll__('Цветовая гамма нашей пряжи') }}</div>
     <div class="pryazha__gallery-wrap">
-        @component('components.pryazha.item', ['title' => __('Хлопок', 'sage') . ' 100%'])
+        @component('components.pryazha.item', ['title' => pll__('Хлопок') . ' 100%'])
             @slot('images')
                 <div class="pryazha__gallery-img">
                     <img src="@asset('images/components/pryazha/cotton/cotton_1.jpg')"
@@ -33,7 +33,7 @@
                 </div>
             @endslot
         @endcomponent
-        @component('components.pryazha.item', ['title' => __('Хлопок', 'sage') . ' / ' . __('Полиэстер', 'sage')])
+        @component('components.pryazha.item', ['title' => pll__('Хлопок') . ' / ' . pll__('Полиэстер')])
             @slot('images')
                 <div class="pryazha__gallery-img">
                     <img src="@asset('images/components/pryazha/cotton/cotton_1.jpg')"
@@ -53,7 +53,7 @@
                 </div>
             @endslot
         @endcomponent
-        @component('components.pryazha.item', ['title' => __('Вискоза', 'sage')])
+        @component('components.pryazha.item', ['title' => pll__('Вискоза')])
             @slot('images')
                 <div class="pryazha__gallery-img">
                     <img src="@asset('images/components/pryazha/cotton/cotton_4.jpg')"
@@ -69,7 +69,7 @@
                 </div>
             @endslot
         @endcomponent
-        @component('components.pryazha.item', ['title' => __('Полиэстер', 'sage') . ' / ' . __('Вискоза', 'sage')])
+        @component('components.pryazha.item', ['title' => pll__('Полиэстер') . ' / ' . pll__('Вискоза')])
             @slot('images')
 
                 <div class="pryazha__gallery-img">

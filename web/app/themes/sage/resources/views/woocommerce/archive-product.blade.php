@@ -82,7 +82,7 @@ the readme will list any important changes.
     </div>
     <div class="archive__description">
         <div class="archive__form">
-            @include('components.form.default', ['title' => __('Бесплатная консультация по поставке и производству', 'sage')])
+            @include('components.form.default', ['title' => pll__('Бесплатная консультация по поставке и производству')])
         </div>
         @php
             do_action('woocommerce_archive_description');
