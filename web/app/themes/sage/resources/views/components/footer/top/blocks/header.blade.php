@@ -16,7 +16,7 @@
         </div>
         <div class="footer__phone footer__header_right">
             @include('common.phone', ['class' => 'title title_large footer__phone-item'])
-            <p class="text footer__header_text">{{ __('Для бесплатных звонков по России', 'sage') }}</p>
+            <p class="text footer__header_text">{{ pll__('Для бесплатных звонков по России') }}</p>
         </div>
     </div>
 </div>

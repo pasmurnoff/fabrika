@@ -25,6 +25,7 @@ pll_register_string('form', 'Отправляя форму я соглашаюс
 /* компоненты
 ----------------------------------------------------------------- */
 pll_register_string('components', 'Цвета', 'fabrikanoskov');
+pll_register_string('components', 'Для бесплатных звонков по России', 'fabrikanoskov');
 pll_register_string('components', 'Написать директору ООО "Фабрика Носков"', 'fabrikanoskov');
 pll_register_string('components', 'Хотите связаться с директором? Отправьте сообщение с подробным описанием по форме ниже.', 'fabrikanoskov');
 pll_register_string('components', 'Купить подарочные сертификаты', 'fabrikanoskov');
