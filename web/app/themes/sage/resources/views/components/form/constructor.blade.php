@@ -4,14 +4,15 @@
     {{--Количество моделей--}}
     @component('components.form.elements.form-item', ['title' => 'Количество моделей','text' =>'Сколько моделей носков с индивидуальным дизайном входит в тираж?'])
         @slot('content')
-            @include('components.form.elements.input-number', ['value' => '5', 'name' => 'Количество моделей'])
+            @include('components.form.elements.input-number', ['value' => '5', 'name' => 'model-quantity'])
         @endslot
     @endcomponent
 
     {{--Тираж на одну модель--}}
     @component('components.form.elements.form-item', ['title' => 'Тираж на одну модель','text' =>'Если вы хотите сделать сигнальный образец, то поставьте 1'])
         @slot('content')
-            @include('components.form.elements.input-number', ['value' => '1000', 'step' => '100','min' => '1000','max' => '', 'name'=>'Количество одной модели' ])
+{{--            @include('components.form.elements.input-number', ['value' => '1000', 'step' => '100','min' => '1000','max' => '', 'name'=>'Количество одной модели' ])--}}
+            @include('components.form.elements.input-number', ['value' => '1000', 'step' => '100','min' => '1000','max' => '', 'name'=>'one-model-quantity' ])
         @endslot
     @endcomponent
 
@@ -125,9 +126,9 @@
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
-                            'name' => 'Имя',
+                            'name'  => 'name',
                             'label' => 'Иван Иванов',
-                             'attr' => 'required'])
+                            'attr'  => 'required'])
             @endslot
         @endcomponent
 
@@ -135,7 +136,7 @@
             @slot('content')
                 @include('components.form.elements.input', [
                             'positionClass' => 'labelwrap_single',
-                            'name' => 'email',
+                            'name' => 'email_r',
                             'type' => 'email',
                             'label' => 'primer@mail.ru',
                              'attr' => 'required'])
@@ -161,7 +162,7 @@
 
         @component('components.form.elements.form-item', ['title' => 'Комментарий','text' => 'Любая дополнительная информация'])
             @slot('content')
-                @include('components.form.elements.textarea', ['name' => 'Описание', 'label' => 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации'])
+                @include('components.form.elements.textarea', ['name' => 'information', 'label' => 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации'])
             @endslot
         @endcomponent
         @include('components.form.elements.privacy', ['submit' => 'Рассчитать стоимость'])
