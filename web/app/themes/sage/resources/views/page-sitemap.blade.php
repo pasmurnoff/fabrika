@@ -113,4 +113,34 @@ Template Name: Карта сайта
             </div>
         </div>
     </div>
+
+    @if(current_user_can('level_10'))
+        @php
+            $pages = get_posts( [
+                'numberposts'  => '-1',
+                'post_type'    => 'page',
+                'post_status'  => 'publish',
+            ] );
+        @endphp
+        <table border="1" style="width:100%;">
+        @foreach($pages as $page)
+                @php
+                    $page_en = pll_get_post($page->ID, 'en');
+                @endphp
+                <tr style="padding: 5px;">
+                    <td><a href="{{ get_permalink($page->ID) }}">{!! $page->ID !!}</a></td>
+                    <td>{!! $page->post_title !!}</td>
+                    <td>{!! $page->post_type !!}</td>
+                    <td>{!! get_post_meta($page->ID, '_wp_page_template', true) !!}</td>
+
+                    <td><a href="{{ get_permalink($page_en) }}">{!! $page_en !!}</a></td>
+                    <td>{!! get_the_title($page_en) !!}</td>
+                    <td>{!! get_post_type($page_en) !!}</td>
+                    <td>{!! get_post_meta($page_en, '_wp_page_template', true) !!}</td>
+                    <td>{!! get_post_meta($page->ID, '_wp_page_template', true) != get_post_meta($page_en, '_wp_page_template', true) ? 'ОШИБКА' : 'ВСЕ НОРМ' !!}</td>
+                </tr>
+        @endforeach
+        </table>
+    @endif
+
 @endsection
