@@ -72,6 +72,9 @@ pll_register_string('components', 'Фотография', 'fabrikanoskov');
 pll_register_string('components', 'Менеджер', 'fabrikanoskov');
 pll_register_string('components', 'Страницы', 'fabrikanoskov');
 pll_register_string('components', 'Что ищем', 'fabrikanoskov');
+pll_register_string('components', 'Магазин', 'fabrikanoskov');
 // Коммерческое предложение
 pll_register_string('components', 'Узнайте как будет выглядеть ваш носок', 'fabrikanoskov');
 pll_register_string('components', 'Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!', 'fabrikanoskov');
+// тут скобки заменяются тегами при выводе
+pll_register_string('components', 'Ограниченное предложение: При заказе от 100 000 рублей скидка 20% [Перейти в магазин]', 'fabrikanoskov');

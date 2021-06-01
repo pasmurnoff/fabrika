@@ -5,10 +5,7 @@ Template Name: Статус заказа по номеру
 
 @section('content')
     <div class="defaultpage">
-        <div class="defaultpage__imgwrap" itemscope itemtype="http://schema.org/ImageObject">
-            <img class="defaultpage__image" src="@asset('images/defaultpages/status_zakaza_fabrika_noskov.jpg')"
-                 alt="{{ __('Статус заказа по номеру', 'sage') }}" itemprop="contentUrl">
-        </div>
+        @include('components.thumbnail.wrap')
 
         @while(have_posts()) @php the_post() @endphp
             <div class="the-content">

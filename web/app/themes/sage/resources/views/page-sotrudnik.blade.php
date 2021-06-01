@@ -15,7 +15,7 @@ Template Name: Помощь сотрудникам
                             'bgc' => $card['background'],
                             'title' => $card['title'],
                             'href' => $card['link']['url'] ?? '#',
-                            'buttonText' => $card['link']['title'] ?? 'Заказать',
+                            'buttonText' => $card['link']['title'] ?? '',
                         ])
                     @slot('text')
                         {!! $card['text'] or '' !!}

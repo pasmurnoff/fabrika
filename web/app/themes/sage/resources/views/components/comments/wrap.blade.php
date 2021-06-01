@@ -9,6 +9,6 @@
         'comment_notes_after'  => '',
         'comment_field'        => '<p class="comment-form-comment">
 		   <textarea id="comment" name="comment" cols="45" rows="8" placeholder="'. _x( 'Comment', 'noun' ) .'"  aria-required="true" required="required"></textarea></p>',
-		'label_submit'         => __( 'Отправить' ),
+		'label_submit'         => pll__( 'Отправить' ),
         ])
 @endphp

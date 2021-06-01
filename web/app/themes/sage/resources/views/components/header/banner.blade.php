@@ -1,8 +1,13 @@
 @if(!isset($_COOKIE['topbanner']))
+    @php
+        $link_text = pll__('Ограниченное предложение: При заказе от 100 000 рублей скидка 20% [Перейти в магазин]');
+        $link_text = str_replace('[', '<span class="topbanner__button">', $link_text);
+        $link_text = str_replace(']', '</span>', $link_text);
+    @endphp
     <div class="topbanner">
         <div class="topbanner__inner">
             <a href="/magazin" class="topbanner__link">
-                {!! __('<span class="topbanner__mobilefix">Ограниченное предложение: </span>При заказе от 100 000 рублей скидка 20% <span class="topbanner__button">Перейти в магазин</span>', 'sage') !!}
+                {!! $link_text !!}
             </a>
             <div class="topbanner__cross">
                 @include('icon::cross')
