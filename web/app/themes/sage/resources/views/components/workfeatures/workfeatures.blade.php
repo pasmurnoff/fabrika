@@ -4,7 +4,7 @@
 @endphp
 @if($manager_features_title)
   <div class="workfeatures mrgn35">
-    <div class="title title_huge workfeatures__title">Особенности работы с Фабрикой носков</div>
+    <div class="title title_huge workfeatures__title">{!! $manager_features_title !!}</div>
     <div class="workfeatures__inner">
       @if($manager_features)
         @foreach($manager_features as $feature)
