@@ -4,24 +4,12 @@
 @extends('layouts.app')
 
 @section('content')
+
+    @include('components.banner.wrap')
+
     @php
-        $banner_buttons = get_field( "banner_buttons" );
         $yarn_info = get_field( "yarn_info" );
     @endphp
-    @component('components.banner.banner', ['buttons' => $banner_buttons])
-        @slot('title')
-            {!! get_field( 'banner_title' ) !!}
-        @endslot
-
-        @slot('text')
-            {!! get_field( 'banner_text' ) !!}
-        @endslot
-
-        @slot('icon')
-            <img width="210" src="@asset('images/components/banners/pryazha/fabrika-noskov-prazha.png')"
-                 alt="Производство и продажа носков по низким ценам">
-        @endslot
-    @endcomponent
 
     @if($yarn_info)
         <div class="pryazha__blocks mrgn35 pdng35-top">
