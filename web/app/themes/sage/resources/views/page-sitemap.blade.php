@@ -128,16 +128,17 @@ Template Name: Карта сайта
                     $page_en = pll_get_post($page->ID, 'en');
                 @endphp
                 <tr style="padding: 5px;">
-                    <td><a href="{{ get_permalink($page->ID) }}">{!! $page->ID !!}</a></td>
-                    <td>{!! $page->post_title !!}</td>
-                    <td>{!! $page->post_type !!}</td>
+                    <td><a href="{{ get_permalink($page->ID) }}">{!! $page->post_title !!}</a></td>
                     <td>{!! get_post_meta($page->ID, '_wp_page_template', true) !!}</td>
-
-                    <td><a href="{{ get_permalink($page_en) }}">{!! $page_en !!}</a></td>
-                    <td>{!! get_the_title($page_en) !!}</td>
-                    <td>{!! get_post_type($page_en) !!}</td>
-                    <td>{!! get_post_meta($page_en, '_wp_page_template', true) !!}</td>
-                    <td>{!! get_post_meta($page->ID, '_wp_page_template', true) != get_post_meta($page_en, '_wp_page_template', true) ? 'ОШИБКА' : 'ВСЕ НОРМ' !!}</td>
+                    @if($page_en)
+                        <td><a href="{{ get_permalink($page_en) }}">{!! get_the_title($page_en) !!}</a></td>
+                        <td>{!! get_post_meta($page_en, '_wp_page_template', true) !!}</td>
+                        <td>{!! get_post_meta($page->ID, '_wp_page_template', true) != get_post_meta($page_en, '_wp_page_template', true) ? 'ОШИБКА' : 'все норм' !!}</td>
+                    @else
+                        <td></td>
+                        <td></td>
+                        <td>пусто</td>
+                    @endif
                 </tr>
         @endforeach
         </table>
