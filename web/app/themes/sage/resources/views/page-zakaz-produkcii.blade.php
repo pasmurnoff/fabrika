@@ -18,37 +18,37 @@ Template Name: Заказ носков на фабриках
   <div class="manager rmanager">
     <form id="form-send" method="POST" enctype='multipart/form-data'
           action="/app/themes/sage/app/nikita/send.php">
-      <h3 class="title title_huge rmanager__title">{{ __('Заказываем', 'sage') }}</h3>
+      <h3 class="title title_huge rmanager__title">{{ pll__('Заказываем') }}</h3>
       <div class="manager__sku">
         <div class="sku__item" id="item-0">
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][style]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Какие носки', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Какие носки') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][size]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Размеры', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Размеры') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][qty]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Количество', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Количество') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][price]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Проходная цена', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Проходная цена') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][term]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Срок изготовления', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Срок изготовления') }}</div>
           </div>
           <div class="manager__item manager__item-single">
             <input type="text" name="data[0][compose]" onclick="togglePlaceholder(this);" required>
-            <div class="placeholder__first">{{ __('Состав', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Состав') }}</div>
           </div>
           <div class="manager__item manager__item-single manager__file-wrap">
             <input type="file" name="photos_0[]" onclick="togglePlaceholder(this);" class="manager__file" multiple
                    onchange="showName(jQuery(this));" required>
-            <div class="placeholder__first">{{ __('Фотография', 'sage') }}</div>
+            <div class="placeholder__first">{{ pll__('Фотография') }}</div>
             <span class="filevalue"></span></div>
           <div class="itemRem" onclick="remItem(0);"><i class="fa fa-close"></i></div>
         </div>
@@ -75,7 +75,7 @@ Template Name: Заказ носков на фабриках
 
       <div class="">
         <br/>
-        <label style="font-weight:bold;">{{ __('Менеджер', 'sage') }}</label><br/><br/>
+        <label style="font-weight:bold;">{{ pll__('Менеджер') }}</label><br/><br/>
         <select name="manager" required style="width:100%;min-height:30px; padding:5px;font-size:16px">
           @if (!empty($managers))
             @foreach($managers as $manager)
@@ -86,7 +86,7 @@ Template Name: Заказ носков на фабриках
       </div>
 
       <br/>
-      <input class="submit" id="sendnikita" type="submit" value="{{ __('Отправить', 'sage') }}">
+      <input class="submit" id="sendnikita" type="submit" value="{{ pll__('Отправить') }}">
     </form>
   </div>
 
