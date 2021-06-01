@@ -27,7 +27,7 @@
             @if($banner_image)
                 <div class="banner__side banner__side_right">
                     <div class="banner__icon">
-                        {!! wp_get_attachment_image( $banner_image['ID'] ) !!}
+                        {!! wp_get_attachment_image( $banner_image['ID'], 'full' ) !!}
                     </div>
                 </div>
             @endif
