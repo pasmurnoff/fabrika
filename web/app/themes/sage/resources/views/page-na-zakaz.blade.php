@@ -4,19 +4,12 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.price-filter.wrap')
-    @include('components.blocks.zakaz.wrap')
-    <div class="block-text">
-        <div class="text">
-            Наша фабрика может отвязать для вас носки на заказ. Любых расцветок и дизайнов. У нас своё производство и
-            возможны
-            даже минимальные партии. Мы используем дорогое европейское оборудование и качественный гребенной хлопок. Мы
-            можем
-            сделать носки с вашим логотипом или в фирменном стиле вашей футбольной команды. Носки с вашим собственным
-            уникальным
-            и неповторимым дизайном. Мы открыты к коллаборациям с другими брендами.
-        </div>
-    </div>
+    @php
+        $page_id = get_the_ID();
+    @endphp
+    @include('components.price-filter.wrap', ['page_id' => $page_id])
+    @include('components.blocks.zakaz.wrap', ['page_id' => $page_id])
+
     @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov', 'classes' =>'banner_bg'])
         @slot('title')
             Носки на заказ с Вашим дизайном<br/>
