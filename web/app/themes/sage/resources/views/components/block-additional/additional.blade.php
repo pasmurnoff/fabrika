@@ -1,46 +1,29 @@
-<div class="additional mrgn35">
-  @component('components.block-additional.additional-item')
-    @slot('icon')
-      @include('icon::quality')
-    @endslot
+@php
+    $additional = get_field('na_zakaz_whyus_additional', $page_id);
+    $icon = [
+        0 => 'quality',
+        1 => 'dashboard',
+        2 => 'telemarketer',
+    ];
+@endphp
+@if($additional)
+    <div class="additional mrgn35">
+        @foreach($additional as $item)
 
-    @slot('title')
-        Гарантия
-    @endslot
+            @component('components.block-additional.additional-item')
+                @slot('icon')
+                    @include('icon::' . ( $icon[$loop->index] ?? 'quality' ))
+                @endslot
 
-    @slot('text')
-        Качественные экологичные материалы.<br/>
-        Контроль каждого изделия
-    @endslot
-  @endcomponent
+                @slot('title')
+                    {!! $item['title'] !!}
+                @endslot
 
-  @component('components.block-additional.additional-item')
-    @slot('icon')
-      @include('icon::dashboard')
-    @endslot
+                @slot('text')
+                    {!! $item['desc'] !!}
+                @endslot
+            @endcomponent
 
-    @slot('title')
-      Доставка
-    @endslot
-
-    @slot('text')
-      Быстрая доставка по России.<br/>
-      Доставка по всему миру
-    @endslot
-  @endcomponent
-
-  @component('components.block-additional.additional-item')
-    @slot('icon')
-      @include('icon::telemarketer')
-    @endslot
-
-    @slot('title')
-      Сервис
-    @endslot
-
-    @slot('text')
-        Лёгкий процесс оплаты,<br/>
-        обмена и возврата
-    @endslot
-    @endcomponent
-</div>
+        @endforeach
+    </div>
+@endif
