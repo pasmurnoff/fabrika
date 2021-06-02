@@ -7,114 +7,12 @@
     @php
         $page_id = get_the_ID();
     @endphp
+
     @include('components.price-filter.wrap', ['page_id' => $page_id])
     @include('components.blocks.zakaz.wrap', ['page_id' => $page_id])
-
-    @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov', 'classes' =>'banner_bg'])
-        @slot('title')
-            Носки на заказ с Вашим дизайном<br/>
-            от 1000 пар!
-        @endslot
-        @slot('text')
-            Если вы хотите заказать стильные и качественные носки со своим дизайном, логотипом, инициалами или фамилией, обращайтесь к нам.
-        @endslot
-        @slot('icon')
-            <img width="270" src="@asset('images/components/banners/noski_na_zakaz_s_vashim_dizainom.png')"
-                 alt="Носки на заказ с Вашим дизайном от 1000 пар">
-        @endslot
-        @slot('buttonText')
-            Конструктор заказа носков
-        @endslot
-    @endcomponent
-
-    @include('components.individualsocks', ['classes' => 'pdng35'])
-
-    {{--  @include('blocks.block-text', ['title' => 'Услуги по вязке носков'])--}}
-    <div class="block-text">
-        <div class="title title_middle pdng15-bottom">Услуги по вязке носков</div>
-        <div class="text">
-            «Фабрика носков» предлагает услугу носки по собственному дизайну.
-        </div>
-        <ul class="block-text__list">
-            <li class="block-text__point">Для начала работы, вам потребуется заполнить техническое задание для нашего
-                отдела
-                технического дизайна
-            </li>
-            <li class="block-text__point">Эскиз изделия может быть нарисован от руки либо разработан в дизайнерских
-                программах
-            </li>
-            <li class="block-text__point">Необходимые шрифты, при их наличии передаются отдельными файлами</li>
-            <li class="block-text__point">Необходимые цвета должны быть обозначены по цветовой схеме CMYK, для более
-                удобного
-                подбора цвета
-            </li>
-            <li class="block-text__point">Обязательно нужно указать интересующий вас размер мужских, женских либо
-                детских
-                изделий
-            </li>
-            <li class="block-text__point">Со стоимостью разработки дизайна по вашим эскизам вы можете ознакомиться в <a
-                        class="block-text__link" href="/polozhenie-o-razrabotke-disajna-ot-2019.jpg">разделе «Положение
-                    о разработке
-                    дизайна»</a></li>
-            <li class="block-text__point">Сроки изготовления дизайна по вашим эскизам от 3 до 5 рабочих дней</li>
-            <li class="block-text__point">Первое согласование происходит по электронному макету</li>
-            <li class="block-text__point">Второй этап согласования происходит по физической копии, отправленной
-                клиенту.
-            </li>
-            <li class="block-text__point">Стоимость изготовления пробного образца и его доставка оплачивается
-                отдельно.
-            </li>
-            <li class="block-text__point">После согласования физической копии, переходим к пошиву тиража, по
-                согласованным
-                размерам и цветам, на основании подписанного договора с двух сторон, а также оплаченного счета
-            </li>
-            <li class="block-text__point">При необходимости создать дизайн с нуля, без эскиза со стороны заказчика,
-                стоимость
-                дизайна увеличивается до 5000 рублей. В этом случае заказчик формирует направления идеи. В течении 3-5
-                рабочих
-                дней клиенту предоставляется 3 варианта дизайна на согласование.
-            </li>
-        </ul>
-    </div>
-
-    <div class="block-text">
-        <div class="title title_middle pdng15-bottom">Носки с логотипом на заказ</div>
-        <div class="text">
-            Мы можем отвязать партию носков с логотипом вашей компании. В фирменных цветах и стиле. Для корпоративных
-            подарков, форменной одежды или продажи в ваших магазинах. Цветные носки зададут отличное настроение вашим
-            сотрудникам и партнерам. Носки – это отличный подарок.
-        </div>
-    </div>
-
-    <div class="block-text">
-        <div class="title title_middle pdng15-bottom">Изготовим носки по индивидуальному дизайну</div>
-        <div class="text">
-            Используйте конструктор заказа, который поможет нам быстро обработать вашу заявку и создать носки по
-            индивидуальному заказу. Если нужны определенные цвета или оттенки пряжи, оформим специальный заказ у наших
-            поставщиков или подберем аналоги. Перед стартом производства утвердим с вами образцы.
-        </div>
-    </div>
-
-    @component('components.banner.banner', ['href' => '/konstruktor-zakaza-noskov', 'classes' => 'mrgn35 banner_bg banner_design'])
-        @slot('title')
-            От вас идея, от нас - продукт!
-        @endslot
-        @slot('text')
-            <ul class="banner__order-list">
-                <li class="banner__order-item">Ваш дизайн и идея носков или колготок</li>
-                <li class="banner__order-item">Наше производство и лучшие цены в России</li>
-                <li class="banner__order-item">Минимальная партия 100 пар</li>
-                <li class="banner__order-item">Доставка по всему миру</li>
-            </ul>
-        @endslot
-        @slot('icon')
-            <img width="310" src="@asset('images/components/banners/Noski_na_zakaz.png')"
-                 alt="Носки на заказ с Вашим дизайном от 1000 пар">
-        @endslot
-        @slot('buttonText')
-            Конструктор дизайна носков и колготок
-        @endslot
-    @endcomponent
+    @include('components.banner.wrap', ['field_slug' => 'na_zakaz_banner1'])
+    @include('components.individualsocks', ['page_id' => $page_id, 'classes' => 'pdng35'])
+    @include('components.banner.wrap', ['field_slug' => 'na_zakaz_banner2'])
 
     <div class="block-text">
         <div class="title title_middle pdng15-bottom">Виды чулочно-носочных изделий:</div>
@@ -177,9 +75,9 @@
 
     @include('components.workyears.workyears')
 
-    <div class="title title_large">Доставляем носки, колготки и прочие грузы:</div>
+    <div class="title title_large">{{ pll__('Доставляем носки, колготки и прочие грузы') }}:</div>
     <img class="partner-image" src="@asset('images/defaultpages/dostavka_noski_kolgotki.jpg')"
-         alt="Доставляем носки, колготки и прочие грузы">
+         alt="{{ pll__('Доставляем носки, колготки и прочие грузы') }}">
 
     @include('components.сommercial-offer.wrap', ['page_id' => get_the_ID()] )
 

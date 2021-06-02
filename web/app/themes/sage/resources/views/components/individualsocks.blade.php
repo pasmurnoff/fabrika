@@ -1,71 +1,55 @@
-<div class="individualsocks {{ $classes or '' }}">
-  <div class="individualsocks__title title title_huge">Производство носков с индивидуальным дизайном</div>
-  <div class="individualsocks__inner">
-    <div class="individualsocks__column individualsocks__column_left">
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Состав классической модели:</div>
-        <div class="individualsocks__text">
-          80% гребенной хлопок<br/>
-          17% полиамид<br/>
-          3% эластан
-        </div>
-      </div>
+@php
+  $individual_title = get_field('na_zakaz_individual_title', $page_id);
+  $individual_list = get_field('na_zakaz_individual_list', $page_id);
+@endphp
+@if($individual_title)
+  <div class="individualsocks {{ $classes or '' }}">
+    <div class="individualsocks__title title title_huge">{!! $individual_title !!}</div>
+    @if($individual_list)
+      @php
+        // Разобьем массив на 2 части
+        $list = array_chunk($individual_list, ceil(count($individual_list)/2));
+      @endphp
+      <div class="individualsocks__inner">
 
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Натуральный хлопок</div>
-        <div class="individualsocks__text">
-          В составе носков fabrikanoskov.ru 80% натурального хлопка высшего класса. Он дарит носкам повышенную
-          прочность, мягкость, легкость в уходе, а так же привлекательный внешний вид.
-        </div>
-      </div>
+        {{-- START ЛЕВАЯ ЧАСТЬ --}}
+        @if($list[0])
+          <div class="individualsocks__column individualsocks__column_left">
+            @foreach($list[0] as $left)
+              <div class="individualsocks__item">
+                <div class="individualsocks__titling title title_middle">{!! $left['title'] !!}</div>
+                <div class="individualsocks__text">{!! $left['desc'] !!}</div>
+              </div>
+            @endforeach
+          </div>
+        @endif
+        {{-- END ЛЕВАЯ ЧАСТЬ --}}
 
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Гребенная пряжа</div>
-        <div class="individualsocks__text">
-          Гладкая структура, улучшенная рельефность и, конечно же, насыщенные цвета - результат гребенной системы
-          производства пряжи для носков fabrikanoskov.ru. Носки из гребенной пряжи более гигиеничны, приятны для кожи и
-          комфортны при ношении.
+        <div class="individualsocks__column individualsocks__column_center">
+          <div class="individualsocks__image">
+            <img class="individualsocks__img" src="@asset('images/components/individualsocks/noski_na_zakaz_po_designu.gif')"
+                 alt="{{ $individual_title }}">
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="individualsocks__column individualsocks__column_center">
-      <div class="individualsocks__image">
-        <img class="individualsocks__img" src="@asset('images/components/individualsocks/noski_na_zakaz_po_designu.gif')"
-             alt="Производство носков с индивидуальным дизайном">
-      </div>
-    </div>
+        {{-- START ПРАВАЯ ЧАСТЬ --}}
+        @if($list[1])
+          <div class="individualsocks__column individualsocks__column_right">
+            @foreach($list[1] as $right)
+              <div class="individualsocks__item">
+                <div class="individualsocks__titling title title_middle">{!! $right['title'] !!}</div>
+                <div class="individualsocks__text">{!! $right['desc'] !!}</div>
+              </div>
+            @endforeach
+          </div>
+        @endif
+        {{-- END ПРАВАЯ ЧАСТЬ --}}
 
-    <div class="individualsocks__column individualsocks__column_right">
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Усиленная пятка и мысок</div>
-        <div class="individualsocks__text">
-          Пятка и мысок в носках fabrikanoskov.ru связаны из специальной кетлевочной
-          нити, которая в разы прочнее хлопка и прочих материалов. Так что можно смело бегать на пятках по улицам своего
-          любимого города.
-        </div>
       </div>
-
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Анатомическая резинка</div>
-        <div class="individualsocks__text">
-          Специальная анатомическая резинка разработана для максимального комфорта любителя носков. Именно ее
-          отличительные особенности позволяют носку не сползать по ноге и при этом не сдавливать ее.
-        </div>
-      </div>
-
-      <div class="individualsocks__item">
-        <div class="individualsocks__titling title title_middle">Размеры:</div>
-        <div class="individualsocks__text">
-          Обувные размеры (в скобках - носочные):
-          <ul class="individualsocks__list">
-            <li class="individualsocks__point">34-37 (23)</li>
-            <li class="individualsocks__point">38-41 (25)</li>
-            <li class="individualsocks__point">42-46 (27/29)</li>
-            <li class="individualsocks__point">46-49 (31)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    @endif
   </div>
+@endif
+
+<div class="the-content">
+  {!! get_field('na_zakaz_individual_text', $page_id) !!}
 </div>
