@@ -1,48 +1,38 @@
-<div class="block-order mrgn50 pdng50">
-    @include('components.blocks.zakaz.nav')
-    <div class="block-order__wrapper">
-        @component('components.blocks.zakaz.item', ['title' => 'Размер'])
-            @slot('svg')
-                @include('icon::zakaz.size')
-            @endslot
-            @slot('text')
-                Один размер подходит всем: <br>
-                c 38 по 45 (EU) <br>
-                или с 8 по 12 (US)
-            @endslot
-        @endcomponent
+@php
+    $order_icons = get_field('na_zakaz_order_icons', $page_id);
+    $svg = [
+        0 => 'size',
+        1 => 'material',
+        2 => 'time',
+        3 => 'delivery',
+    ];
+@endphp
+@if($order_icons)
+    <div class="block-order mrgn50 pdng50">
 
-        @component('components.blocks.zakaz.item', ['title' => 'Материал'])
-            @slot('svg')
-                @include('icon::zakaz.material')
-            @endslot
-            @slot('text')
-                80% Хлопок <br>
-                17% Полиамид <br>
-                3% Эластан
-            @endslot
-        @endcomponent
+        <div class="block-order__nav">
+            @foreach($order_icons as $icon)
+                <div class="block-order__nav-item">{!! $icon['title'] !!}</div>
+            @endforeach
+        </div>
 
-        @component('components.blocks.zakaz.item', ['title' => 'Сроки'])
-            @slot('svg')
-                @include('icon::zakaz.time')
-            @endslot
-            @slot('text')
-                Время изготовки<br>
-                4 - 6 недель <br>
-                на партию
-            @endslot
-        @endcomponent
+        <div class="block-order__wrapper">
+            @foreach($order_icons as $key => $icon)
+                @component('components.blocks.zakaz.item', ['title' => $icon['title']])
+                    @slot('svg')
+                        @include('icon::zakaz.' . ($svg[$key] ?? 'size'))
+                    @endslot
+                    @slot('text')
+                        {!! $icon['desc'] !!}
+                    @endslot
+                @endcomponent
+            @endforeach
+        </div>
 
-        @component('components.blocks.zakaz.item', ['title' => 'Доставка'])
-            @slot('svg')
-                @include('icon::zakaz.delivery')
-            @endslot
-            @slot('text')
-                Ваши носки <br>
-                будут доставлены <br>
-                на указанный адрес
-            @endslot
-        @endcomponent
     </div>
-</div>
+    <div class="block-text">
+        <div class="text">
+            {!! get_field('na_zakaz_order_icons_text', $page_id) !!}
+        </div>
+    </div>
+@endif
