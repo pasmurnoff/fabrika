@@ -22,11 +22,11 @@
 
     @include('components.whyus.whyus', ['page_id' => $page_id])
 
-    @include('components.workorder.workorder')
+    @include('components.workorder.workorder', ['page_id' => $page_id])
 
     @include('components.form.default', ['title' => pll__('Бесплатная консультация по поставке и производству')])
 
-    @include('components.tables.table')
+    @include('components.tables.table', ['page_id' => $page_id])
 
     @include('components.workyears.workyears')
 
