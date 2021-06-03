@@ -31,6 +31,7 @@ wp-cli.local.yml
 
 # Plugins
 !web/app/plugins/advanced-custom-fields-pro
+!web/app/plugins/polylang-wc
 !web/app/plugins/fabric-vendors
 
 .DS_Store
