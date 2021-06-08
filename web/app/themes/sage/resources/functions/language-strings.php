@@ -75,6 +75,8 @@ pll_register_string('components', 'Что ищем', 'fabrikanoskov');
 pll_register_string('components', 'Магазин', 'fabrikanoskov');
 pll_register_string('components', 'Я хочу работать с вами', 'fabrikanoskov');
 pll_register_string('components', 'Доставляем носки, колготки и прочие грузы', 'fabrikanoskov');
+pll_register_string('components', 'Блог о носках', 'fabrikanoskov');
+pll_register_string('components', 'Все статьи', 'fabrikanoskov');
 // Коммерческое предложение
 pll_register_string('components', 'Узнайте как будет выглядеть ваш носок', 'fabrikanoskov');
 pll_register_string('components', 'Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!', 'fabrikanoskov');
