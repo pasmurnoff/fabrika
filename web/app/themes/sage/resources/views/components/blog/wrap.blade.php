@@ -14,8 +14,8 @@ $posts = get_posts($params);
 <div class="blog {{ $class or '' }}">
     <div class="blog__wrap mrgn35-bottom pdng15-bottom">
         <a class="blog__title blog__title_index title title_huge"
-           href="@php  echo get_permalink(get_option( 'page_for_posts' )) @endphp">Блог о носках</a>
-        <a href="/blog" class="button button_transparent">Все статьи</a>
+           href="{{ get_permalink(get_option( 'page_for_posts' )) }}">{!! pll__('Блог о носках')  !!}</a>
+        <a href="{{ get_permalink(get_option( 'page_for_posts' )) }}" class="button button_transparent">{!! pll__('Все статьи') !!}</a>
     </div>
 
     <ul class="blog__list mrgn35-top">

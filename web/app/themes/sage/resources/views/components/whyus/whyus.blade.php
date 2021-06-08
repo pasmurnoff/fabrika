@@ -1,4 +1,5 @@
 @php
+    $page_id = empty($page_id) ? get_the_ID() : $page_id;
     $whyus_list = get_field('na_zakaz_whyus_list', $page_id);
 @endphp
 @if($whyus_list)

@@ -35,7 +35,7 @@ $publishedProductIds = [];
 
     @endphp
     @if($products && (count($products) >= 6))
-        <div class="category-output mrgn35-top">
+        <div class="category-output">
             @include('components.category-output.title')
             <ul class="category-output__list products @php echo isset($overflow) ? 'products_overflow' : ''  @endphp">
                 @foreach ($products as $product)
