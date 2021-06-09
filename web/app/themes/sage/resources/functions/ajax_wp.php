@@ -6,8 +6,10 @@ function send_mail()
 
     if (isset($_POST['director'])) {
         $to = 'director@fabrikanoskov.ru';
-    } else
-        $to = 'mail@fabrikanoskov.ru';
+    } else {
+        //$to = 'mail@fabrikanoskov.ru';
+        $to = 'malikov.kzn@gmail.com';
+    }
 
     $html = '';
 
@@ -18,26 +20,34 @@ function send_mail()
         'email'    => 'Email',
         'email_r'  => 'Email',
         'question' => 'Вопрос',
+        'type'     => 'Тип',
+        'density'  => 'Плотность',
+        'size'     => 'Размер',
+        'pairs'    => 'Пары',
+        'colors'   => 'Цвета',
+        'packaging'=> 'Упаковка',
+        'delivery-date' => 'Дата доставки',
+        'delivery-city' => 'Город доставки',
+        'count-colors' => 'Количество цветов',
         'model-quantity' => 'Количество моделей',
         'one-model-quantity' => 'Количество одной модели',
         'information' => 'Количество одной модели',
     ];
 
     foreach ($_POST as $key => $value) {
-        if (!empty($_POST[$key]))
-            if (is_array($value)) {
-                $html .= '<span>' . $key . '</span>' . ': ';
-                foreach ($value as $item) {
-                    if ($item == end($value)) {
-                        $html .= '<span>' . $item . '</span><br>';
-                    } else {
-                        $html .= '<span>' . $item . '</span>, ';
-                    }
+        $title = (empty($replace_keys[$key])) ? $key : $replace_keys[$key];
+        if (is_array($value)) {
+            $html .= '<strong>' . $title . '</strong>' . ': ';
+            foreach ($value as $item) {
+                if ($item == end($value)) {
+                    $html .= '<span>' . $item . '</span><br>';
+                } else {
+                    $html .= '<span>' . $item . '</span>, ';
                 }
-            } else {
-                $title = (empty($replace_keys[$key])) ? $key : $replace_keys[$key];
-                $html .= '<strong>' . $title . '</strong>' . ': ' . '<span>' . $value . '</span><br>';
             }
+        } else {
+            $html .= '<strong>' . $title . '</strong>' . ': ' . '<span>' . $value . '</span><br>';
+        }
     }
 
 
