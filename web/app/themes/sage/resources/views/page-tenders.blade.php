@@ -4,75 +4,128 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.banner.wrap')
+    @component('components.banner.banner', ['href' => '/noski-optom', 'buttonText' => 'Носки оптом', 'href2' => '/na-zakaz', 'buttonText2' => 'Носки на заказ'])
+        @slot('title')
+            Участвуем в тендерах на производство <br> носков, кологоток и чулок
+        @endslot
+
+        @slot('text')
+            Расширяем базу деловых контактов: ищем заказчиков носков, чулок и колготок.
+            Не только в региональных центрах, но и небольших городах РФ.
+            Производим и продаем чулочно-носочную продукцию оптом.
+        @endslot
+
+        @slot('icon')
+            <img width="210" src="@asset('images/components/tenders/FabrikaNoskov_Tender.png')"
+                 alt="Производство и продажа носков по низким ценам">
+        @endslot
+
+    @endcomponent
     <div class="tenders mrgn50">
         <div class="tenders__title title title_huge text_thin mrgn50-bottom pdng50">
-            {!! get_field( "tenders_fact" ) !!}
+            Фабрика Носков — Самая крупная чулочно-носочная фабрика России. Мы единственные отгружаем нашу продукцию
+            (носки, чулоки и колготки) в 171 город России и стран СНГ.
         </div>
         <div class="tenders__block mrgn50-bottom pdng50-bottom">
             <div class="tenders__block-left">
-                <div class="tenders__block-left_first title title_large mrgn35-bottom">{!! get_field( "tenders_delivery" )['title'] !!}</div>
-                <div class="text text_large mrgn15-bottom">
-                    {!! get_field( "tenders_delivery" )['descr'] !!}
+                <div class="tenders__block-left_first title title_large mrgn35-bottom">Доставка по России и всему миру
+                </div>
+                <div class="text text_large mrgn15-bottom">Доставка писем, посылок и грузов в рамках закупок:
+                    коммерческих и
+                    государственных
+                    <nobr>(по 44-ФЗ и 223-ФЗ).</nobr>
+                </div>
+                <div class="text text_large">Подготовим выгодные условия для заказчиков и расширим функционал, если ваш
+                    тендер этого потребует. Государственным организациям поможем составить ТЗ и предоставим коммерческое
+                    предложение.
                 </div>
             </div>
             <div class="tenders__block-right" itemscope itemtype="http://schema.org/ImageObject">
-                <img src="{{ get_field( "tenders_delivery" )['image']['url'] }}"
-                     alt="{{ get_field( "tenders_delivery" )['alt'] }}"
-                     itemprop="contentUrl">
+                <img src="@asset('images/components/tenders/go_tenders.jpg')"
+                     alt="Фабрика носков. Участвуем в тендерах на производство носков, кологоток и чулок" itemprop="contentUrl">
             </div>
         </div>
         <div class="tenders__block mrgn50-bottom pdng50">
             <div class="tenders__block-left">
-                <div class="title title_large mrgn35-bottom">
-                    {!! get_field( "tenders_advantages" )['title'] !!}
+                <div class="title title_large mrgn35-bottom">С 2005 года мы открыли более 200 пунктов выдачи в 171
+                    городе России
                 </div>
             </div>
             <div class="tenders__block-right tenders__block-right_exclude">
                 <ul class="tenders__list">
-                    @foreach(get_field('tenders_advantages')['items'] as $item)
-                        <li class="tenders__point">
-                            {!! $item['item'] !!}
-                        </li>
-                    @endforeach
+                    <li class="tenders__point">
+                        <b>Доставка носков</b>, чулок и колготок оптом в любой город России и стран СНГ.
+                    </li>
+                    <li class="tenders__point"><b>Полный комплекс</b> сервисов и услуг для розничных магазинов:
+                        крупный опт,
+                        мелкий опт, возврат, продукция по вашему дизайну и др.
+                    </li>
+                    <li class="tenders__point">
+                        <b>Гибкие цены и предложения</b> для покупателей. Большой выбор материлов и быстрая скорость
+                        вязки
+                        чулочно-носочных изделий
+                    </li>
+                    <li class="tenders__point"><b>Фулфилмент:</b> прием и обработка заказов, комплектация и упаковка,
+                        складское хранение, доставка и возврат.
+                    </li>
+                    <li class="tenders__point">
+                        <b>Авиа Перевозка:</b> перевозки грузов от 30 кг. Гарантируем свободные места у авиаперевозчиков
+                        даже в
+                        высокий сезон.
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="tenders__block tenders__block_bg mrgn50 pdng35-bottom">
-            <div class="tenders__title tenders__title_bg title title_huge text_thin mrgn50-bottom">
-                {!! get_field('tenders_platforms')['title'] !!}
+            <div class="tenders__title tenders__title_bg title title_huge text_thin mrgn50-bottom">Зарегистрированы на
+                <b>20 коммерческих электронных площадках</b>, а
+                также на <b>крупнейших федеральных</b>:
             </div>
             <ul class="tenders__list tenders__list_bg">
-                @foreach(get_field('tenders_platforms')['items'] as $item)
-                    <li class="tenders__point tenders__point_bg">{!! $item['item'] !!}</li>
-                @endforeach
+                <li class="tenders__point tenders__point_bg">Единая электронная торговая площадка</li>
+                <li class="tenders__point tenders__point_bg">Система торгов «Сбербанк-АСТ»</li>
+                <li class="tenders__point tenders__point_bg">ЭТП RTS tender</li>
+                <li class="tenders__point tenders__point_bg">Cистема электронных торгов ZakazRF</li>
+                <li class="tenders__point tenders__point_bg">ЭТП Госзакупки ММВБ</li>
+                <li class="tenders__point tenders__point_bg">Торговый портал "Фабрикант.ру"</li>
+                <li class="tenders__point tenders__point_bg">Портал поставщиков г. Москвы</li>
             </ul>
         </div>
 
         <div class="tenders__callback pdng50">
-            @foreach(get_field('tenders_questions')['region'] as $item)
-                <div class="tenders__callback-item">
-                    <div class="title mrgn15-bottom text_large text_bold text_black">{!! $item['title'] !!}</div>
-                    @foreach($item['human'] as $human)
-                        <div class="tenders__contact mrgn15-bottom text_middle text text_black">
-                            {!! $human['name'] !!}
-                            <br>
-                            <span class="tenders__status">{!! $human['role'] !!}</span>
-                            <br>
-                            <a href="{{generationPhoneLink($human['phone'])}}">{!! $human['phone'] !!}</a>
-                        </div>
-                    @endforeach
+            <div class="tenders__callback-item">
+                <div class="title mrgn15-bottom text_large text_bold text_black">По вопросам закупок в Российской Федерации</div>
+                <div class="tenders__contact mrgn15-bottom text_middle text text_black">
+                    Красильников Никита <br><span class="tenders__status">директор отдела продаж</span><br> <a
+                            href="tel:+79297256165">+7 (929) 725
+                        61 65</a>
                 </div>
-            @endforeach
+                <div class="tenders__contact text_middle text text_black">
+                    Барбашин Андрей <br><span class="tenders__status">младший менеджер по тендерам</span><br> <a
+                            href="tel:+79297256165">+7 (929)
+                        725 61 65</a>
+                </div>
+            </div>
+            <div class="tenders__callback-item">
+                <div class="title mrgn15-bottom text_large text_bold text_black">В странах СНГ</div>
+                <div class="tenders__contact mrgn15-bottom text_middle text text_black">
+                    Нажалова Анна <br><span class="tenders__status">менеджер по продажам в странах СНГ</span><br> <a
+                            href="tel:+79297256165">+7
+                        (929) 725 61 65</a>
+                </div>
+                <div class="tenders__contact text_middle text text_black">
+                    Ерофеев Артем <br><span class="tenders__status">менеджер по тендерам</span><br> <a
+                            href="tel:+79297256165">+7 (929) 725 61
+                        65</a>
+                </div>
+            </div>
         </div>
 
         <div class="tenders__more text text_large text_black mrgn35 pdng35-bottom">
-            {!! get_field('tenders_links')['email_text'] !!}
-            <a href="mailto:{{ get_field('tenders_links')['email'] }}">{!! get_field('tenders_links')['email'] !!}</a>
-            <br>
-            {!! get_field('tenders_links')['phone_text'] !!}
-            <a href="{{ generationPhoneLink(get_field('tenders_links')['phone']) }}">{!! get_field('tenders_links')['phone'] !!}</a>
+            Узнайте больше, написав на электронную почту <a
+                    href="mailto:tender@fabrikanoskov.ru">tender@fabrikanoskov.ru</a> <br>
+            Или позвоните по телефону <a href="tel:88004441156">8 800 444 11 56</a>
         </div>
     </div>
 @endsection
