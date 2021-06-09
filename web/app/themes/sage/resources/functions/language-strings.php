@@ -6,12 +6,14 @@ pll_register_string('form', 'Отправить', 'fabrikanoskov');
 pll_register_string('form', 'Заказать', 'fabrikanoskov');
 pll_register_string('form', 'Имя', 'fabrikanoskov');
 pll_register_string('form', 'Ваше имя', 'fabrikanoskov');
+pll_register_string('form', 'Иван Иванов', 'fabrikanoskov');
 pll_register_string('form', 'Фамилия Имя Отчество', 'fabrikanoskov');
 pll_register_string('form', 'Имя лица, принимающего решение', 'fabrikanoskov');
 pll_register_string('form', 'Ваш телефон', 'fabrikanoskov');
 pll_register_string('form', 'Мобильный телефон', 'fabrikanoskov');
 pll_register_string('form', 'Телефон лица, принимающего решение', 'fabrikanoskov');
 pll_register_string('form', 'Электронная почта', 'fabrikanoskov');
+pll_register_string('form', 'Ваш email', 'fabrikanoskov');
 pll_register_string('form', 'Дата рождения', 'fabrikanoskov');
 pll_register_string('form', 'Город', 'fabrikanoskov');
 pll_register_string('form', 'Артикул', 'fabrikanoskov');
@@ -22,11 +24,13 @@ pll_register_string('form', 'Задать вопрос', 'fabrikanoskov');
 pll_register_string('form', 'Задайте ваш вопрос', 'fabrikanoskov');
 pll_register_string('form', 'Задать вопрос на Фабрику Носков', 'fabrikanoskov');
 pll_register_string('form', 'Описание вашего вопроса', 'fabrikanoskov');
+pll_register_string('form', 'Комментарий', 'fabrikanoskov');
 pll_register_string('form', 'Любая дополнительная информация', 'fabrikanoskov');
 pll_register_string('form', 'Сумма подарочного сертификата', 'fabrikanoskov');
 pll_register_string('form', 'Наименование юр лица или ФИО заказчика', 'fabrikanoskov');
 pll_register_string('form', 'ИНН юр лица или физ лица заказчика', 'fabrikanoskov');
 pll_register_string('form', 'Отследить', 'fabrikanoskov');
+pll_register_string('form', 'Рассчитать стоимость', 'fabrikanoskov');
 // тут скобки заменяются тегами при выводе
 pll_register_string('form', 'Отправляя форму я соглашаюсь с [условиями передачи информации]', 'fabrikanoskov');
 
@@ -77,6 +81,8 @@ pll_register_string('components', 'Я хочу работать с вами', 'f
 pll_register_string('components', 'Доставляем носки, колготки и прочие грузы', 'fabrikanoskov');
 pll_register_string('components', 'Блог о носках', 'fabrikanoskov');
 pll_register_string('components', 'Все статьи', 'fabrikanoskov');
+pll_register_string('components', 'Файл или архив файлов, с которыми нужно поработать', 'fabrikanoskov');
+pll_register_string('components', 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации', 'fabrikanoskov');
 // Коммерческое предложение
 pll_register_string('components', 'Узнайте как будет выглядеть ваш носок', 'fabrikanoskov');
 pll_register_string('components', 'Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!', 'fabrikanoskov');
