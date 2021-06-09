@@ -7,8 +7,8 @@ function send_mail()
     if (isset($_POST['director'])) {
         $to = 'director@fabrikanoskov.ru';
     } else {
-        //$to = 'mail@fabrikanoskov.ru';
-        $to = 'malikov.kzn@gmail.com';
+        $to = 'mail@fabrikanoskov.ru';
+        //$to = 'malikov.kzn@gmail.com';
     }
 
     $html = '';
