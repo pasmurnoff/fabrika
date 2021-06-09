@@ -18,7 +18,7 @@
             </div>
             <div class="tenders__block-right" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="{{ get_field( "tenders_delivery" )['image']['url'] }}"
-                     alt="Фабрика носков. Участвуем в тендерах на производство носков, кологоток и чулок"
+                     alt="{{ get_field( "tenders_delivery" )['alt'] }}"
                      itemprop="contentUrl">
             </div>
         </div>
@@ -60,7 +60,7 @@
                             <br>
                             <span class="tenders__status">{!! $human['role'] !!}</span>
                             <br>
-                            {!! $human['phone'] !!}
+                            <a href="{{generationPhoneLink($human['phone'])}}">{!! $human['phone'] !!}</a>
                         </div>
                     @endforeach
                 </div>
@@ -68,9 +68,11 @@
         </div>
 
         <div class="tenders__more text text_large text_black mrgn35 pdng35-bottom">
-            {!! get_field('tenders_links')['email'] !!}
+            {!! get_field('tenders_links')['email_text'] !!}
+            <a href="mailto:{{ get_field('tenders_links')['email'] }}">{!! get_field('tenders_links')['email'] !!}</a>
             <br>
-            {!! get_field('tenders_links')['phone'] !!}
+            {!! get_field('tenders_links')['phone_text'] !!}
+            <a href="{{ generationPhoneLink(get_field('tenders_links')['phone']) }}">{!! get_field('tenders_links')['phone'] !!}</a>
         </div>
     </div>
 @endsection
