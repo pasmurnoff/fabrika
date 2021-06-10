@@ -30,6 +30,7 @@ pll_register_string('form', 'Сумма подарочного сертифик�
 pll_register_string('form', 'Наименование юр лица или ФИО заказчика', 'fabrikanoskov');
 pll_register_string('form', 'ИНН юр лица или физ лица заказчика', 'fabrikanoskov');
 pll_register_string('form', 'Отследить', 'fabrikanoskov');
+pll_register_string('form', 'Выбрать файл', 'fabrikanoskov');
 pll_register_string('form', 'Рассчитать стоимость', 'fabrikanoskov');
 // тут скобки заменяются тегами при выводе
 pll_register_string('form', 'Отправляя форму я соглашаюсь с [условиями передачи информации]', 'fabrikanoskov');
@@ -77,6 +78,8 @@ pll_register_string('components', 'Менеджер', 'fabrikanoskov');
 pll_register_string('components', 'Страницы', 'fabrikanoskov');
 pll_register_string('components', 'Что ищем', 'fabrikanoskov');
 pll_register_string('components', 'Магазин', 'fabrikanoskov');
+pll_register_string('components', 'В наличии', 'fabrikanoskov');
+pll_register_string('components', 'На заказ', 'fabrikanoskov');
 pll_register_string('components', 'Я хочу работать с вами', 'fabrikanoskov');
 pll_register_string('components', 'Доставляем носки, колготки и прочие грузы', 'fabrikanoskov');
 pll_register_string('components', 'Блог о носках', 'fabrikanoskov');
