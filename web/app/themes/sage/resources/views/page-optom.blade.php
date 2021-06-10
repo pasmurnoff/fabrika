@@ -5,21 +5,11 @@
 
 @section('content')
   <div class="defaultpage">
-    <div class="work-order mrgn50">
-      <div class="title title_large pdng35-bottom">
-        Порядок работы со склада
-      </div>
-      <ol class="text work-order__list">
-        <li>Поступление запроса по необходимому артикулу, размеру и цвету</li>
-        <li>Подтверждение наличия на складе, если необходимый артикул отсутствуют на складе в нужном количестве,
-          производителем предлагаются условия производства
-        </li>
-        <li>Заключение договора</li>
-        <li>Оплата стоимости тиража</li>
-        <li>Отгрузка или производство тиража</li>
-        <li>Доставка</li>
-      </ol>
+
+    <div class="the-content">
+      {!! get_field('wholesale_before') !!}
     </div>
+
     @include('components.category-output.all.wrap', ['overflow' => ''])
 
     @while(have_posts()) @php the_post() @endphp

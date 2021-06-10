@@ -10,7 +10,9 @@
       ];
     @endphp
 
-    @if(!in_array($prodCat->slug, $parentArr))
+    @if(pll_current_language() != 'ru')
+      <a href="{!! get_term_link($prodCat) !!}" class="button button_transparent">{{ $prodCat->name }}</a>
+    @elseif(!in_array($prodCat->slug, $parentArr))
       <a href="{!! get_term_link($prodCat) !!}" class="button button_transparent">{{ $prodCat->name }} оптом</a>
     @elseif($prodCat->slug == 'detskoe')
       <a href="{!! get_term_link($prodCat) !!}" class="button button_transparent">Открыть детскую коллекцию</a>
