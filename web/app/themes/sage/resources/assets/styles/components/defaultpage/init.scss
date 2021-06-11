@@ -6,6 +6,12 @@
     border-radius: 8px;
     box-shadow: 0 0 30px 6px rgba(31, 51, 73, 0.1);
 
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 38.34%;
+    }
+
     &-figcaption {
       position: absolute;
       left: -9999px;
@@ -17,6 +23,10 @@
     display: block;
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
   }
 }
