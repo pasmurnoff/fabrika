@@ -27,69 +27,24 @@ Template name: Носки на заказ, отдельная страница
     <main class="custom__socks">
         <section class="custom__welcome">
             <div class="custom__welcome-wrap">
-                <h1 class="custom__title">Носки на заказ по вашему дизайну</h1>
-                <p class="custom__text">На нашей фабрике можно заказать не только носки изготовленные нашими дизайнера,
-                    но и носки с логотипом или в фирменной стилистике бренда и мероприятия для самых разных нужд.
-                </p>
-                <p class="custom__text">Мерч,
-                    промо, сувениры, подарки, на продажу для расширения ассортимента - носки зарекомендовали себя как
-                    отличный инструмент для самых различных целей.</p>
+                <h1 class="custom__title">{!! get_field( "ordering_title" ) !!}</h1>
+                <p class="custom__text">{!! get_field( "ordering_descr" ) !!}</p>
             </div>
         </section>
         <section class="custom__comunication">
-            <p class="custom__communication-title">Новый проект</p>
+            <p class="custom__communication-title">{!! get_field("ordering_new") !!}</p>
             <form id="form" class="custom__form" method="POST">
                 <div class="custom__items">
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-1" value="Спортивные"
-                               name="stylesocks[]" checked="checked">
-                        <label for="style-1" class="custom__item">Спортивные</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-2" value="Классические"
-                               name="stylesocks[]">
-                        <label for="style-2" class="custom__item ">Классические</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-3" value="Подарочные"
-                               name="stylesocks[]">
-                        <label for="style-3" class="custom__item ">Подарочные</label>
-                    </div>
-
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-4" value="С текстом"
-                               name="stylesocks[]">
-                        <label for="style-4" class="custom__item ">С текстом</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-5" value="С логотипом"
-                               name="stylesocks[]">
-                        <label for="style-5" class="custom__item ">С логотипом</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-6" value="Из мультфильма"
-                               name="stylesocks[]">
-                        <label for="style-6" class="custom__item ">Из мультфильма</label>
-                    </div>
-
-                    <div class="custom__input-wrapper">
-                        <input class="custom__checkbox" type="checkbox"
-                               id="style-7" value="Другое"
-                               name="stylesocks[]">
-                        <label for="style-7" class="custom__item ">Другое</label>
-                    </div>
-
+                    @php $i = 1; @endphp
+                    @foreach(get_field("ordering_types") as $item)
+                        <div class="custom__input-wrapper">
+                            <input class="custom__checkbox" type="checkbox"
+                                   id="style-{{ $i }}" value="{{ $item['name'] }}"
+                                   name="stylesocks[]" {{ $item['default'] ? 'checked' : ''  }}>
+                            <label for="style-{{ $i }}" class="custom__item">{!! $item['name'] !!}</label>
+                        </div>
+                        @php $i++; @endphp
+                    @endforeach
                 </div>
                 <div class="custom__fields">
                     <div class="custom__field">
