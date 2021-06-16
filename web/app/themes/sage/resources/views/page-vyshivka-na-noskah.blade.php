@@ -15,6 +15,6 @@ Template Name: Вышивка на носках
 
     @include('components.writeus.writeus', ['title' => 'Консультация по вышивке', 'class' => 'mrgn35-bottom'])
 
-    @include('components.photo-gallery.wrap', ['gallery' => get_field( 'photo_gallery', get_the_ID() )])
+    @include('components.gallery.photo', ['gallery' => get_field( 'photo_gallery', get_the_ID() )])
 
 @endsection
