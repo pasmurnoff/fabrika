@@ -12,10 +12,10 @@ Template Name: Сублимация
 
     <div class="the-content">{!! get_field('sublimation_text_1', $page_id) !!}</div>
 
-    @include('components.photo-gallery.wrap', ['gallery' => get_field('sublimation_gallery_1', $page_id)])
+    @include('components.gallery.photo', ['gallery' => get_field('sublimation_gallery_1', $page_id)])
 
     <div class="the-content">{!! get_field('sublimation_text_2', $page_id) !!}</div>
 
-    @include('components.photo-gallery.wrap', ['gallery' => get_field('sublimation_gallery_2', $page_id)])
+    @include('components.gallery.photo', ['gallery' => get_field('sublimation_gallery_2', $page_id)])
 
 @endsection
