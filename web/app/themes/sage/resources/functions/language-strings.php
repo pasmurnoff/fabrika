@@ -95,3 +95,7 @@ pll_register_string('components', 'Узнайте как будет выгляд
 pll_register_string('components', 'Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!', 'fabrikanoskov');
 // тут скобки заменяются тегами при выводе
 pll_register_string('components', 'Ограниченное предложение: При заказе от 100 000 рублей скидка 20% [Перейти в магазин]', 'fabrikanoskov');
+// атрибуты товаров
+pll_register_string('components', 'Название товара', 'fabrikanoskov');
+pll_register_string('components', 'Цена', 'fabrikanoskov');
+pll_register_string('components', 'Статус', 'fabrikanoskov');

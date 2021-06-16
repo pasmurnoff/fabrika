@@ -13,6 +13,8 @@ Template name: Носки на заказ, отдельная страница
     <meta property="og:description" content="Купить носки оптом и в розницу"/>
     <meta property="og:url" content="@php echo get_home_url() @endphp"/>
     <meta property="og:image" content=""/>
+    <link rel="alternate" href="https://www.fabrikanoskov.ru/zakazat-noski/" hreflang="ru" />
+    <link rel="alternate" href="https://www.socksmanufacturer.com/make-an-order/" hreflang="en" />
     @php
         $ajax_href = ['ajax_url' => get_permalink()];
     echo
