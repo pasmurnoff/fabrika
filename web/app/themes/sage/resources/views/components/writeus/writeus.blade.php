@@ -1,10 +1,10 @@
-<div class="title title_huge">{{ pll__('Написать на Фабрику Носков') }}</div>
+<div class="title title_huge">{{ $title or pll__('Написать на Фабрику Носков') }}</div>
 <div class="pdng15-top pdng35-bottom">
     <div class="text">
         {{ pll__('Если у вас есть вопрос, предложение или замечание относительно нашей работы, вы можете воспользоваться формой для связи с нами.') }}
     </div>
 </div>
-<form class="form" method="POST">
+<form class="form {{ $class or '' }}" method="POST">
 
     <div class="dualrow">
         @include('components.form.elements.input', [
