@@ -48,27 +48,27 @@ Template name: Носки на заказ, отдельная страница
                 </div>
                 <div class="custom__fields">
                     <div class="custom__field">
-                        <label for="company" class="custom__field-name">Название компании</label>
+                        <label for="company" class="custom__field-name">{!! pll__('Название компании') !!}</label>
                         <input id="company" name="company" class="custom__field-input" type="text">
                     </div>
                     <div class="custom__field">
-                        <label for="budget" class="custom__field-name">Приблизительный бюджет</label>
+                        <label for="budget" class="custom__field-name">{!! pll__('Приблизительный бюджет') !!}</label>
                         <input id="budget" name="budget" class="custom__field-input" type="text">
                     </div>
                     <div class="custom__field">
-                        <label for="email" class="custom__field-name">Email</label>
+                        <label for="email" class="custom__field-name">{!! pll__('Email') !!}</label>
                         <input id="email" name="email" class="custom__field-input" type="email" required>
                     </div>
                     <div class="custom__field">
-                        <label for="phone" class="custom__field-name">Ваш телефон</label>
+                        <label for="phone" class="custom__field-name">{!! pll__('Ваш телефон') !!}</label>
                         <input id="phone" name="phone" class="custom__field-input" type="tel" required>
                     </div>
                     <div class="custom__field">
-                        <label for="name" class="custom__field-name">Имя</label>
+                        <label for="name" class="custom__field-name">{!! pll__('Имя') !!}</label>
                         <input id="name" name="name" class="custom__field-input" type="text" required>
                     </div>
                 </div>
-                <button type="submit" class="design__custom-btn">Отправить заявку</button>
+                <button type="submit" class="design__custom-btn">{!! pll__('Отправить заявку') !!}</button>
             </form>
         </section>
     </main>

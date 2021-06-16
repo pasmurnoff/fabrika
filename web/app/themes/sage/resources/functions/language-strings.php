@@ -3,6 +3,7 @@
 /* формы pll__('Имя')
 ----------------------------------------------------------------- */
 pll_register_string('form', 'Отправить', 'fabrikanoskov');
+pll_register_string('form', 'Отправить заявку', 'fabrikanoskov');
 pll_register_string('form', 'Заказать', 'fabrikanoskov');
 pll_register_string('form', 'Имя', 'fabrikanoskov');
 pll_register_string('form', 'Ваше имя', 'fabrikanoskov');
@@ -14,6 +15,7 @@ pll_register_string('form', 'Мобильный телефон', 'fabrikanoskov'
 pll_register_string('form', 'Телефон лица, принимающего решение', 'fabrikanoskov');
 pll_register_string('form', 'Электронная почта', 'fabrikanoskov');
 pll_register_string('form', 'Ваш email', 'fabrikanoskov');
+pll_register_string('form', 'Email', 'fabrikanoskov');
 pll_register_string('form', 'Дата рождения', 'fabrikanoskov');
 pll_register_string('form', 'Город', 'fabrikanoskov');
 pll_register_string('form', 'Артикул', 'fabrikanoskov');
@@ -32,6 +34,8 @@ pll_register_string('form', 'ИНН юр лица или физ лица зак�
 pll_register_string('form', 'Отследить', 'fabrikanoskov');
 pll_register_string('form', 'Выбрать файл', 'fabrikanoskov');
 pll_register_string('form', 'Рассчитать стоимость', 'fabrikanoskov');
+pll_register_string('form', 'Приблизительный бюджет', 'fabrikanoskov');
+pll_register_string('form', 'Название компании', 'fabrikanoskov');
 // тут скобки заменяются тегами при выводе
 pll_register_string('form', 'Отправляя форму я соглашаюсь с [условиями передачи информации]', 'fabrikanoskov');
 
