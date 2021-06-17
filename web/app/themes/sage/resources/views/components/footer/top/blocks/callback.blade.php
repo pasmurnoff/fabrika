@@ -1,4 +1,4 @@
-<div class="title footer__title mrgn15-bottom">Заказать обратный звонок</div>
+<div class="title footer__title mrgn15-bottom">{!! pll__('Заказать обратный звонок') !!}</div>
 <form method="POST" class="form formline">
     <div class="footer__callback">
         <div class="labelwrap footer__callback_field">

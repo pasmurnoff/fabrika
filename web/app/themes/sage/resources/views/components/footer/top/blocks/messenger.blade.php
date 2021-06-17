@@ -5,7 +5,7 @@
             @include('common.phone', ['class' => 'footer-messenger__text footer-messenger__phone text_link text_bold'])
         </div>
         <div class="footer-messenger__icons-wrap">
-            <div class="text text_bold text_middle">Ответим на ваши вопросы в мессенджерах</div>
+            <div class="text text_bold text_middle">{!! pll__('Ответим на ваши вопросы в мессенджерах') !!}</div>
             <div class="footer-messenger__icons">
                 <a href="viber://chat?number=79274519036"
                    target="_blank"

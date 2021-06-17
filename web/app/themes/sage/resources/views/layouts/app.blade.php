@@ -10,14 +10,14 @@
   <div class="container">
 
     @if( is_front_page() )
-      @php $title = 'Носки и колготки оптом. Продажа и изготовление на заказ.'; @endphp
+      @php $title = get_field('main_title'); @endphp
     @elseif(!is_product())
       @php $title =  App::title(); @endphp
     @endif
 
     @if(is_singular('city'))
 
-      @php $title = 'Носки оптом в ' . get_field('city-rod') . ' – Фабрика носков в ' . get_field('city-rod'); @endphp
+      @php $title = pll__('Носки оптом в ') . get_field('city-rod') . pll__(' – Фабрика носков в ') . get_field('city-rod'); @endphp
     @endif
 
     @if (isset($title))

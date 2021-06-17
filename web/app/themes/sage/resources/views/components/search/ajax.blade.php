@@ -17,7 +17,7 @@
     </div>
     <input class="search__input input" type="search"
            class="search__input input"
-           value="<?php echo get_search_query(); ?>" name="s" placeholder="Найти носки..."/>
+           value="<?php echo get_search_query(); ?>" name="s" placeholder="{{ pll__('Найти носки...') }}"/>
     <ul class="search__list text"></ul>
     <input type="hidden" name="post_type" value="product"/>
 </form>

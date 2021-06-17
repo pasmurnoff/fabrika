@@ -1,2 +1,2 @@
-<a class="support-btn callpopup" data-popup="support-modal">Служба поддержки</a>
+<a class="support-btn callpopup" data-popup="support-modal">{!! pll__('Служба поддержки') !!}</a>
 @include('components.support-modal.support-modal')
