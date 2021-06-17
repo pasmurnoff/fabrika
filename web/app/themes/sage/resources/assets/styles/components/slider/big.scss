@@ -1,5 +1,9 @@
 .slider-big {
   position: relative;
+  box-shadow: 0 0 30px 6px rgba(31, 51, 73, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 35px;
 
   .slick-dots {
     position: absolute;
@@ -29,6 +33,10 @@
         }
       }
     }
+  }
+
+  .slick-slider {
+    margin-bottom: 0 !important;
   }
 
   .banner__side_left {
