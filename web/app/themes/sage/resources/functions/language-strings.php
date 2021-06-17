@@ -90,6 +90,24 @@ pll_register_string('components', 'Блог о носках', 'fabrikanoskov');
 pll_register_string('components', 'Все статьи', 'fabrikanoskov');
 pll_register_string('components', 'Файл или архив файлов, с которыми нужно поработать', 'fabrikanoskov');
 pll_register_string('components', 'Ссылка на скачивание файлов (логотип, шрифты, макеты), реквизиты организации', 'fabrikanoskov');
+pll_register_string('components', 'Носки оптом в ', 'fabrikanoskov');
+pll_register_string('components', ' – Фабрика носков в ', 'fabrikanoskov');
+pll_register_string('components', 'Найти носки...', 'fabrikanoskov');
+// футер
+pll_register_string('components', 'Ответим на ваши вопросы в мессенджерах', 'fabrikanoskov');
+pll_register_string('components', 'Помощь', 'fabrikanoskov');
+pll_register_string('components', 'Категории магазина носков', 'fabrikanoskov');
+pll_register_string('components', 'Партнёрам', 'fabrikanoskov');
+pll_register_string('components', 'Способы оплаты', 'fabrikanoskov');
+pll_register_string('components', 'Вы можете оплатить покупки наложенным платежом, либо выбрать другой способ оплаты.', 'fabrikanoskov');
+pll_register_string('components', 'Контакты фабрики носков', 'fabrikanoskov');
+pll_register_string('components', 'Телефон:', 'fabrikanoskov');
+pll_register_string('components', 'Служба поддержки', 'fabrikanoskov');
+pll_register_string('components', 'Заказать обратный звонок', 'fabrikanoskov');
+pll_register_string('components', 'Мы в соцсетях', 'fabrikanoskov');
+pll_register_string('components', 'Для сотрудников', 'fabrikanoskov');
+pll_register_string('components', 'Прайс-листы', 'fabrikanoskov');
+pll_register_string('components', 'Время работы ежедневно с 10:00 до 20:00. Работаем без праздников и выходных', 'fabrikanoskov');
 // Коммерческое предложение
 pll_register_string('components', 'Узнайте как будет выглядеть ваш носок', 'fabrikanoskov');
 pll_register_string('components', 'Заполните форму ниже и мы сделаем вам скидку 10% на первые 10 заказов!', 'fabrikanoskov');

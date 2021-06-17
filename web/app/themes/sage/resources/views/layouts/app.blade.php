@@ -8,21 +8,8 @@
   @php get_template_part('functions/watched') @endphp
 
   <div class="container">
+    @include('components.page-title.wrap')
 
-    @if( is_front_page() )
-      @php $title = 'Носки и колготки оптом. Продажа и изготовление на заказ.'; @endphp
-    @elseif(!is_product())
-      @php $title =  App::title(); @endphp
-    @endif
-
-    @if(is_singular('city'))
-
-      @php $title = 'Носки оптом в ' . get_field('city-rod') . ' – Фабрика носков в ' . get_field('city-rod'); @endphp
-    @endif
-
-    @if (isset($title))
-      @include('components.title.title', ['classes' => 'title_huge title_main', 'title' => $title])
-    @endif
     @php
       if (!is_front_page() && !is_product()) {
         if (function_exists('yoast_breadcrumb')) {
@@ -35,7 +22,6 @@
           function_exists('yoast_breadcrumb') ? yoast_breadcrumb('<p class="breadcrumbs breadcrumbs_mrgn15-top">', '</p>') : '';
       }
     @endphp
-
 
     <div class="content">
       @yield('content')
