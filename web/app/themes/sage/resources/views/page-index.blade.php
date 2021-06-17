@@ -6,7 +6,6 @@
 @section('content')
     {{--    @include('components.tags.wrap')--}}
 {{--        @include('components.card.stories.wrap')--}}
-    @include('components.slider.wrap')
     @include('components.banner.banner-duo')
     @include('components.category-output.output', ['overflow' => ''])
 
