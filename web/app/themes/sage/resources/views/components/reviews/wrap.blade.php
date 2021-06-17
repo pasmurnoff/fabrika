@@ -6,8 +6,12 @@
     ]);
 @endphp
 
+
+
 <pre>
 <?php
+    var_dump(get_field('review_rating', 26454));
+    var_dump(get_field('review_rating', 26463));
     print_r($review);
 ?>
 </pre>
