@@ -5,7 +5,7 @@
             <input required type="tel" class="input" name="phone" placeholder="+7 (___) ___-__-__">
         </div>
         <div class="labelwrap footer__callback_submit">
-            <input type="submit" class="submit submit_line" value="Отправить">
+            <input type="submit" class="submit submit_line" value="{{ pll__('Отправить') }}">
         </div>
     </div>
 </form>

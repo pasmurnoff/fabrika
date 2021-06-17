@@ -32,7 +32,7 @@
 @endphp
 
 
-@component('components.category-output.single-output', ['title' => 'Случайные товары', 'overflow' => ''])
+@component('components.category-output.single-output', ['title' => pll__('Случайные товары'), 'overflow' => ''])
     @slot('href')
         @php echo get_category_link($id) @endphp
     @endslot
