@@ -10,7 +10,7 @@
         <div class="blog__item blog__item_single">
 
             <div class="article__content hidden">
-                <h2 class="article__content-title title title_large">Содержание</h2>
+                <h2 class="article__content-title title title_large">{!! pll__('Содержание') !!}</h2>
                 <ul class="article__list"></ul>
             </div>
 

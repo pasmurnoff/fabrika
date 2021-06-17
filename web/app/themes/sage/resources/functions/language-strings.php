@@ -93,6 +93,9 @@ pll_register_string('components', 'Ссылка на скачивание фай
 pll_register_string('components', 'Носки оптом в ', 'fabrikanoskov');
 pll_register_string('components', ' – Фабрика носков в ', 'fabrikanoskov');
 pll_register_string('components', 'Найти носки...', 'fabrikanoskov');
+pll_register_string('components', 'Содержание', 'fabrikanoskov');
+pll_register_string('components', 'Случайные товары', 'fabrikanoskov');
+pll_register_string('components', 'Цена действительна только для интернет-магазина и может отличаться от цен в розничных магазинах', 'fabrikanoskov');
 // футер
 pll_register_string('components', 'Ответим на ваши вопросы в мессенджерах', 'fabrikanoskov');
 pll_register_string('components', 'Помощь', 'fabrikanoskov');
@@ -107,6 +110,7 @@ pll_register_string('components', 'Заказать обратный звоно�
 pll_register_string('components', 'Мы в соцсетях', 'fabrikanoskov');
 pll_register_string('components', 'Для сотрудников', 'fabrikanoskov');
 pll_register_string('components', 'Прайс-листы', 'fabrikanoskov');
+pll_register_string('components', 'Zip-архив', 'fabrikanoskov');
 pll_register_string('components', 'Время работы ежедневно с 10:00 до 20:00. Работаем без праздников и выходных', 'fabrikanoskov');
 // Коммерческое предложение
 pll_register_string('components', 'Узнайте как будет выглядеть ваш носок', 'fabrikanoskov');
