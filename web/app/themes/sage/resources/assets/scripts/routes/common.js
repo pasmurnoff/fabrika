@@ -3,6 +3,7 @@ import transitionFix from '../common/transition-fix'
 import miniCart from './../components/mini-cart'
 import dropdownSizes from '../components/swatches/init'
 import dropdownSizesForQuickView from '../components/swatches/for-quick'
+import Slider from '../components/slider/init'
 import Inputmask from 'inputmask';
 
 export default {
@@ -21,6 +22,7 @@ export default {
         miniCart();
         dropdownSizes();
         dropdownSizesForQuickView();
+        Slider();
     },
     finalize() {
         // JavaScript to be fired on all pages, after page specific JS is fired

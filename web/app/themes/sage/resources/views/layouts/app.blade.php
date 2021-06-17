@@ -9,7 +9,6 @@
 
   <div class="container">
     @include('components.page-title.wrap')
-
     @php
       if (!is_front_page() && !is_product()) {
         if (function_exists('yoast_breadcrumb')) {
