@@ -1,8 +1,5 @@
 <section class="slider-big">
     <div class="slider-big__slider">
-        <div class="slider-big__slide">
-            @include('components.banner.manager')
-        </div>
         @if(get_field('main_slides'))
             @foreach(get_field('main_slides') as $item)
                 <div class="slider-big__slide">

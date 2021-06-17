@@ -35,15 +35,6 @@
     padding: 39px 54px;
   }
 
-  .banner_manager {
-    margin: 0;
-    max-height: 300px;
-
-    @media screen and (max-width: 480px) {
-      max-height: 463px;
-    }
-  }
-
   &__arrow {
     position: absolute;
     top: 50%;
@@ -69,9 +60,5 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
-
-    @media screen and (max-width: 480px) {
-      height: 463px;
-    }
   }
 }
