@@ -5,7 +5,7 @@
 @endif
 
 @if(is_singular('city'))
-    @php $title = pll__('Носки оптом в ') . get_field('city-rod') . pll__(' – Фабрика носков в ') . get_field('city-rod'); @endphp
+    @php $title = pll__('Носки оптом в ') . ' ' . get_field('city-rod') . pll__(' – Фабрика носков в ') . ' ' . get_field('city-rod'); @endphp
 @endif
 
 @if (isset($title))

@@ -1,1 +1,1 @@
-<h1 class="title {{ $classes or '' }}">{{ $title or '' }}</h1>
+<h1 class="title {{ $classes or '' }}">{!! $title or '' !!}</h1>

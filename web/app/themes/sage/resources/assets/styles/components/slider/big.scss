@@ -1,0 +1,77 @@
+.slider-big {
+  position: relative;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    display: flex !important;
+    justify-content: center;
+
+    li {
+      display: block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      background-color: hsla(0, 0, 100%, 0.5);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.4s;
+      opacity: 0.4;
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      button {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .banner__side_left {
+    padding: 39px 54px;
+  }
+
+  .banner_manager {
+    margin: 0;
+    max-height: 300px;
+
+    @media screen and (max-width: 480px) {
+      max-height: 463px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 1;
+    height: 64px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    &-left {
+      left: 5px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &-right {
+      right: 5px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    @media screen and (max-width: 480px) {
+      height: 463px;
+    }
+  }
+}
