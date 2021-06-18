@@ -35,12 +35,15 @@ export const formRules = {
         'review_author': {
             required: true,
         },
+        'review_rating': {
+            required: true,
+        },
         'review_body': {
             required: true,
         },
         'review_image': {
             required: true,
-            filesize: 5242880, // 5 MB
+            //filesize: 5242880, // 5 MB
             //extension: 'xls|csv',
         },
     },
@@ -76,6 +79,9 @@ export const formRules = {
         },
         'review_author': {
             required: 'Введите своё имя',
+        },
+        'review_rating': {
+            required: 'Укажите оценку',
         },
         'review_body': {
             required: 'Введите свой отзыв',

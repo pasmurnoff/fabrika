@@ -220,6 +220,7 @@ require_once dirname(__DIR__) . '/resources/functions/product-views.php';
 
 /* ajax wp_mail */
 require_once dirname(__DIR__) . '/resources/functions/ajax_wp.php';
+require_once dirname(__DIR__) . '/resources/functions/ajax-review.php';
 
 /* Remove slug from cities, products, and woo_categories */
 require_once dirname(__DIR__) . '/resources/functions/remove-slugs.php';
