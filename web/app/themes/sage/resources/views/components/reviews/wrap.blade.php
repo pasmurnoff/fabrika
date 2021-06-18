@@ -25,7 +25,7 @@
                     <div class="reviews-section__head-date">
                         {{ get_the_date('j F Y', $review_id) }}
                     </div>
-                    <div class="reviews-section__head-rating" itemprop="reviewRating">
+                    <div class="reviews-section__head-rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                         <span itemprop="ratingValue">{{ $review_rating }}</span>
                         <meta itemprop="bestRating" content="5">
                     </div>
