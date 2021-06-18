@@ -1,37 +1,53 @@
 @php
-    $review = get_posts([
+    $organization_title = 'Фабрика Носков';
+    $reviews = get_posts([
         'post_status' => 'publish',
         'numberposts' => '-1',
         'post_type'   => 'review',
     ]);
 @endphp
-@if($review)
+@if($reviews)
     <section class="reviews-section" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <h2>Отзывы</h2>
-        <meta itemprop="name" content="Наркологическая клиника «Альтернатива»">
+        <h2 class="title title_large mrgn35">Отзывы</h2>
+        <meta itemprop="name" content="{{ $organization_title }}">
 
-        <div class="review-item" itemprop="review" itemscope itemtype="http://schema.org/Review">
-            <span class="review-title" itemprop="author">Антон</span>
-            <div class="review-rating review-rating-5" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" >
-                <span itemprop="ratingValue" title="Оценка: 5">5</span> <meta itemprop="bestRating" content="5">
+        @foreach($reviews as $review)
+            @php
+                $review_id = $review->ID;
+                $review_rating = get_field('review_rating', $review_id) ?? 5;
+                $review_img = get_field('review_img', $review_id);
+                $aggregate_rating[] = $review_rating; // для подсчета средней оценки
+            @endphp
+
+            <div class="reviews-section__item" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                <div class="reviews-section__head">
+                    <div class="reviews-section__head-title" itemprop="author">{{ $review->post_title }}</div>
+                    <div class="reviews-section__head-date">
+                        {{ get_the_date('j F Y', $review_id) }}
+                    </div>
+                    <div class="reviews-section__head-rating" itemprop="reviewRating">
+                        <span itemprop="ratingValue">{{ $review_rating }}</span>
+                        <meta itemprop="bestRating" content="5">
+                    </div>
+                </div>
+                <div class="reviews-section__content" itemprop="reviewBody">
+                    {!! apply_filters( 'the_content', $review->post_content ) !!}
+                </div>
+                @if($review_img)
+                    @include('components.gallery.photo', ['gallery' => [$review_img], 'itemClass' => 'photo-gallery__item-64'])
+                @endif
             </div>
-            <p itemprop="reviewBody">Отношение в клинике замечательное. Условия комфортные. Цены приемлемые. Спасибо за комфортное лечение.</p>
-        </div>
+        @endforeach
 
+        @php
+            $reviews_count = count($reviews);
+            $aggregate_rating = array_sum($aggregate_rating)/$reviews_count; // средняя оценка
+            $aggregate_rating = round($aggregate_rating, 1); // округляем до десятых
+        @endphp
         <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-            <meta itemprop="ratingValue" content="4.9">
+            <meta itemprop="ratingValue" content="{{ $aggregate_rating }}">
             <meta itemprop="bestRating" content="5">
-            <meta itemprop="reviewCount" content="41">
+            <meta itemprop="reviewCount" content="{{ $reviews_count }}">
         </div>
     </section>
 @endif
-
-
-
-<pre>
-<?php
-    //var_dump(get_field('review_rating', 26454));
-    //var_dump(get_field('review_rating', 26463));
-    print_r($review);
-?>
-</pre>

@@ -16,8 +16,6 @@ $(document).ready(function () {
                 if (typeof formAction != 'string') { // значение по умолчанию
                     formAction = 'send_mail';
                 }
-                console.log(formAction);
-                console.log(typeof formAction);
                 $.ajax({
                     contentType: false, // важно - убираем форматирование данных по умолчанию
                     processData: false, // важно - убираем преобразование строк по умолчанию
