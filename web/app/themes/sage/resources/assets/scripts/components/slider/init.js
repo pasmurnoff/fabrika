@@ -4,7 +4,9 @@ export default function () {
         slidesToScroll: 1,
         prevArrow: $('.slider-big__arrow-left'),
         nextArrow: $('.slider-big__arrow-right'),
-        infinite: false,
+        infinite: true,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 15000,
     });
 }
