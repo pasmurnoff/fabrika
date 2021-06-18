@@ -3,7 +3,7 @@
         <figure class="woocommerce-product-gallery__wrapper photo-gallery__wrap">
 
             @foreach($gallery as $item)
-                <div class="woocommerce-product-gallery__image photo-gallery__item">
+                <div class="woocommerce-product-gallery__image photo-gallery__item {{ $itemClass or '' }}">
                     <a href="{{ $item['url'] }}" class="photo-gallery__item-link">
                         <img class="photo-gallery__item-img"
                              alt="{!! $item['alt'] !!}"

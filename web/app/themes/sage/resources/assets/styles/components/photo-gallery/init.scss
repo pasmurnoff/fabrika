@@ -29,6 +29,14 @@
       padding-bottom: 100%;
     }
 
+    &-64 {
+      max-width: 64px;
+
+      &::before {
+        padding-bottom: 64px;
+      }
+    }
+
     &-link {
       display: block;
       position: absolute;

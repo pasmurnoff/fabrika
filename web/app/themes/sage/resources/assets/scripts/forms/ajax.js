@@ -11,11 +11,15 @@ $(document).ready(function () {
             errorClass: 'form-error',
             ...formRules,
             submitHandler: function (form) {
-                let formData = new FormData(form);
+                let formData = new FormData(form),
+                    formAction = $(item).data('ajax-action'); // на какой обработчик отправлять
+                if (typeof formAction != 'string') { // значение по умолчанию
+                    formAction = 'send_mail';
+                }
                 $.ajax({
                     contentType: false, // важно - убираем форматирование данных по умолчанию
                     processData: false, // важно - убираем преобразование строк по умолчанию
-                    url: window.wp_data.ajax_url + '?action=send_mail',
+                    url: window.wp_data.ajax_url + '?action=' + formAction,
                     type: 'POST', //метод отправки
                     data: formData,  // Сеарилизуем объект
                     success: function () { //Данные отправлены успешно
