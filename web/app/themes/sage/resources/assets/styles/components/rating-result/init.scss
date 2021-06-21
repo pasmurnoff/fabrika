@@ -1,0 +1,21 @@
+.rating-result {
+  &__numeric {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  &__stars {
+    &-item {
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: #d6dbe0;
+      }
+
+      &.active svg {
+        fill: #ff8970;
+      }
+    }
+  }
+}

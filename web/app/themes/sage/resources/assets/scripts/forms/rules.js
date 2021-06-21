@@ -41,7 +41,7 @@ export const formRules = {
         'review_body': {
             required: true,
         },
-        'review_image': {
+        'review_images[]': {
             required: true,
             //filesize: 5242880, // 5 MB
             //extension: 'xls|csv',
@@ -86,7 +86,7 @@ export const formRules = {
         'review_body': {
             required: 'Введите свой отзыв',
         },
-        'review_image': {
+        'review_images[]': {
             required: 'Добавьте изображение',
         },
     },
