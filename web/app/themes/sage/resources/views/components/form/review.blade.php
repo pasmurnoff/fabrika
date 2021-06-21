@@ -10,11 +10,9 @@
             'attr'  => 'required',
         ])
 
-        @include('components.form.elements.input', [
+        @include('components.form.elements.radio-rating', [
             'positionClass' => 'labelwrap_dual',
-            'type' => 'text',
             'name' => 'review_rating',
-            'label' => 'Ваша оценка',
         ])
 
         @include('components.form.elements.input', [

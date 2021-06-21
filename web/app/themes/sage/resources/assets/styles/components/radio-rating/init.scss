@@ -1,0 +1,40 @@
+.radio-rating {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: center;
+  align-items: center;
+  min-height: 65px;
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: #d6dbe0;
+    }
+
+    &:hover svg,
+    &:hover ~ label svg {
+      fill: #ff8970;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  input:checked ~ label svg {
+    fill: #ff8970;
+  }
+}
