@@ -5,9 +5,14 @@
 
   &__head {
     display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-column-gap: 16px;
-    margin-bottom: 25px;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 30px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+    }
 
     &-title {
       font-size: 16px;
@@ -15,20 +20,35 @@
       color: $black;
     }
 
+    &-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &-date {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
       font-size: 14px;
       color: #5a6c7d;
     }
+  }
 
-    &-rating {
-      font-size: 14px;
-      font-weight: bold;
-      color: #ff8970;
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.29;
+
+    &-title {
+      margin-right: 5px;
+      color: #5a6c7d;
     }
   }
 
   &__content {
-    margin-bottom: 24px;
+    margin: 25px 0;
     font-size: 14px;
     line-height: 1.29;
     color: #001a34;

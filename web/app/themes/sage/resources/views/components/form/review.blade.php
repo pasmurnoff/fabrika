@@ -10,11 +10,9 @@
             'attr'  => 'required',
         ])
 
-        @include('components.form.elements.input', [
+        @include('components.form.elements.radio-rating', [
             'positionClass' => 'labelwrap_dual',
-            'type' => 'text',
             'name' => 'review_rating',
-            'label' => 'Ваша оценка',
         ])
 
         @include('components.form.elements.input', [
@@ -38,9 +36,9 @@
         ])
     </div>
 
-    @component('components.form.elements.form-item', ['title' => 'Сюда нужно прикрепить фото изделия, которое мы для Вас связали', 'class' => 'singlerow child__mrgn'])
+    @component('components.form.elements.form-item', ['title' => 'Сюда нужно прикрепить фото изделия, которое мы для вас связали и/или благодарственное письмо', 'class' => 'singlerow child__mrgn'])
         @slot('content')
-            @include('components.form.elements.file', ['name'=>'review_image', 'id' => 'review_image'])
+            @include('components.form.elements.file', ['name'=>'review_images[]', 'id' => 'review_images'])
         @endslot
     @endcomponent
 

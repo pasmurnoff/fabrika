@@ -1,4 +1,18 @@
 <?php
+function upload_this_attachment($file_handler, $post_id)
+{
+    // продолжаем, только если файлы успешно загружены
+    if ($_FILES[$file_handler]['error'] !== UPLOAD_ERR_OK) {
+        __return_false();
+    }
+
+    require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+    require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+    require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+
+    return media_handle_upload($file_handler, $post_id); // возвращаем id файла из библиотеки
+}
+
 function send_review()
 {
     $subject = 'Новый отзыв на сайте fabrikanoskov.ru';
@@ -19,17 +33,34 @@ function send_review()
     $review_rating = (int) $_POST['review_rating'];
     update_field('review_rating', $review_rating, $post_id);
 
-    // изображение
-    require_once(ABSPATH . 'wp-admin/includes/file.php');
-    $attachment_id = media_handle_upload('review_image', $post_id);
-    update_field('review_img', $attachment_id, $post_id);
+    // изображения
+    $images = []; // сюда сложим id картинок
+    if ($_FILES) {
+        $attachments = $_FILES["review_images"];
+        foreach ($attachments['name'] as $key => $value) {
+            if ($attachments['name'][$key]) {
+                $file = array(
+                    'name' => $attachments['name'][$key],
+                    'type' => $attachments['type'][$key],
+                    'tmp_name' => $attachments['tmp_name'][$key],
+                    'error' => $attachments['error'][$key],
+                    'size' => $attachments['size'][$key]
+                );
+                $_FILES = array ("my_file_upload" => $file);
+                foreach ($_FILES as $file => $array) {
+                    $images[] = upload_this_attachment($file, $post_id);
+                }
+            }
+        }
+    }
+    update_field('review_img', $images, $post_id);
 
     // должность и организация
     update_field('review_position', $_POST['review_position'], $post_id);
     update_field('review_organization', $_POST['review_organization'], $post_id);
 
     // отправляем письмо
-    $mail_body = 'На сайт был добавлен новый отзыв, который ожидает публикации -> <a href="'. $_SERVER['HTTP_REFERER'] . 'wp/wp-admin/post.php?post=' . $post_id . '&action=edit' .'">Посмотреть</a>';
+    $mail_body = 'На сайт был добавлен новый отзыв, который ожидает публикации -> <a href="//'. $_SERVER['HTTP_HOST'] . '/wp/wp-admin/post.php?post=' . $post_id . '&action=edit' .'">Посмотреть</a>';
     wp_mail($to, $subject, $mail_body, $headers);
 
     wp_die();

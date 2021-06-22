@@ -1,6 +1,6 @@
 @if(!empty($gallery))
     <div class="woocommerce-product-gallery photo-gallery">
-        <figure class="woocommerce-product-gallery__wrapper photo-gallery__wrap">
+        <figure class="woocommerce-product-gallery__wrapper photo-gallery__wrap {{ $wrapClass or '' }}">
 
             @foreach($gallery as $item)
                 <div class="woocommerce-product-gallery__image photo-gallery__item {{ $itemClass or '' }}">
