@@ -1,16 +1,30 @@
 .radio-rating {
-  display: flex;
-  flex-flow: row-reverse;
-  justify-content: center;
-  align-items: center;
-  min-height: 65px;
+  &__wrap {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: 65px;
 
-  @media screen and (max-width: 767px) {
-    display: inline-flex;
+    @media screen and (max-width: 767px) {
+      display: inline-flex;
+      min-height: auto;
+    }
+  }
+
+  .form-error {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
   }
 
   input {
-    display: none;
+    position: absolute;
+    left: -9999px;
   }
 
   label {

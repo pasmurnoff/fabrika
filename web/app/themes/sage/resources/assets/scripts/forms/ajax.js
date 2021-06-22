@@ -27,6 +27,7 @@ $(document).ready(function () {
                             'Mы свяжемся с Вами в ближайшее время.</div>').hide();
                         $('body').append($resultForm);
                         dynamicAnimate($resultForm);
+                        form.reset();
                     },
                     error: function () { // Данные не отправлены
                         let $resultForm = $('<div class="result-message text text_dangerous">Что-то пошло не так, попробуйте в другой раз</div>').hide();
