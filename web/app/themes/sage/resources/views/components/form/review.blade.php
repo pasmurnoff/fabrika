@@ -2,17 +2,18 @@
 <form class="form mrgn35" enctype="multipart/form-data" method="post" data-ajax-action="send_review">
 
     <div class="dualrow">
-        @include('components.form.elements.input', [
-            'positionClass' => 'labelwrap_dual',
-            'type' => 'text',
-            'name' => 'review_author',
-            'label' => pll__('Ваше имя'),
-            'attr'  => 'required',
-        ])
 
         @include('components.form.elements.radio-rating', [
             'positionClass' => 'labelwrap_dual',
             'name' => 'review_rating',
+        ])
+
+        @include('components.form.elements.input', [
+            'positionClass' => 'labelwrap_single',
+            'type' => 'text',
+            'name' => 'review_author',
+            'label' => pll__('Ваше имя'),
+            'attr'  => 'required',
         ])
 
         @include('components.form.elements.input', [
