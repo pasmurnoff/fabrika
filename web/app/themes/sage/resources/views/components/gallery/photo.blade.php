@@ -1,4 +1,8 @@
 @if(!empty($gallery))
+    @if(!empty($sectionTitle))
+        <div class="title title_large mrgn35-bottom">{{ $sectionTitle }}</div>
+    @endif
+
     <div class="woocommerce-product-gallery photo-gallery">
         <figure class="woocommerce-product-gallery__wrapper photo-gallery__wrap {{ $wrapClass or '' }}">
 

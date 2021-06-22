@@ -17,8 +17,8 @@ function send_review()
 {
     $subject = 'Новый отзыв на сайте fabrikanoskov.ru';
     $headers = array('Content-Type: text/html; charset=UTF-8');
-    //$to = 'mail@fabrikanoskov.ru';
-    $to = 'malikov.kzn@gmail.com';
+    $to = 'mail@fabrikanoskov.ru';
+    //$to = 'malikov.kzn@gmail.com';
 
     // вставляем запись в базу данных
     $post_id = wp_insert_post(wp_slash([

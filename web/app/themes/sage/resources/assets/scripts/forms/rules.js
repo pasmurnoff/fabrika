@@ -81,7 +81,7 @@ export const formRules = {
             required: 'Введите своё имя',
         },
         'review_rating': {
-            required: 'Укажите оценку',
+            required: 'Поставьте оценку',
         },
         'review_body': {
             required: 'Введите свой отзыв',
@@ -89,5 +89,12 @@ export const formRules = {
         'review_images[]': {
             required: 'Добавьте изображение',
         },
+    },
+    errorPlacement: function (error, element) {
+        if ( element.is(':radio') ) {
+            error.insertAfter(element.parents('.radioInputValidate'));
+        } else { // для всех остальных оставляем прежние правила
+            error.insertAfter(element);
+        }
     },
 }
