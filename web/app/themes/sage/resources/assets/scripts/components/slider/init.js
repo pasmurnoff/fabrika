@@ -7,6 +7,6 @@ export default function () {
         infinite: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 15000,
+        autoplaySpeed: 8000,
     });
 }
