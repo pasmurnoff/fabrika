@@ -1,6 +1,7 @@
 .radio-rating {
   &__wrap {
-    display: flex;
+    //display: flex;
+    display: inline-flex;
     flex-flow: row-reverse;
     justify-content: center;
     align-items: center;
@@ -15,11 +16,11 @@
   .form-error {
     display: block;
     width: 100%;
-    text-align: center;
-
-    @media screen and (max-width: 767px) {
-      text-align: left;
-    }
+    //  text-align: center;
+    //
+    //  @media screen and (max-width: 767px) {
+    //    text-align: left;
+    //  }
   }
 
   input {
