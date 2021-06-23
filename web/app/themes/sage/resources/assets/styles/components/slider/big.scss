@@ -7,7 +7,7 @@
 
   .slick-dots {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     display: flex !important;
     justify-content: center;
 
@@ -66,12 +66,12 @@
     }
 
     &-left {
-      left: 5px;
+      left: 20px;
       transform: translateY(-50%) rotate(180deg);
     }
 
     &-right {
-      right: 5px;
+      right: 20px;
       transform: translateY(-50%);
     }
   }
