@@ -18,5 +18,7 @@ Template Name: Тай дай
     {{-- Палитра цветов --}}
     @include('components.gallery.color-palette')
 
+    @include('components.gallery.photo', ['gallery' => get_field( 'photo_gallery', get_the_ID() ), 'sectionTitle' => 'Примеры наших работ'])
+
     @include('components.writeus.writeus')
 @endsection

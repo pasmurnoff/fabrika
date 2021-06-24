@@ -1,7 +1,6 @@
 // import external dependencies
 import 'jquery';
 import 'slick-carousel/slick/slick.min'
-import './forms/visual'
 import './forms/input-file'
 import './forms/ajax'
 import './forms/input-number'

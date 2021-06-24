@@ -1,4 +1,5 @@
 import lozad from 'lozad';
+import visualLabel from '../forms/visual';
 import transitionFix from '../common/transition-fix'
 import miniCart from './../components/mini-cart'
 import dropdownSizes from '../components/swatches/init'
@@ -18,6 +19,7 @@ export default {
         const observer = lozad();
         observer.observe();
 
+        visualLabel();
         transitionFix();
         miniCart();
         dropdownSizes();
